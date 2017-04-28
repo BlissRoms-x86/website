@@ -53,7 +53,7 @@ $(document).ready(function(e) {
       log("Website", "A!********************************");
       log("Website", "A!*  ____  _     ___ ____ ____   *");
       log("Website", "A!* | __ )| |   |_ _/ ___/ ___|  *");
-      log("Website", "A!* |  _ | | |    | ||___ |___ |  *");
+      log("Website", "A!* |  _) | |    | |(___ (___ )  *");
       log("Website", "A!* | |_) | |___ | | ___) |__) | *");
       log("Website", "A!* |____/|_____|___|____/____/  *");
       log("Website", "A!*                              *");
