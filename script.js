@@ -53,7 +53,7 @@ $(document).ready(function(e) {
       log("Website", "A!********************************");
       log("Website", "A!*  ____  _     ___ ____ ____   *");
       log("Website", "A!* | __ )| |   |_ _/ ___/ ___|  *");
-      log("Website", "A!* |  _ \ | |    | |\___ \___ \  *");
+      log("Website", "A!* |  _ | | |    | ||___ |___ |  *");
       log("Website", "A!* | |_) | |___ | | ___) |__) | *");
       log("Website", "A!* |____/|_____|___|____/____/  *");
       log("Website", "A!*                              *");
@@ -61,7 +61,7 @@ $(document).ready(function(e) {
       log("Website", "A!Have A Truly Blissful Experience");
       log("Website", "A!********************************");
       log("Website", "");
-      log("Website", "E!Bliss ROMs temporary site [^http://blissroms.io/](*blissroms.io*)");
+      log("Website", "E!Bliss ROMs temporary site [^http://blissroms.github.io/](*blissroms.github.io*)");
       log("Website", "");
       log("Website", "A!********************************");
       log("Website", "");
