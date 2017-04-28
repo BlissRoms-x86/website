@@ -65,7 +65,7 @@ $(document).ready(function(e) {
       log("Website", "");
       log("Website", "A!********************************");
       log("Website", "");
-      log("Website", "E![^http://downloads.blissroms.com/](*Bliss Downloads*) , [^http://paypal.me/TeamBliss](*Donate to Team Bliss*)");
+      log("Website", "E![^http://downloads.blissroms.com/](*Bliss Downloads*) , [^http://paypal.me/TeamBliss](*Donate to Team Bliss*) , [^http://review.blissroms.com](*BlissROMs Gerrit Review*)");
 	  urlvars();
       log("Client", "For help say '/help'");
 	  setInterval(favicon,500);
