@@ -1,0 +1,103 @@
+body {
+  background-color: #3A3A3A;
+  color: #EFEFAE;
+  font-family: 'Fira Mono', Monospace;
+  margin: 0;
+  overflow-x: hidden;
+}
+body a {
+  color: inherit;
+}
+body a:hover {
+  color: #FFFFAE;
+  background-color: #005F5F;
+}
+body .stream {
+  margin-top: 8px;
+}
+body .line {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  margin: 0 4px;
+  padding-top: 2px;
+  width: calc(100% - 12px);
+}
+body .line p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+body .line .name {
+  max-width: 80px;
+  min-width: 80px;
+  text-align: right;
+  padding-right: 6px;
+}
+body .editline {
+  background-color: #262626;
+  padding: 2px 4px 0px 4px;
+  width: calc(100%);
+  margin: 0;
+  margin-bottom: 8px;
+}
+body .editline .edit {
+  min-width: calc(100% - 200px);
+  outline: none;
+}
+body .editline .time {
+  user-select: none;
+  cursor: default;
+}
+
+.whitet {
+  color: #FFFFAE;
+}
+
+.redt {
+  color: #d75f5f;
+}
+
+.important {
+  color: #E3A786;
+}
+
+.bluet {
+  color: #5f8787;
+}
+
+.greent {
+  color: #afaf00;
+}
+
+.selft {
+  color: #83A598;
+}
+
+::selection {
+  color: #FFFFAE;
+  background: #005F5F;
+}
+
+::-webkit-scrollbar {
+  background-color: #3A3A3A;
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bcbcbc;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #3A3A3A;
+}
+
+::-webkit-resizer {
+  background-color: #3A3A3A;
+}
+
+.phjspenheader:hover {
+  background-color: #D44C2A;
+}
