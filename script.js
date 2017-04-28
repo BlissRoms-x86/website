@@ -27,7 +27,7 @@ $(document).ready(function(e) {
 	  ["connect", "Connect with Bliss",
 	  "[mailto:Officialblissroms@gmail.com](Email Bliss)",
 	  "[^https://plus.google.com/communities/118265887490106132524](Google+ Community)",
-	  "[^https://t.me/OfficialBlissROMs](Telegram Community)"]
+	  "[^https://t.me/OfficialBlissROMs](Telegram Community)",
 	  "[^https://review.blissroms.com](Gerrit Code Review for Blissroms)"]
    ];
    var pageindex = ["index", "about", "connect"];
