@@ -15,8 +15,9 @@ $(document).ready(function(e) {
       ["/help", "Show commands"],
       ["/list", "List all pages on the website"],
       ["/nav &lt;location&gt;", "Navigate to location"],
-	   ["/gl", "Generate a url for the current page - [^http://blissroms.github.io/](This doesn't work in an iFrame.) outputs something like [^http://blissroms.github.io/connect](*blissroms.github.io/connect*)"],
+	   ["/gl", "Generate a url for the current page - not currently working"],
       ["/clear", "Clear the console"],
+      ["brunch", "Initiate device compile - Example: 'brunch bliss_bacon' will get you a build for bacon, 'brunch bliss_x86' will get you a build for Bliss-x86. You get the idea"],
       ["/login &lt;username&gt; &lt;password&gt;", "Login to your account - This is not set up and when implemeneted it'll be '/login username' then request password without printing into the cmd prompt"],
       ["/upload", "Upload file, must be logged in."]
    ];
@@ -321,12 +322,23 @@ $(document).ready(function(e) {
                log("Client", "Not enough arguments to log in, you need a USERNAME and a PASSWORD.");
             }
             break;
-	//case "/brunch":
-          //  if (word[1] = "bliss_kiwi") [
-		//window.open("https://downloads.blissroms.com/Bliss/Official/kiwi/");
-	    //} else (word[1] = "bliss_x86") {
-        	//window.open("https://downloads.blissroms.com/Bliss/Official/x86/");
-            //break;
+	      case "/brunch":
+         case "brunch":
+            if (word[1] = "bliss_kiwi") {		window.open("https://downloads.blissroms.com/Bliss/Official/kiwi/");}
+            if (word[1] = "bliss_x86") {        	window.open("https://downloads.blissroms.com/Bliss/Official/x86/");}
+            if (word[1] = "bliss_axon7") {        	window.open("https://downloads.blissroms.com/Bliss/Official/axon7/");}
+            if (word[1] = "bliss_bacon") {        	window.open("https://downloads.blissroms.com/Bliss/Official/bacon/");}
+            if (word[1] = "bliss_bullhead") {        	window.open("https://downloads.blissroms.com/Bliss/Official/bullhead/");}
+            if (word[1] = "bliss_clark") {        	window.open("https://downloads.blissroms.com/Bliss/Official/clark/");}
+            if (word[1] = "bliss_hammerhead") {        	window.open("https://downloads.blissroms.com/Bliss/Official/hammerhead/");}
+            if (word[1] = "bliss_hydrogen") {        	window.open("https://downloads.blissroms.com/Bliss/Official/hydrogen/");}
+            if (word[1] = "bliss_kenzo") {        	window.open("https://downloads.blissroms.com/Bliss/Official/kenzo/");}
+            if (word[1] = "bliss_mako") {        	window.open("https://downloads.blissroms.com/Bliss/Official/mako/");}
+            if (word[1] = "bliss_oneplus2") {        	window.open("https://downloads.blissroms.com/Bliss/Official/oneplus2/");}
+            if (word[1] = "bliss_shamu") {        	window.open("https://downloads.blissroms.com/Bliss/Official/shamu/");}
+            if (word[1] = "bliss_victara") {        	window.open("https://downloads.blissroms.com/Bliss/Official/victara/");}
+            if (word[1] = "bliss_warp4") {        	window.open("https://downloads.blissroms.com/Bliss/Official/warp4/");}
+            break;
          default:
             output = "Unrecognised command '" + word[0] + "'.";
             log("Client", output);
