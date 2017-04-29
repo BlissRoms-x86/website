@@ -17,7 +17,7 @@ $(document).ready(function(e) {
       ["/nav &lt;location&gt;", "Navigate to location"],
 	   ["/gl", "Generate a url for the current page - not currently working"],
       ["/clear", "Clear the console"],
-      ["brunch", "Initiate device compile - Example: 'brunch bliss_bacon' will get you a build for bacon, 'brunch bliss_x86' will get you a build for Bliss-x86. You get the idea"],
+      ["brunch + bliss_device", "Initiate device compile - Example: 'brunch bliss_bacon' will get you a build for bacon, 'brunch bliss_x86' will get you a build for Bliss-x86. You get the idea"],
       ["/login &lt;username&gt; &lt;password&gt;", "Login to your account - This is not set up and when implemeneted it'll be '/login username' then request password without printing into the cmd prompt"],
       ["/upload", "Upload file, must be logged in."]
    ];
