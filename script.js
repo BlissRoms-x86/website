@@ -324,20 +324,32 @@ $(document).ready(function(e) {
             break;
 	      case "/brunch":
          case "brunch":
-            if (word[1] = "bliss_kiwi") {		window.open("https://downloads.blissroms.com/Bliss/Official/kiwi/");}
-            if (word[1] = "bliss_x86") {        	window.open("https://downloads.blissroms.com/Bliss/Official/x86/");}
-            if (word[1] = "bliss_axon7") {        	window.open("https://downloads.blissroms.com/Bliss/Official/axon7/");}
-            if (word[1] = "bliss_bacon") {        	window.open("https://downloads.blissroms.com/Bliss/Official/bacon/");}
-            if (word[1] = "bliss_bullhead") {        	window.open("https://downloads.blissroms.com/Bliss/Official/bullhead/");}
-            if (word[1] = "bliss_clark") {        	window.open("https://downloads.blissroms.com/Bliss/Official/clark/");}
-            if (word[1] = "bliss_hammerhead") {        	window.open("https://downloads.blissroms.com/Bliss/Official/hammerhead/");}
-            if (word[1] = "bliss_hydrogen") {        	window.open("https://downloads.blissroms.com/Bliss/Official/hydrogen/");}
-            if (word[1] = "bliss_kenzo") {        	window.open("https://downloads.blissroms.com/Bliss/Official/kenzo/");}
-            if (word[1] = "bliss_mako") {        	window.open("https://downloads.blissroms.com/Bliss/Official/mako/");}
-            if (word[1] = "bliss_oneplus2") {        	window.open("https://downloads.blissroms.com/Bliss/Official/oneplus2/");}
-            if (word[1] = "bliss_shamu") {        	window.open("https://downloads.blissroms.com/Bliss/Official/shamu/");}
-            if (word[1] = "bliss_victara") {        	window.open("https://downloads.blissroms.com/Bliss/Official/victara/");}
-            if (word[1] = "bliss_warp4") {        	window.open("https://downloads.blissroms.com/Bliss/Official/warp4/");}
+         if (word[1] == "bliss_kiwi") {		window.open("https://downloads.blissroms.com/Bliss/Official/kiwi/");
+                                        }
+            else if(word[1] == "bliss_x86") {        	window.open("https://downloads.blissroms.com/Bliss/Official/x86/");
+                                           }
+            else if(word[1] == "bliss_axon7") {        	window.open("https://downloads.blissroms.com/Bliss/Official/axon7/");
+                                             }
+            else if(word[1] == "bliss_bacon") {        	window.open("https://downloads.blissroms.com/Bliss/Official/bacon/");
+                                             }
+            else if(word[1] == "bliss_bullhead") {        	window.open("https://downloads.blissroms.com/Bliss/Official/bullhead/");
+                                                }
+            else if(word[1] == "bliss_clark") {        	window.open("https://downloads.blissroms.com/Bliss/Official/clark/");
+                                             }
+            else if(word[1] == "bliss_hammerhead") {       window.open("https://downloads.blissroms.com/Bliss/Official/hammerhead/");
+                                                  }
+            else if(word[1] == "bliss_hydrogen") {        	window.open("https://downloads.blissroms.com/Bliss/Official/hydrogen/");
+                                                }
+            else if(word[1] == "bliss_kenzo") {        	window.open("https://downloads.blissroms.com/Bliss/Official/kenzo/");
+                                             }
+            else if(word[1] == "bliss_mako") {        	window.open("https://downloads.blissroms.com/Bliss/Official/mako/");
+                                            }
+            else if(word[1] == "bliss_oneplus2") {        	window.open("https://downloads.blissroms.com/Bliss/Official/oneplus2/");
+                                                }
+            else if(word[1] == "bliss_shamu") {        	window.open("https://downloads.blissroms.com/Bliss/Official/shamu/");
+                                              }
+            else if(word[1] == "bliss_victara") {        	window.open("https://downloads.blissroms.com/Bliss/Official/victara/");}
+            else if(word[1] == "bliss_warp4") {        	window.open("https://downloads.blissroms.com/Bliss/Official/warp4/");}
             break;
          default:
             output = "Unrecognised command '" + word[0] + "'.";
