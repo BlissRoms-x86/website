@@ -350,6 +350,10 @@ $(document).ready(function(e) {
                                               }
             else if(word[1] == "bliss_victara") {        	window.open("https://downloads.blissroms.com/Bliss/Official/victara/");}
             else if(word[1] == "bliss_warp4") {        	window.open("https://downloads.blissroms.com/Bliss/Official/warp4/");}
+            else {
+               output = "Unrecognized device";
+               log("Client", output);
+            }
             break;
          default:
             output = "Unrecognised command '" + word[0] + "'.";
