@@ -321,13 +321,11 @@ $(document).ready(function(e) {
                log("Client", "Not enough arguments to log in, you need a USERNAME and a PASSWORD.");
             }
             break;
-	case "brunch":
 	case "/brunch":
-            	if (word = "bliss_kiwi") [
-			window.open("https://downloads.blissroms.com/Bliss/Official/kiwi/");
-		} else (word = "bliss_x86") {
-        		window.open("https://downloads.blissroms.com/Bliss/Official/x86/");
-		
+            if (word[1] = "bliss_kiwi") [
+		window.open("https://downloads.blissroms.com/Bliss/Official/kiwi/");
+	    } else (word[1] = "bliss_x86") {
+        	window.open("https://downloads.blissroms.com/Bliss/Official/x86/");
             break;
          default:
             output = "Unrecognised command '" + word[0] + "'.";
