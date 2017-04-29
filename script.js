@@ -321,10 +321,10 @@ $(document).ready(function(e) {
                log("Client", "Not enough arguments to log in, you need a USERNAME and a PASSWORD.");
             }
             break;
-         case "brunch bliss_kiwi":
+         case "/brunch bliss_kiwi":
             window.open("https://downloads.blissroms.com/Bliss/Official/kiwi/");
             break;
-         case "brunch bliss_x86":
+         case "/brunch bliss_x86":
             window.open("https://downloads.blissroms.com/Bliss/Official/x86/");
             break;
          default:
