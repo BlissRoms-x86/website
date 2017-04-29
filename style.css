@@ -1,6 +1,6 @@
 body {
   background-color: #3A3A3A;
-  color: #EFEFAE;
+  color: #FFFFFF;
   font-family: 'Fira Mono', Monospace;
   margin: 0;
   overflow-x: hidden;
@@ -9,8 +9,8 @@ body a {
   color: inherit;
 }
 body a:hover {
-  color: #FFFFAE;
-  background-color: #005F5F;
+  color: #00bbff;
+  background-color: #373838;
 }
 body .stream {
   margin-top: 8px;
@@ -52,7 +52,7 @@ body .editline .time {
 }
 
 .whitet {
-  color: #FFFFAE;
+  color: #00bbff;
 }
 
 .redt {
@@ -64,7 +64,7 @@ body .editline .time {
 }
 
 .bluet {
-  color: #5f8787;
+  color: #42aaf4;
 }
 
 .greent {
@@ -76,8 +76,8 @@ body .editline .time {
 }
 
 ::selection {
-  color: #FFFFAE;
-  background: #005F5F;
+  color: #00bbff;
+  background: #373838;
 }
 
 ::-webkit-scrollbar {
