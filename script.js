@@ -67,7 +67,7 @@ $(document).ready(function(e) {
       log("Website", "A!********************************");
       log("Website", "");
       log("Website", "E![^http://downloads.blissroms.com/](*Bliss Downloads*) , [^http://paypal.me/TeamBliss](*Donate to Team Bliss*)");
-	log("Website", "E![^http://review.blissroms.com](*BlissROMs Gerrit Review*)");
+	log("Website", "E![^http://review.blissroms.com](*BlissROMs Gerrit Review*) , [^https://goo.gl/forms/PdiaAj1PojosmehK2](*Join Team Bliss*)");
 	log("Website", "");
       log("Website", "A!********************************");
 	   urlvars();
