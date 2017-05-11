@@ -70,6 +70,8 @@ $(document).ready(function(e) {
       log("Website", "E![^http://downloads.blissroms.com/](*Bliss Downloads*) , [^http://paypal.me/TeamBliss](*Donate to Team Bliss*)");
 	log("Website", "E![^http://review.blissroms.com](*BlissROMs Gerrit Review*) , [^https://goo.gl/forms/PdiaAj1PojosmehK2](*Join Team Bliss*)");
 	log("Website", "");
+      log("Website", "E![^https://goo.gl/kAb7ti](*Join Bliss Family of ROMs*)");
+      log("Website", "");
       log("Website", "A!********************************");
 	   urlvars();
       log("Client", "For help say '/help'");
