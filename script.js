@@ -30,7 +30,7 @@ $(document).ready(function(e) {
 	  "[mailto:Officialblissroms@gmail.com](Email Bliss)",
 	  "[^https://plus.google.com/communities/118265887490106132524](Google+ Community)",
 	  "[^https://t.me/OfficialBlissROMs](Telegram Community)",
-	  "[^https://review.blissroms.com](Gerrit Code Review for Blissroms)"
+	  "[^https://review.blissroms.com](Gerrit Code Review for Blissroms)",
 	  "[^https://goo.gl/forms/PdiaAj1PojosmehK2](*Join Team Bliss*)"]
    ];
    var pageindex = ["index", "about", "connect"];
