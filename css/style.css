@@ -263,3 +263,34 @@ body > .container-fluid {
   display: none; }
   .back-to-top.visible {
     display: block; }
+
+/* our team section */
+
+.section {
+	background-color: #0080ff;   
+}
+.hr.invisible_hr {
+    height: 0;
+    padding: 0;
+}
+.hr.big_size_hr {
+    margin: 30px 0;
+}
+.hr {
+    clear: both;
+    display: block;
+    font-size: 0;
+    height: 24px;
+    margin: 20px 0;
+    overflow: hidden;
+    padding: 2px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.highlight_secondary {
+    color: #FFFFFF;
+}
+.team-role {
+    color: #07374a;
+}
