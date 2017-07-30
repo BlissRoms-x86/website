@@ -31,6 +31,10 @@ $(document).ready(function() {
             e.preventDefault();
             $.scrollTo($("#contact"), 1000);
         });
+		$("#nav-team").click(function(e) {
+            e.preventDefault
+            $.scrollTo($("#team"), 1000);
+        });
         $(".navbar-brand").click(function(e) {
             e.preventDefault();
             $.scrollTo(0, 1000);
