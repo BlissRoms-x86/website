@@ -3,28 +3,171 @@
 
   <head>
     <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="BlissRoms - Command Line Website" />
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">     
-    <title>BlissRoms.github.io - Command Line Website</title>
+    <meta name="description" content="BlissRoms - new site" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>BlissRoms.github.io - New Site </title>
   </head>
 
   <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bliss OS</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="nav-about"><a href="#about">About Bliss</a></li>
+            <li id="nav-portfolio"><a href="#portfolio">Download</a></li>
+            <li id="nav-contact"><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-    <!-- HEADER -->
+    <!-- Begin page content -->
+    <div class="container-fluid">
+      
+      <div class="row cover top">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-12 headline">
+			<img class="centered text-center" src="http://i.imgur.com/nzsZTTY.png">
+              <h1 class="text-center">This is Bliss OS</h1>
+              <p class="lead text-center">A Open-Source OS for phones, tablets & PC's</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 center-block text-center">
+              <a href="#about"><span id="scrollIcon" class="front-glyph glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div id="about" class="row cover">
+        <h2 class="text-center">About Bliss</h2>
+        <div class="row">
+          <div class="col-md-6 text-center about-info">
+            <img class="img-circle text-center profile-img" src="images/bliss_opt_logo.png">
+            <p class="text-center">We are a team of designers, developers, maintainers, and business professionals who work together to help achieve the dreams of our teammates and the Android Community. Our goal is to help provide a unique learning environment, using the FOSS mentality, and not only train people how to make and monetize what they aspire, but also help provide unique business opportunities for already existing projects too. </p>
+			<p class="text-center">If you are interested in joining our team, please fill out the form found here: <a href="https://goo.gl/forms/PdiaAj1PojosmehK2"><li>Join Team Bliss</li></a></p>
+			<p class="text-center">Or if you represent an already existing project and would like to join the Bliss Family, please fill out the form found here: <a href="https://goo.gl/kAb7ti"><li>Join Bliss Family</li></a></p>
+			</div>
+          <div class="col-md-6 about-tools">
+            <p class="text-center">The nature of our business is to train and develop. So we have quite the diverse list of things we have experience with, and the list is growing constantly<br/><br/>Here's a few of the types of projects we work on</p>
+              <div class="col-xs-6">
+                <ul>
+                  <li>Android Development</li>
+                  <li>Graphic Design</li>
+                  <li>Web Development</li>
+                  <li>IOT Software Development</li>
+                  <li>Server Admin</li>
+				  <li>Prototype Design</li>
+				  <li>Animation</li>
+				  <li>Brand Imaging</li>
+                </ul>
+              </div>
+              <div class="col-xs-6">
+                <ul>
+                  <li>Development Training</li>
+                  <li>Design Training</li>
+                  <li>Team Management</li>
+                  <li>Marketing</li>
+                  <li>Product Technology Strategy</li>
+				  <li>New Product Development</li>
+				  <li>Product Testing</li>
+				  <li>OEM Software Resources</li>
+                </ul>
+              </div>
+            
+          </div>
+          <div class="row break">
+            <div class="centered col-md-6 about-last">
+              <p class="text-center">Check out our latest projects <span class="glyphicon glyphicon-arrow-down"></span></p>
+            </div>
+          </div>
+        </div> 
+      </div><!-- End #About -->
 
-    <div class="stream"></div>
-   <div class="line editline">
-      <p class="time"></p>
-      <p class="name">&gt;</p>
-      <p contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="information edit"></p>
-   </div>
+      <div id="portfolio" class="row cover">
+        <h2 class="text-center">Downloads</h2>
+        <div class="container">
+          <div class="row portfolio-projects"> <!-- Two project row-->
+            <div class="col-lg-6"> <!--1st side project -->
+              <div class="row"> 
+                <div class="col-sm-5 text-center">
+                  <h4 class="portfolio-projects--title">Bliss OS - For Phones and Tablets</h4>
+                  <p class="portfolio-projects--desc">This is the Bliss you have all come to know and love for your phones and tablets.</p>
+                  <p class="portfolio-projects--desc">Devices: axon7, bacon, bullhead, clark, hammerhead, hydrogen, kenzo, kiwi, mako, marlin, oneplus2, shamu, victara, warp4</p>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="https://downloads.blissroms.com/Bliss/Official/" role="button">Go To Downloads</a>
+                </div>
+                <div class="col-sm-7 text-center">
+                  <img class="portfolio-projects--image" src="images/bliss_nexus.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"> <!--2nd side project -->
+              <div class="row"> 
+                <div class="col-sm-5 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <h4 class="portfolio-projects--title">Bliss x86 - For PC's and Laptops</h4>
+                  <p class="portfolio-projects--desc">This is a newer spin on Bliss for your x86 PC's, Laptops, Tablets and x86 maker boards.</p>
+                  <p class="portfolio-projects--desc">Devices: Compatible with the growing number of Intel x86 CPU's This includes some AMD and Nvidia CPU's (MBR and UEFI Compatible)</p>
+                  <a class="btn btn-rounded portfolio-projects--btn" href="https://downloads.blissroms.com/Bliss/Official/x86/" role="button">Go To Downloads</a>
+                </div>
+                <div class="col-sm-7 text-center pull-right-sm"><!--flipped on small, unflipped on large-->
+                  <img class="img-rounded portfolio-projects--image" src="images/bliss_surface.png">
+                </div>
+              </div>
+            </div>
+          </div><!--end Two project row-->
+
+        </div>
+        </div>
+      </div><!-- End #Portfolio -->
+
+      <div id="contact" class="row cover bottom">
+        <h2 class="text-center contact-header">Find Us Online</h2>
+        <p class="text-center contact-email">Get in touch with us <span class="glyphicon glyphicon-arrow-right"></span> blissfamilyroms@gmail.com</p>
+        <div class="text-center contact-social-icons">
+          <p>Or find us online at:</p>
+          <ul class="centered">
+            <a href="https://t.me/OfficialBlissROMs"><li><i class="fa fa-telegram"></i> Bliss ROMs Telegram</li></a>
+            <a href="https://t.me/blissx86"><li><i class="fa fa-telegram"></i> Bliss x86 Telegram</li></a>
+            <a href="https://github.com/BlissRoms"><li><i class="fa fa-github"></i> Bliss OS Github</li></a>
+            <a href="https://github.com/BlissRoms-x86"><li><i class="fa fa-github"></i> Bliss x86 Github</li></a>
+			<a href="https://review.blissroms.com"><li><i class="fa fa-github"></i> Bliss OS Gerrit</li></a>
+			<a href="https://review-x86.blissroms.com"><li><i class="fa fa-github"></i> Bliss x86 Gerrit</li></a>
+			<a href="https://twitter.com/Bliss_Roms"><li><i class="fa fa-twitter"></i> Twitter</li></a>
+          </ul>
+        </p>
+        
+      </div><!-- End #Contact -->
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+      </div>
+    </footer>
 
   </body>
   
-     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-     <script src="//codepen.io/OfficialAntarctica/pen/dcdf9b1e328493afd4bd982ed98266d3.js"></script>
-     <script src="script.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+	<script src='https://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js'></script>
+	<script src="js/script.js"></script>
   
 </html>
