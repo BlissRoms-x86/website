@@ -267,7 +267,10 @@ body > .container-fluid {
 /* our team section */
 
 .section {
-	background-color: #0080ff;   
+	background-color: #0080ff;
+	padding-top: 4.375em;
+    font-weight: 700;
+    font-size: 1.5em;	
 }
 .hr.invisible_hr {
     height: 0;
@@ -293,4 +296,7 @@ body > .container-fluid {
 }
 .team-role {
     color: #07374a;
+}
+.team-links {
+	padding-top: .75em;
 }
