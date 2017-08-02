@@ -265,11 +265,9 @@ body > .container-fluid {
     display: block; }
 
 /* our team section */
-
-.section {
+#team {
 	background-color: #0080ff;
-	padding-top: 4.375em;
-    font-weight: 700;
+	font-weight: 700;
     font-size: 1.5em;	
 }
 .hr.invisible_hr {
