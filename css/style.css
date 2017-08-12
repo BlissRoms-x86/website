@@ -364,3 +364,30 @@ body > .container-fluid {
   max-height: 150px;
   margin:0 auto;
 }
+/* our team section */
+#family {
+	background-color: #07374a;
+	font-weight: 700;
+    font-size: 1.5em;	
+}
+
+.family-role, .family-name, .family-links-list {
+    color: #FFFFFF;
+}
+.family-description {
+    color: #b7b7b7;
+}
+.family-role h4 {
+    color: #0080ff;
+}
+.family-header h2 {
+    color: #0080ff;
+}
+.family-links {
+	padding-top: .75em;
+}
+.family-image img {
+  max-width:150px;
+  max-height: 150px;
+  margin:0 auto;
+}
