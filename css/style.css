@@ -173,7 +173,14 @@ body > .container-fluid {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-  
+
+.navbar-collapse .navbar-nav > li > a,
+.navbar-collapse .navbar-nav > li > a:hover,
+.navbar-collapse .navbar-nav > li > a:focus,
+.navbar-collapse .navbar-nav > li > a:active {
+  border-color: transparent !important;
+}
+
 /* Solid class attached on scroll past first section */
 .navbar.solid {
   background-color: #07374a;
@@ -437,6 +444,15 @@ body > .container-fluid {
   #portfolio h2 {padding-bottom: 0}
   .portfolio-projects--btn {margin-top:1.25em;}
   #scrollIcon, #scrollTopIcon {font-size: 1em}
+}
+@media (max-device-height: 480px) and (orientation: landscape) {
+  .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 240px;
+  }
+  .navbar-nav>li>a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
 }
 @media (max-width: 360px) {
   .h1, h1 {font-size: 32px;}
