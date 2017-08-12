@@ -389,7 +389,8 @@ body > .container-fluid {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  background-color: #07374a;
+  background-color: #052a38;
+
   color: #ffffff; }
 .footer-role, .footer-name, .footer-description {
     color: #FFFFFF;
