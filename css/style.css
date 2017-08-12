@@ -39,7 +39,7 @@
 }
 @media (min-width: 1366px) {
   #portfolio > .container, #about > .row {width: 90%;max-width: 1600px;margin-left:auto;margin-right: auto;}
-  .navbar > .container {max-width: 1366px}
+  .navbar > .container {max-width: 1170px}
 }
 * {
   box-sizing: border-box; }
