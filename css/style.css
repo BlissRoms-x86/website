@@ -60,6 +60,8 @@ p {
   color: #ffffff; }
 
 a, .btn {
+  -webkit-transition: color 1s ease 0s, border-color 1s ease 0s, background-color 1s ease 0s;
+  transition: color 1s ease 0s, border-color 1s ease 0s, background-color 1s ease 0s;
 }
 
 a:hover, a:focus, a:active {text-decoration: none;}
