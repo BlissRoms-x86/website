@@ -411,9 +411,14 @@ body > .container-fluid {
 }
 @media (max-height: 480px) {
   #scrollIcon, #scrollTopIcon {margin-top: 0}
-  .cover.top {padding: 0vh 0 3vh 0;}
+  .cover.top {padding: 3vh 0 3vh 0;}
   .headline {padding-top:1.5vh;}
   body > div.container-fluid > div.row.cover.top > div > .row > .headline > img {max-height: 32vh;}
+}
+@media (max-height: 320px) {
+  .cover.top {padding: 1vh 0 3vh 0;}
+  .headline {padding-top:1vh;}
+  body > div.container-fluid > div.row.cover.top > div > .row > .headline > img {max-height: 25vh;}
 }
 @media (max-width: 768px) {
   .container-fluid {padding:30px 0 !important;}
