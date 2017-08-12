@@ -201,6 +201,8 @@ body > .container-fluid {
     background-color: #0080ff; }
   .cover.bottom {
     padding: 10% 0 10% 0; }
+  @media (max-width: 550px) {
+    .cover, .cover.bottom {padding: 17.5% 0 17.5% 0; } }
 
 .headline {
   padding-top: 6.25em; }
