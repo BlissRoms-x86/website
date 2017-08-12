@@ -332,10 +332,21 @@ body > .container-fluid {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 30px;
   background-color: #07374a;
   color: #ffffff; }
-
+.footer-role, .footer-name, .footer-description {
+    color: #FFFFFF;
+}
+.footer-description {
+    color: #fff;
+    font-size: 18px;
+}
+.footer-role h4, .footer-links-list a {
+    color: #0080ff;
+}
+.footer-header h4 {
+    color: #0080ff;
+}
 #scrollIcon, #scrollTopIcon {
   margin-top: 200px;
   padding: 10px;
