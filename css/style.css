@@ -73,6 +73,10 @@ a:hover, a:focus, a:active {text-decoration: none;}
 body > .container-fluid {
   padding: 60px 0; }
 
+#portfolio > .container {
+  padding-left: 0;
+  padding-right: 0 }
+
 .row,
 .container-fluid>.navbar-collapse,
 .container-fluid>.navbar-header,
