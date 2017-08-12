@@ -153,15 +153,23 @@ body > .container-fluid {
 }
 .navbar-collapse.collapse.collapsing {
   background-color: #07374a;
-  
+}
+.navbar-default .navbar-toggle .icon-bar {
+    color: #ffffff;
+    background-color: #ffffff; }
+.navbar-default .navbar-collapse.collapse.in ul {
+  background-color: #07374a; 
+}
+.navbar-collapse.collapse.collapsing {
+  background-color: #07374a;
 }
   
-  .navbar-collapse.collapse.show {
+.navbar-collapse.collapse.show {
   background-color: #07374a;
   -webkit-transition: background-color .2s ease 0s;
   transition: background-color .2s ease 0s;
 }
-
+  
 /* Solid class attached on scroll past first section */
 .navbar.solid {
   background-color: #07374a;
