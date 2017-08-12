@@ -328,3 +328,8 @@ body > .container-fluid {
 .team-links {
 	padding-top: .75em;
 }
+.team-image img {
+  max-width:150px;
+  max-height: 150px;
+  margin:0 auto;
+}
