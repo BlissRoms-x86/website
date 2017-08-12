@@ -148,10 +148,10 @@ body > .container-fluid {
   .navbar-default .navbar-toggle .icon-bar {
     color: #ffffff;
     background-color: #ffffff; }
-.navbar-default .navbar-collapse.collapse.in ul, .navbar-collapse {
+.navbar-default .navbar-collapse.collapse.in ul {
   background-color: #07374a;
 }
-.navbar-collapse.collapse.collapsing {
+.navbar-collapse.collapsing {
   background-color: #07374a;
 }
 .navbar-default .navbar-toggle .icon-bar {
