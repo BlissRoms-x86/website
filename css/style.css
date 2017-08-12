@@ -19,6 +19,7 @@
     float: left !important; }
   .container {width: 768px}
   .navbar-right {margin-right: 0;}
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: 0;padding-left: 15px}
 }
 @media (min-width: 992px) {
   .pull-right-md {
@@ -34,9 +35,11 @@
     float: left !important; }
   .container {width: 1170px;}
   .portfolio-projects .col-lg-6 {width: 100%}
+  .navbar > .container {max-width: 1170px}
 }
 @media (min-width: 1366px) {
   #portfolio > .container, #about > .row {width: 90%;max-width: 1600px;margin-left:auto;margin-right: auto;}
+  .navbar > .container {max-width: 1366px}
 }
 * {
   box-sizing: border-box; }
