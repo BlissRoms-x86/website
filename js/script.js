@@ -39,6 +39,10 @@ $(document).ready(function() {
             e.preventDefault
             $.scrollTo($("#team"), 1000);
         });
+		$("#nav-family").click(function(e) {
+            e.preventDefault
+            $.scrollTo($("#family"), 1000);
+        });
         $(".navbar-brand").click(function(e) {
             e.preventDefault();
             $.scrollTo(0, 1000);
