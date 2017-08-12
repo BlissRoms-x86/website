@@ -91,17 +91,28 @@ body > .container-fluid {
   font-weight: 500;
   font-size: 1em;
   text-transform: lowercase;
-  margin: 10px 5px 5px 5px;
+  margin: 9px 5px 5px 5px;
+  border: 1px solid transparent;
   border-radius: 5px; }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover {
   color: #ffffff;
   border: 1px solid #ffffff; }
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar.solid .navbar-nav > li > a:active, .navbar.solid .navbar-nav > li > a:focus {
+  color: rgba(255,255,255,0.8);
+  border: 1px solid rgba(255,255,255,0.8); }
 .navbar-default .navbar-nav > li > a:visited {
   color: #ffffff;
   text-decoration: none; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
   background-color: transparent;
   color: #ffffff; }
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar.solid .navbar-nav > li > a:active,
+.navbar.solid .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color: rgba(255,255,255,0.8); }
 .navbar-default .navbar-toggle {
   border-color: #ffffff; }
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
