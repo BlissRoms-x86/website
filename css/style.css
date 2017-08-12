@@ -73,7 +73,11 @@ a:hover, a:focus, a:active {text-decoration: none;}
 body > .container-fluid {
   padding: 60px 0; }
 
-.row {
+.row,
+.container-fluid>.navbar-collapse,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container>.navbar-header {
   margin:auto;}
 
 .container-fluid .text-muted {
@@ -110,6 +114,7 @@ body > .container-fluid {
   border-radius: 5px;
   -webkit-transition: color .2s ease 0s, border-color .2s ease 0s;
   transition: color .2s ease 0s, border-color .2s ease 0s; }
+  .navbar-default .navbar-nav > li:last-child > a {margin-right: 0}
 .navbar-default .navbar-nav > li > a:hover {
   color: #ffffff;
   border: 1px solid #ffffff; }
