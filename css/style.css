@@ -93,7 +93,9 @@ body > .container-fluid {
   text-transform: lowercase;
   margin: 9px 5px 5px 5px;
   border: 1px solid transparent;
-  border-radius: 5px; }
+  border-radius: 5px;
+  -webkit-transition: color 1s ease 0s, border-color 1s ease 0s;
+  transition: color 1s ease 0s, border-color 1s ease 0s; }
 .navbar-default .navbar-nav > li > a:hover {
   color: #ffffff;
   border: 1px solid #ffffff; }
