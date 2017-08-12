@@ -239,7 +239,8 @@ body > .container-fluid {
       margin-top: 20%; } }
   @media screen and (min-width: 1200px) {
     .portfolio-projects--title {
-      margin-top: 5%; } }
+      margin-top: 5%; }
+    .portfolio-projects .col-lg-6 + .col-lg-6 + .col-lg-6 {margin-top:40px} }
 @media screen and (min-width: 768px) {
   .portfolio-projects--desc {
     margin-top: 10%;
