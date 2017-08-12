@@ -586,7 +586,10 @@ body > .container-fluid {
   }
   .h4, h4 {font-size: 20px}
   #portfolio h2 {padding-bottom: 0}
-  .portfolio-projects--btn {margin-top:1.25em;}
+  #portfolio > .container {padding-right: 0;padding-left: 0}
+  .portfolio-projects--btn {margin-top:1.25em;margin-left: auto;margin-right: auto}
+  #portfolio > div > div > div:nth-child(2) > div > div.col-sm-5.text-center.pull-right-sm > a:nth-child(4) {margin-right: 4px}
+  #portfolio > div > div > div:nth-child(2) > div > div.col-sm-5.text-center.pull-right-sm > a:nth-child(5) {margin-left: 4px}
   #scrollIcon, #scrollTopIcon {font-size: 1em}
 }
 @media (max-device-height: 480px) and (orientation: landscape) {
@@ -600,4 +603,8 @@ body > .container-fluid {
 }
 @media (max-width: 360px) {
   .h1, h1 {font-size: 32px;}
+  .cover, .cover.bottom {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
