@@ -217,6 +217,10 @@ body > .container-fluid {
   .portfolio-projects--btn:hover {
     background: #07374a;
     color: #ffffff; }
+  .portfolio-projects--btn:focus,
+  .portfolio-projects--btn:active {
+    background: #052a38;
+    color: #ffffff; }
 .portfolio-projects--image {
   margin-bottom: 1.875em;
   padding-top: 5%; }
@@ -231,8 +235,14 @@ body > .container-fluid {
 .contact-social-icons ul a {
   color: #0080ff;
   list-style: none; }
-  .contact-social-icons ul a:hover {
+  .contact-social-icons ul a:hover,
+  .team-links-list a:hover {
     color: #ffffff; }
+  .contact-social-icons ul a:focus,
+  .contact-social-icons ul a:active,
+  .team-links-list a:focus,
+  .team-links-list a:active {
+    color: rgba(255,255,255,0.8); }
   .contact-social-icons ul a li {
     display: inline-block;
     padding: 2%; }
