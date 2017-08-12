@@ -132,12 +132,12 @@ body > .container-fluid {
   .navbar.solid .navbar-brand {
     display: inline-block;
     color: #ffffff;
-    -webkit-transition: color 1s ease 0s;
-    transition: color 1s ease 0s; }
+    -webkit-transition: color 1s ease 0s, border-color 1s ease 0s;
+    transition: color 1s ease 0s, border-color 1s ease 0s; }
   .navbar.solid .navbar-nav > li > a {
     color: #ffffff;
-    -webkit-transition: color 1s ease 0s;
-    transition: color 1s ease 0s; }
+    -webkit-transition: color 1s ease 0s, border-color 1s ease 0s;
+    transition: color 1s ease 0s, border-color 1s ease 0s; }
 
 .cover {
   padding: 10% 0 10% 0; }
