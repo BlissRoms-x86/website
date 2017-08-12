@@ -59,6 +59,8 @@ p {
   font-family: "Comfortaa", sans-serif;
   color: #ffffff; }
 
+a:hover, a:focus, a:active {text-decoration: none;}
+
 body > .container-fluid {
   padding: 60px 15px 0; }
 
