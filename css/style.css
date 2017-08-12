@@ -292,7 +292,7 @@ body > .container-fluid {
 .highlight_secondary {
     color: #FFFFFF;
 }
-.team-role {
+.team-role, .team-name, .team-links-list a {
     color: #07374a;
 }
 .team-links {
