@@ -35,6 +35,7 @@ $(document).ready(function() {
             e.preventDefault();
             $.scrollTo($("#contact"), 1000);
         });
+        $("#nav-team").click(function(e) {
             e.preventDefault
             $.scrollTo($("#team"), 1000);
         });
