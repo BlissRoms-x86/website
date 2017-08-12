@@ -60,8 +60,6 @@ p {
   color: #ffffff; }
 
 a, .btn {
-  -webkit-transition: color .2s ease 0s, border-color .2s ease 0s, background-color .2s ease 0s;
-  transition: color .2s ease 0s, border-color .2s ease 0s, background-color .2s ease 0s;
 }
 
 a:hover, a:focus, a:active {text-decoration: none;}
@@ -84,8 +82,8 @@ body > .container-fluid {
   z-index: 100;
   margin-bottom: 0;
   border-radius: 0;
-  -webkit-transition: background-color .2s ease 0s;
-  transition: background-color .2s ease 0s; }
+  -webkit-transition: background-color 1s ease 0s;
+  transition: background-color 1s ease 0s; }
 
 .navbar-brand {
   display: none;
@@ -101,8 +99,8 @@ body > .container-fluid {
   margin: 9px 5px 5px 5px;
   border: 1px solid transparent;
   border-radius: 5px;
-  -webkit-transition: color .2s ease 0s, border-color .2s ease 0s;
-  transition: color .2s ease 0s, border-color .2s ease 0s; }
+  -webkit-transition: color 1s ease 0s, border-color 1s ease 0s;
+  transition: color 1s ease 0s, border-color 1s ease 0s; }
 .navbar-default .navbar-nav > li > a:hover {
   color: #ffffff;
   border: 1px solid #ffffff; }
@@ -135,18 +133,18 @@ body > .container-fluid {
 /* Solid class attached on scroll past first section */
 .navbar.solid {
   background-color: #07374a;
-  -webkit-transition: background-color .2s ease 0s;
-  transition: background-color .2s ease 0s;
+  -webkit-transition: background-color 1s ease 0s;
+  transition: background-color 1s ease 0s;
   box-shadow: 0 0 4px rgba(7, 55, 74, 0.2); }
   .navbar.solid .navbar-brand {
     display: inline-block;
     color: #ffffff;
-    -webkit-transition: color .2s ease 0s, border-color .2s ease 0s;
-    transition: color .2s ease 0s, border-color .2s ease 0s; }
+    -webkit-transition: color 1s ease 0s, border-color 1s ease 0s;
+    transition: color 1s ease 0s, border-color 1s ease 0s; }
   .navbar.solid .navbar-nav > li > a {
     color: #ffffff;
-    -webkit-transition: color .2s ease 0s, border-color .2s ease 0s;
-    transition: color .2s ease 0s, border-color .2s ease 0s; }
+    -webkit-transition: color 1s ease 0s, border-color 1s ease 0s;
+    transition: color 1s ease 0s, border-color 1s ease 0s; }
 
 .cover {
   padding: 10% 0 10% 0; }
