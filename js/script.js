@@ -19,6 +19,10 @@ $(document).ready(function() {
             e.preventDefault();
             $.scrollTo($("#about"), 1000);
         });
+        $("#scrollPortfolio").click(function(e) {
+            e.preventDefault();
+            $.scrollTo($("#portfolio"), 1000);
+        });
         $("#nav-about").click(function(e) {
             e.preventDefault();
             $.scrollTo($("#about"), 1000);
@@ -31,7 +35,6 @@ $(document).ready(function() {
             e.preventDefault();
             $.scrollTo($("#contact"), 1000);
         });
-		$("#nav-team").click(function(e) {
             e.preventDefault
             $.scrollTo($("#team"), 1000);
         });
