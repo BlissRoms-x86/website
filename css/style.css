@@ -82,7 +82,8 @@ body > .container-fluid {
 .container-fluid>.navbar-header,
 .container>.navbar-collapse,
 .container>.navbar-header {
-  margin:auto;}
+  margin:auto;
+}
 
 .container-fluid .text-muted {
   margin: 20px 0; }
@@ -142,12 +143,24 @@ body > .container-fluid {
 .navbar-default .navbar-toggle {
   border-color: #ffffff; }
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #07374a; }
+    background-color: #07374a;
+  }
   .navbar-default .navbar-toggle .icon-bar {
     color: #ffffff;
     background-color: #ffffff; }
 .navbar-default .navbar-collapse.collapse.in ul, .navbar-collapse {
-  background-color: #07374a; }
+  background-color: #07374a;
+}
+.navbar-collapse.collapse.collapsing {
+  background-color: #07374a;
+  
+}
+  
+  .navbar-collapse.collapse.show {
+  background-color: #07374a;
+  -webkit-transition: background-color .2s ease 0s;
+  transition: background-color .2s ease 0s;
+}
 
 /* Solid class attached on scroll past first section */
 .navbar.solid {
