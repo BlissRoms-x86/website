@@ -138,6 +138,7 @@ body > .container-fluid {
 .navbar.solid .navbar-nav > li > a:focus {
   background-color: transparent;
   color: rgba(255,255,255,0.8); }
+.navbar-toggle {margin-right:0;}
 .navbar-default .navbar-toggle {
   border-color: #ffffff; }
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -145,7 +146,7 @@ body > .container-fluid {
   .navbar-default .navbar-toggle .icon-bar {
     color: #ffffff;
     background-color: #ffffff; }
-.navbar-default .navbar-collapse.collapse.in ul {
+.navbar-default .navbar-collapse.collapse.in ul, .navbar-collapse {
   background-color: #07374a; }
 
 /* Solid class attached on scroll past first section */
@@ -167,7 +168,7 @@ body > .container-fluid {
 .cover {
   padding: 10% 0 10% 0; }
   .cover.top {
-    padding: 5% 0 10% 0;
+    padding: 10vh 0 15vh 0;
     height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -178,6 +179,11 @@ body > .container-fluid {
 
 .headline {
   padding-top: 6.25em; }
+  body > div.container-fluid > div.row.cover.top > div > .row > .headline > img {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+    display: block; }
   @media screen and (min-width: 768px) {
     .headline {
       padding-top: 3.75em; } }
@@ -349,4 +355,57 @@ body > .container-fluid {
   max-width:150px;
   max-height: 150px;
   margin:0 auto;
+}
+
+@media (max-height: 880px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 15vh}
+}
+@media (max-height: 800px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 10vh}
+  .cover.top {padding: 7.5vh 0 12.5vh 0;}
+}
+@media (max-height: 750px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 8vh}
+}
+@media (max-height: 720px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 5vh}
+  .cover.top {padding: 5vh 0 10vh 0;}
+}
+@media (max-height: 650px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 5vh}
+  .cover.top {padding: 2.5vh 0 5vh 0;}
+  body > div.container-fluid > div.row.cover.top > div > .row > .headline > img {max-height: 42vh;}
+}
+@media (max-height: 550px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 5vh}
+  .cover.top {padding: 1.5vh 0 3vh 0;}
+  .headline {padding-top:3vh;}
+  body > div.container-fluid > div.row.cover.top > div > .row > .headline > img {max-height: 32vh;}
+}
+@media (max-height: 480px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 0}
+  .cover.top {padding: 0vh 0 3vh 0;}
+  .headline {padding-top:1.5vh;}
+  body > div.container-fluid > div.row.cover.top > div > .row > .headline > img {max-height: 32vh;}
+}
+@media (max-width: 768px) {
+  .container-fluid {padding:30px 0 !important;}
+  .h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .lead, .about, .about-info, .about-tools, .about-last {font-size: 16px}
+  .about-info {padding: 0% 6% 0% 6%;}
+  .row.cover.top .lead {
+    max-width: 350px;
+    margin-left:auto;
+    margin-right: auto
+  }
+  .h4, h4 {font-size: 20px}
+  #portfolio h2 {padding-bottom: 0}
+  .portfolio-projects--btn {margin-top:1.25em;}
+  #scrollIcon, #scrollTopIcon {font-size: 1em}
+}
+@media (max-width: 360px) {
+  .h1, h1 {font-size: 32px;}
 }
