@@ -104,7 +104,7 @@ body > .container-fluid {
   transition: background-color .2s ease 0s; }
 
 .navbar-brand {
-  display: none;
+  opacity: 0;
   margin-top: 10px;
   color: #ffffff;
   font-weight: 400; }
@@ -188,10 +188,11 @@ body > .container-fluid {
   transition: background-color .2s ease 0s;
   box-shadow: 0 0 4px rgba(7, 55, 74, 0.2); }
   .navbar.solid .navbar-brand {
+    opacity: 1;
     display: inline-block;
     color: #ffffff;
-    -webkit-transition: color .2s ease 0s, border-color .2s ease 0s;
-    transition: color .2s ease 0s, border-color .2s ease 0s; }
+    -webkit-transition: color .2s ease 0s, border-color .2s ease 0s, opacity .2s ease 0s;
+    transition: color .2s ease 0s, border-color .2s ease 0s, opacity .2s ease 0s; }
   .navbar.solid .navbar-nav > li > a {
     color: #ffffff;
     -webkit-transition: color .2s ease 0s, border-color .2s ease 0s;
