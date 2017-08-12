@@ -415,6 +415,26 @@ body > .container-fluid {
 #family .about-tools {
   font-size: 20px;
 }
+.family-image img {
+  max-width:150px;
+  max-height: 150px;
+  margin:0 auto;
+}
+.family-projects--btn {
+  background: transparent;
+  color: #0080ff;
+  border: 1px solid #0080ff;
+  border-radius: 5px;
+  margin-bottom: 1.25em;
+  font-weight: 700;
+  font-size: 1.5em; }
+  .family-projects--btn:hover {
+    background: #0080ff;
+    color: #ffffff; }
+  .family-projects--btn:focus,
+  .family-projects--btn:active {
+    background: #0080ff;
+    color: #ffffff; }
 
 @media (max-height: 880px) {
   #scrollIcon, #scrollTopIcon {margin-top: 15vh}
