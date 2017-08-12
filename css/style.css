@@ -412,6 +412,9 @@ body > .container-fluid {
 .family-header h2 {
     color: #0080ff;
 }
+#family .about-tools {
+  font-size: 20px;
+}
 
 @media (max-height: 880px) {
   #scrollIcon, #scrollTopIcon {margin-top: 15vh}
