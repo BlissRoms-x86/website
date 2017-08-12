@@ -367,8 +367,6 @@ body > .container-fluid {
 /* our team section */
 #family {
 	background-color: #07374a;
-	font-weight: 700;
-    font-size: 1.5em;	
 }
 
 .family-role, .family-name, .family-links-list {
