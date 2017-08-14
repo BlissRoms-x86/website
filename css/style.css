@@ -633,11 +633,6 @@ body > .container-fluid {
 
 h1 {
   color: #fff;
-  z-index: 10;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   cursor: default;
 }
 
@@ -662,27 +657,30 @@ h1 span:nth-of-type(3) {
 .space {
   will-change: transform;
   position: relative;
-  left:18%;
-  bottom:-50%;
+  left:-25;
+  top:auto;
+  bottom:auto;
   margin-top:15%;
   margin-bottom:25%;
-  margin-left: auto;
+  margin-left: 35%;
   margin-right: auto
-  -webkit-transform: perspective(1000px) rotateX(65deg) rotateY(0deg) rotateZ(-45deg) scale(0.8);
-          transform: perspective(1000px) rotateX(65deg) rotateY(0deg) rotateZ(-45deg) scale(0.8);
+  -webkit-transform: perspective(1000px) rotateX(65deg) rotateY(0deg) rotateZ(-45deg) scale(0.90);
+          transform: perspective(1000px) rotateX(65deg) rotateY(0deg) rotateZ(-45deg) scale(0.90);
   -webkit-transition: all 600ms;
   transition: all 600ms;
 }
 
 .space-hover {
-  left:30%;
-  bottom:-50%;
-  margin-top:20%;
+  position: relative;
+  left:-25;
+  top:auto;
+  bottom:auto;
+  margin-top:30%;
   margin-bottom:25%;
-  margin-left: auto;
+  margin-left: 45%;
   margin-right: auto
-  -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.8);
-          transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.8);
+  -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.90);
+          transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.90);
 }
 
 .phone-container {
