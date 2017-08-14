@@ -663,7 +663,10 @@ h1 span:nth-of-type(3) {
   will-change: transform;
   position: relative;
   left:50%;
-  bottom:50%;
+  bottom:-50%;
+  margin-top:7em;
+  margin-left: auto;
+  margin-right: auto
   -webkit-transform: perspective(1000px) rotateX(65deg) rotateY(0deg) rotateZ(-45deg) scale(0.8);
           transform: perspective(1000px) rotateX(65deg) rotateY(0deg) rotateZ(-45deg) scale(0.8);
   -webkit-transition: all 600ms;
