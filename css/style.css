@@ -662,9 +662,9 @@ h1 span:nth-of-type(3) {
 .space {
   will-change: transform;
   position: relative;
-  left:10%;
+  left:18%;
   bottom:-50%;
-  margin-top:20%;
+  margin-top:15%;
   margin-bottom:25%;
   margin-left: auto;
   margin-right: auto
@@ -675,6 +675,12 @@ h1 span:nth-of-type(3) {
 }
 
 .space-hover {
+  left:30%;
+  bottom:-50%;
+  margin-top:20%;
+  margin-bottom:25%;
+  margin-left: auto;
+  margin-right: auto
   -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.8);
           transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.8);
 }
