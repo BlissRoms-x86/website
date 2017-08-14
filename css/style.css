@@ -120,7 +120,7 @@ body > .container-fluid {
   padding-right: 30px;
   border-radius: 0;
   -webkit-transition: background-color .2s ease 0s;
-  transition: background-color .2s ease 0s; }
+  transition: background-color .2s ease 0s;  }
 .navbar > .container {padding: 4px 0 0 0;width: 100%;margin-top:2px;}
 .navbar-brand {
   opacity: 0;
@@ -178,7 +178,7 @@ body > .container-fluid {
     color: #ffffff;
     background-color: #ffffff; }
 .navbar-default .navbar-collapse.collapse.in ul {
-  background-color: #07374a; 
+  background-color: #07374a;  
 }
 .navbar-collapse.collapse.collapsing {
   background-color: #07374a;
@@ -204,9 +204,14 @@ body > .container-fluid {
 /* Solid class attached on scroll past first section */
 .navbar.solid {
   background-color: #07374a;
+  top: 0;
+  width: 110%;
+  margin: 0px -5%;
+  box-shadow: 0 7px 8px 0px rgba(0,0,0,0.3);
   -webkit-transition: background-color .2s ease 0s;
   transition: background-color .2s ease 0s;
-  box-shadow: 0 0 4px rgba(7, 55, 74, 0.2); }
+  -webkit-transition: box-shadow .2s ease 0s;
+  transition: box-shadow .2s ease 0s;  }
   .navbar.solid .navbar-brand {
     opacity: 1;
     display: inline-block;
