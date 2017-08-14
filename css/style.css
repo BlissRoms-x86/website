@@ -663,6 +663,7 @@ h1 span:nth-of-type(3) {
   will-change: transform;
   position: relative;
   left:50%;
+  bottom:50%;
   -webkit-transform: perspective(1000px) rotateX(65deg) rotateY(0deg) rotateZ(-45deg) scale(0.8);
           transform: perspective(1000px) rotateX(65deg) rotateY(0deg) rotateZ(-45deg) scale(0.8);
   -webkit-transition: all 600ms;
@@ -675,8 +676,8 @@ h1 span:nth-of-type(3) {
 }
 
 .phone-container {
-  width: 338px;
-  height: 700px;
+  width: 11.2em;
+  height: 23.33em;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -687,13 +688,13 @@ h1 span:nth-of-type(3) {
           transform-style: preserve-3d;
   -webkit-transform: translateX(-80%);
           transform: translateX(-80%);
-  border-radius: 60px;
+  border-radius: 2.0em;
 }
 
 .phone-front {
   will-change: transform;
-  width: 336px;
-  height: 700px;
+  width: 11.2em;
+  height: 23.33em;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -702,9 +703,9 @@ h1 span:nth-of-type(3) {
   margin: auto;
   background-image: url("https://goo.gl/T50KD8");
   background-repeat: no-repeat;
-  background-position: -16px 0;
-  background-size: 370px 701px;
-  border-radius: 60px;
+  background-position: -.53em 0;
+  background-size: 12.3em 23.36em;
+  border-radius: 2.0em;
   box-shadow: -20px 27px 13px 10px rgba(0, 0, 0, 0.5);
   -webkit-transition: -webkit-transform 600ms;
   transition: -webkit-transform 600ms;
@@ -725,12 +726,12 @@ h1 span:nth-of-type(3) {
 }
 
 .phone-screen {
-  width: 310px;
-  height: 550px;
+  width: 10.3em;
+  height: 18.3em;
   position: relative;
   left: 0;
   right: 0;
-  top: 68.5px;
+  top: 2.283em;
   margin: auto;
   background-color: #000;
   overflow: hidden;
@@ -758,18 +759,18 @@ h1 span:nth-of-type(3) {
 
 .phone-side {
   will-change: transform;
-  width: 400px;
-  height: 750px;
+  width: 13.33em;
+  height: 25em;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  border-radius: 50px;
+  border-radius: 1.66em;
   background-repeat: no-repeat;
-  background-position: 22px 5px;
-  background-size: 400px 742px;
+  background-position: 2.2em .5em;
+  background-size: 13.33em 24.73em;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transform: skew(-1deg) translateX(-15.5%) translateY(1.2%) scaleX(0.95) scaleY(0.96) rotate(-1deg);
