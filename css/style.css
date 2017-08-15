@@ -728,6 +728,36 @@ h1 span:nth-of-type(3) {
   transition: box-shadow 450ms;
 }
 
+.just-phone-front {
+  will-change: transform;
+  width: 11.2em;
+  height: 23.33em;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  left:-25;
+  top:0;
+  bottom:auto;
+  margin-top:10%;
+  margin-bottom:15%;
+  margin-left: 35%;
+  margin-right: auto;
+  background-image: url("../images/phone_front.svg");
+  background-repeat: no-repeat;
+  background-position: -.53em 0;
+  background-size: 12.3em 23.36em;
+  border-radius: 2.0em;
+  box-shadow: -10px 13px 7px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(0.90);
+          transform: scale(0.90);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+  -webkit-transition: box-shadow 450ms;
+  transition: box-shadow 450ms;
+}
+
 .phone-front-hover {
   box-shadow: 0 12px 13px 10px rgba(0, 0, 0, 0.5);
   -webkit-transition: -webkit-transform 600ms;
