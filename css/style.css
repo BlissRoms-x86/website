@@ -178,12 +178,12 @@ body > .container-fluid {
     color: #ffffff;
     background-color: #ffffff; }
 .navbar-default .navbar-collapse.collapse.in ul {
-  background-color: #07374a;  
+  background-color: #07374a;
 }
 .navbar-collapse.collapse.collapsing {
   background-color: #07374a;
 }
-  
+
 .navbar-collapse.collapse.show {
   background-color: #07374a;
   -webkit-transition: background-color .2s ease 0s;
@@ -469,11 +469,18 @@ body > .container-fluid {
 }
 .team-role, .team-name, .team-links-list a {
     color: #07374a;
+    text-align: center;
+    white-space: nowrap;
 }
-.team-name, .family-name {font-size: 21px}
+.team-name, .family-name {
+    font-size: 21px;
+    text-align: center;
+    white-space: nowrap;
+}
 .team-links, .family-links {
   padding-top: .75em;
   color: #07374a;
+  text-align: center;
 }
 .team-image img, .family-image img {
   max-width:150px;
@@ -486,7 +493,7 @@ body > .container-fluid {
   padding-right: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
   @media (min-width: 768px) {
     #team > .container .row > div {min-height: 320px;}
