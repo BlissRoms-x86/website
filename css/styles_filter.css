@@ -261,8 +261,8 @@ xgallery
   }
   .cd-gallery ul {
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
   }
   .cd-gallery ul:after {
@@ -278,6 +278,10 @@ xgallery
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .cd-gallery li {width: 50%;}
+}
+
 @media only screen and (min-width: 768px) {
   .cd-gallery {
     padding: 30px 0;
@@ -288,8 +292,8 @@ xgallery
   }
   .cd-gallery ul {
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     padding-left: 0;
   }
   .cd-gallery ul:after {
@@ -298,10 +302,10 @@ xgallery
     clear: both;
   }
   .cd-gallery li {
-    width: 100%;
+    width: 33.333333%;
     margin-bottom: 5rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -315,16 +319,16 @@ xgallery
 
   .cd-gallery ul {
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 30px;
     padding-left: 0;
   }
 
   .cd-gallery li {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 33.333333%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .cd-gallery.filter-is-visible {
     /* reduce width when filter is visible */
