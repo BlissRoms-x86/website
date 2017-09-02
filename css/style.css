@@ -1252,7 +1252,7 @@ body > .container-fluid {
       margin-bottom: 30px;
       font-size: 18px; }
     .portfolio-projects .col-lg-6 + .col-lg-6 + .col-lg-6 {margin-top:40px}
-    .portfolio-projects--btn {font-size: 18px;margin:0 8px;} }
+    .portfolio-projects--btn {font-size: 18px;} }
   @media screen and (min-width: 1366px) {
     .portfolio-projects--title {margin-top:28%;}
   }
