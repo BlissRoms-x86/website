@@ -1205,6 +1205,23 @@ body > .container-fluid {
   .portfolio-projects--btn:active {
     background: #052a38;
     color: #ffffff; }
+	
+.portfolio-projects--btn-sm {
+  background: transparent;
+  color: #07374a;
+  border: 1px solid #07374a;
+  border-radius: 5px;
+  margin-bottom: 1.25em;
+  font-size: 12px;
+  margin: 0 8px; }
+  .portfolio-projects--btn-sm:hover {
+    background: #07374a;
+    color: #ffffff; }
+  .portfolio-projects--btn-sm:focus,
+  .portfolio-projects--btn-sm:active {
+    background: #052a38;
+    color: #ffffff; }
+	
 .portfolio-projects--image {
   margin-bottom: 1.875em;
   padding-top: 5%; }
