@@ -8,6 +8,12 @@
   margin-left: auto;
   margin-right: auto; }
 
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+
 .break {
   clear: both;
   margin-top: 10px; }
@@ -1205,7 +1211,7 @@ body > .container-fluid {
   .portfolio-projects--btn:active {
     background: #052a38;
     color: #ffffff; }
-	
+
 .portfolio-projects--btn-sm {
   background: transparent;
   color: #07374a;
@@ -1221,7 +1227,7 @@ body > .container-fluid {
   .portfolio-projects--btn-sm:active {
     background: #052a38;
     color: #ffffff; }
-	
+
 .portfolio-projects--image {
   margin-bottom: 1.875em;
   padding-top: 5%; }
