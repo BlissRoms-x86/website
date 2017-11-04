@@ -593,18 +593,18 @@ body > .container-fluid {
 }
 .family-projects--btn {
   background: transparent;
-  color: #07374a;
-  border: 1px solid #07374a;
+  color: #0080ff;
+  border: 1px solid #0080ff;
   border-radius: 5px;
   margin-bottom: 1.25em;
   font-weight: 700;
   font-size: 21px; }
   .family-projects--btn:hover {
-    background: #07374a;
+    background: #0080ff;
     color: #ffffff; }
   .family-projects--btn:focus,
   .family-projects--btn:active {
-    background: #07374a;
+    background: #0080ff;
     color: #ffffff; }
 
 @media (max-height: 880px) {
@@ -1477,18 +1477,18 @@ body > .container-fluid {
 }
 .family-projects--btn {
   background: transparent;
-  color: #07374a;
-  border: 1px solid #07374a;
+  color: #0080ff;
+  border: 1px solid #0080ff;
   border-radius: 5px;
   margin-bottom: 1.25em;
   font-weight: 700;
   font-size: 21px; }
   .family-projects--btn:hover {
-    background: #07374a;
+    background: #0080ff;
     color: #ffffff; }
   .family-projects--btn:focus,
   .family-projects--btn:active {
-    background: #07374a;
+    background: #0080ff;
     color: #ffffff; }
 
 @media (max-height: 880px) {
@@ -1833,4 +1833,4 @@ h1 span:nth-of-type(3) {
 /* When moving the mouse over the close button */
 .closebtn:hover {
     color: black;
-}
+} 
