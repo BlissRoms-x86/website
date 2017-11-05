@@ -1847,8 +1847,8 @@ h1 span:nth-of-type(3) {
 .animation {
   display: inline-block;
   position: relative;
-  width: 378px;
-  height: 290px;
+  width: 100%;
+  height: 60%;
   margin: 0 auto;
   vertical-align: middle;
 }
@@ -1963,10 +1963,10 @@ h1 span:nth-of-type(3) {
   background: #34495e;
 }
 .animation .device .display .slide2 {
-  background: #16a085;
+  background: #6b15a0;
 }
 .animation .device .display .slide3 {
-  background: #3498db;
+  background: #1c8918;
 }
 .animation[data-animation-step="1"] .device {
   width: 70%;
