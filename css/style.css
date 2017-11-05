@@ -1847,8 +1847,8 @@ h1 span:nth-of-type(3) {
 .animation {
   display: inline-block;
   position: relative;
-  width: 100%;
-  height: 60%;
+  width: 378px; 
+  height: 290px; 
   margin: 0 auto;
   vertical-align: middle;
 }
