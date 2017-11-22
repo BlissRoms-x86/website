@@ -120,7 +120,7 @@ body > .container-fluid {
   padding-right: 30px;
   border-radius: 0;
   -webkit-transition: background-color .2s ease 0s;
-  transition: background-color .2s ease 0s; }
+  transition: background-color .2s ease 0s;  }
 .navbar > .container {padding: 4px 0 0 0;width: 100%;margin-top:2px;}
 .navbar-brand {
   opacity: 0;
@@ -178,7 +178,7 @@ body > .container-fluid {
     color: #ffffff;
     background-color: #ffffff; }
 .navbar-default .navbar-collapse.collapse.in ul {
-  background-color: #07374a; 
+  background-color: #07374a;  
 }
 .navbar-collapse.collapse.collapsing {
   background-color: #07374a;
@@ -204,9 +204,14 @@ body > .container-fluid {
 /* Solid class attached on scroll past first section */
 .navbar.solid {
   background-color: #07374a;
+  top: 0;
+  width: 110%;
+  margin: 0px -5%;
+  box-shadow: 0 7px 8px 0px rgba(0,0,0,0.3);
   -webkit-transition: background-color .2s ease 0s;
   transition: background-color .2s ease 0s;
-  box-shadow: 0 0 4px rgba(7, 55, 74, 0.2); }
+  -webkit-transition: box-shadow .2s ease 0s;
+  transition: box-shadow .2s ease 0s;  }
   .navbar.solid .navbar-brand {
     opacity: 1;
     display: inline-block;
@@ -437,8 +442,8 @@ body > .container-fluid {
 /* our team section */
 #team, #family {
   background-color: #0080ff;
-  font-weight: 700;
-  font-size: 21px;  
+  /*font-weight: 700;
+  font-size: 21px; */
 }
 .hr.invisible_hr {
     height: 0;
@@ -468,6 +473,7 @@ body > .container-fluid {
 .team-name, .family-name {font-size: 21px}
 .team-links, .family-links {
   padding-top: .75em;
+  color: #07374a;
 }
 .team-image img, .family-image img {
   max-width:150px;
@@ -620,5 +626,251 @@ body > .container-fluid {
   .cover, .cover.bottom {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+/* --- Mock-up Setting --- */
+/* Paste link to your image 310x550px */
+/* Screen Setting */
+/* ---  --- */
+/* --- Animation Setting --- */
+/* ---  --- */
+
+h1 {
+  color: #fff;
+  cursor: default;
+}
+
+h1 span:nth-of-type(1) {
+  font-size: 1em;
+  line-height: 0.5em;
+}
+h1 span:nth-of-type(2) {
+  font-size: .4em;
+  font-weight: 400;
+  line-height: 3.65em;
+  color: #0080ff;
+  background-color: #282828;
+  padding: 3px 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.6);
+}
+h1 span:nth-of-type(3) {
+  font-size: 1.5em;
+  line-height: .85em;
+}
+
+.space {
+  will-change: transform;
+  position: relative;
+  left:-25;
+  top:auto;
+  bottom:auto;
+  margin-top:15%;
+  margin-bottom:25%;
+  margin-left: 35%;
+  margin-right: auto
+  -webkit-transform: perspective(1000px) rotateX(65deg) rotateY(0deg) rotateZ(-45deg) scale(0.90);
+          transform: perspective(1000px) rotateX(65deg) rotateY(0deg) rotateZ(-45deg) scale(0.90);
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+
+.space-hover {
+  position: relative;
+  left:-25;
+  top:auto;
+  bottom:auto;
+  margin-top:30%;
+  margin-bottom:25%;
+  margin-left: 45%;
+  margin-right: auto
+  -webkit-transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.90);
+          transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(0.90);
+}
+
+.phone-container {
+  width: 11.2em;
+  height: 23.33em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: translateX(-80%);
+          transform: translateX(-80%);
+  border-radius: 2.0em;
+}
+
+.phone-front {
+  will-change: transform;
+  width: 11.2em;
+  height: 23.33em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url("../images/phone_front.svg");
+  background-repeat: no-repeat;
+  background-position: -.53em 0;
+  background-size: 12.3em 23.36em;
+  border-radius: 2.0em;
+  box-shadow: -20px 27px 13px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+  -webkit-transition: box-shadow 450ms;
+  transition: box-shadow 450ms;
+}
+
+.just-phone-front {
+  will-change: transform;
+  width: 11.2em;
+  height: 23.33em;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  left:-25;
+  top:0;
+  bottom:auto;
+  margin-top:10%;
+  margin-bottom:15%;
+  margin-left: 35%;
+  margin-right: auto;
+  background-image: url("../images/phone_front.svg");
+  background-repeat: no-repeat;
+  background-position: -.53em 0;
+  background-size: 12.3em 23.36em;
+  border-radius: 2.0em;
+  box-shadow: -10px 13px 7px 5px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(0.90);
+          transform: scale(0.90);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+  -webkit-transition: box-shadow 450ms;
+  transition: box-shadow 450ms;
+}
+
+.phone-front-hover {
+  box-shadow: 0 12px 13px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
+  -webkit-transition: box-shadow 450ms;
+  transition: box-shadow 450ms;
+}
+
+.phone-screen {
+  width: 10.5em;
+  height: 19.3em;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 2.283em;
+  margin: auto;
+  background-color: #000;
+  overflow: hidden;
+}
+.phone-screen::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 13px 0 10px -5px rgba(250, 250, 250, 0.17), inset -13px 0 10px -5px rgba(250, 250, 250, 0.17);
+  background-image: url("../images/bliss_screens.gif");
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  background-size: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.phone-screen::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(250, 250, 250, 0.1);
+}
+
+.phone-side {
+  will-change: transform;
+  width: 13.33em;
+  height: 25em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 1.66em;
+  background-repeat: no-repeat;
+  background-position: 2.2em .5em;
+  background-size: 13.33em 24.73em;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: skew(-1deg) translateX(-15.5%) translateY(1.2%) scaleX(0.95) scaleY(0.96) rotate(-1deg);
+          transform: skew(-1deg) translateX(-15.5%) translateY(1.2%) scaleX(0.95) scaleY(0.96) rotate(-1deg);
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+
+.phone-side-hover {
+  -webkit-transform: skew(-1deg) translateX(-13.4%) translateY(1.05%) scaleX(0.83) scaleY(0.83) rotate(-1deg);
+          transform: skew(-1deg) translateX(-13.4%) translateY(1.05%) scaleX(0.83) scaleY(0.83) rotate(-1deg);
+  -webkit-transition: all 350ms;
+  transition: all 350ms;
+}
+
+@-webkit-keyframes figure-anim {
+  from {
+    border-radius: 50%;
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+  to {
+    border-radius: 30%;
+    -webkit-transform: rotate(360deg) scale(0.5);
+            transform: rotate(360deg) scale(0.5);
+  }
+}
+
+@keyframes figure-anim {
+  from {
+    border-radius: 50%;
+    -webkit-transform: rotate(0deg) scale(1);
+            transform: rotate(0deg) scale(1);
+  }
+  to {
+    border-radius: 30%;
+    -webkit-transform: rotate(360deg) scale(0.5);
+            transform: rotate(360deg) scale(0.5);
+  }
+}
+@-webkit-keyframes figure-container-anim {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes figure-container-anim {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }

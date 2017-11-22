@@ -12,7 +12,22 @@ $(document).ready(function() {
           }
 
         });
+		
+		$('.phone-container').hover(function() {
+		  $('.space').toggleClass('space-hover');
+		  $('.phone-side').toggleClass('phone-side-hover');
+		  $('.phone-front').toggleClass('phone-front-hover');
+		});
 
+		$("[class^='figure-']")
+		  .within({
+			  distance: 1000,
+			  cord: 'center'
+			},
+			function(distance, ele, event) {
+			  ele.style.transform = 'scale(' + (7000 - distance) / 7000 + ')';
+			}
+		  )
 
         // Scrolling effect for Arrow icons
         $("#scrollIcon").click(function(e) {
