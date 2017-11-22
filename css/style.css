@@ -23,24 +23,10 @@
     float: right !important; }
   .pull-left-sm {
     float: left !important; }
-  .container {width: 768px}
+  .container {max-width: 768px}
   .navbar-right {margin-right: 0;}
   .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {margin-left: 0;padding-left: 15px}
 }
-@media (min-width: 992px) {
-  .pull-right-md {
-@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
-.about-tools ul li, .contact-social-icons ul a li {
-  text-align: center; }
-
-.centered {
-  float: none;
-  margin-left: auto;
-  margin-right: auto; }
-
-.break {
-  clear: both;
-  margin-top: 10px; }
 
 @media (min-width: 768px) {
   .pull-right-sm {
@@ -926,17 +912,14 @@ h1 span:nth-of-type(3) {
   }
 }
 
-    float: right !important; }
-  .pull-left-md {
-    float: left !important; }
-  .container {width: 94%;}
-}
 @media (min-width: 1200px) {
   .pull-right-lg {
     float: right !important; }
   .pull-left-lg {
     float: left !important; }
-  .container {width: 1170px;}
+  .pull-left-md {
+    float: left !important; }
+  .container {max-width: 1170px;}
   .portfolio-projects .col-lg-6 {width: 100%}
   .navbar > .container {max-width: 1170px}
 }
@@ -1446,6 +1429,7 @@ body > .container-fluid {
   @media (max-width: 500px) {
     #team > .container .row > div {min-height: 250px;}
     #team .col-xs-6 {width: 92%;margin:4%;}
+    .animation {margin: -1em -20em;}
   }
 #team > .container .row > .row, #team > .container {padding-left:0;padding-right: 0}
 
@@ -1499,7 +1483,7 @@ body > .container-fluid {
   .cover.top {padding: 7.5vh 0 12.5vh 0;}
 }
 @media (max-height: 750px) {
-  #scrollIcon, #scrollTopIcon {margin-top: 8vh}
+  #scrollIcon, #scrollTopIcon {margin-top: 6vh}
 }
 @media (max-height: 720px) {
   #scrollIcon, #scrollTopIcon {margin-top: 5vh}
@@ -1533,6 +1517,10 @@ body > .container-fluid {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  .about, .about-info, .about-tools, .about-last {
+    padding: 4% 0px 1% 0px;
+    font-size: 16px;
+  }
   .lead, .about, .about-info, .about-tools, .about-last {font-size: 16px}
   .row.cover.top .lead {
     max-width: 350px;
@@ -1542,7 +1530,7 @@ body > .container-fluid {
   .h4, h4 {font-size: 20px}
   #portfolio h2 {padding-bottom: 0}
   #portfolio > .container {padding-right: 0;padding-left: 0}
-  .portfolio-projects--btn {margin-top:1.25em;margin-left: auto;margin-right: auto}
+  .portfolio-projects--btn {margin-top:0;margin-bottom:30px;margin-left: auto;margin-right: auto}
   #portfolio > div > div > div:nth-child(2) > div > div.col-sm-5.text-center.pull-right-sm > a:nth-child(4) {margin-right: 4px}
   #portfolio > div > div > div:nth-child(2) > div > div.col-sm-5.text-center.pull-right-sm > a:nth-child(5) {margin-left: 4px}
   #scrollIcon, #scrollTopIcon {font-size: 1em}
@@ -1849,7 +1837,7 @@ h1 span:nth-of-type(3) {
   position: relative;
   width: 378px; 
   height: 290px; 
-  margin: 0 auto;
+  margin: -1.5em -10em;
   vertical-align: middle;
 }
 .animation .device {
@@ -2011,4 +1999,9 @@ h1 span:nth-of-type(3) {
 }
 .animation[data-animation-step="3"] .device .phone-home-button {
   opacity: 1;
+}
+
+/* More media queries */
+@media (max-width: 430px) {
+  h2, .h2 {font-size: 30px;}
 }
