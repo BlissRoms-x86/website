@@ -277,6 +277,9 @@ body > .container-fluid {
   .portfolio-projects--btn:active {
     background: #052a38;
     color: #ffffff; }
+@media (max-width:650px) {
+  .portfolio-projects--btn {font-size:16px;}
+}
 .portfolio-projects--image {
   margin-bottom: 1.875em;
   padding-top: 5%; }
@@ -651,11 +654,12 @@ body > .container-fluid {
   .h4, h4 {font-size: 20px}
   #portfolio h2 {padding-bottom: 0}
   #portfolio > .container {padding-right: 0;padding-left: 0}
-  .portfolio-projects--btn {margin-top:1.25em;margin-left: auto;margin-right: auto}
+  .portfolio-projects--btn {margin-top:1.25em;margin-left: 4px;margin-right: 4px}
   #portfolio > div > div > div:nth-child(2) > div > div.col-sm-5.text-center.pull-right-sm > a:nth-child(4) {margin-right: 4px}
   #portfolio > div > div > div:nth-child(2) > div > div.col-sm-5.text-center.pull-right-sm > a:nth-child(5) {margin-left: 4px}
-  #scrollIcon, #scrollTopIcon {font-size: 1em}
+  #scrollIcon, #scrollTopIcon {font-size: 1em;display: none}
 }
+@media (max-width:480px) {.row.cover.top .lead {max-width:180px}}
 @media (max-device-height: 480px) and (orientation: landscape) {
   .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     max-height: 240px;
@@ -1013,6 +1017,9 @@ width: 378px;
 @media (max-width:450px) {
   .animation {width:58rem;height:38rem;}
 }
+@media (max-width:450px) {
+  .animation {width:58rem;height:38rem;}
+}
 @media (max-width:400px) {
   .animation {width:55rem;height:36rem;}
 }
@@ -1021,6 +1028,12 @@ width: 378px;
 }
 @media (max-width:340px) {
   .animation {width:47rem;height:31rem;}
+}
+@media (max-width:320px) {
+  .animation {width:42rem;height:28rem;}
+}
+@media (max-height:650px) {
+  .animation {margin-top: -15vh !important;margin-bottom: 10vh !important;}
 }
 .animation .device {
   position: absolute;
@@ -1225,10 +1238,34 @@ width: 378px;
     .animation[data-animation-step="3"] .device {width:22%; height:60%;}
     .animation .device .display div div {font-size:15px;}
   }
+  @media (max-width:560px) {
+    .animation[data-animation-step="1"] .device {margin-top:0%;width:72%; height:75%;}
+    .animation[data-animation-step="2"] .device {margin-top:0%;width:65%; height:66%;}
+    .animation[data-animation-step="3"] .device {margin-top:0%;width:30%; height:80%;}
+    .animation .device .display div div {font-size:15px;}
+  }
+  @media (max-width:520px) {
+    .animation[data-animation-step="1"] .device {margin-top:0%;width:66%; height:69%;}
+    .animation[data-animation-step="2"] .device {margin-top:0%;width:62%; height:63%;}
+    .animation[data-animation-step="3"] .device {margin-top:0%;width:30%; height:80%;}
+    .animation .device .display div div {font-size:15px;}
+  }
+  @media (max-width:460px) {
+    .animation[data-animation-step="1"] .device {margin-top:0%;width:58%; height:61%;}
+    .animation[data-animation-step="2"] .device {margin-top:0%;width:54%; height:55%;}
+    .animation[data-animation-step="3"] .device {margin-top:0%;width:25%; height:70%;}
+    .animation .device .display div div {font-size:15px;}
+  }
   @media (max-width:350px) {
     .animation[data-animation-step="1"] .device {margin-top:3%;width:62%; height:65%;}
     .animation[data-animation-step="2"] .device {margin-top:3%;width:58%; height:60%;}
     .animation[data-animation-step="3"] .device {margin-top:9%;width:30%; height:80%;}
+    .animation .device .display div div {font-size:15px;}
+  }
+  @media (max-width:320px) {
+    .animation[data-animation-step="1"] .device {margin-top:6%;width:62%; height:65%;}
+    .animation[data-animation-step="2"] .device {margin-top:6%;width:58%; height:60%;}
+    .animation[data-animation-step="3"] .device {margin-top:12%;width:30%; height:80%;}
     .animation .device .display div div {font-size:15px;}
   }
 
