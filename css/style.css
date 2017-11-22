@@ -439,7 +439,7 @@ body > .container-fluid {
     color: #0080ff;
 }
 #scrollIcon, #scrollTopIcon {
-  margin-top: 200px;
+  margin-top: 10vh;
   padding: 10px;
   font-size: 1.5em;
   color: #07374a;
@@ -583,27 +583,45 @@ body > .container-fluid {
     color: #ffffff; }
 
 @media (max-height: 880px) {
-  #scrollIcon, #scrollTopIcon {margin-top: 15vh}
+  #scrollIcon, #scrollTopIcon {margin-top: 8vh}
 }
 @media (max-height: 800px) {
-  #scrollIcon, #scrollTopIcon {margin-top: 10vh}
+  #scrollIcon, #scrollTopIcon {margin-top: 6vh}
   .cover.top {padding: 7.5vh 0 12.5vh 0;}
 }
 @media (max-height: 750px) {
-  #scrollIcon, #scrollTopIcon {margin-top: 8vh}
+  #scrollIcon, #scrollTopIcon {margin-top: 4vh;}
 }
 @media (max-height: 720px) {
-  #scrollIcon, #scrollTopIcon {margin-top: 5vh}
-  .cover.top {padding: 5vh 0 10vh 0;}
+  #scrollIcon, #scrollTopIcon {margin-top: 0vh;}
+}
+@media (max-height: 690px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 0vh;}
+  .animation {margin-top:-6vh !important;}
+}
+@media (max-height: 670px) {
+  #scrollIcon, #scrollTopIcon {margin-top: -1vh;}
+  .animation {margin-top:-7vh !important;}
 }
 @media (max-height: 650px) {
-  #scrollIcon, #scrollTopIcon {margin-top: 5vh}
-  .cover.top {padding: 2.5vh 0 5vh 0;}
+  #scrollIcon, #scrollTopIcon {margin-top: -3vh}
+  .animation {margin-top:-8vh !important;}
+  .cover.top {padding: 6vh 0 5vh 0;}
   body > div.container-fluid > div.row.cover.top > div > .row > .headline > img {max-height: 42vh;}
 }
+@media (max-height: 630px) {
+  #scrollIcon, #scrollTopIcon {margin-top: -6vh}
+  .animation {margin-top:-10vh !important;}
+  .cover.top {padding: 6vh 0 5vh 0;}
+}
+@media (max-height: 600px) {
+  #scrollIcon, #scrollTopIcon {margin-top: -9vh}
+  .animation {margin-top:-13vh !important;}
+  .cover.top {padding: 6vh 0 5vh 0;}
+}
 @media (max-height: 550px) {
-  #scrollIcon, #scrollTopIcon {margin-top: 5vh}
-  .cover.top {padding: 1.5vh 0 3vh 0;}
+  #scrollIcon, #scrollTopIcon {display:none}
+  .cover.top {padding: 6vh 0 3vh 0;}
   .headline {padding-top:3vh;}
   body > div.container-fluid > div.row.cover.top > div > .row > .headline > img {max-height: 32vh;}
 }
@@ -986,8 +1004,23 @@ width: 378px;
   position: relative;
   width: 64rem; 
   height: 42rem; 
-  margin: 0 auto;
+  margin: -2vh auto 0 auto;
   vertical-align: middle;
+}
+@media (max-width:720px) {
+  .animation {margin-left:-30rem;margin-right:-30rem;}
+}
+@media (max-width:450px) {
+  .animation {width:58rem;height:38rem;}
+}
+@media (max-width:400px) {
+  .animation {width:55rem;height:36rem;}
+}
+@media (max-width:380px) {
+  .animation {width:50rem;height:33rem;}
+}
+@media (max-width:340px) {
+  .animation {width:47rem;height:31rem;}
 }
 .animation .device {
   position: absolute;
@@ -1093,6 +1126,9 @@ width: 378px;
   text-align: center;
  /* color: #0080ff;*/
 }
+@media (max-width:450px) {
+  .animation .device .display div div {width:100%;max-width:100%;font-size:12px !important;}
+}
   .animation .device .display .slide1 div {margin-top:0px;}
 .animation .device .display div div em {
   font-weight: bold;
@@ -1177,6 +1213,24 @@ width: 378px;
 .animation[data-animation-step="3"] .device .phone-home-button {
   opacity: 1;
 }
+  @media (max-height:720px) {
+    .animation[data-animation-step="1"] .device {width:72%; height:75%;}
+    .animation[data-animation-step="2"] .device {width:59%; height:60%;}
+    .animation[data-animation-step="3"] .device {width:22%; height:60%;}
+    .animation .device .display div div {font-size:16px;}
+  }
+  @media (max-height:650px) {
+    .animation[data-animation-step="1"] .device {width:62%; height:65%;}
+    .animation[data-animation-step="2"] .device {width:54%; height:55%;}
+    .animation[data-animation-step="3"] .device {width:22%; height:60%;}
+    .animation .device .display div div {font-size:15px;}
+  }
+  @media (max-width:350px) {
+    .animation[data-animation-step="1"] .device {margin-top:3%;width:62%; height:65%;}
+    .animation[data-animation-step="2"] .device {margin-top:3%;width:58%; height:60%;}
+    .animation[data-animation-step="3"] .device {margin-top:9%;width:30%; height:80%;}
+    .animation .device .display div div {font-size:15px;}
+  }
 
 /* More media queries */
 @media (max-width: 430px) {
