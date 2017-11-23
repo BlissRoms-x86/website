@@ -633,7 +633,7 @@ body > .container-fluid {
   .animation {margin-top:-6vh !important;}
 }
 @media (max-height: 670px) {
-  #scrollIcon, #scrollTopIcon {margin-top: -1vh;}
+  #scrollIcon, #scrollTopIcon {margin-top: -10vh;}
   .animation {margin-top:-7vh !important;}
 }
 @media (max-height: 650px) {
@@ -1278,7 +1278,7 @@ width: 378px;
   @media (max-height:720px) {
     .animation[data-animation-step="1"] .device {width:72%; height:75%;}
     .animation[data-animation-step="2"] .device {width:59%; height:60%;}
-    .animation[data-animation-step="3"] .device {width:22%; height:60%;}
+    .animation[data-animation-step="3"] .device {width:22%; height:63%;}
     .animation .device .display div div {font-size:16px;}
   }
   @media (max-height:650px) {
