@@ -269,7 +269,7 @@ body > .container-fluid {
   border-radius: 5px;
   margin-bottom: 1.25em;
   font-size: 18px;
-  margin: 0 8px; }
+  margin: 8px; }
   .portfolio-projects--btn:hover {
     background: #07374a;
     color: #ffffff; }
@@ -336,6 +336,12 @@ body > .container-fluid {
   .navbar > .container {max-width: 1170px}
 }
 
+@media (max-width:768px) {
+  .portfolio-projects--desc {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 16px; }
+}
 @media (min-width: 768px) {
   .portfolio-projects {
     margin-top: 0.625em; } }
@@ -343,9 +349,8 @@ body > .container-fluid {
   margin-top: 0.9375em;
   font-size: 20px; }
 @media (min-width: 768px) {
-    .portfolio-projects--title {
-      margin-top: 0;
-      font-size: 21px; }
+    .portfolio-projects .col-lg-6:first-child .portfolio-projects--title {font-size: 21px;margin-top:0rem;}
+    .portfolio-projects .col-lg-6:nth-child(2) .portfolio-projects--title {font-size: 21px;margin-top:-2.5rem;}
     .portfolio-projects--desc {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -382,6 +387,10 @@ body > .container-fluid {
     .portfolio-projects .col-lg-6:nth-child(2) .portfolio-projects--title {font-size: 28px;margin-top:9.5rem;}
     .portfolio-projects--btn {font-size: 18px;}
   }
+  .portfolio-projects--image-title {margin-top:-3rem;margin-bottom:6rem;}
+    @media (max-width: 768px) {
+      .portfolio-projects--image-title {margin-top:-3rem;margin-bottom:3rem;}
+    }
 
 #contact {
   background-color: #07374a;
@@ -653,7 +662,7 @@ body > .container-fluid {
   .h4, h4 {font-size: 20px}
   #portfolio h2 {padding-bottom: 0}
   #portfolio > .container {padding-right: 0;padding-left: 0}
-  .portfolio-projects--btn {margin-top:1.25em;margin-left: 4px;margin-right: 4px}
+  .portfolio-projects--btn {margin-top:0;margin-left: 4px;margin-right: 4px}
   #portfolio > div > div > div:nth-child(2) > div > div.col-sm-5.text-center.pull-right-sm > a:nth-child(4) {margin-right: 4px}
   #portfolio > div > div > div:nth-child(2) > div > div.col-sm-5.text-center.pull-right-sm > a:nth-child(5) {margin-left: 4px}
   #scrollIcon, #scrollTopIcon {font-size: 1em;display: none}
@@ -972,6 +981,7 @@ h1 span:nth-of-type(3) {
     margin-bottom: 15px;
 }
 .alert a {color: #fff;font-weight:bolder;padding-bottom:2px;margin-bottom:-2px;box-shadow: 0 2px}
+@media (max-width:768px) {.alert {width:90%;margin: 0 auto;}}
 @media (max-width:1200px) {.alert {margin-top:3rem}}
 /* The close button */
 .closebtn {
