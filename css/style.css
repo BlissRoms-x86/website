@@ -601,7 +601,7 @@ body > .container-fluid {
   .cover.top {padding: 7.5vh 0 12.5vh 0;}
 }
 @media (max-height: 750px) {
-  #scrollIcon, #scrollTopIcon {margin-top: 4vh;}
+  #scrollIcon, #scrollTopIcon {margin-top: 0vh;}
 }
 @media (max-height: 720px) {
   #scrollIcon, #scrollTopIcon {margin-top: 2vh;}
@@ -615,7 +615,7 @@ body > .container-fluid {
   .animation {margin-top:-7vh !important;}
 }
 @media (max-height: 650px) {
-  #scrollIcon, #scrollTopIcon {margin-top: -3vh}
+  #scrollIcon, #scrollTopIcon {margin-top: -14vh;}
   .animation {margin-top:-8vh !important;}
   .cover.top {padding: 6vh 0 5vh 0;}
   body > div.container-fluid > div.row.cover.top > div > .row > .headline > img {max-height: 42vh;}
@@ -665,7 +665,7 @@ body > .container-fluid {
   .portfolio-projects--btn {margin-top:0;margin-left: 4px;margin-right: 4px}
   #portfolio > div > div > div:nth-child(2) > div > div.col-sm-5.text-center.pull-right-sm > a:nth-child(4) {margin-right: 4px}
   #portfolio > div > div > div:nth-child(2) > div > div.col-sm-5.text-center.pull-right-sm > a:nth-child(5) {margin-left: 4px}
-  #scrollIcon, #scrollTopIcon {font-size: 1em;display: none}
+  #scrollIcon, #scrollTopIcon {font-size: 1em;}
 }
 @media (max-width:480px) {.row.cover.top .lead {max-width:180px}}
 @media (max-device-height: 480px) and (orientation: landscape) {
@@ -1043,7 +1043,7 @@ width: 378px;
   .animation {width:42rem;height:28rem;}
 }
 @media (max-height:650px) {
-  .animation {margin-top: -12.5vh !important;margin-bottom: 10vh !important;}
+  .animation {margin-top: -6vh !important;margin-bottom: 10vh !important;}
 }
 @media (min-height:651px) {
   .animation {margin-top: -8vh !important;margin-bottom: 10vh !important;}
@@ -1052,7 +1052,7 @@ width: 378px;
   .animation {margin-top: -6.5vh !important;margin-bottom: 10vh !important;}
 }
 @media (min-height:720px) {
-  .animation {margin-top: -1vh !important;margin-bottom: 10vh !important;overflow-y:visible}
+  .animation {margin-top: -2vh !important;margin-bottom: 10vh !important;overflow-y:visible}
 }
 @media (min-height:800px) {
   .animation {margin-top: 0 !important;margin-bottom: 10vh !important;overflow-y:visible}
