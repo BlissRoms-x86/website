@@ -593,11 +593,33 @@ body > .container-fluid {
     background: #0080ff;
     color: #ffffff; }
 
-@media (max-height: 880px) {
+
+@media (min-height: 880px) {
   #scrollIcon, #scrollTopIcon {margin-top: 4vh;}
 }
-@media (max-height: 800px) {
+@media (min-height: 900px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 6vh;}
+}
+@media (min-height: 960px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 10vh;}
+}
+@media (min-height: 980px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 12vh;}
+}
+@media (min-height: 1020px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 14vh;}
+}
+@media (min-height: 1090px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 16vh;}
+}
+@media (max-height: 880px) {
   #scrollIcon, #scrollTopIcon {margin-top: 2vh;}
+}
+@media (max-height: 850px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 0vh;}
+}
+@media (max-height: 820px) {
+  #scrollIcon, #scrollTopIcon {margin-top: 0vh;}
   .cover.top {padding: 7.5vh 0 12.5vh 0;}
 }
 @media (max-height: 750px) {
