@@ -626,7 +626,7 @@ body > .container-fluid {
   .cover.top {padding: 6vh 0 5vh 0;}
 }
 @media (max-height: 600px) {
-  #scrollIcon, #scrollTopIcon {margin-top: -9vh}
+  #scrollIcon, #scrollTopIcon {margin-top: -12vh}
   .animation {margin-top:-13vh !important;}
   .cover.top {padding: 6vh 0 5vh 0;}
 }
@@ -1043,7 +1043,7 @@ width: 378px;
   .animation {width:42rem;height:28rem;}
 }
 @media (max-height:650px) {
-  .animation {margin-top: -6vh !important;margin-bottom: 10vh !important;}
+  .animation {margin-top: -7vh !important;margin-bottom: 10vh !important;}
 }
 @media (min-height:651px) {
   .animation {margin-top: -8vh !important;margin-bottom: 10vh !important;}
