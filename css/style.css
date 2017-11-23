@@ -442,7 +442,7 @@ body > .container-fluid {
     color: #0080ff;
 }
 #scrollIcon, #scrollTopIcon {
-  margin-top: 10vh;
+  margin-top: 4vh;
   padding: 10px;
   font-size: 1.5em;
   color: #07374a;
@@ -586,17 +586,17 @@ body > .container-fluid {
     color: #ffffff; }
 
 @media (max-height: 880px) {
-  #scrollIcon, #scrollTopIcon {margin-top: 8vh}
+  #scrollIcon, #scrollTopIcon {margin-top: 4vh;}
 }
 @media (max-height: 800px) {
-  #scrollIcon, #scrollTopIcon {margin-top: 6vh}
+  #scrollIcon, #scrollTopIcon {margin-top: 2vh;}
   .cover.top {padding: 7.5vh 0 12.5vh 0;}
 }
 @media (max-height: 750px) {
   #scrollIcon, #scrollTopIcon {margin-top: 4vh;}
 }
 @media (max-height: 720px) {
-  #scrollIcon, #scrollTopIcon {margin-top: 0vh;}
+  #scrollIcon, #scrollTopIcon {margin-top: 2vh;}
 }
 @media (max-height: 690px) {
   #scrollIcon, #scrollTopIcon {margin-top: 0vh;}
@@ -1033,7 +1033,19 @@ width: 378px;
   .animation {width:42rem;height:28rem;}
 }
 @media (max-height:650px) {
-  .animation {margin-top: -15vh !important;margin-bottom: 10vh !important;}
+  .animation {margin-top: -12.5vh !important;margin-bottom: 10vh !important;}
+}
+@media (min-height:651px) {
+  .animation {margin-top: -8vh !important;margin-bottom: 10vh !important;}
+}
+@media (min-height:670px) {
+  .animation {margin-top: -6.5vh !important;margin-bottom: 10vh !important;}
+}
+@media (min-height:720px) {
+  .animation {margin-top: -1vh !important;margin-bottom: 10vh !important;overflow-y:visible}
+}
+@media (min-height:800px) {
+  .animation {margin-top: 0 !important;margin-bottom: 10vh !important;overflow-y:visible}
 }
 .animation .device {
   position: absolute;
@@ -1226,6 +1238,11 @@ width: 378px;
 .animation[data-animation-step="3"] .device .phone-home-button {
   opacity: 1;
 }
+  @media (min-height:800px) {
+    .animation[data-animation-step="1"] .device {width:87%; height:90%;}
+    .animation[data-animation-step="2"] .device {width:80%; height:80%;}
+    .animation[data-animation-step="3"] .device {width:28%; height:80%;}
+  }
   @media (max-height:720px) {
     .animation[data-animation-step="1"] .device {width:72%; height:75%;}
     .animation[data-animation-step="2"] .device {width:59%; height:60%;}
