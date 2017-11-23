@@ -1280,7 +1280,7 @@ width: 378px;
   @media (max-width:460px) {
     .animation[data-animation-step="1"] .device {margin-top:0%;width:58%; height:61%;}
     .animation[data-animation-step="2"] .device {margin-top:0%;width:54%; height:55%;}
-    .animation[data-animation-step="3"] .device {margin-top:0%;width:25%; height:70%;}
+    .animation[data-animation-step="3"] .device {margin-top:0%;width:25%; height:72%;}
     .animation .device .display div div {font-size:15px;}
   }
   @media (max-width:350px) {
