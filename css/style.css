@@ -1213,7 +1213,7 @@ width: 378px;
 .animation[data-animation-step="3"] .device {
   width: 27%;
   height: 75%;
-  padding: 16px 8px;
+  padding: 16px 4px;
   border-radius: 6px;
 }
 .animation[data-animation-step="3"] .device .slide1,
