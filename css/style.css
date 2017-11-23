@@ -1239,9 +1239,9 @@ width: 378px;
     .animation .device .display div div {font-size:15px;}
   }
   @media (max-width:560px) {
-    .animation[data-animation-step="1"] .device {margin-top:0%;width:72%; height:75%;}
-    .animation[data-animation-step="2"] .device {margin-top:0%;width:65%; height:66%;}
-    .animation[data-animation-step="3"] .device {margin-top:0%;width:30%; height:80%;}
+    .animation[data-animation-step="1"] .device {margin-top:6%;width:72%; height:75%;}
+    .animation[data-animation-step="2"] .device {margin-top:6%;width:65%; height:66%;}
+    .animation[data-animation-step="3"] .device {margin-top:9%;width:30%; height:80%;}
     .animation .device .display div div {font-size:15px;}
   }
   @media (max-width:520px) {
