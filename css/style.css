@@ -46,6 +46,7 @@ body > .container-fluid {
 #family-lt > .container {
   padding-left: 30px;
   padding-right: 30px;
+  font-size: 18px;
 }
 #family-lt > div > div > div {padding-right: 0;padding-left: 0}
 
@@ -1020,10 +1021,32 @@ h1 span:nth-of-type(3) {
     transition: 0.3s;
 }
 
+/* The alert message box */
+.alert2 {
+   padding: 20px;
+   background-color: #17c13f; /* green */
+   color: white;
+   margin-bottom: 15px;
+}
+.alert2 a {color: #fff;font-weight:bolder;padding-bottom:2px;margin-bottom:-2px;box-shadow: 0 2px}
+@media (max-width:768px) {.alert {width:90%;margin: 0 auto;}}
+@media (max-width:1200px) {.alert {margin-top:3rem}}
+/* The close button */
+.closebtn {
+   margin-left: 15px;
+   color: white;
+   font-weight: bold;
+   float: right;
+   font-size: 22px;
+   line-height: 20px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
 /* When moving the mouse over the close button */
 .closebtn:hover {
     color: black;
-} 
+}
 
 .vcenter {
   display: inline-block;
@@ -1032,17 +1055,17 @@ h1 span:nth-of-type(3) {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-} 
+}
 
 /* Anim
-width: 378px; 
+width: 378px;
   height: 290px;
  */
 .animation {
   display: inline-block;
   position: relative;
-  width: 64rem; 
-  height: 42rem; 
+  width: 64rem;
+  height: 42rem;
   margin: -2vh auto 0 auto;
   vertical-align: middle;
 }
