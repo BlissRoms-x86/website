@@ -1217,8 +1217,8 @@ width: 378px;
   font-weight: bold;
 }
 .animation .device .display .slide1 {
-  background: #000;
-  background: url("https://blissroms.com/images/bliss-desktop.jpg");
+  /* background: #000; */
+  background: url("https://i.imgur.com/wCp0xpe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1229,8 +1229,8 @@ width: 378px;
     color:white;
 }
 .animation .device .display .slide2 {
-  background: #000;
-  background: url("https://blissroms.com/images/bliss-tablet.jpg");
+  /* background: #000; */
+  background: url("https://i.imgur.com/KfArkPZ.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1241,8 +1241,8 @@ width: 378px;
   color:#0080ff;
 }
 .animation .device .display .slide3 {
-  background: #000;
-  background: url("https://blissroms.com/images/bliss-phone.jpg");
+  /* background: #000; */
+  background: url("https://i.imgur.com/c55mey7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
