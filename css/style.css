@@ -10,7 +10,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   /* Preserve aspet ratio */
-   height: 100%;
+   /* width: 100%; */
    background-repeat: no-repeat;
    background-attachment: fixed !important;
    /* background-position: center !important; */
