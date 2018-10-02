@@ -5,21 +5,22 @@ body {
   font-family: "Comfortaa", Helvetica, Arial, sans-serif;
   line-height: 1.4;
   /* background-color: #0080ff; */
-  background: url("../images/web_bg_1280.png") no-repeat center center fixed; 
+  background: url("../images/web_bg_1280.png") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   /* Preserve aspet ratio */
   min-width: 100%; 
   min-height: 100%;
-  background-size: cover;
-  background-position:50% 50%;
-  
+  background-attachment: fixed;
+  background-size: cover !important;
+  background-position:50% 50%; 
   image-rendering: crisp-edges;
   image-rendering: -moz-crisp-edges;          /* Firefox */
   image-rendering: -o-crisp-edges;            /* Opera */
   image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
   -ms-interpolation-mode: nearest-neighbor; 
+  background-size: 1280px 1280px;
   }
 
 #bg {
