@@ -15,7 +15,7 @@ h5, .h5,
 h6, .h6 {
   font-family: "Comfortaa", Helvetica, Arial, sans-serif;
   line-height: 1.4;
-  color: #07374a; }
+  color: #222222; }
 h1, .h1 {font-size: 64px;}
 h2, .h2 {font-size: 42px;}
 h4, .h4 {font-weight: bolder;}
@@ -123,29 +123,29 @@ body > .container-fluid {
 .navbar-default .navbar-toggle {
   border-color: #ffffff; }
   .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #07374a;
+    background-color: #222222;
   }
   .navbar-default .navbar-toggle .icon-bar {
     color: #ffffff;
     background-color: #ffffff; }
 .navbar-default .navbar-collapse.collapse.in ul {
-  background-color: #07374a;
+  background-color: #222222;
 }
 .navbar-collapse.collapsing {
-  background-color: #07374a;
+  background-color: #222222;
 }
 .navbar-default .navbar-toggle .icon-bar {
     color: #ffffff;
     background-color: #ffffff; }
 .navbar-default .navbar-collapse.collapse.in ul {
-  background-color: #07374a;
+  background-color: #222222;
 }
 .navbar-collapse.collapse.collapsing {
-  background-color: #07374a;
+  background-color: #222222;
 }
 
 .navbar-collapse.collapse.show {
-  background-color: #07374a;
+  background-color: #222222;
   -webkit-transition: background-color .2s ease 0s;
   -moz-transition: background-color .2s ease 0s;
   -o-transition: background-color .2s ease 0s;
@@ -165,7 +165,7 @@ body > .container-fluid {
 
 /* Solid class attached on scroll past first section */
 .navbar.solid {
-  background-color: #07374a;
+  background-color: #222222;
   top: 0;
   width: 100%;
   margin: 0;
@@ -225,7 +225,7 @@ body > .container-fluid {
       padding-top: 0; } }
 
 #about {
-  background-color: #07374a; }
+  background-color: #222222; }
   #about h2 {
     color: #0080ff; }
   #about > div > div.row.break > div > p {margin-bottom: 15px}
@@ -265,18 +265,18 @@ body > .container-fluid {
 
 .portfolio-projects--btn {
   background: transparent;
-  color: #07374a;
-  border: 1px solid #07374a;
+  color: #222222;
+  border: 1px solid #222222;
   border-radius: 5px;
   margin-bottom: 1.25em;
   font-size: 18px;
   margin: 8px; }
   .portfolio-projects--btn:hover {
-    background: #07374a;
+    background: #222222;
     color: #ffffff; }
   .portfolio-projects--btn:focus,
   .portfolio-projects--btn:active {
-    background: #052a38;
+    background: #111111;
     color: #ffffff; }
 @media (max-width:650px) {
   .portfolio-projects--btn {font-size:16px;}
@@ -394,7 +394,7 @@ body > .container-fluid {
     }
 
 #contact {
-  background-color: #07374a;
+  background-color: #222222;
   padding-left: 15px;
   padding-right: 15px }
   #contact h2 {
@@ -434,7 +434,7 @@ body > .container-fluid {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  background-color: #052a38;
+  background-color: #111111;
 
   color: #ffffff; }
 .footer-role, .footer-name, .footer-description {
@@ -454,8 +454,8 @@ body > .container-fluid {
   margin-top: 4vh;
   padding: 10px;
   font-size: 1.5em;
-  color: #07374a;
-  border: solid 2px #07374a;
+  color: #222222;
+  border: solid 2px #222222;
   border-radius: 50%; }
 
 #scrollTopIcon {
@@ -498,7 +498,7 @@ body > .container-fluid {
     color: #FFFFFF;
 }
 .team-role, .team-name, .team-links-list a {
-    color: #07374a;
+    color: #222222;
     text-align: center;
     white-space: normal;
     width: 100%;
@@ -510,7 +510,7 @@ body > .container-fluid {
 }
 .team-links, .family-links {
   padding-top: .75em;
-  color: #07374a;
+  color: #222222;
   text-align: center;
 }
 .team-image img, .family-image img {
@@ -554,7 +554,7 @@ body > .container-fluid {
 
 /* Bliss family section */
 #family {
-  background-color: #07374a;
+  background-color: #222222;
 }
 #family > div > div.row > div {font-size: 18px}
 .family-role, .family-name, .family-description {
