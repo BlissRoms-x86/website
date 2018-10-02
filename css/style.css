@@ -10,17 +10,11 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   /* Preserve aspet ratio */
-  min-width: 100%; 
-  min-height: 100%;
-  background-attachment: fixed;
-  background-size: cover !important;
-  background-position:50% 50%; 
-  image-rendering: crisp-edges;
-  image-rendering: -moz-crisp-edges;          /* Firefox */
-  image-rendering: -o-crisp-edges;            /* Opera */
-  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming)*/
-  -ms-interpolation-mode: nearest-neighbor; 
-  background-size: 1280px 1280px;
+   height: 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed !important;
+   background-position: center !important;
+   background-size: cover !important;
   }
 
 #bg {
