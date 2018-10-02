@@ -14,7 +14,8 @@ body {
    background-repeat: no-repeat;
    background-attachment: fixed !important;
    /* background-position: center !important; */
-   background-size: cover !important;
+   /* background-size: cover !important; */
+   background-width: contain !important;
    margin-left: calc(-50vw + 50%);
    margin-right: calc(-50vw + 50%);
   }
