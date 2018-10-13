@@ -4,7 +4,7 @@ Main Components
 Source: https://codepen.io/elorenn/pen/qXzXPv
 
 -------------------------------- */
-.section {
+.bsection {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@ Source: https://codepen.io/elorenn/pen/qXzXPv
   flex-wrap: wrap;
   flex-basis: 50%;
 }
-.section:first-of-type {
+.bsection:first-of-type {
   border-right: 2px solid #fff;
 }
 
