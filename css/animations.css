@@ -1,0 +1,258 @@
+/* --------------------------------
+
+Main Components
+Source: https://codepen.io/elorenn/pen/qXzXPv
+
+-------------------------------- */
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 1em;
+  overflow: scroll;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+.section:first-of-type {
+  border-right: 2px solid #fff;
+}
+
+.badge {
+  cursor: help;
+  background: #e7cc9c;
+  height: 33%;
+  width: 33%;
+  min-width: 30%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  -webkit-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+          filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+  transition: 150ms linear;
+}
+.badge:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.15));
+}
+.badge:active:after {
+  content: 'Prost!';
+  position: absolute;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  letter-spacing: .1em;
+  top: -25%;
+}
+.badge.anim {
+  height: 33%;
+  width: 33%;
+}
+.badge.anim:active:after {
+  content: 'cheers!';
+}
+
+.beer-single-div {
+  position: relative;
+  height: 150px;
+  width: 112.5px;
+  min-width: 112.5px;
+  margin-top: 30px;
+  background-image: radial-gradient(97.5px 22.5px at 50% 103%, #f1ecdb 40%, transparent 40%), radial-gradient(6px 9px at 15% 67%, #ffe799 80%, transparent 83%), radial-gradient(6px 9px at 15% 18%, #ffe799 80%, transparent 83%), radial-gradient(9px 9px at 25% 85%, #ffda66 80%, transparent 80%), radial-gradient(25.5px 45px at 15% 90%, #ffc200 70%, transparent 70%), radial-gradient(25.5px 25.5px at 15% 5%, #ffc200 70%, transparent 70%), linear-gradient(to right, transparent 0%, transparent 10%, #ffe799 10%, #ffe799 20%, transparent 20%), radial-gradient(6px 6px at 70% 45%, #fecf75 80%, transparent 80%), radial-gradient(7.5px 7.5px at 35% 27%, #ffda66 80%, transparent 80%), radial-gradient(4.5px 4.5px at 80% 12%, #fecf75 80%, transparent 80%), radial-gradient(6px 6px at 60% 81%, #fecf75 80%, transparent 80%), radial-gradient(4.5px 4.5px at 89% 89%, #fecf75 80%, transparent 80%), radial-gradient(7.5px 7.5px at 77% 78%, #fecf75 80%, transparent 80%), radial-gradient(4.5px 4.5px at 40% 57%, #ffda66 80%, transparent 80%), linear-gradient(to right, #ffc200 50%, #fdac10 50%);
+  border-radius: 0 0 15% 15%;
+  border: 9px solid #f1ecdb;
+  /*mug*/
+  box-sizing: border-box;
+}
+.beer-single-div:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border-radius: 0 50% 50% 0;
+  height: 75px;
+  width: 52.5px;
+  top: 22.5px;
+  right: -49.5px;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 12px solid #f1ecdb;
+  /*mug handle*/
+  border-left: 12px solid transparent;
+}
+.beer-single-div:after {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: 20%;
+  height: 15px;
+  width: 15px;
+  background: #fffef8;
+  border-radius: 25.5px;
+  box-shadow: 0 16.5px 0 10.5px #fff9de, 0 10.5px 0 10.5px #fffef8, -40.5px 10.5px 0 6px #fff9de, -58.5px 9px 0 9px #fffef8, -27px 18px 0 6px #fff9de, -75px 12px 0 6px #fff9de, -22.5px 0 0 9px #fffef8, 21px 10.5px 0 9px #fffef8, -48px -12px 0 7.5px #fffef8, -27px -21px 0 7.5px #fff9de, -7.5px -10.5px 0 7.5px #fff9de, 10.5px -7.5px 0 1.5px #fffef8, 13.5px -10.5px 0 1.5px #fff9de, 37.5px 10.5px 0 1.5px #fff9de;
+}
+
+.beer-animation-wrapper {
+  position: relative;
+  overflow-y: hidden;
+  padding: 25.5px;
+  padding-right: 0;
+  padding-top: 10%;
+}
+.beer-animation-wrapper .beer {
+  position: relative;
+  height: 150px;
+  width: 112.5px;
+  min-width: 112.5px;
+  margin-top: 48px;
+  margin-right: 40.5px;
+  margin-left: 13.5px;
+  z-index: -2;
+  background-image: radial-gradient(97.5px 22.5px at 50% 103%, #f1ecdb 40%, transparent 40%), linear-gradient(to right, #ffc200 50%, #fdac10 50%);
+  border-radius: 0 0 15% 15%;
+  /*mug*/
+  border: 9px solid #f1ecdb;
+  box-sizing: border-box;
+}
+.beer-animation-wrapper .beer:before {
+  content: '';
+  position: absolute;
+  height: 130%;
+  width: 100%;
+  bottom: -5%;
+  z-index: -1;
+  opacity: 1;
+  -webkit-animation: 3s bubbles linear infinite;
+          animation: 3s bubbles linear infinite;
+  background: radial-gradient(9px 9px at 25% 85%, #ffda66 80%, transparent 80%), radial-gradient(6px 6px at 70% 45%, #fecf75 80%, transparent 80%), radial-gradient(7.5px 7.5px at 35% 40%, #fecf75 80%, transparent 80%), radial-gradient(4.5px 4.5px at 80% 30%, #fecf75 80%, transparent 80%), radial-gradient(6px 6px at 60% 81%, #fecf75 80%, transparent 80%), radial-gradient(4.5px 4.5px at 89% 89%, #fecf75 80%, transparent 80%), radial-gradient(7.5px 7.5px at 77% 78%, #fecf75 80%, transparent 80%), radial-gradient(4.5px 4.5px at 40% 57%, #ffda66 80%, transparent 80%), radial-gradient(3px 3px at 30% 67%, #ffda66 80%, transparent 80%), radial-gradient(3px 3px at 30% 17%, #ffda66 80%, transparent 80%), radial-gradient(4.5px 4.5px at 40% 10%, #ffda66 80%, transparent 80%), radial-gradient(7.5px 7.5px at 62% 24%, #ffda66 80%, transparent 80%), radial-gradient(6px 6px at 18% 31%, #ffda66 80%, transparent 80%), radial-gradient(9px 9px at 83% 60%, #ffda66 80%, transparent 80%);
+}
+.beer-animation-wrapper .beer:after {
+  /*mug handle*/
+  content: '';
+  position: absolute;
+  border-radius: 0 50% 50% 0;
+  height: 75px;
+  width: 49.5px;
+  top: 22.5px;
+  right: -49.5px;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 12px solid #f1ecdb;
+  border-left: 9px solid #f1ecdb;
+}
+.beer-animation-wrapper .foam {
+  position: relative;
+  top: -20%;
+  left: 63%;
+  height: 15px;
+  width: 15px;
+  background: #fffef8;
+  border-radius: 25.5px;
+  box-shadow: -52.5px 42px 0 -2.25px #ffe799, -52.5px 43.5px 0 -2.25px #ffe799, -52.5px 45px 0 -2.25px #ffe799, -52.5px 46.5px 0 -2.25px #ffe799, -52.5px 48px 0 -2.25px #ffe799, -52.5px 49.5px 0 -2.25px #ffe799, -52.5px 51px 0 -2.25px #ffe799, -52.5px 52.5px 0 -2.25px #ffe799, -52.5px 54px 0 -2.25px #ffe799, -52.5px 55.5px 0 -2.25px #ffe799, -52.5px 57px 0 -2.25px #ffe799, -52.5px 58.5px 0 -2.25px #ffe799, -52.5px 60px 0 -2.25px #ffe799, -52.5px 61.5px 0 -2.25px #ffe799, -52.5px 63px 0 -2.25px #ffe799, -52.5px 64.5px 0 -2.25px #ffe799, -52.5px 66px 0 -2.25px #ffe799, -52.5px 67.5px 0 -2.25px #ffe799, -52.5px 69px 0 -2.25px #ffe799, -52.5px 70.5px 0 -2.25px #ffe799, -52.5px 72px 0 -2.25px #ffe799, -52.5px 73.5px 0 -2.25px #ffe799, -52.5px 75px 0 -2.25px #ffe799, -52.5px 76.5px 0 -2.25px #ffe799, -52.5px 78px 0 -2.25px #ffe799, -52.5px 79.5px 0 -2.25px #ffe799, -52.5px 81px 0 -2.25px #ffe799, -52.5px 82.5px 0 -2.25px #ffe799, -52.5px 84px 0 -2.25px #ffe799, -52.5px 85.5px 0 -2.25px #ffe799, -52.5px 87px 0 -2.25px #ffe799, -52.5px 88.5px 0 -2.25px #ffe799, -52.5px 90px 0 -2.25px #ffe799, -52.5px 91.5px 0 -2.25px #ffe799, -52.5px 93px 0 -2.25px #ffe799, -52.5px 94.5px 0 -2.25px #ffe799, -52.5px 96px 0 -2.25px #ffe799, -52.5px 97.5px 0 -2.25px #ffe799, -52.5px 99px 0 -2.25px #ffe799, -52.5px 100.5px 0 -2.25px #ffe799, -52.5px 102px 0 -2.25px #ffe799, -52.5px 103.5px 0 -2.25px #ffe799, -52.5px 105px 0 -2.25px #ffe799, -52.5px 106.5px 0 -2.25px #ffe799, -52.5px 108px 0 -2.25px #ffe799, -52.5px 109.5px 0 -2.25px #ffe799, 0 16.5px 0 10.5px #fff9de, 0 10.5px 0 10.5px #fffef8, -40.5px 10.5px 0 6px #fff9de, -58.5px 9px 0 9px #fffef8, -27px 18px 0 6px #fff9de, -75px 12px 0 6px #fff9de, -22.5px 0 0 9px #fffef8, 21px 10.5px 0 9px #fffef8, -48px -12px 0 7.5px #fffef8, -27px -21px 0 7.5px #fff9de, -7.5px -10.5px 0 7.5px #fff9de, 10.5px -7.5px 0 1.5px #fffef8, 13.5px -10.5px 0 1.5px #fff9de, 37.5px 10.5px 0 1.5px #fff9de;
+}
+.beer-animation-wrapper .foam:before, .beer-animation-wrapper .foam:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 200%;
+  width: 15px;
+  border-radius: 25.5px;
+  background: #fff9de;
+  background: linear-gradient(to right, #fff9de 75%, #fffef8 75%);
+}
+.beer-animation-wrapper .foam:after {
+  left: 100%;
+  height: 0px;
+  -webkit-animation: drip1 2s ease-out forwards;
+          animation: drip1 2s ease-out forwards;
+}
+.beer-animation-wrapper .foam:before {
+  right: 25%;
+  height: 0px;
+  -webkit-animation: drip2 5s ease-out forwards;
+          animation: drip2 5s ease-out forwards;
+}
+
+@-webkit-keyframes drip2 {
+  0% {
+    height: 0px;
+  }
+  50% {
+    height: 45px;
+  }
+  75% {
+    height: 45px;
+  }
+  80% {
+    height: 45px;
+  }
+  100% {
+    height: 52.5px;
+  }
+}
+
+@keyframes drip2 {
+  0% {
+    height: 0px;
+  }
+  50% {
+    height: 45px;
+  }
+  75% {
+    height: 45px;
+  }
+  80% {
+    height: 45px;
+  }
+  100% {
+    height: 52.5px;
+  }
+}
+@-webkit-keyframes drip1 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 75px;
+  }
+}
+@keyframes drip1 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 75px;
+  }
+}
+@-webkit-keyframes bubbles {
+  0% {
+    -webkit-transform: translatey(0%);
+            transform: translatey(0%);
+  }
+  99% {
+    -webkit-transform: translatey(-50%);
+            transform: translatey(-50%);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes bubbles {
+  0% {
+    -webkit-transform: translatey(0%);
+            transform: translatey(0%);
+  }
+  99% {
+    -webkit-transform: translatey(-50%);
+            transform: translatey(-50%);
+  }
+  100% {
+    opacity: 0;
+  }
+}
