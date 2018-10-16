@@ -665,3 +665,7 @@ xcustom form elements
     display: none;
   }
 }
+.worldmap {
+  width: 100%;
+  margin: 10em auto;
+}
