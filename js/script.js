@@ -62,6 +62,14 @@ $(document).ready(function() {
             e.preventDefault
             $.scrollTo($("#family"), 1000);
         });
+		$("#nav-family2").click(function(e) {
+            e.preventDefault
+            $.scrollTo($("#family2"), 1000);
+        });
+		$("#nav-family-lt").click(function(e) {
+            e.preventDefault
+            $.scrollTo($("#family-lt"), 1000);
+        });
         $(".navbar-brand").click(function(e) {
             e.preventDefault();
             $.scrollTo(0, 1000);
