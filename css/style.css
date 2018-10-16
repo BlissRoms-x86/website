@@ -259,6 +259,12 @@ body > .container-fluid {
     color: #0080ff; }
   #about > div > div.row.break > div > p {margin-bottom: 15px}
 
+#about2 {
+  background-color: #0080ff; }
+  #about2 h2 {
+    color: #222; }
+  #about2 > div > div.row.break > div > p {margin-bottom: 15px}
+
 .profile-img {
   margin-bottom: 15px;
   width: 120px; }
@@ -428,6 +434,12 @@ body > .container-fluid {
   padding-right: 15px }
   #contact h2 {
     color: #0080ff; }
+#expenses {
+  background-color: #222;
+  padding-left: 15px;
+  padding-right: 15px }
+  #expenses h2 {
+    color: #0080ff; }
 
 .contact-social-icons p {
   color: #0080ff; }
@@ -585,6 +597,9 @@ body > .container-fluid {
 #family {
   background-color: #222222;
 }
+#family2 {
+  /* background-color: #0080ff; */
+}
 #family > div > div.row > div {font-size: 18px}
 .family-role, .family-name, .family-description {
     color: #FFFFFF;
@@ -598,6 +613,10 @@ body > .container-fluid {
 }
 .family-header h2 {
     color: #0080ff;
+}
+}
+.family2-header h2 {
+    color: #222;
 }
 #family .about-tools {
   font-size: 20px;
