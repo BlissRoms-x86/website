@@ -4,7 +4,7 @@ img {
 body {
   font-family: "Comfortaa", Helvetica, Arial, sans-serif;
   line-height: 1.4;
-  background: url("https://i.imgur.com/BOGKaGy.jpg") no-repeat center center fixed; 
+  background: url("https://i.imgur.com/BOGKaGy.jpg") no-repeat center center fixed;
   background-color: #0080ff;
   width: 100%;
   position: absolute;
@@ -13,23 +13,23 @@ body {
   }
 
 #bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
   height: 200%;
 }
 #bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
   min-width: 50%;
   min-height: 50%;
 }
-  
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -222,7 +222,7 @@ body > .container-fluid {
     display: -ms-flexbox;
     display: flex;
     /* background-color: #0080ff;*/
-	background: url(images/web_bg_1280.png) no-repeat center center fixed; 
+	background: url(images/web_bg_1280.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -440,7 +440,10 @@ body > .container-fluid {
   padding-right: 15px }
   #expenses h2 {
     color: #0080ff; }
-
+.family-links-list {
+  font-size: 2.3em;
+  line-height: 1.8em;
+}
 .contact-social-icons p {
   color: #0080ff; }
 .contact-social-icons > ul {padding:0;margin:0 auto;}

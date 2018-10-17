@@ -669,3 +669,40 @@ xcustom form elements
   width: 100%;
   margin: 10em auto;
 }
+
+blockquote {
+  padding: 1em;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  line-height: 1.8;
+  margin: 1.6em !important;
+  font-size: 17.5px;
+  border-left: 0px !important;
+}
+blockquote p {
+  margin: 0;
+  grid-column: 2 / 3;
+}
+blockquote p + p,
+blockquote footer {
+  margin-top: .6em;
+}
+blockquote footer {
+  grid-column: 1 / -1;
+  font-size: .8em;
+  order: 1;
+}
+blockquote::before, blockquote::after {
+  grid-column-end: span 1;
+  font-size: 4em;
+  height: .25em;
+  line-height: .8;
+  padding: 0 .2em;
+}
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+  align-self: end;
+}
