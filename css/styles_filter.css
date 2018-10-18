@@ -671,12 +671,9 @@ xcustom form elements
 }
 
 blockquote {
-  padding: 1em;
   display: grid;
   grid-template-columns: auto 1fr auto;
   line-height: 1.8;
-  margin: 1.6em !important;
-  font-size: 17.5px;
   border-left: 0px !important;
 }
 blockquote p {
