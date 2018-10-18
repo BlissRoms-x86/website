@@ -744,7 +744,8 @@ body > .container-fluid {
   #portfolio > div > div > div:nth-child(2) > div > div.col-sm-5.text-center.pull-right-sm > a:nth-child(5) {margin-left: 4px}
   #scrollIcon, #scrollTopIcon {font-size: 1em;}
 }
-@media (max-width:480px) {.row.cover.top .lead {max-width:180px}}
+
+
 @media (max-device-height: 480px) and (orientation: landscape) {
   .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     max-height: 240px;
