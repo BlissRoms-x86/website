@@ -184,7 +184,7 @@ Source: https://codepen.io/elorenn/pen/qXzXPv
   background-size:cover;
   padding:0; 
   position:relative;
-  height:500px;
+  height:300px;
   border-top-left-radius:6px;
   border-top-right-radius:6px;
 }
@@ -209,19 +209,18 @@ Source: https://codepen.io/elorenn/pen/qXzXPv
 }
 
 #popup-modal .modal-social {
-  position:absolute;
+  /*position:absolute;
   right: 65px;
   top: 130px;
-  width: 215px;
+  width: 215px;*/
 }
 
 #popup-modal .modal-box {
   margin: auto;
   position:absolute;
-  top: 40%; left: 25%; bottom: 50%; right: 25%;
+  top: 40%; left: 15%; bottom: 50%; right: 15%;
   z-index:9999;
 }
-
 
 .overlay {
   position: fixed;
@@ -412,3 +411,291 @@ Source: https://codepen.io/elorenn/pen/qXzXPv
     opacity: 0;
   }
 }
+
+/* Anim
+width: 378px;
+  height: 290px;
+ */
+.animation {
+  display: inline-block;
+  position: relative;
+  width: 46em;
+  height: 30em;
+  margin: -2vh auto 0 auto;
+  vertical-align: middle;
+}
+@media (max-width:720px) {
+  .animation {margin-left:-30rem;margin-right:-30rem;}
+}
+@media (max-width:450px) {
+  .animation {width:58rem;height:38rem;}
+}
+@media (max-width:450px) {
+  .animation {width:58rem;height:38rem;}
+}
+@media (max-width:400px) {
+  .animation {width:55rem;height:36rem;}
+}
+@media (max-width:380px) {
+  .animation {width:50rem;height:33rem;}
+}
+@media (max-width:340px) {
+  .animation {width:47rem;height:31rem;}
+}
+@media (max-width:320px) {
+  .animation {width:42rem;height:28rem;}
+}
+@media (max-height:650px) {
+  .animation {margin-top: -7vh !important;margin-bottom: 10vh !important;}
+}
+@media (min-height:651px) {
+  .animation {margin-top: -8vh !important;margin-bottom: 10vh !important;}
+}
+@media (min-height:670px) {
+  .animation {margin-top: -6.5vh !important;margin-bottom: 10vh !important;}
+}
+@media (min-height:720px) {
+  .animation {margin-top: -2vh !important;margin-bottom: 10vh !important;overflow-y:visible}
+}
+@media (min-height:800px) {
+  .animation {margin-top: 0 !important;margin-bottom: 10vh !important;overflow-y:visible}
+}
+.animation .device {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  background: #111;
+  -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.animation .device .phone-home-button,
+.animation .device .tablet-home-button {
+  position: absolute;
+  border-radius: 50%;
+  background: #444;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.animation .device .phone-home-button {
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  right: 11px;
+  top: 50%;
+}
+.animation .device .tablet-home-button {
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  bottom: 7px;
+  left: 50%;
+}
+.animation .device .screen-stand {
+  position: absolute;
+  width: 100%;
+  margin-left: -10px;
+  margin-top: -1px;
+  top: 60%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.animation .device .screen-stand .leg {
+  position: absolute;
+  width: 12px;
+  height: 16px;
+  left: 50%;
+  top: 0;
+  margin-left: -6px;
+  background: #111;
+}
+.animation .device .screen-stand .foot {
+  position: absolute;
+  width: 120px;
+  height: 4px;
+  left: 50%;
+  top: 15px;
+  margin-left: -60px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background: #111;
+}
+.animation .device .display {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #34495e;
+  z-index: 3;
+}
+.animation .device .display div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  white-space: nowrap;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.animation .device .display div div {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  margin-top: -14px;
+  font-size: 20px;
+  text-align: center;
+ /* color: #0080ff;*/
+}
+@media (max-width:450px) {
+  .animation .device .display div div {width:100%;max-width:100%;font-size:12px !important;}
+}
+  .animation .device .display .slide1 div {margin-top:0px;}
+.animation .device .display div div em {
+  font-weight: bold;
+}
+.animation .device .display .slide1 {
+  /* background: #000; */
+  background: url("https://i.imgur.com/wCp0xpe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-shadow:  1px 1px 2px #1f1f1f, -1px -1px 2px #1f1f1f, -1px 0 2px #1f1f1f, 0 -1px 2px #1f1f1f, 1px 0 2px #1f1f1f, 0 1px 2px #1f1f1f, 1px -1px 2px #1f1f1f, -1px 1px 2px #1f1f1f,
+                2px 2px 2px #1f1f1f, -2px -2px 2px #1f1f1f, -2px 0 2px #1f1f1f, 0 -2px 2px #1f1f1f, 2px 0 2px #1f1f1f, 0 2px 2px #1f1f1f, 2px -2px 2px #1f1f1f, -2px 2px 2px #1f1f1f,
+                3px 3px 2px #1f1f1f, -3px -3px 2px #1f1f1f, -3px 0 2px #1f1f1f, 0 -3px 2px #1f1f1f, 3px 0 2px #1f1f1f, 0 3px 2px #1f1f1f, 3px -3px 2px #1f1f1f, -3px 3px 2px #1f1f1f,
+                4px 4px 4px #1f1f1f, -4px -4px 4px #1f1f1f, -4px 0 4px #1f1f1f, 0 -4px 4px #1f1f1f, 4px 0 4px #1f1f1f, 0 4px 4px #1f1f1f, 4px -4px 4px #1f1f1f, -4px 4px 4px #1f1f1f;
+    color:white;
+}
+.animation .device .display .slide2 {
+  /* background: #000; */
+  background: url("https://i.imgur.com/KfArkPZ.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-shadow:  1px 1px 2px #fff, -1px -1px 2px #fff, -1px 0 2px #fff, 0 -1px 2px #fff, 1px 0 2px #fff, 0 1px 2px #fff, 1px -1px 2px #fff, -1px 1px 2px #fff,
+                2px 2px 2px #fff, -2px -2px 2px #fff, -2px 0 2px #fff, 0 -2px 2px #fff, 2px 0 2px #fff, 0 2px 2px #fff, 2px -2px 2px #fff, -2px 2px 2px #fff,
+                3px 3px 2px #fff, -3px -3px 2px #fff, -3px 0 2px #fff, 0 -3px 2px #fff, 3px 0 2px #fff, 0 3px 2px #fff, 3px -3px 2px #fff, -3px 3px 2px #fff,
+                4px 4px 4px #fff, -4px -4px 4px #fff, -4px 0 4px #fff, 0 -4px 4px #fff, 4px 0 4px #fff, 0 4px 4px #fff, 4px -4px 4px #fff, -4px 4px 4px #fff;
+  color:#0080ff;
+}
+.animation .device .display .slide3 {
+  /* background: #000; */
+  background: url("https://i.imgur.com/c55mey7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-shadow:  1px 1px 2px #000, -1px -1px 2px #000, -1px 0 2px #000, 0 -1px 2px #000, 1px 0 2px #000, 0 1px 2px #000, 1px -1px 2px #000, -1px 1px 2px #000,
+                2px 2px 2px #000, -2px -2px 2px #000, -2px 0 2px #000, 0 -2px 2px #000, 2px 0 2px #000, 0 2px 2px #000, 2px -2px 2px #000, -2px 2px 2px #000,
+                3px 3px 2px #000, -3px -3px 2px #000, -3px 0 2px #000, 0 -3px 2px #000, 3px 0 2px #000, 0 3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
+                4px 4px 4px #000, -4px -4px 4px #000, -4px 0 4px #000, 0 -4px 4px #000, 4px 0 4px #000, 0 4px 4px #000, 4px -4px 4px #000, -4px 4px 4px #000;
+  color:white;
+}
+.animation[data-animation-step="1"] .device {
+  width: 87%;
+  height: 90%;
+  padding: 10px;
+  border-radius: 4px;
+}
+.animation[data-animation-step="1"] .device .slide1 {
+  left: 0%;
+}
+.animation[data-animation-step="1"] .device .screen-stand {
+  opacity: 1;
+  top: 100%;
+}
+.animation[data-animation-step="2"] .device {
+  width: 74%;
+  height: 75%;
+  padding: 16px;
+  border-radius: 10px;
+}
+.animation[data-animation-step="2"] .device .slide1 {
+  left: -100%;
+}
+.animation[data-animation-step="2"] .device .slide2 {
+  left: 0%;
+}
+.animation[data-animation-step="2"] .device .tablet-home-button {
+  opacity: 1;
+}
+.animation[data-animation-step="3"] .device {
+  width: 27%;
+  height: 75%;
+  padding: 16px 4px;
+  border-radius: 6px;
+}
+.animation[data-animation-step="3"] .device .slide1,
+.animation[data-animation-step="3"] .device .slide2 {
+  left: -100%;
+}
+.animation[data-animation-step="3"] .device .slide3 {
+  left: 0%;
+}
+.animation[data-animation-step="3"] .device .phone-home-button {
+  opacity: 1;
+}
+  @media (min-height:800px) {
+    .animation[data-animation-step="1"] .device {width:87%; height:90%;}
+    .animation[data-animation-step="2"] .device {width:80%; height:80%;}
+    .animation[data-animation-step="3"] .device {width:28%; height:80%;}
+  }
+  @media (max-height:720px) {
+    .animation[data-animation-step="1"] .device {width:72%; height:75%;}
+    .animation[data-animation-step="2"] .device {width:59%; height:60%;}
+    .animation[data-animation-step="3"] .device {width:22%; height:63%;}
+    .animation .device .display div div {font-size:16px;}
+  }
+  @media (max-height:650px) {
+    .animation[data-animation-step="1"] .device {width:62%; height:65%;}
+    .animation[data-animation-step="2"] .device {width:54%; height:55%;}
+    .animation[data-animation-step="3"] .device {width:22%; height:63%;}
+    .animation .device .display div div {font-size:15px;}
+  }
+  @media (max-width:560px) {
+    .animation[data-animation-step="1"] .device {margin-top:1%;width:72%; height:75%;}
+    .animation[data-animation-step="2"] .device {margin-top:1%;width:65%; height:66%;}
+    .animation[data-animation-step="3"] .device {margin-top:1%;width:28%; height:80%;}
+    .animation .device .display div div {font-size:15px;}
+  }
+  @media (max-width:520px) {
+    .animation[data-animation-step="1"] .device {margin-top:0%;width:66%; height:69%;}
+    .animation[data-animation-step="2"] .device {margin-top:0%;width:62%; height:63%;}
+    .animation[data-animation-step="3"] .device {margin-top:0%;width:28%; height:80%;}
+    .animation .device .display div div {font-size:15px;}
+  }
+  @media (max-width:460px) {
+    .animation[data-animation-step="1"] .device {margin-top:0%;width:58%; height:61%;}
+    .animation[data-animation-step="2"] .device {margin-top:0%;width:54%; height:55%;}
+    .animation[data-animation-step="3"] .device {margin-top:0%;width:25%; height:72%;}
+    .animation .device .display div div {font-size:15px;}
+  }
+  @media (max-width:350px) {
+    .animation[data-animation-step="1"] .device {margin-top:3%;width:62%; height:65%;}
+    .animation[data-animation-step="2"] .device {margin-top:3%;width:58%; height:60%;}
+    .animation[data-animation-step="3"] .device {margin-top:9%;width:30%; height:80%;}
+    .animation .device .display div div {font-size:15px;}
+  }
+  @media (max-width:320px) {
+    .animation[data-animation-step="1"] .device {margin-top:6%;width:62%; height:65%;}
+    .animation[data-animation-step="2"] .device {margin-top:6%;width:58%; height:60%;}
+    .animation[data-animation-step="3"] .device {margin-top:12%;width:30%; height:80%;}
+    .animation .device .display div div {font-size:15px;}
+  }
+
