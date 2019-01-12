@@ -717,3 +717,72 @@ width: 378px;
   }
 }
 
+.device {
+  transform: rotateX(25deg) rotateZ(-25deg) translateX(0) scale(.93);
+  margin: auto;
+	position: relative;
+	display: inline-block;
+	background: #333333;
+	box-shadow:
+		0 1px 4px 0 rgba(0,0,0,0.20),
+		0 8px 24px 0 rgba(0,0,0,0.20),
+		0 0 0 1px rgba(0, 0, 0, 0.53),
+		inset 0 -2px 2px 2px rgba(0,0,0,0.55);
+  box-shadow: -1px 1px 4px 0 rgba(0, 0, 0, 0.20), -8px 8px 24px 0 rgba(0, 0, 0, 0.20), inset 5px -5px 5px 5px rgba(0, 0, 0, 0.24);
+	border-radius: 40px;
+	position: relative;
+	box-sizing: content-box;
+	padding: 50px 10px;
+  padding: 45px 10px 55px 20px;
+  width: 200px;
+  height: 360px;
+}
+.device-screen {
+	width: 98%;
+	height: 98%;
+	background: #111111;
+	overflow: hidden;
+	border-radius: 4px;
+	box-shadow: inset 0px 1px 3px rgba(0,0,0,0.1);
+	position: relative;
+}
+.device-screen:before {
+	content: "";
+	top: 0;
+	bottom: 0;
+	width: 98%;
+	height: 98%;
+	box-shadow: inset 0px 1px 3px rgba(0,0,0,0.1);
+	position: absolute;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.device video {
+	border-radius: 0px;
+	width: 100%;
+	height: 105%;
+  object-fit: cover;
+}
+
+.device-screen img {
+  height: 100%;
+  width: 105%;
+  object-fit: cover;
+}
+
+@media (max-width: 850px) {
+  .device {
+    border-radius: 4.6vw;
+    padding: 6vw 1.2vw;
+    width: 33vw;
+    height: 59vw;
+  }
+  .device video,
+  .device-screen {
+    border-radius: .33vw;
+  }
+}
+
+
+
+
