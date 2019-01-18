@@ -280,13 +280,17 @@ Source: https://codepen.io/elorenn/pen/qXzXPv
   }
 }
 
+.layout {
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 100%;
+	padding: 0 15px;
+}
+
 /********Grid Widht *******/
 .grid-3 {	width: 25%;	float: left;	min-height: 1px;	padding-left: 15px;	padding-right: 15px;
 	position: relative;}
 /********Grid Widht *******/	
-
-
-
 
 /***Section Css******/
 .counting {
@@ -330,9 +334,7 @@ Source: https://codepen.io/elorenn/pen/qXzXPv
 @media (max-width:640px) {
 	.layout {		width: 300px;	}
 	.grid-3 {		width: 100%;	}
-
-
-	}
+}
 
 @-webkit-keyframes drip2 {
   0% {
@@ -424,9 +426,9 @@ width: 378px;
   margin: -2vh auto 0 auto;
   vertical-align: middle;
 }
-@media (max-width:720px) {
+/*@media (max-width:720px) {
   .animation {margin-left:-30rem;margin-right:-30rem;}
-}
+} */
 @media (max-width:450px) {
   .animation {width:58rem;height:38rem;}
 }
