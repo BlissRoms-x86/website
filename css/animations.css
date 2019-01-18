@@ -421,14 +421,14 @@ width: 378px;
 .animation {
   display: inline-block;
   position: relative;
-  width: 46em;
-  height: 30em;
+  width: 26em;
+  height: 16em;
   margin: -2vh auto 0 auto;
   vertical-align: middle;
 }
 /*@media (max-width:720px) {
   .animation {margin-left:-30rem;margin-right:-30rem;}
-} */
+} 
 @media (max-width:450px) {
   .animation {width:58rem;height:38rem;}
 }
@@ -446,7 +446,7 @@ width: 378px;
 }
 @media (max-width:320px) {
   .animation {width:42rem;height:28rem;}
-}
+}*/
 @media (max-height:650px) {
   .animation {margin-top: -7vh !important;margin-bottom: 10vh !important;}
 }
@@ -561,8 +561,8 @@ width: 378px;
   width: 100%;
   left: 0;
   top: 50%;
-  margin-top: -14px;
-  font-size: 20px;
+  margin-top: -24px;
+  font-size: 18px;
   text-align: center;
  /* color: #0080ff;*/
 }
