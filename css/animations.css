@@ -568,6 +568,7 @@ width: 378px;
 }
 @media (max-width:450px) {
   .animation .device .display div div {width:100%;max-width:100%;font-size:12px !important;}
+  .display-3 { font-size: 3.5rem;}
 }
   .animation .device .display .slide1 div {margin-top:0px;}
 .animation .device .display div div em {
