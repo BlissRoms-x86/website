@@ -2,3 +2,18 @@
 
 # blissroms.github.io
 New website for Team Bliss / Bliss Roms / Bliss OS / Bliss x86
+
+
+
+
+
+
+
+
+
+
+
+
+This website is tested with BrowserStack.
+
+<img src="https://bstacksupport.zendesk.com/attachments/token/xOAbso67D0wIju4PyV3EplIZl/?name=browserstack-logo-600x315.png" width="20%" height="20%">
