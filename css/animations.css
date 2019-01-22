@@ -566,9 +566,21 @@ width: 378px;
   text-align: center;
  /* color: #0080ff;*/
 }
+@media (max-width:650px) {
+  .display-3 { font-size: 4.1rem;}
+}
+@media (max-width:550px) {
+  .display-3 { font-size: 3.8rem;}
+}
+@media (max-width:430px) {
+  .display-3 { font-size: 2.8rem;}
+}
+@media (max-width:400px) {
+  .display-3 { font-size: 2.5rem;}
+}
 @media (max-width:450px) {
   .animation .device .display div div {width:100%;max-width:100%;font-size:12px !important;}
-  .display-3 { font-size: 3.5rem;}
+  .display-3 { font-size: 3.0rem;}
 }
   .animation .device .display .slide1 div {margin-top:0px;}
 .animation .device .display div div em {
