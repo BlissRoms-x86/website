@@ -566,8 +566,13 @@ width: 378px;
   text-align: center;
  /* color: #0080ff;*/
 }
+@media (max-width:767px) {
+  .display-3 { font-size: 4.4rem;}
+  .navbar-ontop { background-color: #303030 !important;}
+}
 @media (max-width:650px) {
   .display-3 { font-size: 4.1rem;}
+  .navbar-ontop { background-color: #303030 !important;}
 }
 @media (max-width:550px) {
   .display-3 { font-size: 3.8rem;}
