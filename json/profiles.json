@@ -24,15 +24,15 @@
 		"https://lh3.googleusercontent.com/8VqQRqDi3dc35qeC_cipzDE5oW8llKvxq0F-uzwmR9jYJvsMtREEaANi874yCBpKvmWy86MwwXC22JDRRKU=w1920-h1080-no"
 	],
 	"Description": [
-		"CEO/Founder",
-		"CTO/Incorporator",
-		"Admin/Board Member",
-		"Project Manager/Board Member",
-		"Board Member/Developer",
-		"Board Member/Product Technology Strategist",
-		"Product Technology Strategist",
-		"Lead Development Manager/Web Developer",
-		"App Developer/Web Developer",
+		"CEO / Founder / Developer",
+		"CTO / Incorporator / Developer",
+		"Board Member / Admin / Developer",
+		"Board Member / Project Manager / App Developer",
+		"Board Member / Developer",
+		"Board Member / Product Technology Strategist",
+		"Web Designer / Product Technology Strategist",
+		"Lead Development Manager / Web Developer",
+		"App Developer / Web Developer",
 		"Lead Developer"
 	],
 	"Facebook": [
@@ -60,7 +60,7 @@
 		""
 	],
 	"Twitter": [
-		"",
+		"https://twitter.com/jackeaglexda",
 		"https://twitter.com/electrikjesus",
 		"",
 		"",
@@ -120,7 +120,7 @@
 		""
 	],
 	"Github": [
-		"",
+		"https://github.com/Jackeagle",
 		"https://github.com/electrikjesus",
 		"https://github.com/rwaterspf1",
 		"",
