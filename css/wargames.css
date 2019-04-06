@@ -86,6 +86,8 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAECAYA
 background:#fff;
 border:1px solid #DDD;
 padding:0.1em 0.2em;
+word-break: break-word !important;
+overflow-wrap: break-word;
 }
 
 #wargames pre code{
@@ -95,6 +97,8 @@ box-shadow:none;
 background-color:transparent;
 border-style:none;
 font:400 19px VT323, monospace;
+word-break: break-word !important;
+overflow-wrap: break-word;
 }
 
 #wargames pre code:last-child:after{
