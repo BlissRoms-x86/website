@@ -6585,3 +6585,13 @@ mark.secondary {
   .animate-in-right.out-of-viewport {
     opacity: 0;
     left: 5%; }
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
