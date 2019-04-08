@@ -2770,7 +2770,8 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+  white-space: nowrap; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
   .nav-link.disabled {
@@ -5389,6 +5390,14 @@ button.bg-dark:focus {
 .pt-5,
 .py-5 {
   padding-top: 4.5rem !important; }
+
+.pt-6 {}
+  @media (min-width: 576px) {
+    .pt-6 {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .pt-6 {
+      max-width: 1140px; } } }
 
 .pr-5,
 .px-5 {
