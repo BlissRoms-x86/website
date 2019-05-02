@@ -566,7 +566,7 @@ width: 378px;
   text-align: center;
  /* color: #0080ff;*/
 }
-@media (max-width:767px) {
+@media (max-width:867px) {
   .display-3 { font-size: 4.4rem;}
   .navbar-ontop { background-color: #303030 !important;}
 }
