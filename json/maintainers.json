@@ -1,26 +1,25 @@
-{
-  "ID": [
-    ""
-  ],
-  "Avatar": [
-    ""
-  ],
-  "Name": [
-    ""
-  ],
-  "XDAUsername": [
-    ""
-  ],
-  "HangoutsUsername": [
-    ""
-  ],
-  "Email": [
-    ""
-  ],
-  "TelegramUsername": [
-    ""
-  ],
-  "Github_Username": [
-    ""
-  ]
-}
+[
+   {
+       "name": "tioburla",
+       "email": "tioburla@blissroms.com",
+       "device": [
+           "santoni"
+       ]
+   },
+   {
+       "name": "Eric Park (ideaman924)",
+       "email": "ideaman924@blissroms.com",
+       "device": [
+           "bullhead"
+       ]
+   },
+   {
+       "name": "Wes Goodrich (bcrichster)",
+       "email": "bcrichster@blissroms.com",
+       "device": [
+           "payton",
+           "owens",
+           "warp4"
+       ]
+   }
+]
