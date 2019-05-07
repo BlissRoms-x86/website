@@ -1,0 +1,41 @@
+#wrap_a {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#output_a {
+  margin: 2em 1em;
+  text-align: left;
+  /* font-family: monospace; */
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #fc9;
+}
+#output_a .title {
+  color: white;
+  text-align: center;
+}
+#output_a ul {
+  color: white;
+}
+#output_a ul li {
+  margin: 1em;
+}
+#output_a ul a {
+  color: lightblue;
+  text-decoration: none;
+}
+#output_a ul a.win {
+  color: limegreen;
+}
+#output_a ul a.lose {
+  color: red;
+}
+#output_a ul a:hover {
+  color: white;
+}
+#output_a .inv {
+  color: #ca9;
+  font-size: 0.8em;
+  padding-top: 2em;
+}
