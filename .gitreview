@@ -1,5 +1,0 @@
-[gerrit]
-host=review.blissroms.com
-port=29418
-project=blissroms.github.io.git
-defaultbranch=master
