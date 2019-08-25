@@ -2264,25 +2264,31 @@
       </div>
 	  
 	  <section id="content"></section>
-	  <script type="text/javascript">
-		function showEvents(data) {  // Callback when JSON loads
-		  var newContent = '';       // Variable to hold HTML
-		 
-			// BUILD UP STRING WITH NEW CONTENT (could also use DOM manipulation)
-			for (var i = 0; i < data.events.length; i++) {    // Loop through object
-			  newContent += '<div id="event">';
-			  newContent += '<img class="image crop" src="' + data.events[i].image + '" ';
-			  newContent += 'alt="' + data.events[i].member + '" />';
-			newContent += '<h3><b>' + data.events[i].member + '</b></h3>';
-			newContent += '<p>' + data.events[i].descriptions + '<br>';
-			newContent += '<i>&quot;' + data.events[i].email + '&quot;</i></p>';
-			  newContent += '</div>';
-			}
-
-			// Update the page with the new content
-			document.getElementById('content').innerHTML = newContent;
-		}
-	  </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script> 
+    <script>
+       $.ajax({
+       type: "GET",
+       url: "https://blissapi.blissroms.com/team/public/allteambliss", // TeamBliss JSON
+          success: function (data) {
+          var newContent = '';       // Variable to hold HTML
+       
+          for (var i = 0; i < data.length; i++) {    // Loop through object
+            newContent += '<div id="event">';
+            newContent += '<img class="image crop" src="' + data[i].image + '" ';
+            newContent += 'alt="' + data[i].member + '" />';
+            newContent += '<h3><b>' + data[i].member + '</b></h3>';
+            newContent += '<p>' + data[i].descriptions + '<br>';
+            newContent += '<i>&quot;' + data[i].email + '&quot;</i></p>';
+            newContent += '</div>';
+          }
+    
+          // Update the page with the new content
+          document.getElementById('content').innerHTML = newContent;
+      }
+    })
+  </script>
+    
 	</div>
   </div>
   <div class="py-4 text-center" style="">
