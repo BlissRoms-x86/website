@@ -149,7 +149,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   a:hover {
-    color: white;
+    color: #0080ff;
     text-decoration: none; }
 
 a:not([href]):not([tabindex]) {
@@ -353,6 +353,12 @@ h6, .h6 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2; }
+
+.body-font {
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1px;
+}
 
 hr {
   margin-top: 1.5rem;
@@ -1827,10 +1833,11 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(48, 48, 48, 0.5); }
 
 .btn-outline-primary {
-  color: #0080ff;
+  color: #fff;
+  letter-spacing: 1px;
   background-color: transparent;
   background-image: none;
-  border-color: #0080ff; }
+  border-color: #fff; }
   .btn-outline-primary:hover {
     color: #fff;
     background-color: #0080ff;
@@ -3058,9 +3065,9 @@ input[type="button"].btn-block {
     color: #fff; }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.5); }
+  color: rgba(255, 255, 255, 1); }
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-    color: rgba(255, 255, 255, 0.75); }
+    color: rgba(255, 255, 255, 1); }
   .navbar-dark .navbar-nav .nav-link.disabled {
     color: rgba(255, 255, 255, 0.25); }
 
@@ -6244,7 +6251,9 @@ button.bg-dark:focus {
 
 .text-white {
   color: #fff !important; }
-
+.text-black {
+  color: #000 !important;
+}
 .text-primary {
   color: #0080ff !important; }
 

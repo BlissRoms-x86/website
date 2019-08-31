@@ -31,7 +31,7 @@
         <div class="col-md-12"><a class="navbar-brand" href="#"><b><b>Bliss ROMs</b></b></a></div>
       </div>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="true" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="navbar-collapse text-center justify-content-end collapse show" id="navbar2SupportedContent" style="">
+      <div class="navbar-collapse text-center justify-content-end collapse show" id="navbar2SupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item mx-2">
             <a class="nav-link" href="#features"><b><b>Features</b></b></a>
@@ -52,7 +52,7 @@
             <a class="nav-link" href="#gear"><b><b>Gear</b></b></a>
           </li>
         </ul>
-        <a class="btn navbar-btn mx-2 btn-primary shadowed" href="#download"><b><b>Download</b></b></a>
+        <a class="btn navbar-btn mx-2 btn-primary" href="#download"><b><b>Download</b></b></a>
       </div>
     </div>
   </nav>
@@ -60,10 +60,13 @@
   <div class="section-fade-out pt-5" style="background-image: url(&quot;https://i.imgur.com/BOGKaGy.jpg&quot;); background-position: center bottom;">
     <div class="container pt-5">
       <div class="row">
-        <div class="col-md-4 ">
+        <div class="col-md-5">
           <div class="col-md-12">
             <h1 class="display-3 mb-4">Bliss</h1>
-            <p class="lead mb-4">An Open Source OS, based on Android, that incorporates many customizations options and added security features.&nbsp;<br><br>And it is available for...</p>
+            <p class="lead">An Open Source OS, based on Android, that incorporates many customizations options and added security features.&nbsp;<br><br>And it is available for...</p>
+            <div class="d-inline-flex justify-content-center align-items-center mx-auto">
+              <a href="#download" class="btn btn-lg btn-primary d-inline-flex justify-content-center align-items-center mx-auto">Download Now</a>
+            </div>
           </div>
         </div>
         <div class="d-flex justify-content-center align-items-center flex-grow-1" align="center" style="max-height: 100%;max-width: 100%;vertical-align: middle;display: inline-flex;float: none; margin-top: -8%;">
@@ -93,15 +96,12 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12 d-inline-flex justify-content-center align-items-center mx-auto mt-5"><a href="#download" class="btn btn-lg btn-primary d-inline-flex justify-content-center align-items-center mx-auto">Download Now</a></div>
-      </div>
     </div>
   </div>
   <!-- Article style section -->
   <div class="py-5">
     <div class="container">
-      <div class="row" style="" id="about">
+      <div class="row" id="about">
         <div class="col-md-6 order-2 order-md-1 animate-in-left d-flex flex-grow-1 align-items-center justify-content-center">
           <div class="flex-grow-1 justify-content-center align-items-center">
             <div class="device iphone animate-in-left d-flex flex-grow-1 align-items-center justify-content-center">
@@ -124,7 +124,7 @@
         </div>
         <div class="col-md-6 align-self-center order-1 order-md-2 my-3 text-md-left text-center">
           <h3 class="display-3">About Bliss</h3>
-          <p class="my-4 text-light">We are a volunteer based non-profit organization that works to maintain various open source &amp; closed source development projects. We provide the inspiration, training and mentorship to help the&nbsp;dreams of those that join, become reality.<br><br>One of our main focuses is to provide a quality ROM/OS that can run on all your devices, preserving customizations and options by syncing across all platforms. We try to include all the features you can imagine, for just about any situation.<br><br>You will also find us regularly contributing to other projects as well because we believe that building our community through positive influence will go further than building an empire on selfish goals.</p>
+          <p class="my-4 body-font">We are a volunteer based non-profit organization that works to maintain various open source &amp; closed source development projects. We provide the inspiration, training and mentorship to help the&nbsp;dreams of those that join, become reality.<br><br>One of our main focuses is to provide a quality ROM/OS that can run on all your devices, preserving customizations and options by syncing across all platforms. We try to include all the features you can imagine, for just about any situation.<br><br>You will also find us regularly contributing to other projects as well because we believe that building our community through positive influence will go further than building an empire on selfish goals.</p>
           <a class="btn btn-outline-primary" href="bfor.html">Learn More About Us</a>
         </div>
       </div>
@@ -132,17 +132,19 @@
   </div>
   <!-- Features -->
   <div class="text-center bg-primary py-5 px-5">
-    <div class="d-flex justify-content-center align-items-center px-0 container-fluid mx-auto">
-      <div class="row mx-auto d-flex align-items-center justify-content-center">
-        <div class="col-md-12">
-          <div class="row mx-auto">
-            <div class="align-self-center col-lg-7 text-md-left text-center">
-              <h3 class="display-3">Moar Bliss</h3>
-              <p class="my-4 text-light">Bliss comes in a few variants. On top of our traditional device builds of Bliss ROM, our GSI/Treble builds will work on most treble compatible devices (Android Pie+) And our x86 variant (Bliss OS) is made to work with the Linux kernel, and supports booting with MBR/UEFI type bootloaders. So just about any Windows/Linux PC or tablet released in the last 4 years. We are always developing with usability in mind, and supporting more and more devices each week.&nbsp;<br></p>
-              <a class="btn shadowed btn-dark" href="#download">Download</a>
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center px-0 container-fluid mx-auto">
+        <div class="row mx-auto d-flex align-items-center justify-content-center">
+          <div class="col-md-12">
+            <div class="row mx-auto">
+              <div class="align-self-center col-lg-6 text-md-left text-center">
+                <h3 class="display-3">Moar Bliss</h3>
+                <p class="my-4 body-font">Bliss comes in a few variants. On top of our traditional device builds of Bliss ROM, our GSI/Treble builds will work on most treble compatible devices (Android Pie+) And our x86 variant (Bliss OS) is made to work with the Linux kernel, and supports booting with MBR/UEFI type bootloaders. So just about any Windows/Linux PC or tablet released in the last 4 years. We are always developing with usability in mind, and supporting more and more devices each week.&nbsp;<br></p>
+                <a class="btn btn-dark" href="#download">Download</a>
+              </div>
+              <div class="align-self-center mt-5 col-lg-5 offset-1 animate-in-right">
+                <img class="img-fluid d-block" src="images/bliss_surface.png"> </div>
             </div>
-            <div class="align-self-center mt-5 col-lg-5 animate-in-right">
-              <img class="img-fluid d-block" src="images/bliss_surface.png"> </div>
           </div>
         </div>
       </div>
@@ -182,13 +184,13 @@
   <div class="section">
     <div class="container d-flex justify-content-center align-items-center flex-grow-1 mx-auto w-75 py-4">
       <div class="row">
-        <div class="col-md-6 text-center mx-auto flex-center">
+        <div class="col-md-6 text-left mx-auto flex-center">
           <div>
             <h2 class="my-3 highlight_secondary team-header text-white no-wrap">We volunteer our time.</h2>
-            <p class="mb-3">We are a 501(c3) nonprofit, run by people that donate their free time towards the project. We do our best to bring a quality OS to your device, while working a real job on the side in most cases. Please consider showing us we're on the right track by clicking the button below and making a small contribution towards our efforts.</p> <a href="https://www.paypal.me/TeamBliss" class="btn btn-primary">Buy Us a Coffee</a>
+            <p class="mb-3 body-font">We are a 501(c3) nonprofit, run by people that donate their free time towards the project. We do our best to bring a quality OS to your device, while working a real job on the side in most cases. Please consider showing us we're on the right track by clicking the button below and making a small contribution towards our efforts.</p> <a href="https://www.paypal.me/TeamBliss" class="btn btn-primary">Buy Us a Coffee</a>
           </div>
         </div>
-        <div class="col-md-6 py-5"><img class="img-fluid d-block d-flex align-items-center justify-content-center flex-grow-1 mx-auto animate-in-right" src="images/coffee-break.svg" width="300"></div>
+        <div class="col-md-5 py-5 offset-1"><img class="img-fluid d-block d-flex align-items-center justify-content-center flex-grow-1 mx-auto animate-in-right" src="images/coffee-break.svg" width="300"></div>
       </div>
     </div>
   </div>
@@ -201,18 +203,18 @@
       <div class="download-card-common download-card-white download-card-one">
         <div class="card-header-rows">
           <div class="card-header-column-one">
-            <h3 class="card-header-title"><b>Bliss ROM</b></h3>
+            <h3 class="card-header-title mb-2"><b>Bliss ROM</b></h3>
             <img src="https://img.shields.io/sourceforge/dm/blissroms.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue" max-width="160px" width="100%">
           </div>
           <div class="card-header-column-two">
             <h2 class="mb-0 card-or-donation"><b>$0</b></h2>
-            <p class="card-or-donation">Or Donation</p>
+            <p class="card-or-donation mt-2">Or Donation</p>
           </div>
         </div>
         <div class="card-main-area">
           <div class="text">
-            <p class="my-3">This is Bliss for your typical Android devices.<br>GSI/Treble options are also available. <br>These builds are available in a flashable .zip format, and our GSI/Treble builds are also available in .img format for flashing with fastboot</p>
-            <ul class="pl-3">
+            <p class="my-3 body-font">This is Bliss for your typical Android devices.<br>GSI/Treble options are also available. <br>These builds are available in a flashable .zip format, and our GSI/Treble builds are also available in .img format for flashing with fastboot</p>
+            <ul class="pl-3 body-font">
               <li>Multiple Devices Supported</li>
               <li>Tons of Customization Options</li>
               <li>GSI/Treble builds support multiple devices</li>
@@ -220,26 +222,26 @@
             </ul>
           </div>
           <div class="buttons">
-            <a class="btn btn-primary mt-3 text-white" href="" target="_blank" data-target="#popup-modal6" data-toggle="modal">Learn More&nbsp;</a>
             <a class="btn btn-primary mt-3 text-white" data-target="#popup-modal1" data-toggle="modal">Download Now</a>
+            <a class="btn mt-3 text-black" href="" target="_blank" data-target="#popup-modal6" data-toggle="modal">Learn More&nbsp;</a>
           </div>
         </div>
       </div>
       <div class="download-card-common download-card-white download-card-two">
         <div class="card-header-rows">
           <div class="card-header-column-one">
-            <h3 class="card-header-title"><b>Bliss OS (x86)</b></h3>
+            <h3 class="card-header-title mb-2"><b>Bliss OS (x86)</b></h3>
             <img src="https://img.shields.io/sourceforge/dm/blissos-x86.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue" max-width="160px" width="100%">
           </div>
           <div class="card-header-column-two">
             <h2 class="mb-0 card-or-donation"><b>$0</b></h2>
-            <p class="card-or-donation">Or Donation</p>
+            <p class="card-or-donation mt-2">Or Donation</p>
           </div>
         </div>      
         <div class="card-main-area">
             <div class="text">
-              <p class="my-3">This is Bliss, running as a native or emulated* OS for PCs..&nbsp;These builds are compatible with PCs, MacBooks and Chromebooks equipped with x86/x86_64 compatible CPUs. Supports both BIOS/CSM and UEFI boot.<br><br>*Only KVM/QEMU emulation is currently supported</p>
-              <ul class="pl-3">
+              <p class="my-3 body-font">This is Bliss, running as a native or emulated* OS for PCs..&nbsp;These builds are compatible with PCs, MacBooks and Chromebooks equipped with x86/x86_64 compatible CPUs. Supports both BIOS/CSM and UEFI boot.<br><br>*Only KVM/QEMU emulation is currently supported</p>
+              <ul class="pl-3 body-font">
                 <li>Limited Online Support (<a href="https://forum.xda-developers.com/bliss-roms/bliss-roms-development/bliss-os-pie-beta-preview-t3855917">visit XDA thread</a>)<br></li>
                 <li>Multiple Device Compatibility</li>
                 <li>Multiple Kernel &amp; Mesa options&nbsp;</li>
@@ -247,8 +249,8 @@
               </ul>
             </div>
             <div class="buttons">
-                <a class="btn btn-primary mt-3 text-white" href="" target="_blank" data-target="#popup-modal4" data-toggle="modal">Learn More&nbsp;</a>
-                <a class="btn btn-primary mt-3 text-white" href="" data-target="#popup-modal2" data-toggle="modal">Download Now</a>
+              <a class="btn btn-primary mt-3 text-white" href="" data-target="#popup-modal2" data-toggle="modal">Download Now</a>
+                <a class="btn mt-3 text-black" href="" target="_blank" data-target="#popup-modal4" data-toggle="modal">Learn More&nbsp;</a>
             </div>
           </div>  
       </div>
@@ -266,8 +268,8 @@
             </div>
             <div class="card-main-area">
                 <div class="text">
-                  <p class="my-3">This is for businesses and educational institutions, that wish to use Bliss ROM or OS on specific Android or x86 hardware. This service includes hourly fees for development as well as per device pricing options*.&nbsp;</p>
-                  <ul class="pl-3">
+                  <p class="my-3 body-font">This is for businesses and educational institutions, that wish to use Bliss ROM or OS on specific Android or x86 hardware. This service includes hourly fees for development as well as per device pricing options*.&nbsp;</p>
+                  <ul class="pl-3 body-font">
                     <li>Tech Support Contract Included</li>
                     <li>Extra Kernel &amp; device options **</li>
                     <li>Full Source Code Available</li>
