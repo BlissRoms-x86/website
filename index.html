@@ -428,7 +428,7 @@
         </div>
       </div>
 	  
-	  <section id="content"></section>
+	  <section id="content" class="team_content"></section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
     <script>
        $.ajax({
@@ -438,12 +438,12 @@
           var newContent = '';       // Variable to hold HTML
        
           for (var i = 0; i < data.length; i++) {    // Loop through object
-            newContent += '<div id="event">';
+            newContent += '<div id="event" class="team_item">';
             newContent += '<img class="image crop" src="' + data[i].image + '" ';
             newContent += 'alt="' + data[i].member + '" />';
             newContent += '<h3><b>' + data[i].member + '</b></h3>';
-            newContent += '<p>' + data[i].descriptions + '<br>';
-            newContent += '<i>&quot;' + data[i].email + '&quot;</i></p>';
+            newContent += '<p class="team_data_text">' + data[i].descriptions + '</p>';
+            newContent += '<p class="team_data_text"><i>&quot;' + data[i].email + '&quot;</i></p>';
             newContent += '</div>';
           }
     

@@ -1,187 +1,21 @@
-.box-table table{
-  border-collapse:collapse;
-  text-align:left;
-  width:100%;
-  margin:0;
-  padding:0;
-  background:#7f8c8d;
-  animation: responsive 5s infinite ease-in-out;
-}
-.box-table{
-  font:normal 12px/150% Arial, Helvetica, sans-serif;
-  overflow:hidden;
-  margin:0 auto;
-  display:block;
-  width:95%;
-  padding:2.5%;
-}
-.box-table table thead th{
-  background-color:#7f8c8d;
-  color:#bdc3c7;
-  text-align:center;
-  padding: 0.75em;
-  font-family: 'Vollkorn', serif;
-  font-weight: bold;
-  font-size: 1.5em;
-  height: 1.5em;
-  vertical-align: top;
-  border-left:0.25em double #95a5a6;
-
-}
-.box-table table tbody td,
-.box-table table tbody tr{
-  font-family: 'Vollkorn', serif;
-  font-size:1em;
-  border:none;
-  padding:1em;
-}
-.box-table table tbody tr:nth-child(odd){
-  background:#ecf0f1;
-  color:#95a5a6;
-}
-.box-table table tbody tr:nth-child(even){
-  background:#bdc3c7;
-  color:#7f8c8d;
-}
-.box-table table tbody tr a{
-  text-decoration:none;
-  color:#e67e22;
-}
-.box-table table tbody tr a:hover{
-  color:#d35400;
-}
-.box-table .user-photo{
-  background:#bdc3c7;
-}
-.box-table .user-tumb{
-  width:6em;
-  height:6em;
-  padding:0;
-  display:table-cell;
-  text-align:center;
-  margin:0 auto;
-  -webkit-border-radius:100%;
-  -moz-border-radius:100%;
-  border-radius:100%;
+.team_content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 50px;
+  margin-top: 80px;
 }
 
-#content{
-  width:100%;
-  padding: 5px;
-  overflow:hidden;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;}
-#event{
-  width: 208.6px;
-  float: left;
-  text-align: center;
-  padding: 10px;
-  margin: 5px 5px 5px 5px;
-  display: inline-table;}
-#container{ /* center for demo only */
-  max-width:725px;
-  width:100%;
-  overflow:hidden;
-  position:absolute;
-  top:50%;
-  left:50%;
-  margin-right:-50%;
-  transform:translate(-50%, -50%);}
-.image{
-  width:200px;
-  padding-bottom:5px;
-  border-radius:50%;}
-/* = Responsive table
-------------------------*/
+.image {
+  width: 190px;
+  height: auto;
+  border-radius: 100%;
+  margin: 0 auto 20px auto;
+}
 
-/* http://elvery.net/demo/responsive-tables/  */
-@media only screen and (max-width: 800px){
-  .box-table table{
-    width:100%;
-    border-collapse:collapse;
-    border-spacing:0;
-  }
-  .box-table th,
-  .box-table td{
-    margin:0;
-    vertical-align:top;
-  }
-  .box-table th{
-    text-align:left;
-  }
-  .box-table table{
-    display:block;
-    position:relative;
-    width:100%;
-  }
-  .box-table thead{
-    display:block;
-    float:left;
-  }
-  .box-table tbody{
-    display:block;
-    width:auto;
-    position:relative;
-    overflow-x:auto;
-    white-space:nowrap;
-  }
-  .box-table thead tr{
-    display:block;
-  }
-  .box-table th{
-    display:block;
-    text-align:right;
-  }
-  .box-table tbody tr{
-    display:inline-block;
-    vertical-align:top;
-  }
-  .box-table td{
-    display:block;
-    min-height:1.25em;
-    text-align:left;
-  }
-  .box-table th{
-    border-bottom:0;
-    border-left:0;
-  }
-  .box-table td{
-    border-left:0;
-    border-right:0;
-    border-bottom:0;
-  }
-}
-/* = Error
-------------------------*/
-.error_table {
-  display: block;
-  background: #E05E5E;
-  color: #D1D1D1;
-  font-family: 'Vollkorn', serif;
+.team_item {
   text-align: center;
-  font-size: 3em;
-  width: 90%;
-  padding: 5%;
 }
-/* = Loader
-------------------------*/
-.loading_table{
-  background:#d35400;
-  color:#ecf0f1;
-  font-family: 'Vollkorn', serif;
-  text-align: center;
-  font-size: 1em;
-  width: 0;
-  display: block;
-  overflow: hidden;
-  height: 1em;
-  /*padding:0.5em; */
-  animation: table_loader 10s infinite ease;
+
+.team_data_text {
+  margin: 0;
 }
-@keyframes table_loader{50%{width:100%}}
-@-webkit-keyframes table_loader{50%{width:100%}}
-@-moz-keyframes table_loader{50%{width:100%}}
-@-ms-keyframes table_loader{50%{width:100%}}
-@-o-keyframes table_loader{ 50%{width:100%}}
