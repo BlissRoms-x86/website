@@ -10,37 +10,41 @@
   <meta name="description" content="Open Source OS for all devices, based on AOSP">
   <meta name="keywords" content="blissroms, bliss, os, x86, aosp, android, rom, teambliss">
   <!-- CSS dependencies -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="neon.css">
   <!-- Script: Make my navbar transparent when the document is scrolled to top -->
   <script src="js/navbar-ontop.js"></script>
   <!-- Script: Animated entrance -->
   <script src="js/animate-in.js"></script>
   <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/table.css">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-7639560510014441", enable_page_level_ads: true }); </script>
+  <link rel="stylesheet" href="css/wargames.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script> (adsbygoogle = window.adsbygoogle || []).push({ google_ad_client: "ca-pub-7639560510014441", enable_page_level_ads: true }); </script>
 </head>
 
-<body class="" >
+<body class="" style="">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="padding-right: 41px;">
-    <div class="container pt-6">
-      <a class="navbar-brand" href="#"><img src="images/BlissIcon_Smal_wl.png" width="50" class="d-inline-block align-top" alt=""></a>
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/BlissIcon_Smal_wl.png" width="50" class="d-inline-block align-top" alt=""></a>
       <div class="row">
-        <div class="col-md-12"><a class="navbar-brand" href="#"><b><b>Bliss ROMs</b></b></a></div>
+        <div class="col-md-12"><a class="navbar-brand" href="index.html"><b><b>Bliss OS</b></b></a></div>
       </div>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="true" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-      <div class="navbar-collapse text-center justify-content-end collapse show" id="navbar2SupportedContent">
+      <div class="row"></div>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#features"><b><b>Features</b></b></a>
+            <a class="nav-link" href="index.html#features"><b><b>Features</b></b></a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#about"><b><b>About</b></b></a>
+            <a class="nav-link" href="index.html#about"><b><b>About</b></b></a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#team"><b><b>Team</b></b></a>
+            <a class="nav-link" href="index.html#team"><b><b>Team</b></b></a>
           </li>
           <li class="nav-item mx-2">
             <a class="nav-link" href="bfor.html"><b><b>Non Profit</b></b></a>
@@ -49,10 +53,10 @@
             <a class="nav-link" href="blog.html"><b><b>Blog</b></b></a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link" href="#gear"><b><b>Gear</b></b></a>
+            <a class="nav-link" href="index.html#gear"><b><b>Gear</b></b></a>
           </li>
         </ul>
-        <a class="btn navbar-btn mx-2 btn-primary" href="#download"><b><b>Download</b></b></a>
+        <a class="btn navbar-btn mx-2 btn-primary shadowed" href="index.html#download"><b><b>Download</b></b></a>
       </div>
     </div>
   </nav>
@@ -60,105 +64,35 @@
   <div class="section-fade-out pt-5" style="background-image: url(&quot;https://i.imgur.com/BOGKaGy.jpg&quot;); background-position: center bottom;">
     <div class="container pt-5">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-6 ">
           <div class="col-md-12">
-            <h1 class="display-3 mb-4">Bliss</h1>
-            <p class="lead">An Open Source OS, based on Android, that incorporates many customizations options and added security features.&nbsp;<br><br>And it is available for...</p>
-            <div class="d-inline-flex justify-content-center align-items-center mx-auto">
-              <a href="#download" class="btn btn-lg btn-primary d-inline-flex justify-content-center align-items-center mx-auto">Download Now</a>
-            </div>
+            <h1 class="display-3 mb-4 d-flex align-items-center justify-content-center">Bliss OS (x86)</h1>
+            <h1 class="d-flex justify-content-center">Android for your PC</h1>
+            <h4 class="d-flex justify-content-center pb-3">An Open Source OS, based on Android, that incorporates many customizations options and added security features. And it is available for just about any Chromebook, Windows/Linux PC or tablet released in the last 4 years</h4><a href="#download" class="btn btn-lg btn-primary d-inline-flex justify-content-center align-items-center mx-auto">Download Now</a>
+            <blockquote class="lead blockquote" cite="https://twitter.com/DalaiLama/status/1051767186820198402" style="">
+              <footer class=""></footer>
+            </blockquote>
           </div>
         </div>
-        <div class="d-flex justify-content-center align-items-center flex-grow-1" align="center" style="max-height: 100%;max-width: 100%;vertical-align: middle;display: inline-flex;float: none; margin-top: -8%;">
-          <div class="d-inline-flex justify-content-center align-items-center">
-            <div class="animation d-inline-flex justify-content-center align-items-center" data-animation-step="2">
-              <div class="device mt-5">
-                <div class="screen-stand"></div>
-                <div class="display">
-                  <div class="slide1">
-                    <div>Most Intel/x86 <br>
-                      <em>PCs, Tablets &amp; Laptops</em>
-                    </div>
-                  </div>
-                  <div class="slide2">
-                    <div>Most Android <br>
-                      <em>tablets</em>
-                    </div>
-                  </div>
-                  <div class="slide3">
-                    <div>Most<br>Android<br>
-                      <em>phones</em>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="col-md-6"><img class="img-fluid d-block" src="images/bliss_surface.png"></div>
       </div>
+      <div class="row"></div>
     </div>
   </div>
   <!-- Article style section -->
-  <div class="py-5">
-    <div class="container">
-      <div class="row" id="about">
-        <div class="col-md-6 order-2 order-md-1 animate-in-left d-flex flex-grow-1 align-items-center justify-content-center">
-          <div class="flex-grow-1 justify-content-center align-items-center">
-            <div class="device iphone animate-in-left d-flex flex-grow-1 align-items-center justify-content-center">
-              <div class="device-screen">
-                <img src="" alt="">
-              </div>
-              <video muted="" playsinline="" autoplay="" loop="" preload="metadata">
-                <source src="videos/bliss-phone-demo.webm" type="video/webm">
-                <source src="videos/bliss-phone-demo.mp4" type="video/mp4">
-              </video>
-            </div>
-            <!-- 
-			<img src="images/phone_front.svg" style="max-height: 65%;max-width: 50%; box-shadow: 0 0px 12px 10px rgba(0, 155, 255, 0.2), 0 0px 15px 10px rgba(0, 155, 255, 0.19);" class="justify-content-center align-items-center flex-grow-1 d-flex mx-auto glow ">
-            <div>
-              <video style="max-width: 45%;vertical-align: middle;display: inline-flex;float: none;margin-top: -90%;z-index: 999" preload="" muted="" autoplay="autoplay" oncanplay="this.muted=true" loop="loop" class="justify-content-center align-items-center flex-grow-1 d-flex mx-auto" width="90%" height="39%">
-                <source src="videos/bliss-phone-demo.webm" type="video/webm">
-                <source src="videos/bliss-phone-demo.mp4" type="video/mp4"> Your browser does not support VP9 or H.264 video content. </video>
-				-->
-          </div>
-        </div>
-        <div class="col-md-6 align-self-center order-1 order-md-2 my-3 text-md-left text-center">
-          <h3 class="display-3">About Bliss</h3>
-          <p class="my-4 body-font">We are a volunteer based non-profit organization that works to maintain various open source &amp; closed source development projects. We provide the inspiration, training and mentorship to help the&nbsp;dreams of those that join, become reality.<br><br>One of our main focuses is to provide a quality ROM/OS that can run on all your devices, preserving customizations and options by syncing across all platforms. We try to include all the features you can imagine, for just about any situation.<br><br>You will also find us regularly contributing to other projects as well because we believe that building our community through positive influence will go further than building an empire on selfish goals.</p>
-          <a class="btn btn-outline-primary" href="bfor.html">Learn More About Us</a>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- Features -->
-  <div class="text-center bg-primary py-5 px-5">
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center px-0 container-fluid mx-auto">
-        <div class="row mx-auto d-flex align-items-center justify-content-center">
-          <div class="col-md-12">
-            <div class="row mx-auto">
-              <div class="align-self-center col-lg-6 text-md-left text-center">
-                <h3 class="display-3">Moar Bliss</h3>
-                <p class="my-4 body-font">Bliss comes in a few variants. On top of our traditional device builds of Bliss ROM, our GSI/Treble builds will work on most treble compatible devices (Android Pie+) And our x86 variant (Bliss OS) is made to work with the Linux kernel, and supports booting with MBR/UEFI type bootloaders. So just about any Windows/Linux PC or tablet released in the last 4 years. We are always developing with usability in mind, and supporting more and more devices each week.&nbsp;<br></p>
-                <a class="btn btn-dark" href="#download">Download</a>
-              </div>
-              <div class="align-self-center mt-5 col-lg-5 offset-1 animate-in-right">
-                <img class="img-fluid d-block" src="images/bliss_surface.png"> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Features -->
+  <!-- Carousel reviews -->
+  <!-- Call to action -->
   <div class="py-5 bg-dark" id="features">
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h3 class="display-3">Bliss Features</h3>
+          <h3 class="display-3">Bliss OS Features</h3>
         </div>
       </div>
-      <div class="row" >
-        <div class="align-self-center text-md-right text-center col-lg-4 col-md-6">
+      <div class="row">
+        <div class="align-self-center text-md-right text-center col-lg-4 col-md-4">
           <h4 class="text-primary"><b>Focus on design</b></h4>
           <p class="mb-5 text-white">We include many options for customization and theming throughout the OS</p>
           <h4 class="text-primary"><b>Customized settings</b></h4>
@@ -166,9 +100,8 @@
           <h4 class="text-primary"><b>Performance</b></h4>
           <p class="mb-5 text-white">Focused on speed and stability with tweaks to assist in the most demanding applications</p>
         </div>
-        <div class="my-3 d-none d-lg-block animate-in-down col-md-4" >
-          <img class="img-fluid d-block" src="images/Phone_features_dark.png" > </div>
-        <div class="align-self-center text-md-left text-center col-lg-4 col-md-6">
+        <div class="col-md-4"><img class="img-fluid d-block" src="images/bliss_surface2.png"></div>
+        <div class="align-self-center text-md-left text-center col-lg-4 col-md-4">
           <h4 class="text-primary"><b>Battery-friendly</b></h4>
           <p class="mb-5 text-white">Extra options are provided to help tune battery consumption to the best levels</p>
           <h4 class="text-primary"><b>Added Security</b></h4>
@@ -179,404 +112,172 @@
       </div>
     </div>
   </div>
-  <!-- Features -->
-  <!-- Carousel reviews -->
-  <div class="section">
-    <div class="container d-flex justify-content-center align-items-center flex-grow-1 mx-auto w-75 py-4">
+  <div class="py-5">
+    <div class="container">
       <div class="row">
-        <div class="col-md-6 text-left mx-auto flex-center">
-          <div>
-            <h2 class="my-3 highlight_secondary team-header text-white no-wrap">We volunteer our time.</h2>
-            <p class="mb-3 body-font">We are a 501(c3) nonprofit, run by people that donate their free time towards the project. We do our best to bring a quality OS to your device, while working a real job on the side in most cases. Please consider showing us we're on the right track by clicking the button below and making a small contribution towards our efforts.</p> <a href="https://www.paypal.me/TeamBliss" class="btn btn-primary">Buy Us a Coffee</a>
+        <div class="px-md-5 p-3 col-md-6 d-flex flex-column align-items-start justify-content-center">
+          <h1>A wonderful serenity</h1>
+          <p class="mb-3 lead">Has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+          <p class="mb-2">Choose an option</p>
+          <div class="row">
+            <div class="col-md-12"> <i class="fa fa-stop-circle fa-3x mr-3 text-muted d-inline"></i> <i class="fa fa-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-stop-circle-o fa-3x mx-3 text-muted d-inline"></i> <i class="fa fa-circle fa-3x ml-3 text-muted d-inline"></i> </div>
           </div>
         </div>
-        <div class="col-md-5 py-5 offset-1"><img class="img-fluid d-block d-flex align-items-center justify-content-center flex-grow-1 mx-auto animate-in-right" src="images/coffee-break.svg" width="300"></div>
+        <div class="col-md-6"> <img class="img-fluid d-block" src="https://static.pingendo.com/img-placeholder-tablet.svg"> </div>
       </div>
     </div>
   </div>
-
-
-<!-- Download section -->
-  <div class="download-section" id="download">
-    <h3 class="display-3 d-flex justify-content-center align-items-center w-100 download-title">Download Options</h3>
-  <div class="download-grid">
-      <div class="download-card-common download-card-white download-card-one">
-        <div class="card-header-rows">
-          <div class="card-header-column-one">
-            <h3 class="card-header-title mb-2"><b>Bliss ROM</b></h3>
-            <img src="https://img.shields.io/sourceforge/dm/blissroms.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue" max-width="160px" width="100%">
-          </div>
-          <div class="card-header-column-two">
-            <h2 class="mb-0 card-or-donation"><b>$0</b></h2>
-            <p class="card-or-donation mt-2">Or Donation</p>
-          </div>
-        </div>
-        <div class="card-main-area">
-          <div class="text">
-            <p class="my-3 body-font">This is Bliss for your typical Android devices.<br>GSI/Treble options are also available. <br>These builds are available in a flashable .zip format, and our GSI/Treble builds are also available in .img format for flashing with fastboot</p>
-            <ul class="pl-3 body-font">
-              <li>Multiple Devices Supported</li>
-              <li>Tons of Customization Options</li>
-              <li>GSI/Treble builds support multiple devices</li>
-              <li>Device Support not Guaranteed</li>
-            </ul>
-          </div>
-          <div class="buttons">
-            <a class="btn btn-primary mt-3 text-white" data-target="#popup-modal1" data-toggle="modal">Download Now</a>
-            <a class="btn mt-3 text-black" href="" target="_blank" data-target="#popup-modal6" data-toggle="modal">Learn More&nbsp;</a>
-          </div>
-        </div>
-      </div>
-      <div class="download-card-common download-card-white download-card-two">
-        <div class="card-header-rows">
-          <div class="card-header-column-one">
-            <h3 class="card-header-title mb-2"><b>Bliss OS (x86)</b></h3>
-            <img src="https://img.shields.io/sourceforge/dm/blissos-x86.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue" max-width="160px" width="100%">
-          </div>
-          <div class="card-header-column-two">
-            <h2 class="mb-0 card-or-donation"><b>$0</b></h2>
-            <p class="card-or-donation mt-2">Or Donation</p>
-          </div>
-        </div>      
-        <div class="card-main-area">
-            <div class="text">
-              <p class="my-3 body-font">This is Bliss, running as a native or emulated* OS for PCs..&nbsp;These builds are compatible with PCs, MacBooks and Chromebooks equipped with x86/x86_64 compatible CPUs. Supports both BIOS/CSM and UEFI boot.<br><br>*Only KVM/QEMU emulation is currently supported</p>
-              <ul class="pl-3 body-font">
-                <li>Limited Online Support (<a href="https://forum.xda-developers.com/bliss-roms/bliss-roms-development/bliss-os-pie-beta-preview-t3855917">visit XDA thread</a>)<br></li>
-                <li>Multiple Device Compatibility</li>
-                <li>Multiple Kernel &amp; Mesa options&nbsp;</li>
-                <li>Generic Kernel - One Size Fits All</li>
-              </ul>
-            </div>
-            <div class="buttons">
-              <a class="btn btn-primary mt-3 text-white" href="" data-target="#popup-modal2" data-toggle="modal">Download Now</a>
-                <a class="btn mt-3 text-black" href="" target="_blank" data-target="#popup-modal4" data-toggle="modal">Learn More&nbsp;</a>
-            </div>
-          </div>  
-      </div>
-      <div class="download-card-common download-card-blue download-card-three">
-          <div class="card-header-rows">
-              <div class="card-header-column-one">
-                <h3 class="card-header-title"><b>ROM & OS (x86)</b></h3>
-                <h3 class="card-header-title"><b>Development</b></h3>
-              </div>
-              <div class="card-header-column-two">
-                <p class="card-or-donation">Starting at</p>
-                <h2 class="mb-0 card-or-donation"><b>1,000</b></h2>
-                <p class="card-or-donation">units or more</p>
-              </div>
-            </div>
-            <div class="card-main-area">
-                <div class="text">
-                  <p class="my-3 body-font">This is for businesses and educational institutions, that wish to use Bliss ROM or OS on specific Android or x86 hardware. This service includes hourly fees for development as well as per device pricing options*.&nbsp;</p>
-                  <ul class="pl-3 body-font">
-                    <li>Tech Support Contract Included</li>
-                    <li>Extra Kernel &amp; device options **</li>
-                    <li>Full Source Code Available</li>
-                    <li>Extra Tools and Options Available</li>
-                  </ul>
-                  <p class="d-inline-flex text-left justify-content-start align-items-start" style="	transform:  scale(.8);">* Per device rates starting with orders targeting 1,000 devices or more<br><br>** Custom kernel and device development is available at hourly rates</p>
-                </div>
-                <div class="buttons">
-                  <a class="btn btn-primary mt-3 text-white" href="" data-target="#popup-modal3" data-toggle="modal">Contact Us</a>
-                </div>
-              </div>  
-      </div>
-      <h1 class="inf-header-free inf-header-common">Free</h1>
-      <h1 class="inf-header-paid inf-header-common">Paid</h1>
-   </div>
-   </div>
-
-   <!-- popups for download section -->
-   <div id="popup-modal6" class="modal fade flex-grow-1 align-items-center justify-content-center">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body px-3 bg-light">
-            <h1 class="text-center"> What is Bliss ROM? </h1>
-            <p class="text-center lead"><b>This is Bliss for your typical Android devices.<br>GSI/Treble options are also available</b></p>
-            <p class="text-center"><b>These builds are maintained by our device maintainers, and updated on a regular basis. So please make sure you check for the latest updates.&nbsp;</b></p>
-            <p class="text-center"><b>Our most popular devices are </b>santoni, berkeley, shamu, taimen, cheeseburger, helium, &amp; hydrogen.<br>Other "Unofficial" devices can be found online, but Team Bliss does not offer support for these builds.<br>For support, please check XDA Developers Forum for your device and see if there's a Bliss build for you.</p>
-          </div>
-          <div class="modal-footer text-center bg-light">
-            <a class="btn btn-primary mt-0" href="" data-target="#popup-modal1" data-toggle="modal">Go To Downloads</a>
-          </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 order-2 order-md-1"> <img class="img-fluid d-block" src="https://static.pingendo.com/img-placeholder-tablet.svg"> </div>
+        <div class="px-md-5 col-md-6 d-flex flex-column align-items-start justify-content-center order-1 order-md-2">
+          <h1>I feel the charm</h1>
+          <p class="mb-3">I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees.</p> <a class="btn btn-primary mb-3" href="#">Let's Go</a>
         </div>
       </div>
     </div>
-    <div id="popup-modal1" class="modal fade flex-grow-1 align-items-center justify-content-center">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body px-3 bg-dark">
-            <h1 class="text-center"> Thanks for your interest in Bliss </h1>
-            <p class="text-center">Please consider a small donation as a way to help keep our project moving forward.<br></p>
-            <div class="modal-social text-right">
-              <div class="row">
-                <div class="flex-grow-1">
-                  <a class="btn btn-primary btn-block" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url">Donate $5</a>
-                </div>
-                <div class="flex-grow-1">
-                  <a class="btn btn-info btn-block" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                </div>
-              </div>
-            </div>
-            <div class="modal-social text-right pt-2">
-              <div class="row">
-                <div class="d-flex flex-grow-1 justify-content-center align-items-center">
-                  <a class="btn btn-block text-white btn-outline-secondary" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-                </div>
-              </div>
-              <p class="text-center"><br>As a reminder, all donations are converted to USD. Some regions may want to make sure the currency conversion is greater than $1 USD, Otherwise PayPal is the only one that benefits</p>
-            </div>
-          </div>
-          <div class="modal-footer text-center bg-dark">
-            <a href="https://sourceforge.net/projects/blissroms/files/" class="btn btn-link" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-right"></span>
-            </a><a class="btn btn-primary mt-0" href="https://sourceforge.net/projects/blissroms/files/">Go To Downloads</a>
-          </div>
+  </div>
+  <div class="py-5" style="background-image: linear-gradient(to left bottom, rgba(189, 195, 199, .75), rgba(44, 62, 80, .75));	background-size: 100%;">
+    <div class="container">
+      <div class="row">
+        <div class="my-3 col-lg-8">
+          <h1 class="text-center text-lg-left text-white">Visit our communities and share how you use Bliss OS</h1>
         </div>
+        <div class="text-center align-self-center col-lg-4"> <a href="#">
+            <i class="fa fa-fw fa-facebook text-white mx-3 fa-3x"></i>
+          </a> <a href="#">
+            <i class="fa fa-fw fa-twitter fa-3x text-white mx-3"></i>
+          </a> <a href="#">
+            <i class="fa fa-fw fa-instagram fa-3x text-white mx-3"></i>
+          </a> </div>
       </div>
     </div>
-
-    <div id="popup-modal4" class="modal fade flex-grow-1 align-items-center justify-content-center">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body px-3 bg-light">
-              <h1 class="text-center"> What is Bliss OS? </h1>
-              <p class="text-center lead"><b>This is Bliss for your x86/x86_64-based devices, including desktops, laptops, tablets, maker boards and more.</b></p>
-              <p class="text-center"><b>These builds are compatible with PCs, MacBooks and Chromebooks equipped with x86/x86_64 compatible CPUs from Intel, AMD &amp; others. It also supports GPUs from Intel, AMD, or Nvidia.</b></p>
-              <p class="text-center"><b>Bootable Installer supports BIOS/CSM and UEFI boot. We recommend using Rufus to flash the ISO to a USB drive, and boot into that to test by running in Live mode. If that works, use the USB drive and boot into the installer to install/upgrade</b></p>
-              <div class="modal-social text-right">
-                <div class="row">
-                  <div  class="d-flex justify-content-center align-items-center flex-grow-1">
-                    <a class="btn btn-primary btn-block" target="”_blank”" href="https://forum.xda-developers.com/bliss-roms/bliss-roms-development/bliss-os-pie-beta-preview-t3855917">Bliss OS XDA Thread</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer text-center bg-light">
-              <a class="btn btn-primary mt-0" href="" data-target="#popup-modal2" data-toggle="modal">Go To Downloads</a>
-            </div>
-          </div>
+  </div>
+  <div class="py-5 bg-secondary" id="blog-050219">
+    <div class="container"></div>
+  </div>
+  <div class="row" style=" margin-right: 15px; margin-left: 15px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center mx-auto px-5 pt-4">
+          <h3 class="my-3 highlight_secondary team-header text-white"> </h3><br>
+          <h2 class="my-3 highlight_secondary team-header text-white">We volunteer our time.</h2>
+          <p class="mb-3">We are a 501(c3) nonprofit, run by people that donate their free time towards the project. We do our best to bring a quality OS to your device, while working a real job on the side in most cases. Please consider showing us we're on the right track by clicking the button below. </p> <a href="https://www.paypal.me/TeamBliss" class="btn btn-primary">Buy Us a Coffee</a>
         </div>
+        <div class="col-md-6 py-5"><img class="img-fluid d-block d-flex align-items-center justify-content-center flex-grow-1 mx-auto animate-in-right" src="images/coffee-break.svg" width="300"></div>
       </div>
-      <div id="popup-modal2" class="modal fade align-items-center justify-content-center flex-grow-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body px-3 bg-dark">
-              <h1 class="text-center" contenteditable="true"> Thanks for your interest in Bliss OS</h1>
-              <p class="text-center">Please consider a small donation as a way to help keep our project moving forward.<br></p>
-              <div class="modal-social text-right">
-                <div class="row">
-                  <div class="flex-grow-1">
-                    <a class="btn btn-primary btn-block" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url">Donate $5</a>
-                  </div>
-                  <div class="flex-grow-1">
-                    <a class="btn btn-info btn-block" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="pt-2 flex-grow-1 d-flex align-items-center justify-content-center">
-                    <a class="btn btn-block text-white btn-outline-secondary" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-                  </div>
-                </div>
-                <p class="text-center"><br>As a reminder, all donations are converted to USD. Some regions may want to make sure the currency conversion is greater than $1 USD, Otherwise PayPal is the only one that benefits</p>
-              </div>
-            </div>
-            <div class="modal-footer text-center bg-dark">
-              <a href="https://sourceforge.net/projects/blissos-x86/files/" class="btn btn-link" data-dismiss="modal"><span class="glyphicon glyphicon-chevron-right"></span>
-              </a>
-              <div class="btn-group pi-draggable">
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> Go To Downloads</button>
-                <div class="dropdown-menu" x-placement="top-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, -2px, 0px);">
-                  <a class="dropdown-item" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/archived">Nougat (7.x)</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/archived">Oreo (10.x)</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/">Pie (11.x)</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="popup-modal3" class="modal fade justify-content-center align-items-center flex-grow-1">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-body px-3 bg-dark">
-                <h1 class="text-center" > Thanks for your interest in Bliss ROM/OS Development</h1>
-                <p class="text-center">Please Fill out the form below, leaving as much detail as possible about your target device* and or opportunity and we will be in touch shortly.<br></p>
-                <p class="text-center" style="font-size:.75em;">* Inquiries requesting us to work on a single device, already on the consumer market will be ignored. This opportunity is for manufacturers and OEM's only. </p>
-                <form action="mailto:blissfamilyroms@gmail.com" method="GET" data-form-title="CONTACT US">
-                  <div class="form-group"> <input type="email" class="form-control" id="form33" placeholder="Your Email" name="email"> </div>
-                  <div class="form-group"> <input type="text" class="form-control" id="form34" placeholder="Subject" name="name"> </div>
-                  <div class="form-group"> <textarea class="form-control" id="form35" rows="3" placeholder="Your message" name="message"></textarea> </div> <button type="submit" class="btn btn-outline-primary btn-block">Send</button>
-                </form>
-                <div class="modal-social text-right">
-                  <div class="row">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-  <div class="py-5" id="team" >
+    </div>
+  </div>
+  <div class="py-5" id="team" style="">
     <div class="container">
       <div class="row">
         <div class="mx-auto col-md-12 text-center">
-          <h3 class="display-3">The Team</h3>
-        </div>
-      </div>
-	  
-	  <section id="content" class="team_content"></section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
-    <script>
-       $.ajax({
-       type: "GET",
-       url: "https://blissapi.blissroms.com/team/public/allteambliss", // TeamBliss JSON
-          success: function (data) {
-          var newContent = '';       // Variable to hold HTML
-       
-          for (var i = 0; i < data.length; i++) {    // Loop through object
-            newContent += '<div id="event" class="team_item">';
-            newContent += '<img class="image crop" src="' + data[i].image + '" ';
-            newContent += 'alt="' + data[i].member + '" />';
-            newContent += '<h3><b>' + data[i].member + '</b></h3>';
-            newContent += '<p class="team_data_text">' + data[i].descriptions + '</p>';
-            newContent += '<p class="team_data_text"><i>&quot;' + data[i].email + '&quot;</i></p>';
-            newContent += '</div>';
-          }
-    
-          // Update the page with the new content
-          document.getElementById('content').innerHTML = newContent;
-      }
-    })
-  </script>
-    
-	</div>
-  </div>
-  
-  <div class="py-4 text-center">
-    <div class="container">
-      <div class="row">
-        <div class="mx-auto col-md-8">
-          <h1 class="mb-3" contenteditable="true">Bliss Family Projects</h1>
-          <p class="lead">The Bliss Family projects we currently support can be found below: </p>
+          <h3 class="display-3">Who we are</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 p-3">
-          <div class="card">
-            <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="images/invictrix.jpg" width="150">
-              <h1>Invictrīx ROM</h1>
-              <div class="row d-flex justify-content-center pb-2">
-                <div class="col-lg-4 col-md-6">
-                  <a href="https://t.me/InvictusROM" target="_blank"><i class="d-block fa text-muted text-muted fa-lg mx-2 fab fa-telegram"></i></a>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <a href="https://plus.google.com/communities/109716291977795337501" target="_blank"><i class="d-block fa text-muted text-muted fa-lg mx-2 fab fa-google-plus"></i></a>
-                </div>
-              </div>
-              <p class="mb-0">Invictrīx ROM emphasizes performance, offering heavy optimizations along with a unique dark themed style.</p>
+        <div class="col-lg-6">
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://lh3.googleusercontent.com/w7i8JBSfddUp88DpBjjdT_PBODfKTiFV8TKHqyZnsU3m0-ppYXsuafqDtBxakFYW3mjIahKkFYBepZIGRQ=w1920-h1080-no" width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4><b>Jack Eagle&nbsp;</b>- CEO&nbsp; / Founder / Developer</h4>
+              <p class="mb-0">&nbsp;</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://lh3.googleusercontent.com/xhKBfn9HcjWayS9gQizUuh7JATtI4i-OvVv9Q6XPy5v5IyiI44lqRoxtMIyI3rlLc7OCyparEB9OqGT_Vg=w1920-h1080-no" width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4><b>Vaughn Newman</b> -&nbsp;Board Member / Admin / Developer</h4>
+              <p class="mb-0">&nbsp;</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 p-3 col-md-6">
-          <div class="card">
-            <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="images/soap.jpg" width="150">
-              <h1>SOAP ROM</h1>
-              <div class="row d-flex justify-content-center pb-2">
-                <div class="col-lg-4 col-md-6">
-                  <a href="https://plus.google.com/u/0/107610198397215674589" target="_blank"><i class="d-block fa text-muted text-muted fa-lg mx-2 fab fa-google-plus"></i></a>
-                </div>
-              </div>
-              <p class="mb-0">SOAP is an AOSP ROM that focuses on being a slim and clean ROM.</p>
+        <div class="col-lg-6">
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://lh3.googleusercontent.com/hcV4Tp81H4TJskQhpKckcDBqwnETos_ZOxXsQbiZGOT5OxMC-3pOD5i22j1tPiaubWW74tmnwB0ixvGwELQ=w1920-h1080-no" width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4><b>Jon West&nbsp;</b>- CTO / Incorporator / Developer</h4>
+              <p class="mb-0">&nbsp;</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://lh3.googleusercontent.com/JOdHk7TYY-SLjAANLuK7t68Oz6w4fDFody-Uwj3rtH6oSZkljniUceYFQ52rbJXeBv4kDgoGhrtamLJlwZc=w1920-h1080-no" width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4> <b>Antonio Luciano</b>&nbsp;- Board Member /&nbsp;Project Manager /&nbsp;App Developer</h4>
+              <p class="mb-0">&nbsp;</p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 p-3 col-md-6">
-          <div class="card">
-            <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto rounded-circle" src="images/xtremis.jpg" width="150">
-              <h1>Xtremis Project</h1>
-              <div class="row d-flex justify-content-center pb-2">
-                <div class="col-lg-4 col-md-6">
-                  <a href="#" target="_blank"><i class="d-block fa text-muted text-muted fa-lg mx-2 fab fa-telegram"></i></a>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <a href="#" target="_blank"><i class="d-block fa text-muted text-muted fa-lg mx-2 fab fa-google-plus"></i></a>
-                </div>
-              </div>
-              <p class="mb-0">Currently pre-release, this project is progressing steadily and will soon have more details to share. Please check in later.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://lh3.googleusercontent.com/LZrBsYT1S4qQI92uCuWx34QSGDcKpwY1G2h3LXT3tEvMPuSA8d6tiY7CsLYvBCznXk4sJhgr6UFk8pg1oA=w1920-h1080-no" width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4><b>BitO BSessiOn</b>&nbsp;- Board Member / Developer</h4>
+              <p class="mb-0">&nbsp;</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://lh3.googleusercontent.com/iu4p6sC5xbTmz7gF5eYCucSHuI_1SBJnRkfNWcNQ6Cw7oCt5ryMHaU_DXpjWEgGX43SnPRs4dSjErXU=w1920-h1080-no" width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4> <b>Customworx&nbsp;</b>- Board Member / Graphic Designer </h4>
+              <p class="mb-0">&nbsp;</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://lh3.googleusercontent.com/eRqBEkS4_cWFEkLce4sVRmyCkAwgsGZwIg1kE12_gjBaghKQ8Omc6V2UJT6q6LwZS8l-LkutUrskyeLFrd0=w1920-h1080-no" width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4><b>Evan Galvin</b>&nbsp;- Board Member / Product Technology Strategist</h4>
+              <p class="mb-0">&nbsp;</p>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-3"> <img class="img-fluid d-block mx-auto rounded-circle" src="https://lh3.googleusercontent.com/a-/AAuE7mC91eukOeGZ1fU2mULqdlLqrcsYmUWGjZZMoXwMAIk=s1920-p-no-il" width="100" alt="Card image cap"> </div>
+            <div class="col-9">
+              <h4> <b>Donna West</b> - Board Member / Treasurer</h4>
+              <p class="mb-0">&nbsp;</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="py-5 bg-primary" id="gear">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1><b>A Little Bliss Gear</b></h1>
-          <p class="lead mb-4"><b>Bliss Family of ROMs has put together a Teespring store as a start to bring some stylish merchandise to our users, and help raise money for our cause. Check out a few of our selections below and follow the link to our store for more</b></p>
-        </div>
-      </div>
-      <div class="row d-flex justify-content-between">
-        <div class="col-md-4 col-lg-3 p-4"> <img class="img-fluid d-block" width="1500" src="images/560.jpg">
-          <h4 class="my-3"> <b>T-Shirts</b></h4>
-          <p class="body-font"><b>Be the first one on your block to sport Bliss on your back. Various sizes and colors available.</b></p>
-        </div>
-        <div class="col-md-4 col-lg-3 p-4"> <img class="img-fluid d-block" src="images/560 (1).jpg" width="1500">
-          <h4 class="my-3"> <b>Hoodies</b></h4>
-          <p class="body-font"><b>Keep warm in style. Wr have hoodies and sweatshirts available. Various sizes and colors options too.</b></p>
-        </div>
-        <div class="col-md-4 col-lg-3 p-4"> <img class="img-fluid d-block" src="images/560 (2).jpg" width="1500">
-          <h4 class="my-3"> <b>Tank Tops</b></h4>
-          <p class="body-font"><b>It's all about the Bliss when you are wearing one of our tank tops. Various sizes and colors available.</b></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title"><b>Want More?</b></h4>
-              <p class="card-text body-font">We are constantly updating our selection of apparel, adding more cool designs and options as we go. So make sure you check back for any updates.&nbsp;</p> <a class="btn btn-primary" href="https://teespring.com/stores/bliss-family-store-2">Visit Our Teespring Store&nbsp;<i class="fa fa-shopping-cart fa-fw"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Footer -->
   <div class="py-3 bg-dark">
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-6 p-3">
           <h5> <b>Socials</b></h5>
           <ul class="list-unstyled text-primary">
-            <li class="text-primary"> <a href="https://t.me/Team_Bliss_Community">BlissROMs Telegram</a> </li>
-            <li> <a href="https://t.me/blissx86">Bliss OS Telegram</a> </li>
-            <li> <a href="https://www.facebook.com/BlissFamilyOfROMs/">Bliss Facebook</a> </li>
-            <li> <a href="https://twitter.com/Bliss_Roms">Bliss Twitter</a> </li>
+            <li class="text-primary"> <a href="https://t.me/Team_Bliss_Community" class="text-info">BlissROMs Telegram</a> </li>
+            <li> <a href="https://t.me/blissx86" class="text-info">Bliss OS Telegram</a> </li>
+            <li> <a href="https://www.facebook.com/BlissFamilyOfROMs/" class="text-info">Bliss Facebook</a> </li>
+            <li> <a href="https://twitter.com/Bliss_Roms" class="text-info">Bliss Twitter</a> </li>
+            <li> <a href="https://plus.google.com/communities/118265887490106132524" class="text-info">Bliss G+</a> </li>
           </ul>
         </div>
         <div class="col-lg-3 col-6 p-3">
           <h5> <b>Sources</b></h5>
           <ul class="list-unstyled">
-            <li> <a href="https://review.blissroms.com" >BlissROMs Gerrit Review</a> </li>
-            <li> <a href="https://github.com/BlissRoms" >BlissROMs GitHub</a> </li>
-            <li> <a href="https://github.com/BlissRoms-Devices"  >BlissROMs-Devices GitHub</a> </li>
-            <li> <a href="https://github.com/BlissRoms-Kernels" >BlissROMs-Kernels GitHub</a> </li>
-            <li> <a href="https://github.com/BlissRoms-Vendor" >BlissROMs-Vendor GitHub</a> </li>
-            <li> <a href="https://github.com/BlissRoms-x86" >Bliss OS GitHub</a> </li>
-            <li> <a href="https://github.com/BlissRoms-pine64" >BlissROMs-PINE64 GitHub</a> </li>
+            <li> <a href="https://review.blissroms.com" class="text-info">BlissROMs Gerrit Review</a> </li>
+            <li> <a href="https://github.com/BlissRoms" class="text-info">BlissROMs GitHub</a> </li>
+            <li> <a href="https://github.com/BlissRoms-Devices" style="" class="text-info">BlissROMs-Devices GitHub</a> </li>
+            <li> <a href="https://github.com/BlissRoms-Kernels" class="text-info">BlissROMs-Kernels GitHub</a> </li>
+            <li> <a href="https://github.com/BlissRoms-Vendor" class="text-info">BlissROMs-Vendor GitHub</a> </li>
+            <li> <a href="https://github.com/BlissRoms-x86" class="text-info">Bliss OS GitHub</a> </li>
+            <li> <a href="https://github.com/BlissRoms-pine64" class="text-info">BlissROMs-PINE64 GitHub</a> </li>
           </ul>
         </div>
         <div class="col-lg-3 col-6 p-3">
           <h5>Subreddits</h5>
           <ul class="list-unstyled">
-            <li> <a href="https://www.reddit.com/r/BlissRoms" >BlissROMs</a> </li>
-            <li> <a href="https://www.reddit.com/r/BlissOS" >Bliss OS</a> </li>
-            <li> <a href="https://www.reddit.com/r/TeamBliss" >TeamBliss</a> </li>
+            <li> <a href="https://www.reddit.com/r/BlissRoms" class="text-info">BlissROMs</a> </li>
+            <li> <a href="https://www.reddit.com/r/BlissOS" class="text-info">Bliss OS</a> </li>
+            <li> <a href="https://www.reddit.com/r/TeamBliss" class="text-info">TeamBliss</a> </li>
           </ul>
         </div>
         <div class="col-lg-3 col-md-3 p-3">
@@ -586,7 +287,9 @@
                 <i class="d-block fa fa-facebook-official text-muted mr-2 fa-2x"></i>
               </a> <a href="https://www.instagram.com/blissroms/">
                 <i class="d-block fa fa-instagram text-muted mx-2 fa-2x"></i>
-              <a href="https://github.com/BlissRoms">
+              </a> <a href="https://plus.google.com/communities/118265887490106132524">
+                <i class="d-block fa fa-google-plus-official text-muted mx-2 fa-2x"></i>
+              </a> <a href="https://github.com/BlissRoms">
                 <i class="d-block fa fa-github text-muted text-muted mx-2 fa-2x"></i>
               </a> <a href="https://www.reddit.com/r/BlissRoms">
                 <i class="d-block fa fa-reddit text-muted mx-2 fa-2x"></i>
@@ -603,13 +306,23 @@
       </div>
     </div>
   </div>
-  <!-- Footer -->
   <!-- JavaScript dependencies -->
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"></div>
+      </div>
+    </div>
+  </div>
   <script src="js/mainani.js" type="text/javascript"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <!-- Script: Smooth scrolling between anchors in the same page -->
   <script src="js/smooth-scroll.js"></script>
+  <!-- <script src="https://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script> -->
+  <script src="js/counter.js"></script>
+  <script src="js/adv.js"></script>
 </body>
 
 </html>
