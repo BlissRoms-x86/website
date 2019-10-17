@@ -24,7 +24,7 @@ $enable-print-styles:       true;
 $theme-colors: (
   primary: #0080ff,
   secondary: #0060aa,
-  light: #f3f3f3,
+  light: #ffffff,
   dark: #303030,
   info: #00aaff,
   success: #28a745,
@@ -32,9 +32,9 @@ $theme-colors: (
   danger: #dc3545
 );
 
-$body-bg: #111;
+$body-bg: #ffffff;
 
-$body-color: #efefef;
+$body-color: #111;
 $body-color-inverse: invert($body-color) !default;
 $link-color: #0080ff;
 
@@ -190,6 +190,22 @@ html,body {
     height: 100%;
     content: ' ';
     background: linear-gradient(transparentize($body-bg, 0.8),transparentize($body-bg, 0.2), $body-bg);
+	}
+}
+
+.section-fade-out-white {
+	position: relative;
+  color:white;
+  background-size:cover;
+  background-position: center;
+  &:before {
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height: 100%;
+    content: ' ';
+    background: linear-gradient(transparentize(white, 0.8),transparentize(white, 0.2), white);
 	}
 }
 
