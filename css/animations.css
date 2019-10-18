@@ -568,11 +568,11 @@ width: 378px;
 }
 @media (max-width:867px) {
   .display-3 { font-size: 4.4rem;}
-  .navbar-ontop { background-color: #303030 !important;}
+  /* .navbar-ontop { background-color: #303030 !important;} */
 }
 @media (max-width:650px) {
   .display-3 { font-size: 4.1rem;}
-  .navbar-ontop { background-color: #303030 !important;}
+  /* .navbar-ontop { background-color: #303030 !important;} */
 }
 @media (max-width:550px) {
   .display-3 { font-size: 3.8rem;}
