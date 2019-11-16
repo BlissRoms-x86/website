@@ -21,9 +21,7 @@
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/table.css">
-
-  <script data-ad-client="ca-pub-7639560510014441" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+  <script data-ad-client="ca-pub-7639560510014441" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body class="" style="">
@@ -213,11 +211,44 @@
       </div>
     </div>
   </div>
+  <div class="py-5 text-center bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-8 order-2 order-lg-1" style=""> <img class="img-fluid d-block" src="images/bliss12_surface_all.png"> </div>
+        <div class="px-md-6 p-4 d-flex flex-column justify-content-center order-1 order-lg-3 col-lg-4" style="">
+          <h1><b>Bliss OS 12 Testing</b></h1>
+          <h4>We have started our first round of testing for Bliss OS 12, based on Android 10.&nbsp;&nbsp;</h4>
+          <h5>To become a tester, please visit the <a href="http://blissos.org" class="text-warning">development thread</a> on XDA</h5>
+          <div class="code_container">
+            <h6 class="code_container__title bg-secondary flex-grow-1 justify-content-between flex-column align-items-center d-flex rounded py-2">Please type the secret code for the download link</h6>
+          </div>
+          <script>
+            const pressed = [];
+            const secretCode = 'stayblissful';
+            window.addEventListener('keyup', e => {
+              console.log(e.key);
+              pressed.push(e.key);
+              pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+              console.log(pressed);
+              if (pressed.join('').includes(secretCode)) {
+                console.log('DING DING');
+                const container = document.querySelector('.code_container');
+                const containerTitle = document.querySelector('.code_container__title');
+                container.style.background = secretCode;
+                container.classList.add('alive');
+                containerTitle.innerHTML = 'correct code! Here is the download link: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-secondary text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-link" style="color:white;" href="https://sourceforge.net/projects/blissos-dev/files/Alpha%20Builds/">Go To Downloads</a><br>';
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="py-5 bg-dark" id="documentation">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="display-3 text-truncate" >Docs</h3>
+          <h3 class="display-3 text-truncate">Docs</h3>
           <p class="mb-4 lead">Bliss OS documentation can be found on our <a href="https://docs.blissroms.com">docs site</a>, while our development update posts can be found on our XDA thread. <br><br> For questions on if Bliss OS will work on your device, please search the XDA thread or our <a href="https://t.me/blissx86">telegram chat</a>.</p>
           <div class="row">
             <div class="col-md-3" style=""><img class="img-fluid d-block" src="images/github-logo.png"></div>
@@ -285,7 +316,7 @@
           <h5> <b>Sources</b></h5>
           <ul class="list-unstyled">
             <li> <a href="https://review.blissroms.com" class="text-info">BlissROMs Gerrit Review</a> </li>
-			<li> <a href="https://review-x86.blissroms.com">Bliss OS (x86) Gerrit Review</a> </li>
+            <li> <a href="https://review-x86.blissroms.com">Bliss OS (x86) Gerrit Review</a> </li>
             <li> <a href="https://github.com/BlissRoms" class="text-info">BlissROMs GitHub</a> </li>
             <li> <a href="https://github.com/BlissRoms-Devices" style="" class="text-info">BlissROMs-Devices GitHub</a> </li>
             <li> <a href="https://github.com/BlissRoms-x86" class="text-info">Bliss OS GitHub</a> </li>
