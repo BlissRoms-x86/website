@@ -61,8 +61,19 @@ $(document).ready(function(){
 	}
 	function sendMessage(){
 		var message=$input.text();
+		const secretCode = 'stayblissful';
 		
 		if(message=="") return;
+		
+		if(message=="stayblissful") {
+			console.log('DING DING');
+			const container = document.querySelector('.code_container');
+			const containerTitle = document.querySelector('.code_container__title');
+			container.style.background = secretCode;
+			container.classList.add('alive');
+			containerTitle.innerHTML = 'correct code! Here is the download link: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-secondary text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-link" style="color:white;" href="https://sourceforge.net/projects/blissos-dev/files/Alpha%20Builds/">Go To Downloads</a><br>';
+		  
+		}
 		
 		lastMessage=message;
 
