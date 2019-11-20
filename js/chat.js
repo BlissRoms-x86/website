@@ -14,7 +14,7 @@ $(document).ready(function(){
 		,lastMessage=""
 	;
 	
-	var lipsum="Can you try and guess the secret code? Did you guess it yet? At least act like you are trying. Did you just type something? I must have missed that. I was not paying attention just now. why didn't you say that? I know you are but what am I? I bet that is what all the ladies say to you about your problem.";
+	var lipsum="Can you try and guess the secret code? Did you try and guess it yet? At least act like you are trying. Did you just type something important? I must have missed what you typed. I was not paying attention just now. why didn't you say that? I know you are but what am I? I bet that is what all the ladies say. Have they told you about your problem? I wish that was correct. I cant believe this but you are wrong. I can keep doing this all day. some things never change do thay. ";
 
 	function gooOn(){
 		setFilter('url(#goo)');
@@ -264,7 +264,7 @@ $(document).ready(function(){
 
 		var $info=$("<div/>")
 			.addClass("chat-info-typing")
-			.text("Your friend is typing...")
+			.text("Bliss-Bot is typing...")
 			.css({
 				transform:"translate3d(0,30px,0)"
 			})
