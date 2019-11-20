@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" href="css/chat.css">
   <script data-ad-client="ca-pub-7639560510014441" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
@@ -220,7 +221,58 @@
           <h4>We have started our first round of testing for Bliss OS 12, based on Android 10.&nbsp;&nbsp;</h4>
           <h5>To become a tester, please visit the <a href="https://forum.xda-developers.com/android/software/bliss-os-x86-pc-s-12-x-development-t4004419" class="text-warning">development thread</a> on XDA</h5>
           <div class="code_container">
-            <h6 class="code_container__title bg-secondary flex-grow-1 justify-content-between flex-column align-items-center d-flex rounded py-2 p-2">Please type the secret code for the download link <br><input type="password" class="form-control p-2 m-3" id="inlineFormInputGroup"></h6>
+            <h6 class="code_container__title bg-secondary flex-grow-1 justify-content-between flex-column align-items-center d-flex rounded py-2 p-2"><br>
+			<!--<input type="password" class="form-control p-2 m-3" id="inlineFormInputGroup"> -->
+			<div class="chat-window">
+				<div class="chat-messages">
+					<ol class="chat-messages-list">
+						<li class="chat-message chat-message-friend">
+							<div class="chat-message-bubble">
+								Hello,
+							</div>
+						</li>
+						<li class="chat-message chat-message-friend">
+							<div class="chat-message-bubble">
+								My name is Bliss-Bot, You must be here for the new downloads. 
+							</div>
+						</li>
+						<li class="chat-message chat-message-friend">
+							<div class="chat-message-bubble">
+								I'm here to help, so just let me know what the secret code is and we will get you on your way
+							</div>
+						</li>
+						<li class="chat-message chat-message-friend">
+							<div class="chat-message-bubble">
+								I promise I won't share it
+							</div>
+						</li>
+						<li class="chat-message chat-message-friend">
+							<div class="chat-message-bubble">
+								;)
+							</div>
+						</li>
+					</ol>
+				</div>
+				<div class="chat-input-bar">
+					<div class="chat-info-container">
+
+					</div>
+					<div class="chat-effect-container">
+						<div class="chat-effect-bar"></div>
+					</div>
+					<div class="chat-input-wrapper">
+						<button class="chat-input-tool">
+							<i class="icon icon-camera"></i>
+						</button>
+						<div class="chat-input" contenteditable></div>
+						<button class="chat-send">
+							<i class="fa fa-paper-plane"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+			
+			</h6>
           </div>
           <script style="">
             const pressed = [];
@@ -366,6 +418,8 @@
   <script src="js/counter.js"></script>
   <script src="js/conditionize.js"></script>
   <script src="js/adv.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+  <script src="js/chat.js"></script>
 </body>
 
 </html>
