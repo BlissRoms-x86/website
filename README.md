@@ -1,4 +1,4 @@
-<img src="https://raw.github.com/BlissRoms/platform_manifest/new-mm6.0/bliss-logo.png">
+<img src="https://i.imgur.com/0GnrwaU.png">
 
 # blissroms-x86.github.io
 New website for [Bliss OS](https://www.blissos.org)
