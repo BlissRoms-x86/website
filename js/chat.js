@@ -63,11 +63,11 @@ $(document).ready(function(){
 	}
 	function sendMessage(){
 		var message=$input.text();
-		const secretCode = 'stayblissful';
+		const secretCode = 'readtheop';
 		
 		if(message=="") return;
 		
-		if(message=="stayblissful") {
+		if(message=="readtheop") {
 			console.log('DING DING');
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
