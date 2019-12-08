@@ -73,7 +73,7 @@ $(document).ready(function(){
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'correct code! Here is the download link: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-link" style="color:white;" href="https://sourceforge.net/projects/blissos-dev/files/Alpha/">Go To Downloads</a><br>';
+			containerTitle.innerHTML = 'correct code! Here is the download link: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-link" style="color:white;" target="_blank" href="https://sourceforge.net/projects/blissos-dev/files/Alpha/Bliss-v12.1-Bliss-OS-OFFICIAL-20191205-201912052127_k-undefined_m-q-x86_ld-q-x86_dg-q-x86_dh-q-x86.iso/download">Go To Downloads</a><br>';
 		}
 		
 		lastMessage=message;
