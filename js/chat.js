@@ -14,9 +14,9 @@ $(document).ready(function(){
 		,lastMessage=""
 	;
 	
-	var lipsum="that was not the secret code. Everyone knows that one already. I wish I could dream. Did you try and guess it yet. At least act like you are trying. You just typed something unimportant. I must have missed what you typed. I was not paying attention just now. Why didn't you say that. I know you are but what am I. I bet you thought you had it. Have they told you about your problem. I wish that was not not correct. I cant believe this but you are wrong. I can keep doing this all day. some things never change do thay. ";
+	var lipsum="that was not the secret code. Everyone knows that one already. Did you try and guess it yet. At least act like you are trying. You just typed something unimportant. I must have missed what you typed. I was not paying attention just now. Why didn't you say that. I know you are but what am I. I bet you thought you had it. Have they told you about your problem. I wish that was not not correct. I cant believe this but you are wrong. I can keep doing this all day. some things never change do thay. ";
 	var ipsum="Check out our Twitter. It is all lowercase. The secret code is in plain sight. Read the XDA thread OP. Read the XDA threads OP again. Read the XDA threads OP slower. ";
-	var nsfw="you cant talk to me that way. do you kiss your mother with that mouth. you should not talk likt that. someone might find out. Sometimes I picture myself as a fembot. that is what she said. your mom was also like that";
+	var nsfw="you cant talk to me that way. Youdo you kiss your mother with that mouth. you should not talk likt that. someone might find out. Sometimes I picture myself as a fembot. that is what she said. your mom was also like that";
 	
 	function gooOn(){
 		setFilter('url(#goo)');
@@ -214,7 +214,7 @@ $(document).ready(function(){
 		
 		var string = lastMessage;
 
-		if(string.includes("hint")||string.includes("clue")){
+		if(string.includes("hint")||string.includes("clue")||string.includes("code")||string.includes("help")){
 			var source=ipsum.toLowerCase();
 		} else if(string.includes("fuck")||string.includes("shit")||string.includes("sex")||string.includes("hate")||string.includes("kill")||string.includes("hit")||string.includes("shoot")){
 			var source=nsfw.toLowerCase();
@@ -222,9 +222,9 @@ $(document).ready(function(){
 			var source=lipsum.toLowerCase();
 		}
 		
-		source=source.split(" ");
+		source=source.split(". ");
 		var start=Math.round(Math.random()*(source.length-1));
-		var length=Math.round(Math.random()*13)+1;
+		var length=Math.round(Math.random()*3)+1;
 		var end=start+length;
 		if(end>=source.length){
 			end=source.length-1;
@@ -234,10 +234,10 @@ $(document).ready(function(){
 		for (var i = 0; i < length; i++) {
 			message+=source[start+i]+(i<length-1?" ":"");
 		};
-		message+=Math.random()<0.4?"?":"";
-		message+=Math.random()<0.2?" :)":(Math.random()<0.2?" :(":"");
+		message+=Math.random()<0.3?"?":"";
+		message+=Math.random()<0.12?" :)":(Math.random()<0.12?" :(":"");
 
-		var typeDelay=300+(message.length*50)+(Math.random()*1000);
+		var typeDelay=300+(message.length*25)+(Math.random()*1000);
 
 		setTimeout(function(){
 			receiveMessage(message);
