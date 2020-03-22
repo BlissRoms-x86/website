@@ -15,7 +15,7 @@ $(document).ready(function(){
 	;
 	
 	var lipsum="please ask for something like Android 9 or Android 10. I can understand you better if you ask for things like Bliss OS 11 or Bliss OS 12. You need to be a bit more specific like a version number (11 or 12). ";
-	var nsfw="you cant talk to me that way. Youdo you kiss your mother with that mouth. you should not talk likt that. someone might find out. Sometimes I picture myself as a fembot. that is what she said. your mom was also like that";
+	var nsfw="you cant talk to me that way. Do you kiss your mother with that mouth?. you should not talk like that. that is what she said. your mom was likes it like that?.";
 	
 	function gooOn(){
 		setFilter('url(#goo)');
@@ -419,7 +419,7 @@ $(document).ready(function(){
 		for (var i = 0; i < length; i++) {
 			message+=source[start+i]+(i<length-1?" ":"");
 		};
-		message+=Math.random()<0.3?".":"";
+		message+=Math.random()<0.2?".":"";
 		/* message+=Math.random()<0.12?" :)":(Math.random()<0.12?" :(":""); */
 		
 		if(string.includes("help")){
