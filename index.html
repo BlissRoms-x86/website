@@ -175,59 +175,78 @@
       </div>
     </div>
   </div>
-  <div class="py-5 download-section bg-light" id="download">
+  <div class="py-5 download-section bg-light" id="download" style="">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 order-2 order-md-1"> <img class="img-fluid d-block" src="images/bliss_surface5.png"> </div>
-        <div class="px-md-5 col-md-6 d-flex flex-column align-items-start justify-content-center order-1 order-md-2">
-          <h3 class="display-3">Bliss OS 11.x Downloads</h3>
-          <img src="https://img.shields.io/sourceforge/dm/blissos-x86.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue" max-width="160px" width="50%">
+        <div class="px-md-5 col-md-12 d-flex flex-column align-items-start justify-content-center order-1 order-md-2">
+          <h3 class="display-3 mx-auto">Bliss OS Downloads</h3>
+          <div class="row mx-auto">
+            <div class="col-md-6">
+              <p>Bliss OS 11: <img src="https://img.shields.io/sourceforge/dm/blissos-x86.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue" max-width="160px" width="70%"></p>
+            </div>
+            <div class="col-md-6">
+              <p>Bliss OS 12: <img src="https://img.shields.io/sourceforge/dm/blissos-dev.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue" max-width="160px" width="70%"></p>
+            </div>
+          </div>
           <p class="mb-3">
           </p>
-          <div id="demo">
-            <p class="lead text-dark">
-              <label>Are you running a 64bit PC?</label>
-            </p>
-            <label class="radio lead text-secondary font-weight-bold text-dark"><input type="radio" name="example1" value="yes" style=" margin-bottom: -0.175rem !important;"><span></span> Yes</label>
-            <label class="radio lead text-secondary font-weight-bold text-dark" style=""><input type="radio" name="example1" value="no" class="`" style=" margin-bottom: -0.175rem !important;"><span class=""></span> No</label>
-            <div class="conditional" data-cond-option="example1" data-cond-value="yes">
-              <p class="mb-3 lead text-dark">
-                <label>Is it a Microsoft Surface device other than the Surface Pro 3? (Surface Pro 3 uses the Generic build)</label>
-              </p>
-              <label class="radio lead text-secondary font-weight-bold text-dark"><input type="radio" name="example2" value="yes" style=" margin-bottom: -0.175rem !important;"><span></span>Yes</label>
-              <label class="radio lead text-secondary font-weight-bold text-dark"><input type="radio" name="example2" value="no" style=" margin-bottom: -0.175rem !important;"><span></span>No</label>
-              <div class="conditional" data-cond-option="example2" data-cond-value="yes" style="">
-                <p class="lead text-dark"> Great! Here's the link to the 64bit Surface builds.<br><br>Be sure to check the <a href="https://docs.blissroms.com/Bliss%20OS/installation-guide/#specific-surface-model-instructions">docs site</a> for our Surface specific instructions.</p><br><br><a class="btn btn-primary mx-1 mb-3" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url">Donate $5</a><a class="btn btn-info mx-1 mb-3" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn text-dark btn-outline-primary mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-link" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Surface%20IPTS%20builds%20-%20Pie/">Go To Downloads</a>
-              </div>
-              <div class="conditional" data-cond-option="example2" data-cond-value="no" style="">
-                <p class="mb-3 lead text-dark" style="">Great! Here's the link to our generic 64bit builds </p><br><br>
-                <a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-outline-secondary text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-link" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/">Go To Downloads</a>
-              </div>
-            </div>
-            <div class="conditional" data-cond-option="example1" data-cond-value="no">
-              <p class="mb-3 lead text-dark">OK, we only have experimental 32bit builds at the moment. Here's a link for those:</p> <br><br><a class="btn btn-primary mb-3 mx-1" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn mb-3 btn-outline-secondary text-dark" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-link" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Experimental%20-%2032%20bit%20%28x86%29%20builds%20-%20Pie/">Go To Downloads</a>
+        </div>
+      </div>
+      <div class="row" style="">
+        <div class="col-md-6">
+          <div class="card bg-dark"> <img class="card-img-top" src="images/bliss12_surface_1.png" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Bliss OS Downloads</h4>
+              <p class="card-text">We recommend most Chromebooks, Windows/Linux PCs or tablets released in the last 4 years. Intel CPU/GPU for best results. AMD CPU/GPU/APU support is limited.&nbsp;<br>Make sure to check the docs section for more information.&nbsp;</p>
+			  <a class="btn btn-primary" type="button" href="index.html#documentation">
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Documentation </a>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 text-center bg-primary">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="display-3"><b>Bliss OS 12 Beta Downloads</b><img src="https://img.shields.io/sourceforge/dm/blissos-dev.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue" max-width="160px" width="20%">
-          </h3>
-          <h2>We have released our Bliss OS 12 betas, based on Android 10.&nbsp;&nbsp;</h2>
-          <h3>To learn more, please visit the <a href="https://forum.xda-developers.com/android/software/bliss-os-x86-pc-s-12-x-development-t4004419" class="text-warning">development thread</a> on XDA. And make sure to also checkout our documentation site at <a href="https://docs.blissroms.com" class="text-warning">docs.blissroms.com</a></h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 col-8 order-2 order-lg-1" style=""> <img class="img-fluid d-block" src="images/bliss12_surface_1.png"> </div>
-        <div class="px-md-6 p-4 d-flex flex-column justify-content-center order-1 order-lg-3 col-lg-4" style="">
-          <div class="bg-primary" >
-            <p class="mb-3 lead text-light">Our Bliss OS 12 betas are now found in a new central location.<br></p>
-            <p class="mb-3 text-light">If you like our work so far, feel free to donate, but it is not required in order to download.</p> <br><br><a class="btn btn-outline-dark mb-3 mx-1 text-white" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn mb-3 btn-secondary text-white" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-outline-secondary text-white" href="https://sourceforge.net/projects/blissos-dev/files/yantra/" target="_blank">Go To Downloads</a>
+        <div class="col-md-5 offset-md-1 mx-auto">
+          <div class="row">
+            <div class="code_container mx-auto">
+              <h6 class="container code_container__title flex-grow-1 justify-content-between flex-column align-items-center d-flex rounded py-2 p-2"><br>
+                <!--<input type="password" class="form-control p-2 m-3" id="inlineFormInputGroup"> -->
+                <div class="chat-window">
+                  <div class="chat-messages">
+                    <ol class="chat-messages-list">
+                      <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble"> Hello, </div>
+                      </li>
+                      <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble"> My name is Bliss-Bot, You must be here to download Bliss OS. </div>
+                      </li>
+                      <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble"> I'm here to help, so just let me know what you are looking for and we will get you on your way </div>
+                      </li>
+                      <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble"> try things like Android 9, Android 10, Bliss OS 11, Bliss OS 12, Yantra... </div>
+                      </li>
+                      <li class="chat-message chat-message-friend">
+                        <div class="chat-message-bubble"> ;) </div>
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="chat-input-bar">
+                    <div class="chat-info-container">
+                    </div>
+                    <div class="chat-effect-container">
+                      <div class="chat-effect-bar"></div>
+                    </div>
+                    <div class="chat-input-wrapper">
+                      <button class="chat-input-tool">
+                        <i class="icon icon-camera"></i>
+                      </button>
+                      <div class="chat-input" contenteditable=""></div>
+                      <button class="chat-send">
+                        <i class="fa fa-paper-plane"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </h6>
+            </div>
           </div>
         </div>
       </div>

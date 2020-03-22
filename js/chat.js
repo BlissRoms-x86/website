@@ -14,8 +14,7 @@ $(document).ready(function(){
 		,lastMessage=""
 	;
 	
-	var lipsum="that was not the secret code. Everyone knows that one already. Did you try and guess it yet. At least act like you are trying. You just typed something unimportant. I must have missed what you typed. I was not paying attention just now. Why didn't you say that. I know you are but what am I. I bet you thought you had it. Have they told you about your problem. I wish that was not not correct. I cant believe this but you are wrong. I can keep doing this all day. some things never change do thay. ";
-	var ipsum="Check out our Twitter. It is all lowercase. The secret code is in plain sight. Read the XDA thread OP. Read the XDA threads OP again. Read the XDA threads OP slower. ";
+	var lipsum="please ask for something like Android 9 or Android 10. I can understand you better if you ask for things like Bliss OS 11 or Bliss OS 12. You need to be a bit more specific like a version number (11 or 12). ";
 	var nsfw="you cant talk to me that way. Youdo you kiss your mother with that mouth. you should not talk likt that. someone might find out. Sometimes I picture myself as a fembot. that is what she said. your mom was also like that";
 	
 	function gooOn(){
@@ -67,14 +66,29 @@ $(document).ready(function(){
 		
 		if(message=="") return;
 		
-		if(message=="readtheop") {
-			console.log('DING DING');
+		if(message.includes("pie")||message.includes("bliss 11")||message.includes("android 9")||message.includes("bliss os 11")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'correct code! Here is the download link: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-link" style="color:white;" target="_blank" href="https://sourceforge.net/projects/blissos-dev/files/Alpha/Bliss-OS-v12.2-x86_64-OFFICIAL-201912272156_k-k4.19.80-ax86-ga-q_m-q-x86_ld-q-x86_dg-_dh-q-x86.iso/download">Go To Downloads</a><br>';
-		}
+			containerTitle.innerHTML = 'Here is the download link to our Android 9 builds: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/">x86_64 Generic Builds</a><a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Experimental%20-%2032%20bit%20%28x86%29%20builds%20-%20Pie/">Experimental x86 (32bit)</a><a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Surface%20IPTS%20builds%20-%20Pie/">x86_64 IPTS (M$ Surface 3(non-pro)-6 Devices Only)</a><br>';
+		
+		} else if (message.includes("yantra")||message.includes("bliss 12")||message.includes("android 10")||message.includes("bliss os 12")||message.includes("android q")){
+			const container = document.querySelector('.code_container');
+			const containerTitle = document.querySelector('.code_container__title');
+			container.style.background = secretCode;
+			container.classList.add('alive');
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-dev/files/yantra/">Bliss OS Yantra - x86_64 Generic Builds</a><br>';
+		} 
+		
+		//if(message=="readtheop") {
+		//	console.log('DING DING');
+		//	const container = document.querySelector('.code_container');
+		//	const containerTitle = document.querySelector('.code_container__title');
+		//	container.style.background = secretCode;
+		//	container.classList.add('alive');
+		//	containerTitle.innerHTML = 'correct code! Here is the download link: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-link" style="color:white;" target="_blank" href="https://sourceforge.net/projects/blissos-dev/files/Alpha/Bliss-OS-v12.2-x86_64-OFFICIAL-201912272156_k-k4.19.80-ax86-ga-q_m-q-x86_ld-q-x86_dg-_dh-q-x86.iso/download">Go To Downloads</a><br>';
+		//}
 		
 		lastMessage=message;
 
@@ -214,10 +228,9 @@ $(document).ready(function(){
 		
 		var string = lastMessage;
 
-		if(string.includes("hint")||string.includes("clue")||string.includes("code")||string.includes("help")){
-			var source=ipsum.toLowerCase();
-		} else if(string.includes("fuck")||string.includes("shit")||string.includes("sex")||string.includes("hate")||string.includes("kill")||string.includes("hit")||string.includes("shoot")){
+		if(string.includes("fuck")||string.includes("shit")||string.includes("sex")||string.includes("hate")||string.includes("kill")||string.includes("hit")||string.includes("shoot")){
 			var source=nsfw.toLowerCase();
+		
 		} else {
 			var source=lipsum.toLowerCase();
 		}
