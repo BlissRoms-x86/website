@@ -423,7 +423,7 @@ $(document).ready(function(){
 		/* message+=Math.random()<0.12?" :)":(Math.random()<0.12?" :(":""); */
 		
 		if(string.includes("help")){
-			var message="Options: Bliss OS 11/12, Android 9/10, Yantra, adding_your_linux_drivers, advanced_boot_debugging, bug_report, bug_tracker, docs, how_to_debug_booting, updates, where_to_start, wheres_the_keymapper";
+			var message="Options: Bliss OS 11/12, Android 9/10, Yantra, adding_your_linux_drivers, advanced_boot_debugging, bug_report, bug_tracker, docs, how_to_debug_booting, updates, where_to_start, wheres_the_keymapper. I can also understand many keywords, so depending on what you type, I should be able to figure out what you need for the most part.";
 		} else if(string.includes("adding_your_linux_drivers")||string.includes("linux drivers")||string.includes("kernel module")){
 			var message="So you have tracked down or created Linux drivers for your device, AWESOME!! Now all you have to do is turn it into a Linux kernel module, and then add it to external/kernel-drivers for it to be included in the current kernel build. Examples of others we add are here https://github.com/BlissRoms-x86/external_kernel-drivers/tree/q10.0-x86 The examples only add one Android.mk file, and the one I use is generic for just about any kernel module that has a standard MAKEFILE, not a MAKEFILE.am file. So you should really only need to add your kernel module folder to external/kernel-drivers/ and copy the Android.mk into it, then build source as normal. It'll get picked up as one of the last steps in building and packaging the kernel";
 		} else if(string.includes("advanced_boot_debugging")||string.includes("debugging")){
