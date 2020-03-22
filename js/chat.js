@@ -419,8 +419,8 @@ $(document).ready(function(){
 		for (var i = 0; i < length; i++) {
 			message+=source[start+i]+(i<length-1?" ":"");
 		};
-		message+=Math.random()<0.1?".":"";
-		message+=Math.random()<0.12?" :)":(Math.random()<0.12?" :(":"");
+		message+=Math.random()<0.3?".":"";
+		/* message+=Math.random()<0.12?" :)":(Math.random()<0.12?" :(":""); */
 		
 		if(string.includes("help")){
 			var message="Options: Bliss OS 11/12, Android 9/10, Yantra, adding_your_linux_drivers, advanced_boot_debugging, bug_report, bug_tracker, docs, how_to_debug_booting, updates, where_to_start, wheres_the_keymapper";
