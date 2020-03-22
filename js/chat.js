@@ -230,7 +230,6 @@ $(document).ready(function(){
 
 		if(string.includes("fuck")||string.includes("shit")||string.includes("sex")||string.includes("hate")||string.includes("kill")||string.includes("hit")||string.includes("shoot")){
 			var source=nsfw.toLowerCase();
-		
 		} else {
 			var source=lipsum.toLowerCase();
 		}
@@ -243,12 +242,36 @@ $(document).ready(function(){
 			end=source.length-1;
 			length=end-start;
 		}
+		
 		var message="";
+
 		for (var i = 0; i < length; i++) {
 			message+=source[start+i]+(i<length-1?" ":"");
 		};
-		message+=Math.random()<0.3?"?":"";
+		message+=Math.random()<0.1?".":"";
 		message+=Math.random()<0.12?" :)":(Math.random()<0.12?" :(":"");
+		
+		if(string.includes("help")){
+			var message="Options: Bliss OS 11/12, Android 9/10, Yantra, adding_your_linux_drivers, advanced_boot_debugging, bug_report, bug_tracker, docs, how_to_debug_booting, updates, where_to_start, wheres_the_keymapper";
+		} else if(string.includes("adding_your_linux_drivers")){
+			var message="So you have tracked down or created Linux drivers for your device, AWESOME!! Now all you have to do is turn it into a Linux kernel module, and then add it to external/kernel-drivers for it to be included in the current kernel build. Examples of others we add are here https://github.com/BlissRoms-x86/external_kernel-drivers/tree/q10.0-x86 The examples only add one Android.mk file, and the one I use is generic for just about any kernel module that has a standard MAKEFILE, not a MAKEFILE.am file. So you should really only need to add your kernel module folder to external/kernel-drivers/ and copy the Android.mk into it, then build source as normal. It'll get picked up as one of the last steps in building and packaging the kernel";
+		} else if(string.includes("advanced_boot_debugging")){
+			var message="Sometimes, you can't even get things to boot up at all. In these cases, you will want to use the Debug boot options, or manually add DEBUG=1 (2 - depending on logging level needed), and when it boots, use Logcat to log things, Code: logcat > 'sdcard/log_name.txt' Then in the console again, you can type 'exit' to continue booting Android. (if DEBUG=2, you will need to type exit twice) You can then use alt-f1 & alt-f7 to get back and forth from the console to the Android UI. When done, copy and paste the entire log either to Hastebin or Pastebin. When done, go to https://github.com/BlissRoms-x86/bug_reports/issues and file an issue with the link to the pastebin or hastebin and any other information you may be able to provide";
+		} else if(string.includes("bug_report")){
+			var message="Manual Logging: Use the alt-f1 console, and in the console, type: 'logcat > sdcard/log_name.txt' Then alt-f7 to get back to the Android UI, and replacate the issue. When done, use alt-f1 to go back to console and ctrl-c to stop the logging. Copy and paste the entire log either to Hastebin or Pastebin. When done, go to https://github.com/BlissRoms-x86/bug_reports/issues and file an issue with the link to the pastebin or hastebin and any other information you may be able to provide. ";
+		} else if(string.includes("bug_tracker")){
+			var message="Bliss OS now has a place to help track open bugs and feature requests to start off with. Please follow the link and use one of the existing templates to fill things out. https://github.com/BlissRoms-x86/bug_reports";
+		} else if(string.includes("docs")){
+			var message="You can find more information in our docs. Everything from beginners to advance usage and debugging is covered over there. https://docs.blissroms.com" ;
+		} else if(string.includes("how_to_debug_booting")){
+			var message="There are a few ways to do this. First is to hit 'e' when the grub selection screen shows up, and try and boot by removing the 'quiet' from your grub entry. The second option would be to boot in debug mode by adding DEBUG=1 or DEBUG=2 , both represent a lower level of logging. You will need to enter 'exit' once or twice when using debug mode to procede to the following steps of the boot process. If the animation never starts, add 'nomodeset' to the grub command to force software rendering and hardware compatibility mode";
+		} else if(string.includes("updates")){
+			var message="Get yourself a Telegram account, then Subscribe to this Channel for All announcements and updates https://t.me/blissos_updates";
+		} else if(string.includes("where_to_start")){
+			var message="For those looking where to begin, I would like to direct your attention to our docs.blissroms.com site. The Bliss OS (x86) section on it has all the possible knowledge we've gathered to help make things easier for you all to find, and better for our sanity from having to repeat ourselves. Start there, and make sure to check out the XDA thread for the build you're using (nougat, oreo, pie, q) for any questions that you couldn't figure out using the docs site.";
+		} else if(string.includes("wheres_the_keymapper")){
+			var message="Q: Why is there no keymapper included in Bliss OS? A: We have not found any open source keymappers, so we won't put our users data in jeopardy just for that. We are open to working with any developers interested in creating an on-screen keymapper for keyboard/mouse and gampads though, so please spread the word. For those lost as to why we want to ensure security there, a gaming keymapper will redirect any input from the users device, and can even run when a game is not loaded. So it has the potential to grab passwords, banking info, etc. We don't trust anything we can't sift through the source of enough these days, so this is why we haven't included one as of yet";
+		}
 
 		var typeDelay=300+(message.length*25)+(Math.random()*1000);
 
