@@ -81,7 +81,8 @@ $(document).ready(function(){
 			container.style.background = secretCode;
 			container.classList.add('alive');
 			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
-			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-dev/files/yantra/">Bliss OS Yantra - x86_64 Generic Builds</a><br>';
+			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-dev/files/yantra/">Bliss OS Yantra - x86_64 Generic Builds</a><br>'+
+			'There are currently no Android 10 Surface builds. Please check back later for those.';
 		} else if (message.includes("taimen")||message.includes("pixel 2 xl")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
@@ -444,6 +445,8 @@ $(document).ready(function(){
 			var message="Q: Why is there no keymapper included in Bliss OS? A: We have not found any open source keymappers, so we won't put our users data in jeopardy just for that. We are open to working with any developers interested in creating an on-screen keymapper for keyboard/mouse and gampads though, so please spread the word. For those lost as to why we want to ensure security there, a gaming keymapper will redirect any input from the users device, and can even run when a game is not loaded. So it has the potential to grab passwords, banking info, etc. We don't trust anything we can't sift through the source of enough these days, so this is why we haven't included one as of yet";
 		} else if(string.includes("your manager")||string.includes("real person")||string.includes("speak with a human")){
 			var message="We do have real people available to help in our free Telegram chat for Bliss OS. https://t.me/blissx86 Feel free to sign up for an account and ask more questions in there. ";
+		} else if(string.includes("surface")){
+			var message="You're going to have to further specify what version too. Android 9 or Android 10? ";
 		}
 
 		var typeDelay=300+(message.length*25)+(Math.random()*1000);
