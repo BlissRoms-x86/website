@@ -1,21 +1,26 @@
 .team_content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  row-gap: 50px;
-  margin-top: 80px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  row-gap: 40px;
+  margin-top: 70px;
 }
 
 .image {
-  width: 190px;
+  width: 160px;
   height: auto;
   border-radius: 100%;
   margin: 0 auto 20px auto;
 }
 
 .team_item {
-  text-align: center;
+	text-align: center;
+	font-size: x-small;
 }
 
 .team_data_text {
   margin: 0;
+}
+
+.team {
+	padding-top: 2.5rem !important;
 }
