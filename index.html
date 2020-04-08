@@ -329,7 +329,7 @@
           </div>
           <ul class="nav nav-tabs">
             <li class="nav-item mx-auto"> <a class="active nav-link" href="" data-toggle="tab" data-target="#tabone">Core Members</a> </li>
-            <!-- <li class="nav-item"> <a href="" class="nav-link" data-toggle="tab" data-target="#tabtwo">Maintainers</a> </li> -->
+            <li class="nav-item mx-auto"> <a href="" class="nav-link" data-toggle="tab" data-target="#tabtwo">Maintainers</a> </li>
           </ul>
           <div class="tab-content mt-2">
             <div class="tab-pane fade show active" id="tabone" role="tabpanel">
@@ -357,12 +357,12 @@
               </script>
             </div>
             <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-              <section id="content" class="team_content"></section>
+              <section id="content2" class="team_content"></section>
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
               <script>
                 $.ajax({
                   type: "GET",
-                  url: "https://blissapi.blissroms.com/team/public/allmaintainers", // TeamBliss JSON
+                  url: "https://blissapi.blissroms.com/team/public/allteambliss", // TeamBliss JSON
                   success: function(data) {
                     var newContent = ''; // Variable to hold HTML
                     for (var i = 0; i < data.length; i++) { // Loop through object
@@ -375,7 +375,7 @@
                       newContent += '</div>';
                     }
                     // Update the page with the new content
-                    document.getElementById('content').innerHTML = newContent;
+                    document.getElementById('content2').innerHTML = newContent;
                   }
                 })
               </script>
