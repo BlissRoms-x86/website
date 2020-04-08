@@ -61,7 +61,7 @@ $(document).ready(function(){
 		};
 	}
 	function sendMessage(){
-		var message=$input.text();
+		var message=$input.text().toLowerCase();
 		const secretCode = 'readtheop';
 		
 		if(message=="") return;
