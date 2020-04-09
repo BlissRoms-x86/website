@@ -78,44 +78,73 @@
     <div class="container">
       <div class="row">
         <div class="mx-auto col-md-12 text-center">
-          <h3 class="display-3">The Stats</h3>
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <h3 class="display-3">The Stats</h3>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group mt-3"><input type="text" class="form-control" id="search" placeholder="Search"></div>
+            </div>
+          </div>
         </div>
       </div>
-	  
-	  
-	  <div class="container">
-		  <div id="expenses" class="row cover bottom text-center d-inline-flex justify-content-center align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)); background-position: left top; background-size: 100%; background-repeat: repeat;">
-			<section class="counting">
-			  <div class="layout">
-				<h2 class="text-center" >Bliss Devices</h2>
-				<section id="content3" class="team_content"></section>
-			  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-			  <script>
-				$.ajax({
-				  type: "GET",
-				  url: "https://cors-anywhere.herokuapp.com/https://blissapi.blissroms.com/blissstats/public/devicestats", // TeamBliss JSON
-				  success: function(data) {
-					var newContent = ''; // Variable to hold HTML
-					for (var i = 0; i < data.length; i++) { // Loop through object
-					  newContent += '<div class="grid-3">';
-					  newContent += '<span class="count2 text-dark" style="font-size: 4em !important; color: #0080ff;">' + data[i].installations + '</span>';
-					  newContent += '<p style="color: #0080ff;">' + data[i].device + '</p>';
-					  newContent += '</div>';
-					}
-					// Update the page with the new content
-					document.getElementById('content3').innerHTML = newContent;
-				  }
-				})
-			  </script>
-			  </div>
-			</section>
-			<!-- End #Contact-->
-		  </div>
-		</div>
-	  
-	  
-	  
-	  
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <form class="form-inline">
+              <div class="input-group">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto" data-pingendo-transient="">
+        <div id="expenses" class="row cover bottom text-center d-inline-flex justify-content-center align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)); background-position: left top; background-size: 100%; background-repeat: repeat;">
+          <section class="counting">
+            <div class="layout">
+              <h2 class="text-center">Bliss Devices</h2>
+              <section id="content3" class="team_content"></section>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+              <script>
+                $.ajax({
+                  type: "GET",
+                  url: "https://cors-anywhere.herokuapp.com/https://blissapi.blissroms.com/blissstats/public/devicestats", // TeamBliss JSON
+                  success: function(data) {
+                    var newContent = ''; // Variable to hold HTML
+                    for (var i = 0; i < data.length; i++) { // Loop through object
+                      newContent += '<div class="grid-3">';
+                      newContent += '<span class="count2 text-dark" style="font-size: 4em !important; color: #0080ff;">' + data[i].installations + '</span>';
+                      newContent += '<p class="dev" style="color: #0080ff;">' + data[i].device + '</p>';
+                      newContent += '</div>';
+                    }
+                    // Update the page with the new content
+                    document.getElementById('content3').innerHTML = newContent;
+                  }
+                })
+              </script>
+              <script>
+                $(document).ready(function() {
+                  $('#search').keyup(function() {
+                    // Search text
+                    var text = $(this).val();
+                    // Hide all content class element
+                    $('.grid-3').hide();
+                    // Search 
+                    $('.grid-3 .dev:contains("' + text + '")').closest('.grid-3').show();
+                  });
+                });
+                $.expr[":"].contains = $.expr.createPseudo(function(arg) {
+                  return function(elem) {
+                    return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
+                  };
+                });
+              </script>
+            </div>
+          </section>
+          <!-- End #Contact-->
+        </div>
+      </div>
     </div>
   </div>
   <div class="py-5 bg-light" style="">
