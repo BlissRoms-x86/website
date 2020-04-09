@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- PAGE settings -->
   <link rel="icon" href="favicon.ico">
-  <title>BlissROMs Stats</title>
-  <meta name="description" content="Bliss Stats for all devices with confirmed boot">
+  <title>Bliss OS Stats</title>
+  <meta name="description" content="Bliss OS Stats for all devices with confirmed boot">
   <meta name="keywords" content="blissroms, bliss, os, x86, aosp, android, rom, teambliss">
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -31,7 +31,7 @@
     <div class="container">
       <a class="navbar-brand" href="stats.html"><img src="images/BlissIcon_Smal_wl.png" width="50" class="d-inline-block align-top" alt=""></a>
       <div class="row">
-        <div class="col-md-12"><a class="navbar-brand" href="stats.html"><b><b>BlissROMs Stats</b></b></a></div>
+        <div class="col-md-12"><a class="navbar-brand" href="stats.html"><b><b>Bliss OS Stats</b></b></a></div>
       </div>
       <div class="row"></div>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
@@ -55,7 +55,7 @@
     <div class="container pt-5">
       <div class="row">
         <div class="col-md-12 py-5 mx-auto text-center">
-          <h1 class="display-3 mb-4">BlissROMs Stats Site</h1>
+          <h1 class="display-3 mb-4">Bliss OS Stats Site</h1>
           <h1>Our Bliss Stats app collects a single device identifier when each device boots up for the first time.</h1>
           <h3>This sites purpose is to allow that data to be publicly viewable. </h3>
         </div>
@@ -110,14 +110,17 @@
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
               <script>
                 $.ajax({
+                  url: "https://cors-anywhere.herokuapp.com/https://blissapi.blissroms.com/blissstats/public/blissosstats", // TeamBliss JSON
                   type: "GET",
-                  url: "https://cors-anywhere.herokuapp.com/https://blissapi.blissroms.com/blissstats/public/devicestats", // TeamBliss JSON
                   success: function(data) {
                     var newContent = ''; // Variable to hold HTML
+					var substr = 'Bliss-OS ';
                     for (var i = 0; i < data.length; i++) { // Loop through object
+					  var dv = data[i].device;
+					  var dv1 = dv.replace(substr, '');
                       newContent += '<div class="grid-3">';
                       newContent += '<span class="count2 text-dark" style="font-size: 4em !important; color: #0080ff;">' + data[i].installations + '</span>';
-                      newContent += '<p class="dev" style="color: #0080ff;">' + data[i].device + '</p>';
+                      newContent += '<p class="dev" style="color: #0080ff;">' + dv1 + '</p>';
                       newContent += '</div>';
                     }
                     // Update the page with the new content
