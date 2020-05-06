@@ -75,13 +75,13 @@ $(document).ready(function(){
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/">x86_64 Generic Builds</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Experimental%20-%2032%20bit%20%28x86%29%20builds%20-%20Pie/">Experimental x86 (32bit)</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Surface%20IPTS%20builds%20-%20Pie/">x86_64 IPTS (M$ Surface 3(non-pro)-6 Devices Only)</a><br>';
-		} else if (message.includes("yantra")||message.includes("bliss 12")||message.includes("android 10")||message.includes("bliss os 12")||message.includes("android q")){
+		} else if (message.includes("yantra")|(message.includes("merkaba")||message.includes("bliss 12")||message.includes("android 10")||message.includes("bliss os 12")||message.includes("android q")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
 			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
-			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-dev/files/yantra/">Bliss OS Yantra - x86_64 Generic Builds</a><br>'+
+			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-dev/files/merkaba/">Bliss OS Merkaba - x86_64 Generic Builds</a><br>'+
 			'There are currently no Android 10 Surface builds. Please check back later for those.';
 		} else if (message.includes("taimen")||message.includes("pixel 2 xl")){
 			const container = document.querySelector('.code_container');
