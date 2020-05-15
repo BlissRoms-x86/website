@@ -20,6 +20,7 @@
   <script src="js/animate-in.js"></script>
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/buttonstyle.css">
   <link rel="stylesheet" href="css/table.css">
   <link rel="stylesheet" href="css/chat.css">
   <script data-ad-client="ca-pub-7639560510014441" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -112,7 +113,10 @@
   <div class="py-5" style="background-image: url(&quot;https://i.imgur.com/W9WLZoD.jpg&quot;); background-position: left top; background-size: 100%; background-repeat: repeat; box-shadow: rgb(255, 255, 255) 241px 0px 1000px 300px inset;" id="about">
     <div class="container">
       <div class="row">
-        <div class="px-md-5 col-lg-6 d-flex flex-column align-items-start justify-content-center">
+        <div class="col-lg-12"> <img class="img-fluid d-block" src="https://i.imgur.com/pOad4eK.png"> </div>
+      </div>
+      <div class="row">
+        <div class="px-md-5 col-lg-12 d-flex flex-column align-items-start justify-content-center">
           <h3 class="display-3" style="color: black;">Desktop or Tablet UI</h3>
           <p class="mb-3 lead text-dark"><b>Bliss OS lets the user choose between Desktop or Tablet UI, based on the launcher being used. You can even mix the two for a truly customized experience</b></p>
           <div class="row p-3">
@@ -126,7 +130,6 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6"> <img class="img-fluid d-block" src="images/bliss_surface4.png"> </div>
       </div>
     </div>
   </div>
@@ -192,7 +195,7 @@
       </div>
     </div>
   </div>
-  <div class="py-5 download-section bg-light" id="download" style="">
+  <div class="download-section bg-light pt-5 pb-0" id="download" style="">
     <div class="container">
       <div class="row">
         <div class="px-md-5 col-md-12 d-flex flex-column align-items-start justify-content-center order-1 order-md-2">
@@ -211,30 +214,94 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <div class="alert alert-primary" role="alert">
-            <button type="button" class="close" data-dismiss="alert">×</button>
-            <h4 class="alert-heading">New Download Options!!</h4>
-            <p class="mb-0">We have updated our downloader to also include a variety of helpful tips and tricks for Bliss OS. If you are looking to download Bliss OS, please just type the version you are looking for into the chat window below (bliss os 11, bliss os 12). If you are looking for help, please just type in "help"</p>
-          </div>
           <div class="alert alert-danger" role="alert">
             <button type="button" class="close" data-dismiss="alert">×</button>
-            <h4 class="alert-heading">!!Please Note!!</h4>
+            <h4 class="alert-heading"><b>!!Please Note!!</b></h4>
             <p class="mb-0">Our Bliss OS 12 builds are considered Beta status, and users should expect some bugs.</p>
           </div>
         </div>
       </div>
       <div class="row" style="">
+      </div>
+    </div>
+  </div>
+  <div class="bg-light">
+    <div class="container">
+      <div class="row">
         <div class="col-md-12">
-          <div class="card bg-dark"> <img class="card-img-top" src="images/bliss12_surface_1.png" alt="Card image cap">
+          <h1><b>Bliss OS comes in a few flavors</b></h1>
+          <p class="lead mb-4">Since we are usually working across multiple versions of Android with Bliss OS, things can get a little confusing when it comes to figuring out what build type is right for you. Here is a little explanation of our currently supported variants to help things along.&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-6 p-3 bg-primary">
+          <h2 class="my-3"><b>Bliss OS 11.x</b></h2>
+          <p>These are generic builds based on Android 9 (Pie) and BlissROMs sources.<br>These are considered our current stable branch</p>
+        </div>
+        <div class="col-md-3 col-6 p-3 bg-secondary">
+          <h2 class="my-3"> <b>Bliss OS 11.x (IPTS)</b></h2>
+          <p>These are Microsoft Surface &amp; Lenovo X1 Tab specific builds based on Android 9 (Pie) and BlissROMs sources.&nbsp;<br>Only download these if you have an IPTS device. Ask your manufacturer if unsure.&nbsp;</p>
+        </div>
+        <div class="col-md-3 col-6 p-3 bg-warning">
+          <h2 class="my-3"> <b>Bliss OS 12.x</b></h2>
+          <p class=""><b>These are generic builds based on Android 10 (Q)</b> and BlissROMs sources.<b>&nbsp;</b><br>They should be considered Beta status, thus there may be dragons.&nbsp;</p>
+        </div>
+        <div class="col-md-3 col-6 p-3 bg-success">
+          <h2 class="my-3"> <b>Bliss OS Lite 1.x</b></h2>
+          <p>These are generic builds based on Android 10 (Q) using mostly AOSP and a tiny bit of Bliss sprinkled on top.<br>They should be considered Beta status, thus there may be dragons. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 p-4">
+          <h4><b>Q: Bliss builds come with funny names. Why?</b></h4>
+          <p>A: Because we felt the need to include the various branches for Kernel, Mesa, &amp; Firmware in the build name. So, when you see a name like this: Bliss-v11.1-Beta-x86_64-OFFICIAL-20181018-1457_kernel-4.9_m18.3.0-devel_w40_LLVM70_dev-kernel.org.iso It can be broken into 3-4 parts. Build ID: "Bliss-v11.1-Beta-x86_64-OFFICIAL-20181018-1457" Kernel Branch: "_kernel-4.9" Mesa Branch: "_m18.3.0-devel_w40_LLVM70" Firmware Branch: "_dev-kernel.org"</p>
+        </div>
+        <div class="col-md-6 p-4">
+          <h4><b>Q: What do the parts of the kernel names mean?&nbsp;</b></h4>
+          <p>A: When we add a batch of commits to the kernels, we like to save that version with an identifier. So the most common parts to the kernel names are as follows: -ax86 : Means that this kernel started off from the Android-x86 repo, or has the majority of Chih Wei's commits for that kernel -ma : Means this started out from Maurossi's repo. (https://github.com/maurossi/linux) -gal : Means that this kernel also includes compatibility with Chromebook devices, from the peeps at Gallium OS (https://github.com/GalliumOS/linux) -ipts : Means that we are including some specific commits for the Intel IPTS touchscreens (mostly in the Surface line of devices) These builds likely won't run well on most other devices.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 p-4">
+          <h4 contenteditable="true"><b>Q: OK, So I have a BlahBlah CPU, with a Such'n'such GPU, what builds are right for me?&nbsp;</b></h4>
+          <p style="">A: Well, we have a method to all our madness there. We build Bliss OS with different kernels that work as a way to make it more compatible with different types of devices. Here is the breakdown on those: Kernel-4.9 These are considered the most "Stable" builds, they will work across most older and recent devices. Kernel-4.12-14 builds will be hard to come by, but seem to work great for some newer Atom based devices. Kernel 4.15+ builds will not work on some older devices, so consider these to be a little less "All-In-One" Kernel 4.18+ Intended for newer devices. adds some newer touchscreen support and added AMDGPU support kernel 4.19+ Intended for newer devices. Even more touchscreen support and ACPI support Kernel 4.20+ Intended for newer devices. Even more touchscreen support and added ARM/ATOM support and Vega GPU support Kernel 5.0+ This is where things will start getting tricky. Even more touchscreen support, and added support for ARM/ARM64/ATOM etc, but also a ton of Android kernel commits start making their way into things. If you would like to know if any others using your device have booted Bliss OS yet, we do offer our <a href="https://www.blissos.org/osstats.html">OS stats site</a> to help with that question.&nbsp;</p>
+          <div class="col-md-12 mx-auto d-flex align-items-center flex-grow-1 justify-content-start">
+            <a class="btn btn-secondary mb-3 mx-2" href="https://www.blissos.org/osstats.html" target="_blank">OS Stats Page</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 p-4" style="">
+          <h4> <b>Q: How do I find out about updates and known bugs or report new ones?</b></h4>
+          <p>We do make an update post on our XDA thread for each release. Those posts contain details on any special instructions, fixes, updates, etc. And our docs site is updated often with tips and tricks to help make things easier on everyone. For new bugs found, we like to keep things pretty simple and straight forward, so we've setup a Bug Reports repo on our GitHub to track things.&nbsp;<br></p>
+          <div class="col-md-12 mx-auto d-flex align-items-center flex-grow-1 justify-content-start">
+            <a class="btn btn-secondary mx-2 mb-3" href="https://docs.blissroms.com" target="_blank">BlissROMs Docs</a><a class="btn btn-secondary mb-3 mx-2" href="https://forum.xda-developers.com/bliss-roms/bliss-roms-development/bliss-os-pie-beta-preview-t3855917" target="_blank">Bliss OS 11 XDA Thread</a><a class="btn btn-secondary mb-3 mx-2" href="https://forum.xda-developers.com/android/software/bliss-os-x86-pc-s-12-x-development-t4004419" target="_blank">Bliss OS 12 XDA Thread</a><a class="btn btn-secondary mb-3 mx-2" href="https://github.com/BlissRoms-x86/bug_reports" target="_blank">Bug Reports</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card bg-dark">
             <div class="card-body">
-              <h4 class="card-title">Bliss OS Downloads</h4>
+              <h4 class="card-title">Now, On To The Downloads!</h4>
               <p class="card-text">We recommend&nbsp; running Bliss OS on most Chromebooks, Windows/Linux PCs or tablets released in the last 4 years. Intel CPU/GPU for best results. AMD CPU/GPU/APU support is limited. VM support is very limited. Please install on native hardware for best results.&nbsp;<br>Make sure to check the docs section for more information.&nbsp;</p>
               <a class="btn btn-primary" type="button" href="index.html#documentation">
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Documentation </a>
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   </div>
@@ -244,142 +311,103 @@
         <div class="col-md-3 col-6 mt-0 d-flex flex-column"> <img class="img-fluid d-block" src="images/windows-laptop-64-tablet.svg">
           <div class="row mx-auto text-center">
             <div class="tabbutton1 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
-				<input id="tabbutton1-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;" >
-				<label for="tabbutton1-one">Download</label>
-
-				<div class="tabbutton1-content">
-					<a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-					<br>
-					<a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-					<br>
-					<a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-					<br>
-					<a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/">Go To Downloads</a>
-							 
-				</div>
-		  
-			</div>
-		  </div>	
+              <input id="tabbutton1-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+              <label for="tabbutton1-one">Download</label>
+              <div class="tabbutton1-content">
+                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                <br>
+                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                <br>
+                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                <br>
+                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/">Go To Downloads</a>
+              </div>
+            </div>
+          </div>
           <h5> <b>[Stable]</b><br><b>Generic Pie Builds</b><br>Bliss OS 11.x - x86_64<br>Android 9</h5>
         </div>
         <div class="col-md-3 col-6 mt-0 d-flex flex-column"> <img class="img-fluid d-block" src="images/windows-laptop-64-bugs.svg">
           <div class="row text-center mx-auto">
             <div class="tabbutton2 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
-				<input id="tabbutton2-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;" >
-				<label for="tabbutton2-one">Download</label>
-
-				<div class="tabbutton2-content">
-					<a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-					<br>
-					<a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-					<br>
-					<a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-					<br>
-					<a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/merkaba">Go To Downloads</a>
-							 
-				</div>
-		  
-			</div>
-			
-		  </div>
+              <input id="tabbutton2-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+              <label for="tabbutton2-one">Download</label>
+              <div class="tabbutton2-content">
+                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                <br>
+                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                <br>
+                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                <br>
+                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/merkaba">Go To Downloads</a>
+              </div>
+            </div>
+          </div>
           <h5> <b>[Experimental]</b><br><b>Generic Bliss OS Pro</b><br>Bliss OS 12.x - x86_64<br>Android 10 (Merkaba)</h5>
         </div>
         <div class="col-md-3 col-6 mt-0 d-flex flex-column" style=""> <img class="img-fluid d-block" src="images/windows-touch-screen.svg">
           <div class="row mx-auto">
-            
-			<div class="tabbutton3 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
-				<input id="tabbutton3-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;" >
-				<label for="tabbutton3-one">Download</label>
-
-				<div class="tabbutton3-content">
-					<a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-					<br>
-					<a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-					<br>
-					<a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-					<br>
-					<a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Surface%20IPTS%20builds%20-%20Pie/">Go To Downloads</a>
-							 
-				</div>
-		  
-			</div>
-			
-		  </div>
+            <div class="tabbutton3 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+              <input id="tabbutton3-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+              <label for="tabbutton3-one">Download</label>
+              <div class="tabbutton3-content">
+                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                <br>
+                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                <br>
+                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                <br>
+                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Surface%20IPTS%20builds%20-%20Pie/">Go To Downloads</a>
+              </div>
+            </div>
+          </div>
           <h5> <b>[Stable]</b><br><b>Surface Builds</b><br>Bliss OS 11.x - x86_64<br>Android 9</h5>
         </div>
         <div class="col-md-3 col-6 mt-0 d-flex flex-column"> <img class="img-fluid d-block" src="images/windows-laptop-32-bugs.svg">
           <div class="row mx-auto">
-            
-			<div class="tabbutton4 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
-				<input id="tabbutton4-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;" >
-				<label for="tabbutton4-one">Download</label>
-
-				<div class="tabbutton4-content">
-					<a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-					<br>
-					<a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-					<br>
-					<a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-					<br>
-					<a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Experimental%20-%2032%20bit%20%28x86%29%20builds%20-%20Pie/">Go To Downloads</a>
-							 
-				</div>
-		  
-			</div>
-			
-		  </div>
+            <div class="tabbutton4 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+              <input id="tabbutton4-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+              <label for="tabbutton4-one">Download</label>
+              <div class="tabbutton4-content">
+                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                <br>
+                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                <br>
+                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                <br>
+                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Experimental%20-%2032%20bit%20%28x86%29%20builds%20-%20Pie/">Go To Downloads</a>
+              </div>
+            </div>
+          </div>
           <h5> <b>[Experimental] 32-bit Generic Pie Builds</b><br>Bliss OS 11.x - x86<br>Android 9</h5>
         </div>
       </div>
-	  
-	  
     </div>
   </div>
-  
-  
-  
-  
-  
-  
-  
   <div class="pb-5 bg-light justify-content-center flex-row d-flex align-items-center flex-grow-1" style="">
     <div class="container d-flex flex-row justify-content-center align-items-center flex-grow-1">
       <div class="row d-flex flex-row justify-content-center align-items-center flex-grow-1">
         <div class="col-md-3 col-6 mt-0 d-flex flex-column"> <img class="img-fluid d-block" src="images/windows-laptop-64-tablet.svg">
           <div class="row mx-auto text-center">
             <div class="tabbutton5 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
-				<input id="tabbutton5-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;" >
-				<label for="tabbutton5-one">Coming Soon</label>
-
-				<div class="tabbutton5-content">
-					<a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-					<br>
-					<a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-					<br>
-					<a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-					<br>
-					<a class="btn btn-primary mx-1 mb-3 fade-in" href="#">Coming Soon</a>
-							 
-				</div>
-		  
-			</div>
-		  </div>	
+              <input id="tabbutton5-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+              <label for="tabbutton5-one">Coming Soon</label>
+              <div class="tabbutton5-content">
+                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                <br>
+                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                <br>
+                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                <br>
+                <a class="btn btn-primary mx-1 mb-3 fade-in" href="#">Coming Soon</a>
+              </div>
+            </div>
+          </div>
           <h5> <b>[Experimental]</b><br><b>Generic Bliss OS Lite</b><br>Bliss OS Lite 1.x - x86_64<br>Android 10</h5>
         </div>
-        
       </div>
-	  
-	  
     </div>
   </div>
-  
-  
-  
-  
-  
-  
-  
-  <div class="py-5 bg-dark" id="documentation">
+  <div class="py-5 bg-dark" id="documentation" style="">
     <div class="container">
       <div class="row">
         <div class="col-md-12" style="">

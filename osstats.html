@@ -98,7 +98,7 @@
         </div>
         <div class="row">
           <div class="col-md-12">
-            <div class="form-group"><input type="text" class="form-control" id="search" placeholder="Search"></div>
+            <div class="form-group"><input type="text" class="form-control text-dark bg-light" id="search" placeholder="Search"></div>
           </div>
         </div>
       </div>
@@ -114,10 +114,10 @@
                   type: "GET",
                   success: function(data) {
                     var newContent = ''; // Variable to hold HTML
-					var substr = 'Bliss-OS ';
+                    var substr = 'Bliss-OS ';
                     for (var i = 0; i < data.length; i++) { // Loop through object
-					  var dv = data[i].device;
-					  var dv1 = dv.replace(substr, '');
+                      var dv = data[i].device;
+                      var dv1 = dv.replace(substr, '');
                       newContent += '<div class="grid-3">';
                       newContent += '<span class="count2 text-dark" style="font-size: 4em !important; color: #0080ff;">' + data[i].installations + '</span>';
                       newContent += '<p class="dev" style="color: #0080ff;">' + dv1 + '</p>';
