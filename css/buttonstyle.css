@@ -104,6 +104,27 @@ input:checked ~ .tabbutton5-content {
   max-height: 20em;
 }
 
+.tabbutton6 {
+  text-align: center;
+}
+.tabbutton6-content {
+  max-height: 0;
+  overflow: hidden;
+  text-align: center;
+  /* background: #0080ff; */
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+
+.tabbutton6-content p {
+  margin: .5em;
+}
+/* Size of expand */
+input:checked ~ .tabbutton6-content {
+  max-height: 20em;
+}
+
 input {
   /* position: absolute; */
   opacity: 0;
