@@ -257,50 +257,12 @@
       </div>
     </div>
   </div>
-  <div class="py-3 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 p-4">
-          <h4><b>Q: Bliss builds come with funny names. Why?</b></h4>
-          <p>A: Because we felt the need to include the various branches for Kernel, Mesa, &amp; Firmware in the build name. So, when you see a name like this: Bliss-v11.1-Beta-x86_64-OFFICIAL-20181018-1457_kernel-4.9_m18.3.0-devel_w40_LLVM70_dev-kernel.org.iso It can be broken into 3-4 parts. Build ID: "Bliss-v11.1-Beta-x86_64-OFFICIAL-20181018-1457" Kernel Branch: "_kernel-4.9" Mesa Branch: "_m18.3.0-devel_w40_LLVM70" Firmware Branch: "_dev-kernel.org"</p>
-        </div>
-        <div class="col-md-6 p-4">
-          <h4><b>Q: What do the parts of the kernel names mean?&nbsp;</b></h4>
-          <p>A: When we add a batch of commits to the kernels, we like to save that version with an identifier. So the most common parts to the kernel names are as follows: -ax86 : Means that this kernel started off from the Android-x86 repo, or has the majority of Chih Wei's commits for that kernel -ma : Means this started out from Maurossi's repo. (https://github.com/maurossi/linux) -gal : Means that this kernel also includes compatibility with Chromebook devices, from the peeps at Gallium OS (https://github.com/GalliumOS/linux) -ipts : Means that we are including some specific commits for the Intel IPTS touchscreens (mostly in the Surface line of devices) These builds likely won't run well on most other devices.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 p-4">
-          <h4 contenteditable="true"><b>Q: OK, So I have a BlahBlah CPU, with a Such'n'such GPU, what builds are right for me?&nbsp;</b></h4>
-          <p style="">A: Well, we have a method to all our madness there. We build Bliss OS with different kernels that work as a way to make it more compatible with different types of devices. Here is the breakdown on those: Kernel-4.9 These are considered the most "Stable" builds, they will work across most older and recent devices. Kernel-4.12-14 builds will be hard to come by, but seem to work great for some newer Atom based devices. Kernel 4.15+ builds will not work on some older devices, so consider these to be a little less "All-In-One" Kernel 4.18+ Intended for newer devices. adds some newer touchscreen support and added AMDGPU support kernel 4.19+ Intended for newer devices. Even more touchscreen support and ACPI support Kernel 4.20+ Intended for newer devices. Even more touchscreen support and added ARM/ATOM support and Vega GPU support Kernel 5.0+ This is where things will start getting tricky. Even more touchscreen support, and added support for ARM/ARM64/ATOM etc, but also a ton of Android kernel commits start making their way into things. If you would like to know if any others using your device have booted Bliss OS yet, we do offer our <a href="https://www.blissos.org/osstats.html">OS stats site</a> to help with that question.&nbsp;</p>
-          <div class="col-md-12 mx-auto d-flex align-items-center flex-grow-1 justify-content-start">
-            <a class="btn btn-secondary mb-3 mx-2" href="https://www.blissos.org/osstats.html" target="_blank">OS Stats Page</a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 p-4" style="">
-          <h4> <b>Q: How do I find out about updates and known bugs or report new ones?</b></h4>
-          <p>We do make an update post on our XDA thread for each release. Those posts contain details on any special instructions, fixes, updates, etc. And our docs site is updated often with tips and tricks to help make things easier on everyone. For new bugs found, we like to keep things pretty simple and straight forward, so we've setup a Bug Reports repo on our GitHub to track things.&nbsp;<br></p>
-          <div class="col-md-12 mx-auto d-flex align-items-center flex-grow-1 justify-content-start">
-            <a class="btn btn-secondary mx-2 mb-3" href="https://docs.blissroms.com" target="_blank">BlissROMs Docs</a><a class="btn btn-secondary mb-3 mx-2" href="https://forum.xda-developers.com/bliss-roms/bliss-roms-development/bliss-os-pie-beta-preview-t3855917" target="_blank">Bliss OS 11 XDA Thread</a><a class="btn btn-secondary mb-3 mx-2" href="https://forum.xda-developers.com/android/software/bliss-os-x86-pc-s-12-x-development-t4004419" target="_blank">Bliss OS 12 XDA Thread</a><a class="btn btn-secondary mb-3 mx-2" href="https://github.com/BlissRoms-x86/bug_reports" target="_blank">Bug Reports</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-light">
+  <div class="text-center pt-5 bg-light">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="card bg-dark">
-            <div class="card-body">
-              <h4 class="card-title">Now, On To The Downloads!</h4>
-              <p class="card-text">We recommend&nbsp; running Bliss OS on most Chromebooks, Windows/Linux PCs or tablets released in the last 4 years. Intel CPU/GPU for best results. AMD CPU/GPU/APU support is limited. VM support is very limited. Please install on native hardware for best results.&nbsp;<br>Make sure to check the docs section for more information.&nbsp;</p>
-              <a class="btn btn-primary" type="button" href="index.html#documentation">
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Documentation </a>
-            </div>
-          </div>
+          <h3 class="display-3">How To Download</h3>
+          <p class="lead">Answer just a few questions and we will get you the right download link</p>
         </div>
       </div>
     </div>
@@ -308,119 +270,247 @@
   <div class="pb-5 bg-light justify-content-center flex-row d-flex align-items-center flex-grow-1" style="">
     <div class="container d-flex flex-row justify-content-center align-items-center flex-grow-1">
       <div class="row d-flex flex-row justify-content-center align-items-center flex-grow-1">
-        <div class="col-md-3 col-6 mt-0 d-flex flex-column"> <img class="img-fluid d-block" src="images/windows-laptop-64-tablet.svg">
-          <div class="row mx-auto text-center">
-            <div class="tabbutton1 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
-              <input id="tabbutton1-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
-              <label for="tabbutton1-one">Download</label>
-              <div class="tabbutton1-content">
-                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                <br>
-                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                <br>
-                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-                <br>
-                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/">Go To Downloads</a>
+        <div id="demo">
+          <h1 class="text-dark">What type of PC do you have?</h1>
+          <label class="text-dark"><input type="radio" name="pctype" value="32"><span></span> 32bit</label>
+          <label class="text-dark"><input type="radio" name="pctype" value="64"><span></span> 64bit</label>
+          <div class="conditional" data-cond-option="pctype" data-cond-value="32">
+            <p>Have you ever run Linux on it?</p>
+            <label><input type="radio" name="runlinux1" value="yes"><span></span> Yes</label>
+            <label><input type="radio" name="runlinux1" value="no"><span></span> No</label>
+            <div class="conditional" data-cond-option="runlinux1" data-cond-value="yes">
+              <p class="alert alert-warning">Bliss no longer supports 32bit builds. Unsupported builds are recommended.</p>
+              <p>Chances are that you could likely get things to boot using our old nougat builds. <br> Here's the download: </p>
+              <div class="tabbutton1 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton1-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton1-one">Download</label>
+                <div class="tabbutton1-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/Nougat%20stable%20-%20Unsupported/Bliss-v7.2-android_x86_64-OFFICIAL-20171014-1552_k4.4.iso/download">Download</a>
+                </div>
               </div>
             </div>
-          </div>
-          <h5> <b>[Stable]</b><br><b>Generic Pie Builds</b><br>Bliss OS 11.x - x86_64<br>Android 9</h5>
-        </div>
-        <div class="col-md-3 col-6 mt-0 d-flex flex-column"> <img class="img-fluid d-block" src="images/windows-laptop-64-bugs.svg">
-          <div class="row text-center mx-auto">
-            <div class="tabbutton2 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
-              <input id="tabbutton2-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
-              <label for="tabbutton2-one">Download</label>
-              <div class="tabbutton2-content">
-                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                <br>
-                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                <br>
-                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-                <br>
-                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/merkaba">Go To Downloads</a>
+            <div class="conditional" data-cond-option="runlinux1" data-cond-value="no">
+              <p>These builds can be a bit difficult to get running without prior Linux knowledge. <br> Have you read our Documentation and understand the process?</p>
+              <label><input type="radio" name="docs1" value="yes"><span></span> Yes</label>
+              <label><input type="radio" name="docs1" value="no"><span></span> No</label>
+            </div>
+            <div class="conditional" data-cond-option="docs1" data-cond-value="yes">
+              <p>Awesome! Here is the download:</p>
+              <div class="tabbutton2 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton2-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton2-one">Download</label>
+                <div class="tabbutton2-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/Nougat%20stable%20-%20Unsupported/Bliss-v7.2-android_x86_64-OFFICIAL-20171014-1552_k4.4.iso/download">Download</a>
+                </div>
               </div>
             </div>
-          </div>
-          <h5> <b>[Experimental]</b><br><b>Generic Bliss OS 12.x</b><br>Bliss OS 12.x - x86_64<br>Android 10 (Merkaba)</h5>
-        </div>
-        <div class="col-md-3 col-6 mt-0 d-flex flex-column" style=""> <img class="img-fluid d-block" src="images/windows-touch-screen.svg">
-          <div class="row mx-auto">
-            <div class="tabbutton3 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
-              <input id="tabbutton3-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
-              <label for="tabbutton3-one">Download</label>
-              <div class="tabbutton3-content">
-                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                <br>
-                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                <br>
-                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-                <br>
-                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Surface%20IPTS%20builds%20-%20Pie/">Go To Downloads</a>
-              </div>
+            <div class="conditional" data-cond-option="docs1" data-cond-value="no">
+              <p>That's OK, here is the link to our documentation for Bliss OS. Please read and come back once you understand. </p>
+              <a class="btn mb-3 btn-warning xt-white    " href="https://docs.blissroms.com/Bliss%20OS/" target="”_blank”">Bliss OS Docs Site</a>
             </div>
           </div>
-          <h5> <b>[Stable]</b><br><b>Surface Builds</b><br>Bliss OS 11.x - x86_64<br>Android 9</h5>
-        </div>
-        <div class="col-md-3 col-6 mt-0 d-flex flex-column"> <img class="img-fluid d-block" src="images/windows-laptop-32-bugs.svg">
-          <div class="row mx-auto">
-            <div class="tabbutton4 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
-              <input id="tabbutton4-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
-              <label for="tabbutton4-one">Download</label>
-              <div class="tabbutton4-content">
-                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                <br>
-                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                <br>
-                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-                <br>
-                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Experimental%20-%2032%20bit%20%28x86%29%20builds%20-%20Pie/">Go To Downloads</a>
+          <div class="conditional" data-cond-option="pctype" data-cond-value="64">
+            <p>Have you ever run Linux on it?</p>
+            <label><input type="radio" name="linux2" value="yes"><span></span> Yes</label>
+            <label><input type="radio" name="linux2" value="no"><span></span> No</label>
+            <div class="conditional" data-cond-option="linux2" data-cond-value="yes">
+              <p>Awesome! What kind of CPU does it have?</p>
+              <select class="select" name="cputype">
+                <option value="Pick one!">Pick one!</option>
+                <option value="intel-atom">Intel Atom</option>
+                <option value="intel-ix">Intel i3/i5/i7/i9</option>
+                <option value="intel-core2duo">Intel Core2Duo</option>
+                <option value="amd-anthlon">AMD Anthlon</option>
+                <option value="amd-ryzen">AMD Ryzen</option>
+                <option value="qcom">qualcomm snapdragon</option>
+              </select>
+              <div class="conditional" data-cond-option="cputype" data-cond-value="intel-atom">
+                <p class="alert alert-warning">Our Atom support is experimental.</p>
+                <p>Our Atom builds work best with newer Atom CPU's. Here is the download:</p>
+                <div class="tabbutton3 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+                  <input id="tabbutton3-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+                  <label for="tabbutton3-one">Download</label>
+                  <div class="tabbutton3-content">
+                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                    <br>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/android_x86_64-202006261436_k-kernel-5.7_si_ylng_m-android-10.0.0_r37_dgc-q-x86-atom_ld-android-10.0.0_r37_dg-android-10.0.0_r37_dh-q10.0-x86_mg-_gms_cros-wv.iso/download">Bliss OS 12 Lite - Experimental</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/Bliss-OS_v12.8-Sri-android_x86_64-202006301853_k-k5.7-si-ylng-rmi_m-q_dgc-q-x86-generic-intel_ld-q_dg-q_dh-q10.0-x86_mg-_gms_cros-wv.iso/download">Bliss OS 12.8 - Sri - Experimental</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/Bliss-v11.11--OFFICIAL-20200624-2026_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-p9.0-03.15.20_ld-p9.0-x86_dg-p9.0-x86_dh-p9.0-x86_mg-p9.0-x86.iso/download">Bliss OS 11.11 - Stable</a>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional" data-cond-option="cputype" data-cond-value="intel-ix">
+                <p>Here are the downloads:</p>
+                <div class="tabbutton4 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+                  <input id="tabbutton4-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+                  <label for="tabbutton4-one">Download</label>
+                  <div class="tabbutton4-content">
+                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                    <br>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/android_x86_64-202006261436_k-kernel-5.7_si_ylng_m-android-10.0.0_r37_dgc-q-x86-atom_ld-android-10.0.0_r37_dg-android-10.0.0_r37_dh-q10.0-x86_mg-_gms_cros-wv.iso/download">Bliss OS 12 Lite - Experimental</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/Bliss-OS_v12.8-Sri-android_x86_64-202006301853_k-k5.7-si-ylng-rmi_m-q_dgc-q-x86-generic-intel_ld-q_dg-q_dh-q10.0-x86_mg-_gms_cros-wv.iso/download">Bliss OS 12.8 - Sri - Experimental</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/Bliss-v11.11--OFFICIAL-20200624-2026_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-p9.0-03.15.20_ld-p9.0-x86_dg-p9.0-x86_dh-p9.0-x86_mg-p9.0-x86.iso/download">Bliss OS 11.11 - Stable</a>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional" data-cond-option="cputype" data-cond-value="intel-core2duo">
+                <p class="alert alert-warning">Your CPU lacks support for SSE 4.2 and requires an old build/kernel</p>
+                <p>We actually recommend you run the 32bit version with Kernel-4.4.<br> Here is that download:</p>
+                <div class="tabbutton5 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+                  <input id="tabbutton5-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+                  <label for="tabbutton5-one">Download</label>
+                  <div class="tabbutton5-content">
+                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/Nougat%20stable%20-%20Unsupported/Bliss-v7.2-android_x86_64-OFFICIAL-20171014-1552_k4.4.iso/download">Download</a>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional" data-cond-option="cputype" data-cond-value="amd-anthlon">
+                <p>Here is the download:</p>
+                <div class="tabbutton6 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+                  <input id="tabbutton6-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+                  <label for="tabbutton6-one">Download</label>
+                  <div class="tabbutton6-content">
+                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/Bliss-v11.11--OFFICIAL-20200624-2026_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-p9.0-03.15.20_ld-p9.0-x86_dg-p9.0-x86_dh-p9.0-x86_mg-p9.0-x86.iso/download">Bliss OS 11.11 - Stable</a>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional" data-cond-option="cputype" data-cond-value="amd-ryzen">
+                <p class="alert alert-warning">Our Ryzen support is experimental.</p>
+                <p> Please be aware of this. <br> Here is the download:</p>
+                <div class="tabbutton7 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+                  <input id="tabbutton7-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+                  <label for="tabbutton7-one">Download</label>
+                  <div class="tabbutton7-content">
+                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/merkaba/amd/Bliss-OS-Merkaba-v12.6-android_x86_64-OFFICIAL-202004231931_k-k5.6.2-si-yling-rmi_m-10.0.8-ax86_ld-2.4.100-ax86-ma_dg-_dh-_mg-_gms_cros-hd_cros-wv-amd.iso/download">Bliss OS 12.6 - Merkaba</a>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional" data-cond-option="cputype" data-cond-value="qcom"> 
+				  <p>Unfortunately we do not officially support Bliss OS on this type of CPU. <br>
+				  Please check our website for info on building Bliss for your device. <br></p>
+				  <a class="btn mb-3 btn-warning xt-white " href="https://www.blissroms.com">BlissROMs.com</a>
               </div>
             </div>
-          </div>
-          <h5> <b>[Experimental] 32-bit Generic Pie Builds</b><br>Bliss OS 11.x - x86<br>Android 9</h5>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="pb-5 bg-light justify-content-center flex-row d-flex align-items-center flex-grow-1" style="">
-    <div class="container d-flex flex-row justify-content-center align-items-center flex-grow-1">
-      <div class="row d-flex flex-row justify-content-center align-items-center flex-grow-1">
-        <div class="col-md-6 col-6 mt-0 d-flex flex-column"> <img class="img-fluid d-block" src="images/windows-laptop-64-tablet.svg">
-          <div class="row mx-auto text-center">
-            <div class="tabbutton5 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
-              <input id="tabbutton5-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
-              <label for="tabbutton5-one">Download</label>
-              <div class="tabbutton5-content">
-                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                <br>
-                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                <br>
-                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-                <br>
-                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Lite/">Download</a>
+            <div class="conditional" data-cond-option="linux2" data-cond-value="no">
+              <p>These builds can be a bit difficult to get running without prior Linux knowledge. <br> Have you read our Documentation and understand the process? </p>
+              <label><input type="radio" name="docs2" value="yes"><span></span> Yes</label>
+              <label><input type="radio" name="docs2" value="no"><span></span> No</label>
+            </div>
+            <div class="conditional" data-cond-option="docs2" data-cond-value="yes">
+              <p>Awesome! What kind of CPU does it have?</p>
+              <select class="select" name="cputype2">
+                <option value="Pick one!">Pick one!</option>
+                <option value="intel-atom">Intel Atom</option>
+                <option value="intel-ix">Intel i3/i5/i7/i9</option>
+                <option value="intel-core2duo">Intel Core2Duo</option>
+                <option value="amd-anthlon">AMD Anthlon</option>
+                <option value="amd-ryzen">AMD Ryzen</option>
+                <option value="qcom">qualcomm snapdragon</option>
+              </select>
+              <div class="conditional" data-cond-option="cputype2" data-cond-value="intel-atom">
+                <p class="alert alert-warning">Our Atom support is experimental.</p>
+                <p>Our Atom builds work best with newer Atom CPU's. Here are the downloads:</p>
+                <div class="tabbutton9 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+                  <input id="tabbutton9-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+                  <label for="tabbutton9-one">Download</label>
+                  <div class="tabbutton9-content">
+                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                    <br>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/android_x86_64-202006261436_k-kernel-5.7_si_ylng_m-android-10.0.0_r37_dgc-q-x86-atom_ld-android-10.0.0_r37_dg-android-10.0.0_r37_dh-q10.0-x86_mg-_gms_cros-wv.iso/download">Bliss OS 12 Lite - Experimental</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/Bliss-OS_v12.8-Sri-android_x86_64-202006301853_k-k5.7-si-ylng-rmi_m-q_dgc-q-x86-generic-intel_ld-q_dg-q_dh-q10.0-x86_mg-_gms_cros-wv.iso/download">Bliss OS 12.8 - Sri - Experimental</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/Bliss-v11.11--OFFICIAL-20200624-2026_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-p9.0-03.15.20_ld-p9.0-x86_dg-p9.0-x86_dh-p9.0-x86_mg-p9.0-x86.iso/download">Bliss OS 11.11 - Stable</a>
+                  </div>
+                </div>
               </div>
+              <div class="conditional" data-cond-option="cputype2" data-cond-value="intel-ix">
+                <p>Here are the downloads:</p>
+                <div class="tabbutton10 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+                  <input id="tabbutton10-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+                  <label for="tabbutton10-one">Download</label>
+                  <div class="tabbutton10-content">
+                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                    <br>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/android_x86_64-202006261436_k-kernel-5.7_si_ylng_m-android-10.0.0_r37_dgc-q-x86-atom_ld-android-10.0.0_r37_dg-android-10.0.0_r37_dh-q10.0-x86_mg-_gms_cros-wv.iso/download">Bliss OS 12 Lite - Experimental</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/Bliss-OS_v12.8-Sri-android_x86_64-202006301853_k-k5.7-si-ylng-rmi_m-q_dgc-q-x86-generic-intel_ld-q_dg-q_dh-q10.0-x86_mg-_gms_cros-wv.iso/download">Bliss OS 12.8 - Sri - Experimental</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/Bliss-v11.11--OFFICIAL-20200624-2026_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-p9.0-03.15.20_ld-p9.0-x86_dg-p9.0-x86_dh-p9.0-x86_mg-p9.0-x86.iso/download">Bliss OS 11.11 - Stable</a>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional" data-cond-option="cputype2" data-cond-value="intel-core2duo">
+                <p class="alert alert-warning">Your CPU lacks support for SSE 4.2 and requires an old build/kernel</p>
+                <p>We actually recommend you run the 32bit version with Kernel-4.4.<br> Here is that download:</p>
+                <div class="tabbutton11 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+                  <input id="tabbutton11-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+                  <label for="tabbutton11-one">Download</label>
+                  <div class="tabbutton11-content">
+                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/Nougat%20stable%20-%20Unsupported/Bliss-v7.2-android_x86_64-OFFICIAL-20171014-1552_k4.4.iso/download">Download</a>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional" data-cond-option="cputype2" data-cond-value="amd-anthlon">
+                <p>Here is the download we recommend:</p>
+                <div class="tabbutton12 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+                  <input id="tabbutton12-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+                  <label for="tabbutton12-one">Download</label>
+                  <div class="tabbutton12-content">
+                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/Bliss-v11.11--OFFICIAL-20200624-2026_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-p9.0-03.15.20_ld-p9.0-x86_dg-p9.0-x86_dh-p9.0-x86_mg-p9.0-x86.iso/download">Bliss OS 11.11 - Stable</a>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional" data-cond-option="cputype2" data-cond-value="amd-ryzen">
+                <p class="alert alert-warning">Our Ryzen support is experimental.</p>
+                <p> Please be aware of this. <br> Here is the download:</p>
+                <div class="tabbutton13 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
+                  <input id="tabbutton13-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
+                  <label for="tabbutton13-one">Download</label>
+                  <div class="tabbutton13-content">
+                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/merkaba/amd/Bliss-OS-Merkaba-v12.6-android_x86_64-OFFICIAL-202004231931_k-k5.6.2-si-yling-rmi_m-10.0.8-ax86_ld-2.4.100-ax86-ma_dg-_dh-_mg-_gms_cros-hd_cros-wv-amd.iso/download">Bliss OS 12.6 - Merkaba</a>
+                  </div>
+                </div>
+              </div>
+              <div class="conditional" data-cond-option="cputype2" data-cond-value="qcom"> 
+				  <p>Unfortunately we do not officially support Bliss OS on this type of CPU. <br>
+				  Please check our website for info on building Bliss for your device. <br></p>
+				  <a class="btn mb-3 btn-warning xt-white " href="https://www.blissroms.com">BlissROMs.com</a>
+			  </div>
+            </div>
+            <div class="conditional" data-cond-option="docs2" data-cond-value="no">
+              <p>That's OK, here is the link to our documentation for Bliss OS. Please read and come back once you understand. </p>
+              <a class="btn mb-3 btn-warning xt-white    " href="https://docs.blissroms.com/Bliss%20OS/" target="”_blank”">Bliss OS Docs Site</a>
             </div>
           </div>
-          <h5> <b>[Experimental]</b><br><b>Generic Bliss OS Lite</b><br>Bliss OS Lite 1.x - x86_64<br>Android 10 - Vulkan</h5>
-        </div>
-        <div class="col-md-6 col-6 mt-0 d-flex flex-column"> <img class="img-fluid d-block" src="https://i.imgur.com/cxyiw7I.png">
-          <div class="row mx-auto text-center">
-            <div class="tabbutton6 btn btn-outline-primary" style="margin-bottom: 1.5rem !important; ">
-              <input id="tabbutton6-one" type="checkbox" name="tabbuttons" style=" width: 0px; margin-left: -10px;">
-              <label for="tabbutton6-one">Download</label>
-              <div class="tabbutton6-content">
-                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                <br>
-                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                <br>
-                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-                <br>
-                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/">Download</a>
-              </div>
-            </div>
-          </div>
-          <h5> <b>[Experimental]</b><br><b>Android-Generic Builds</b><br>x86_64<br>Android 10 - Vulkan, Generic-Intel, Generic</h5>
         </div>
       </div>
     </div>
