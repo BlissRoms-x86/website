@@ -17,6 +17,15 @@
 	margin: .5em;
 }
 
+label{
+  color: blue;
+  cursor: pointer;
+}
+
+label:hover{
+  text-decoration: underline;
+}
+
 /* Size of expand */
 input:checked ~ [class^="tabbutton-"][class$="-content"] {
 	max-height: 20em;
