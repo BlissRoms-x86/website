@@ -274,7 +274,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="display-3">How To Download</h3>
+          <h3 class="display-3">Bliss OS Downloads</h3>
           <p class="lead">Answer just a few questions and we will get you the right download link</p>
         </div>
       </div>
@@ -557,6 +557,50 @@
             </div>
           </div>
         </div>
+        <div class="col-md-12"><img class="img-fluid d-block" src="https://i.imgur.com/ZUjS8kG.png">
+          <h1 class="display-3 text-center">Downloads</h1>
+        </div>
+        <div id="demo">
+          <p class="alert alert-warning">These builds are for testing only. No user support will be provided</p>
+          <h1 class="text-dark">Do you understand that our Android-Generic builds are just for testing?</h1>
+          <label class="text-dark"><input type="radio" name="agtype" value="Yes"><span></span> Yes</label>
+          <label class="text-dark"><input type="radio" name="agtype" value="No"><span></span> No</label>
+          <div class="conditional" data-cond-option="agtype" data-cond-value="No">
+            <p>Have you ever done any Android development before?</p>
+            <label><input type="radio" name="runlinux1" value="yes"><span></span> Yes</label>
+            <label><input type="radio" name="runlinux1" value="no"><span></span> No</label>
+            <div class="conditional" data-cond-option="runlinux1" data-cond-value="yes">
+              <p class="alert alert-warning">These builds are for testing only. No user support will be provided</p>
+              <div class="tabbutton-111 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-111-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-111-one">Download</label>
+                <div class="tabbutton-111-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/">Android-Generic PC builds - Unsupported</a>
+                </div>
+              </div>
+            </div>
+            <div class="conditional" data-cond-option="runlinux1" data-cond-value="no">
+              <p class="alert alert-warning">These are not the builds you are looking for</p>
+              <p>Please return to the normal downloads instead of getting in over your head. Not knowing what you are doing with these can damage your device.</p>
+            </div>
+          </div>
+          <div class="conditional" data-cond-option="agtype" data-cond-value="Yes">
+            <p class="alert alert-warning">These builds are for testing only. No user support will be provided</p>
+            <div class="tabbutton-112 " style="margin-bottom: 1.5rem !important; ">
+              <input id="tabbutton-112-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+              <label for="tabbutton-112-one">Download</label>
+              <div class="tabbutton-112-content">
+                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
+                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/">Android-Generic PC builds - Unsupported</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -723,6 +767,15 @@
     </div>
   </div>
   <!-- JavaScript dependencies -->
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-3">Display 3</h1>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/mainani.js" type="text/javascript"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
