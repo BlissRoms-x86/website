@@ -59,7 +59,6 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
-/* 
 body {
   margin: 0;
   font-family: Montserrat;
@@ -69,45 +68,6 @@ body {
   color: #111;
   text-align: left;
   background-color: #ffffff; }
-*/
-body {
-	margin: 0;
-	width: 100%;
-	height: 100vh;
-	font-family: Montserrat;
-	font-size: 0.85rem;
-	font-weight: 450;
-	line-height: 1.8;
-	color: #fff;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	-webkit-animation: gradientBG 15s ease infinite;
-	        animation: gradientBG 15s ease infinite;
-}
-
-@-webkit-keyframes gradientBG {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@keyframes gradientBG {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -254,7 +214,7 @@ button,
 select,
 optgroup,
 textarea {
-  /* margin: 0; */
+  margin: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
@@ -6319,8 +6279,7 @@ a.text-light:hover, a.text-light:focus {
   color: #e6e6e6 !important; }
 
 .text-dark {
-  color: #303030 !important;
-  font-weight: 600 !important; }
+  color: #303030 !important; }
 
 a.text-dark:hover, a.text-dark:focus {
   color: #171717 !important; }
@@ -6517,9 +6476,7 @@ html, body {
 
 .section-fade-in-out {
   position: relative;
-  color: white;
-  background-size: cover;
-  background-position: center; }
+  color: white; }
   .section-fade-in-out:before {
     position: absolute;
     top: 0px;
@@ -6546,8 +6503,10 @@ html, body {
 .section-fade-out {
   position: relative;
   color: white;
-  background-size: cover;
-  background-position: center; }
+  background-size: 100%;
+  background-position: top left;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  background-repeat: repeat; }
   .section-fade-out:before {
     position: absolute;
     top: 0px;
@@ -6631,4 +6590,3 @@ mark.secondary {
   .animate-in-right.out-of-viewport {
     opacity: 0;
     left: 5%; }
-
