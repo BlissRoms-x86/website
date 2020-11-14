@@ -11,7 +11,8 @@
   <meta name="keywords" content="blissroms, bliss, os, x86, aosp, android, rom, teambliss">
   <!-- CSS dependencies -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/7b4ed0a31a.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="neon.css">
   <!-- Script: Make my navbar transparent when the document is scrolled to top -->
@@ -255,21 +256,13 @@
   <div class="bg-light">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-6 p-3 bg-primary">
+        <div class="col-md-6 col-6 p-3 bg-primary">
           <h2 class="my-3"><b>Bliss OS 11.x</b></h2>
-          <p>These are generic builds based on Android 9 (Pie) and BlissROMs sources.<br>These are considered our current stable branch</p>
+          <p>These are generic builds based on Android 9 (Pie) and BlissROMs sources.<br>These are considered our current stable branch<br>(These builds come with ARM app compatibility)</p>
         </div>
-        <div class="col-md-3 col-6 p-3 bg-secondary">
-          <h2 class="my-3"> <b>Bliss OS 11.x (IPTS)</b></h2>
-          <p>These are Microsoft Surface &amp; Lenovo X1 Tab specific builds based on Android 9 (Pie) and BlissROMs sources.&nbsp;<br>Only download these if you have an IPTS device. Ask your manufacturer if unsure.&nbsp;</p>
-        </div>
-        <div class="col-md-3 col-6 p-3 bg-warning">
+        <div class="col-md-6 col-6 p-3 bg-warning">
           <h2 class="my-3"> <b>Bliss OS 12.x</b></h2>
-          <p class=""><b>These are generic builds based on Android 10 (Q)</b> and BlissROMs sources.<b>&nbsp;</b><br>They should be considered Beta status, thus there may be dragons.&nbsp;</p>
-        </div>
-        <div class="col-md-3 col-6 p-3 bg-success">
-          <h2 class="my-3"> <b>Bliss OS Lite 1.x</b></h2>
-          <p>These are generic builds based on Android 10 (Q) using mostly AOSP and a tiny bit of Bliss sprinkled on top.<br>They should be considered Beta status, thus there may be dragons. </p>
+          <p class=""><b>These are generic builds based on Android 10 (Q)</b> and BlissROMs sources. These builds are now produced as a Featured Flavor of Android-Generic Project&nbsp;<br>(These builds do not come with ARM app compatibility)</p><a class="btn btn-link" href="https://android-generic.github.io">Learn More About Android-Generic</a>
         </div>
       </div>
     </div>
@@ -569,48 +562,9 @@
       <div class="row">
         <div class="col-md-12">
           <div class="col-md-12"><img class="img-fluid d-block" src="https://i.imgur.com/6s8q0WO.png">
-            <h1 class="display-3 text-center">Downloads</h1>
-          </div>
-          <div id="demo">
-            <p class="alert alert-warning">These builds are for testing only. No user support will be provided</p>
-            <h1 class="text-light">Do you understand that our Android-Generic builds are just for testing?</h1>
-            <label class="text-light"><input type="radio" name="agtype" value="Yes"><span></span> Yes</label>
-            <label class="text-light"><input type="radio" name="agtype" value="No"><span></span> No</label>
-            <div class="conditional text-light" data-cond-option="agtype" data-cond-value="No">
-              <p>Have you ever done any Android development before?</p>
-              <label class="text-light"><input type="radio" name="runlinux1" value="yes"><span></span> Yes</label>
-              <label class="text-light"><input type="radio" name="runlinux1" value="no"><span></span> No</label>
-              <div class="conditional text-light" data-cond-option="runlinux1" data-cond-value="yes">
-                <p class="alert alert-warning">These builds are for testing only. No user support will be provided</p>
-                <div class="tabbutton-111" style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-111-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-111-one" class="text-light">Download</label>
-                  <div class="tabbutton-111-content ">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/">Android-Generic PC builds - Unsupported</a>
-                  </div>
-                </div>
-              </div>
-              <div class="conditional" data-cond-option="runlinux1" data-cond-value="no">
-                <p class="alert alert-warning">These are not the builds you are looking for</p>
-                <p class="text-light">Please return to the normal downloads instead of getting in over your head. Not knowing what you are doing with these can damage your device.</p>
-              </div>
-            </div>
-            <div class="conditional" data-cond-option="agtype" data-cond-value="Yes">
-              <p class="alert alert-warning">These builds are for testing only. No user support will be provided</p>
-              <div class="tabbutton-112 text-light" style="margin-bottom: 1.5rem !important; ">
-                <input id="tabbutton-112-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                <label for="tabbutton-112-one" class="text-light">Download</label>
-                <div class="tabbutton-112-content">
-                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>
-                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/">Android-Generic PC builds - Unsupported</a>
-                </div>
-              </div>
-            </div>
+            <a class="text-center btn btn-primary btn-lg text-light btn-block my-4" href="https://android-generic.github.io" target="_blank" id="agdl">
+              <h2 class="text-center">Head to AG Website</h2>
+            </a>
           </div>
         </div>
       </div>
@@ -739,6 +693,50 @@
                 })
               </script>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4 text-center text-light" style="	background-image: url(https://i.imgur.com/gDeZpfE.png);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto col-md-8">
+          <h1 class="mb-3">Bliss Family Projects</h1>
+          <p class="lead">Other Bliss Family projects we currently support can be found below: </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="https://avatars0.githubusercontent.com/u/65220149?s=200&amp;v=4" width="150">
+            <h1>Boringdroid</h1>
+            <a href="https://github.com/boringdroid" target="_blank"><i class="fab fa-github p-2" style="font-size: 300%;"></i></a>
+            <p class="mb-0">Boringdroid is a boring project to provide patch set to run multi-window on low version AOSP.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="https://i.imgur.com/bTd1SMo.png" width="150">
+            <h1>Android-Generic Project</h1>
+            <a href="https://gitlab.com/android-generic/vendor_android-generic" target="_blank"><i class="fab fa-git p-2" style="font-size: 300%;"></i></a>
+            <p class="mb-0">Bringing Android ROMs to PC's and GSI devices everywhere. Simple to start, easy to use. Go get your ROM on!</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="images/SG_Asset_2.png" width="138">
+            <h1>Supreme Gamers</h1>
+            <a href="http://supreme-gamers.com/" target="_blank"><i class="fab fa-google p-2" style="font-size: 300%;"></i></a>
+            <a href="https://gitlab.com/AXIM0S/vendor-gearlock" target="_blank"><i class="fab fa-git p-2" style="font-size: 300%;"></i></a>
+            <p class="mb-0">Android-x86 Gaming Community and creators of Gearlock Recovery for Android-x86 based projects</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
           </div>
         </div>
       </div>
