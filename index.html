@@ -707,79 +707,89 @@
                 })
               </script>
             </div>
-            <div class="tab-pane fade" id="tabtwo" role="tabpanel">
-              <section id="content2" class="team_content"></section>
-              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-              <script>
-                $.ajax({
-                  type: "GET",
-                  url: "https://blissapi.blissroms.com/blissinfra/public/allmaintainers", // TeamBliss JSON
-                  success: function(data) {
-                    var newContent = ''; // Variable to hold HTML
-                    for (var i = 0; i < data.length; i++) { // Loop through object
-                      newContent += '<div id="event" class="team_item">';
-                      newContent += '<img class="image crop" src="' + data[i].image + '" ';
-                      newContent += 'alt="' + data[i].mname + '" />';
-                      newContent += '<h3><b>' + data[i].mname + '</b></h3>';
-                      newContent += '<p class="team_data_text font-weight-bold">' + data[i].device + '</p>';
-                      newContent += '<p class="team_data_text font-weight-bold"><i>&quot;' + data[i].codename + '&quot;</i></p>';
-                      newContent += '</div>';
-                    }
-                    // Update the page with the new content
-                    document.getElementById('content2').innerHTML = newContent;
-                  }
-                })
-              </script>
-            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="py-4 text-center text-light" style="	background-image: url(https://i.imgur.com/gDeZpfE.png);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
-    <div class="container">
-      <div class="row">
+  <!-- START OF BLISSLABS -->
+  <div class="py-5 text-light cover" style="background-color: #343a40;">
+    <div class="container" style="max-width: 100%;">
+	  <div class="row">
         <div class="mx-auto col-md-8">
-          <h1 class="mb-3">Bliss Family Projects</h1>
-          <p class="lead">Other Bliss Family projects we currently support can be found below: </p>
+          <h1 class="mb-3">A BlissLabs Project</h1>
+          <p class="lead">We are part of a larger community of open-source projects called BlissLabs. Explore more about the other BlissLabs projects below:<br></p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
-          <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="https://avatars0.githubusercontent.com/u/65220149?s=200&amp;v=4" width="150">
-            <h1>Boringdroid</h1>
-            <a href="https://github.com/boringdroid" target="_blank"><i class="fab fa-github p-2" style="font-size: 300%;"></i></a>
-            <p class="mb-0">Boringdroid is a boring project to provide patch set to run multi-window on low version AOSP.</p>
+        <div class="col-md-12">
+          <div class="carousel slide" data-ride="carousel" id="carousel">
+            <div class="carousel-inner">
+              <div id="carousel-slider"> </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="https://i.imgur.com/bTd1SMo.png" width="150">
-            <h1>Android-Generic Project</h1>
-            <a href="https://gitlab.com/android-generic/vendor_android-generic" target="_blank"><i class="fab fa-git p-2" style="font-size: 300%;"></i></a>
-            <p class="mb-0">Bringing Android ROMs to PC's and GSI devices everywhere. Simple to start, easy to use. Go get your ROM on!</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card-body p-4"> <img class="img-fluid d-block mb-3 mx-auto" src="images/SG_Asset_2.png" width="138">
-            <h1>Supreme Gamers</h1>
-            <a href="https://supreme-gamers.com/" target="_blank"><i class="fab fa-google p-2" style="font-size: 300%;"></i></a>
-            <a href="https://gitlab.com/AXIM0S/vendor-gearlock" target="_blank"><i class="fab fa-git p-2" style="font-size: 300%;"></i></a>
-            <p class="mb-0">Android-x86 Gaming Community and creators of Gearlock Recovery for Android-x86 based projects</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card">
-          </div>
+          <!---------------->
+          <script>
+            $.ajax({
+              type: "GET",
+              url: "https://api.blissroms.org/api/allprojects",
+              contentType: "application/json",
+              datatype: "json",
+              data: {},
+              success: function(data) {
+                var newContent = ''; // Variable to hold HTML
+                for (var i = 0; i < data.length; i++) { // Loop through object
+                  if (data[i].project != null) {
+                    if (i == 0) {
+                      newContent += '<div class="carousel-item active">';
+                    } else {
+                      newContent += '<div class="carousel-item">';
+                    }
+                    newContent += '<img class="d-block img-fluid" src="' + data[i].project_avatar + '" style="max-width: auto; height: 350px;"';
+                    newContent += 'alt="' + data[i].project + ' " style="padding-top: 1.5rem;"/>';
+                    newContent += '<div class="carousel-caption" style="background: linear-gradient(#343a40 10%, #343a40 100%)!important; padding-top: 120px; margin-left: 350px; ">';
+                    <!-- newContent += '<div class="item-details">'; -->
+                    newContent += '<h3 class="zxc" ><b style="font-size: xx-large;">' + data[i].project + '</b></h3>';
+                    newContent += '<h5 class="zxc" >Project Lead: ' + data[i].project_lead + '</h5>';
+                    newContent += '<p class="card__text zxc" style=" margin-right: 1.7rem; margin-left: 1.7rem; ">' + data[i].project_description + '</p>';
+                    if (data[i].project_github != null) {
+                      newContent += '<a href="' + data[i].project_github + '" target="_blank"><i class="fab fa fa-git p-2" style="font-size: 300%;"></i></a>';
+                    }
+                    if (data[i].project_website != null) {
+                      newContent += '<a href="' + data[i].project_website + '" target="_blank"><i class="fab fa p-2 fa-globe" style="font-size: 300%;"></i></a>';
+                    }
+                    <!-- newContent += '</div>'; -->
+                    newContent += '</div>';
+                    newContent += '</div>';
+                  } else {
+                    newContent = 'NONE';
+                  }
+                }
+                // Update the page with the new content
+                document.getElementById('carousel-slider').innerHTML = newContent;
+              },
+              error: function(jqXHR, status, err) {
+                newContent = 'ERROR: NONE';
+                document.getElementById('carousel-slider').innerHTML = newContent;
+                alert("Status: " + textStatus);
+                alert("Error: " + errorThrown);
+              }
+            })
+          </script>
+          <!---------------->
         </div>
       </div>
     </div>
   </div>
+  <!-- END OF BLISSLABS -->
   <!-- Footer -->
   <div class="py-3 bg-dark">
     <div class="container">
