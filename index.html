@@ -311,10 +311,10 @@
           <label class="text-dark"><input type="radio" name="pctype" value="32"><span></span> 32bit</label>
           <label class="text-dark"><input type="radio" name="pctype" value="64"><span></span> 64bit</label>
           <div class="conditional" data-cond-option="pctype" data-cond-value="32">
-            <p>Have you ever run Linux on it?</p>
-            <label><input type="radio" name="runlinux1" value="yes"><span></span> Yes</label>
-            <label><input type="radio" name="runlinux1" value="no"><span></span> No</label>
-            <div class="conditional" data-cond-option="runlinux1" data-cond-value="yes">
+            <!-- <p>Have you ever run Linux on it?</p> -->
+            <!-- <label><input type="radio" name="runlinux1" value="yes"><span></span> Yes</label> -->
+            <!-- <label><input type="radio" name="runlinux1" value="no"><span></span> No</label> -->
+            <!-- <div class="conditional" data-cond-option="runlinux1" data-cond-value="yes"> -->
               <p class="alert alert-warning">Bliss no longer supports 32bit builds. Unsupported builds are recommended.</p>
               <p>Chances are that you could likely get things to boot using our old nougat builds. <br> Here's the download: </p>
               <div class="tabbutton-1 " style="margin-bottom: 1.5rem !important; ">
@@ -328,11 +328,11 @@
                 </div>
               </div>
             </div>
-            <div class="conditional" data-cond-option="runlinux1" data-cond-value="no">
-              <p>These builds can be a bit difficult to get running without prior Linux knowledge. <br> Have you read our Documentation and understand the process?</p>
-              <label><input type="radio" name="docs1" value="yes"><span></span> Yes</label>
-              <label><input type="radio" name="docs1" value="no"><span></span> No</label>
-            </div>
+            <!-- <div class="conditional" data-cond-option="runlinux1" data-cond-value="no"> -->
+              <!-- <p>These builds can be a bit difficult to get running without prior Linux knowledge. <br> Have you read our Documentation and understand the process?</p> -->
+              <!-- <label><input type="radio" name="docs1" value="yes"><span></span> Yes</label> -->
+              <!-- <label><input type="radio" name="docs1" value="no"><span></span> No</label> -->
+            <!-- </div> -->
             <div class="conditional" data-cond-option="docs1" data-cond-value="yes">
               <p>Awesome! Here is the download:</p>
               <div class="tabbutton-2 " style="margin-bottom: 1.5rem !important; ">
@@ -346,16 +346,16 @@
                 </div>
               </div>
             </div>
-            <div class="conditional" data-cond-option="docs1" data-cond-value="no">
-              <p>That's OK, here is the link to our documentation for Bliss OS. Please read and come back once you understand. </p>
-              <a class="btn mb-3 btn-warning xt-white    " href="https://wiki.blissroms.com/" target="”_blank”">Bliss OS Docs Site</a>
-            </div>
-          </div>
+            <!-- <div class="conditional" data-cond-option="docs1" data-cond-value="no"> -->
+              <!-- <p>That's OK, here is the link to our documentation for Bliss OS. Please read and come back once you understand. </p> -->
+              <!-- <a class="btn mb-3 btn-warning xt-white    " href="https://wiki.blissroms.com/" target="”_blank”">Bliss OS Docs Site</a> -->
+            <!-- </div> -->
+          <!-- </div> -->
           <div class="conditional" data-cond-option="pctype" data-cond-value="64">
-            <p>Have you ever run Linux on it?</p>
-            <label><input type="radio" name="linux2" value="yes"><span></span> Yes</label>
-            <label><input type="radio" name="linux2" value="no"><span></span> No</label>
-            <div class="conditional" data-cond-option="linux2" data-cond-value="yes">
+            <!-- <p>Have you ever run Linux on it?</p> -->
+            <!-- <label><input type="radio" name="linux2" value="yes"><span></span> Yes</label> -->
+            <!-- <label><input type="radio" name="linux2" value="no"><span></span> No</label> -->
+            <!-- <div class="conditional" data-cond-option="linux2" data-cond-value="yes"> -->
               <p>Awesome! What kind of CPU does it have?</p>
               <select class="select" name="cputype">
                 <option value="Pick one!">Pick one!</option>
@@ -474,11 +474,11 @@
                 </div>
               </div>
             </div>
-            <div class="conditional" data-cond-option="linux2" data-cond-value="no">
-              <p>These builds can be a bit difficult to get running without prior Linux knowledge. <br> Have you read our Documentation and understand the process? </p>
-              <label><input type="radio" name="docs2" value="yes"><span></span> Yes</label>
-              <label><input type="radio" name="docs2" value="no"><span></span> No</label>
-            </div>
+            <!-- <div class="conditional" data-cond-option="linux2" data-cond-value="no"> -->
+              <!-- <p>These builds can be a bit difficult to get running without prior Linux knowledge. <br> Have you read our Documentation and understand the process? </p> -->
+              <!-- <label><input type="radio" name="docs2" value="yes"><span></span> Yes</label> -->
+              <!-- <label><input type="radio" name="docs2" value="no"><span></span> No</label> -->
+            <!-- </div> -->
             <div class="conditional" data-cond-option="docs2" data-cond-value="yes">
               <p>Awesome! What kind of CPU does it have?</p>
               <select class="select" name="cputype2">
@@ -648,7 +648,8 @@
       <div class="row">
         <div class="px-md-5 col-md-6 d-flex flex-column align-items-start justify-content-center order-1 order-md-2">
           <h1 class="text-light">Thinking about using our work for your project?&nbsp;</h1>
-          <p class="text-light">We provide a bare-bones AOSP build of the latest stable version of Android for PC's for you to test things out with. If it is something you can see being used for your project, we offer development contracts as well as commercial licensing options for our PC/GSI toolkit.&nbsp;</p> <a class="btn mb-3 btn-primary" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/AG-AOSP-10-android_x86_64-202009231416_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_cros-wv.iso/download" target="_blank">Latest Android 10 build</a>
+          <p class="text-light">We provide a bare-bones AOSP build of the latest stable version of Android for PC's for you to test things out with. If it is something you can see being used for your project, we offer development contracts as well as commercial licensing options for our PC/GSI toolkit.&nbsp;</p> 
+		  <a class="btn mb-3 btn-primary" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/AG-AOSP-10-android_x86_64-202009231416_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_cros-wv.iso/download" target="_blank">Latest Android 10 build</a>
         </div>
         <div class="col-lg-6 p-3">
           <div id="carousel3" class="carousel slide" data-ride="carousel" data-interval="5000">
@@ -661,21 +662,6 @@
               <span class="carousel-control-prev-icon" aria-hidden="true"></span></a>
             <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 bg-secondary" id="bfor">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="row">
-            <div class="d-flex flex-column justify-content-center p-3 col-md-8 offset-lg-1 align-items-start order-1 order-md-1">
-              <h3>We Are Part Of A Non-Profit Organization</h3>
-              <p class="mb-3">Bliss OS (x86) is just one of the many projects developed and maintained by members of Bliss Family of ROMs, an 501 (c3) Non-Profit organization who's mission is to provide a variety of resources to the open-source community and others around the world by creating and fostering an all-inclusive learning environment for seasoned developers and newcomers.&nbsp;<br>Our vision is to help provide the tools and knowledge to inspire innovation by sharing and collaborating on projects with individuals of all ages and walks of life that donate their time and knowledge to open-source development.</p> <a class="btn btn-primary" target="_blank" href="https://blissroms.com/bfor.html">Learn More</a>
-            </div>
-            <div class="col-md-4 col-lg-3 order-2 order-md-2 p-0"> <img class="img-fluid d-block justify-content-between align-items-center" src="images/bfor_transparent.svg"> </div>
           </div>
         </div>
       </div>
@@ -705,13 +691,15 @@
                   success: function(data) {
                     var newContent = ''; // Variable to hold HTML
                     for (var i = 0; i < data.length; i++) { // Loop through object
-                      newContent += '<div id="event" class="team_item">';
-                      newContent += '<img class="image crop" src="' + data[i].avatar + '" ';
-                      newContent += 'alt="' + data[i].member + '" />';
-                      newContent += '<h3><b>' + data[i].member + '</b></h3>';
-                      newContent += '<p class="team_data_text font-weight-bold">' + data[i].designation + '</p>';
-                      // newContent += '<p class="team_data_text font-weight-bold"><i>&quot;' + data[i].email + '&quot;</i></p>';
-                      newContent += '</div>';
+						if ($.inArray(data[i].member, ['Jon West', 'utzcoz', 'Jackeagle']) >= 0) {
+							newContent += '<div id="event" class="team_item">';
+							newContent += '<img class="image crop" src="' + data[i].avatar + '" ';
+							newContent += 'alt="' + data[i].member + '" />';
+							newContent += '<h3><b>' + data[i].member + '</b></h3>';
+							newContent += '<p class="team_data_text font-weight-bold">' + data[i].designation + '</p>';
+							// newContent += '<p class="team_data_text font-weight-bold"><i>&quot;' + data[i].email + '&quot;</i></p>';
+							newContent += '</div>';
+						}                     
                     }
                     // Update the page with the new content
                     document.getElementById('content').innerHTML = newContent;
@@ -724,14 +712,27 @@
       </div>
     </div>
   </div>
+  <div class="py-5 bg-secondary" id="bfor">
+    <div class="container">
+      <div class="row">
+        
+      </div>
+    </div>
+  </div>
   <!-- START OF BLISSLABS -->
   <div class="py-5 text-light cover" style="background-color: #343a40;">
     <div class="container" style="max-width: 100%;">
 	  <div class="row">
-        <div class="mx-auto col-md-8">
-          <h1 class="mb-3">A BlissLabs Project</h1>
-          <p class="lead">We are part of a larger community of open-source projects called BlissLabs. Explore more about the other BlissLabs projects below:<br></p>
-        </div>
+	    <div class="col-md-12">
+		    <div class="row">
+				<div class="d-flex flex-column justify-content-center p-3 col-md-8 offset-lg-1 align-items-start order-1 order-md-1">
+					<h1 class="mb-3">A BlissLabs Project</h1>
+					<p class="lead">We are part of a larger community of open-source projects called BlissLabs. Explore more about the other BlissLabs projects below:<br></p>
+					<a class="btn btn-primary" target="_blank" href="https://blisslabs.org">Learn More</a>
+				</div>
+				<div class="col-md-4 col-lg-3 order-2 order-md-2 p-0"> <img class="img-fluid d-block justify-content-between align-items-center" src="images/bliss_labs_logo.svg" style="width: 20vw;"> </div>
+		    </div>
+	    </div>
       </div>
       <div class="row">
         <div class="col-md-12">
@@ -761,13 +762,13 @@
                 for (var i = 0; i < data.length; i++) { // Loop through object
                   if (data[i].project != null) {
                     if (i == 0) {
-                      newContent += '<div class="carousel-item active">';
+                      newContent += '<div class="carousel-item active" style="padding-block: 10vh;" >';
                     } else {
-                      newContent += '<div class="carousel-item">';
+                      newContent += '<div class="carousel-item" >';
                     }
-                    newContent += '<img class="d-block img-fluid" src="' + data[i].project_avatar + '" style="max-width: auto; height: 350px;"';
+                    newContent += '<img class="d-block img-fluid" src="' + data[i].project_avatar + '" style="margin-left: 10%; height: 35vh;"';
                     newContent += 'alt="' + data[i].project + ' " style="padding-top: 1.5rem;"/>';
-                    newContent += '<div class="carousel-caption" style="background: linear-gradient(#343a40 10%, #343a40 100%)!important; padding-top: 120px; margin-left: 350px; ">';
+                    newContent += '<div class="carousel-caption" style="background: linear-gradient(#343a40 10%, #343a40 100%)!important; padding-top: 50vw; width: 50vw; margin-left: 30vw; bottom: 0px ">';
                     <!-- newContent += '<div class="item-details">'; -->
                     newContent += '<h3 class="zxc" ><b style="font-size: xx-large;">' + data[i].project + '</b></h3>';
                     newContent += '<h5 class="zxc" >Project Lead: ' + data[i].project_lead + '</h5>';
