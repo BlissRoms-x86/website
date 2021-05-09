@@ -315,30 +315,104 @@
             <!-- <label><input type="radio" name="runlinux1" value="yes"><span></span> Yes</label> -->
             <!-- <label><input type="radio" name="runlinux1" value="no"><span></span> No</label> -->
             <!-- <div class="conditional" data-cond-option="runlinux1" data-cond-value="yes"> -->
-              <p class="alert alert-warning">Bliss no longer supports 32bit builds. Unsupported builds are recommended.</p>
-              <p>Chances are that you could likely get things to boot using our old nougat builds. <br> Here's the download: </p>
-              <div class="tabbutton-1 " style="margin-bottom: 1.5rem !important; ">
-                <input id="tabbutton-1-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                <label for="tabbutton-1-one">Download</label>
-                <div class="tabbutton-1-content">
-                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a>
+            <p class="alert alert-warning">Bliss no longer supports 32bit builds. Unsupported builds are recommended.</p>
+            <p>Chances are that you could likely get things to boot using our old nougat builds. <br> Here's the download: </p>
+            <div class="tabbutton-1 " style="margin-bottom: 1.5rem !important; ">
+              <input id="tabbutton-1-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+              <label for="tabbutton-1-one">Download</label>
+              <div class="tabbutton-1-content">
+                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a>
+                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
+                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/Nougat%20stable%20-%20Unsupported/Bliss-v7.2-android_x86_64-OFFICIAL-20171014-1552_k4.4.iso/download">Bliss OS 7.2 - Unsupported</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="conditional" data-cond-option="runlinux1" data-cond-value="no"> -->
+          <!-- <p>These builds can be a bit difficult to get running without prior Linux knowledge. <br> Have you read our Documentation and understand the process?</p> -->
+          <!-- <label><input type="radio" name="docs1" value="yes"><span></span> Yes</label> -->
+          <!-- <label><input type="radio" name="docs1" value="no"><span></span> No</label> -->
+          <!-- </div> -->
+          <div class="conditional" data-cond-option="docs1" data-cond-value="yes">
+            <p>Awesome! Here is the download:</p>
+            <div class="tabbutton-2 " style="margin-bottom: 1.5rem !important; ">
+              <input id="tabbutton-2-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+              <label for="tabbutton-2-one">Download</label>
+              <div class="tabbutton-2-content">
+                <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
+                <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/Nougat%20stable%20-%20Unsupported/Bliss-v7.2-android_x86_64-OFFICIAL-20171014-1552_k4.4.iso/download">Bliss OS 7.2 - Unsupported</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="conditional" data-cond-option="docs1" data-cond-value="no"> -->
+          <!-- <p>That's OK, here is the link to our documentation for Bliss OS. Please read and come back once you understand. </p> -->
+          <!-- <a class="btn mb-3 btn-warning xt-white    " href="https://wiki.blissroms.com/" target="”_blank”">Bliss OS Docs Site</a> -->
+          <!-- </div> -->
+          <!-- </div> -->
+          <div class="conditional" data-cond-option="pctype" data-cond-value="64">
+            <!-- <p>Have you ever run Linux on it?</p> -->
+            <!-- <label><input type="radio" name="linux2" value="yes"><span></span> Yes</label> -->
+            <!-- <label><input type="radio" name="linux2" value="no"><span></span> No</label> -->
+            <!-- <div class="conditional" data-cond-option="linux2" data-cond-value="yes"> -->
+            <p>Awesome! What kind of CPU does it have?</p>
+            <select class="select" name="cputype">
+              <option value="Pick one!">Pick one!</option>
+              <option value="intel-atom">Intel Atom</option>
+              <option value="intel-ix">Intel Celeron/i3/i5/i7/i9</option>
+              <option value="intel-core2duo">Intel Core2Duo &amp; older Celeron</option>
+              <option value="amd-athlon">AMD Athlon</option>
+              <option value="amd-ryzen">AMD Ryzen</option>
+              <option value="qcom">Qualcomm Snapdragon</option>
+              <option value="surface">Microsoft Surface (Atom/Celeron/i3/i5/i7/i9)</option>
+            </select>
+            <div class="conditional" data-cond-option="cputype" data-cond-value="intel-atom">
+              <p class="alert alert-warning">Our Atom support is experimental.</p>
+              <p>Our Atom builds work best with newer Atom CPU's. Here is the download:</p>
+              <div class="tabbutton-3 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-3-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-3-one">Download</label>
+                <div class="tabbutton-3-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
                   <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
                   <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/Nougat%20stable%20-%20Unsupported/Bliss-v7.2-android_x86_64-OFFICIAL-20171014-1552_k4.4.iso/download">Bliss OS 7.2 - Unsupported</a>
+                  <br>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/AG-AOSP-10-android_x86_64-202009231416_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_cros-wv.iso/download">AG-10 AOSP barebones - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/AG-AOSP-10-android_x86_64-202009251924_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_foss_cros-wv.iso/download">AG-10 AOSP FOSS - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/AG-10-Bliss-OS-android_x86_64-202010071034_k-kernel-5.8-si-next-rmi_m-q_dgc-q-x86-generic_gms_cros-wv.iso/download">Bliss OS 12.12 - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
                 </div>
               </div>
             </div>
-            <!-- <div class="conditional" data-cond-option="runlinux1" data-cond-value="no"> -->
-              <!-- <p>These builds can be a bit difficult to get running without prior Linux knowledge. <br> Have you read our Documentation and understand the process?</p> -->
-              <!-- <label><input type="radio" name="docs1" value="yes"><span></span> Yes</label> -->
-              <!-- <label><input type="radio" name="docs1" value="no"><span></span> No</label> -->
-            <!-- </div> -->
-            <div class="conditional" data-cond-option="docs1" data-cond-value="yes">
-              <p>Awesome! Here is the download:</p>
-              <div class="tabbutton-2 " style="margin-bottom: 1.5rem !important; ">
-                <input id="tabbutton-2-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                <label for="tabbutton-2-one">Download</label>
-                <div class="tabbutton-2-content">
+            <div class="conditional" data-cond-option="cputype" data-cond-value="intel-ix">
+              <p>Here are the downloads:</p>
+              <div class="tabbutton-4 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-4-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-4-one">Download</label>
+                <div class="tabbutton-4-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
+                  <br>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/AG-AOSP-10-android_x86_64-202009231416_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_cros-wv.iso/download">AG-10 AOSP barebones - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/AG-AOSP-10-android_x86_64-202009251924_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_foss_cros-wv.iso/download">AG-10 AOSP FOSS - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/AG-10-Bliss-OS-android_x86_64-202010071034_k-kernel-5.8-si-next-rmi_m-q_dgc-q-x86-generic_gms_cros-wv.iso/download">Bliss OS 12.12 - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
+                </div>
+              </div>
+            </div>
+            <div class="conditional" data-cond-option="cputype" data-cond-value="intel-core2duo">
+              <p class="alert alert-warning">Your CPU lacks support for SSE 4.2 and requires an old build/kernel</p>
+              <p>We actually recommend you run the 32bit version with Kernel-4.4.<br> Here is that download:</p>
+              <div class="tabbutton-5 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-5-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-5-one">Download</label>
+                <div class="tabbutton-5-content">
                   <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
                   <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
                   <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
@@ -346,275 +420,189 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="conditional" data-cond-option="docs1" data-cond-value="no"> -->
-              <!-- <p>That's OK, here is the link to our documentation for Bliss OS. Please read and come back once you understand. </p> -->
-              <!-- <a class="btn mb-3 btn-warning xt-white    " href="https://wiki.blissroms.com/" target="”_blank”">Bliss OS Docs Site</a> -->
-            <!-- </div> -->
-          <!-- </div> -->
-          <div class="conditional" data-cond-option="pctype" data-cond-value="64">
-            <!-- <p>Have you ever run Linux on it?</p> -->
-            <!-- <label><input type="radio" name="linux2" value="yes"><span></span> Yes</label> -->
-            <!-- <label><input type="radio" name="linux2" value="no"><span></span> No</label> -->
-            <!-- <div class="conditional" data-cond-option="linux2" data-cond-value="yes"> -->
-              <p>Awesome! What kind of CPU does it have?</p>
-              <select class="select" name="cputype">
-                <option value="Pick one!">Pick one!</option>
-                <option value="intel-atom">Intel Atom</option>
-                <option value="intel-ix">Intel Celeron/i3/i5/i7/i9</option>
-                <option value="intel-core2duo">Intel Core2Duo &amp; older Celeron</option>
-                <option value="amd-athlon">AMD Athlon</option>
-                <option value="amd-ryzen">AMD Ryzen</option>
-                <option value="qcom">Qualcomm Snapdragon</option>
-                <option value="surface">Microsoft Surface (Atom/Celeron/i3/i5/i7/i9)</option>
-              </select>
-              <div class="conditional" data-cond-option="cputype" data-cond-value="intel-atom">
-                <p class="alert alert-warning">Our Atom support is experimental.</p>
-                <p>Our Atom builds work best with newer Atom CPU's. Here is the download:</p>
-                <div class="tabbutton-3 " style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-3-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-3-one">Download</label>
-                  <div class="tabbutton-3-content">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                    <br>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/AG-AOSP-10-android_x86_64-202009231416_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_cros-wv.iso/download">AG-10 AOSP barebones - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/AG-AOSP-10-android_x86_64-202009251924_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_foss_cros-wv.iso/download">AG-10 AOSP FOSS - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/AG-10-Bliss-OS-android_x86_64-202010071034_k-kernel-5.8-si-next-rmi_m-q_dgc-q-x86-generic_gms_cros-wv.iso/download">Bliss OS 12.12 - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
-                  </div>
-                </div>
-              </div>
-              <div class="conditional" data-cond-option="cputype" data-cond-value="intel-ix">
-                <p>Here are the downloads:</p>
-                <div class="tabbutton-4 " style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-4-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-4-one">Download</label>
-                  <div class="tabbutton-4-content">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                    <br>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/AG-AOSP-10-android_x86_64-202009231416_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_cros-wv.iso/download">AG-10 AOSP barebones - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/AG-AOSP-10-android_x86_64-202009251924_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_foss_cros-wv.iso/download">AG-10 AOSP FOSS - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/AG-10-Bliss-OS-android_x86_64-202010071034_k-kernel-5.8-si-next-rmi_m-q_dgc-q-x86-generic_gms_cros-wv.iso/download">Bliss OS 12.12 - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
-                  </div>
-                </div>
-              </div>
-              <div class="conditional" data-cond-option="cputype" data-cond-value="intel-core2duo">
-                <p class="alert alert-warning">Your CPU lacks support for SSE 4.2 and requires an old build/kernel</p>
-                <p>We actually recommend you run the 32bit version with Kernel-4.4.<br> Here is that download:</p>
-                <div class="tabbutton-5 " style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-5-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-5-one">Download</label>
-                  <div class="tabbutton-5-content">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/Nougat%20stable%20-%20Unsupported/Bliss-v7.2-android_x86_64-OFFICIAL-20171014-1552_k4.4.iso/download">Bliss OS 7.2 - Unsupported</a>
-                  </div>
-                </div>
-              </div>
-              <div class="conditional" data-cond-option="cputype" data-cond-value="amd-athlon">
-                <p>Here is the download:</p>
-                <div class="tabbutton-6 " style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-6-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-6-one">Download</label>
-                  <div class="tabbutton-6-content">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
-                  </div>
-                </div>
-              </div>
-              <div class="conditional" data-cond-option="cputype" data-cond-value="amd-ryzen">
-                <p class="alert alert-warning">Our Ryzen support is experimental.</p>
-                <p> Please be aware of this. <br> Here is the download:</p>
-                <div class="tabbutton-7 " style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-7-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-7-one">Download</label>
-                  <div class="tabbutton-7-content">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url" target="”_blank”">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/AG-10-Bliss-OS-android_x86_64-202010071034_k-kernel-5.8-si-next-rmi_m-q_dgc-q-x86-generic_gms_cros-wv.iso/download">Bliss OS 12.12 - Experimental</a>
-                  </div>
-                </div>
-              </div>
-              <div class="conditional" data-cond-option="cputype" data-cond-value="qcom">
-                <p>Unfortunately we do not officially support Bliss OS on this type of CPU. <br> Please check our website for info on building Bliss for your device. <br></p>
-                <a class="btn mb-3 btn-warning xt-white " href="https://www.blissroms.com">BlissROMs.com</a>
-              </div>
-              <div class="conditional" data-cond-option="cputype" data-cond-value="surface">
-                <p class="alert alert-warning">Your device requires a special kernel with IPTS Touchscreen support</p>
-                <p>Most Surface devices include an IPTS touchscreen which requires a separate kernel (excluding SP2/3).<br>
-                  <br>Download the latest Stable build for Intel, then install or use Gearlock, and use that to apply the IPTS kernel.</p>
-                  <br>For complete details, see: <a href="https://supreme-gamers.com/t/android-x86-kernel-for-microsoft-surface-based-on-linux-surface-patches.389/">Here</a></p>
-                <div class="tabbutton-14 " style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-14-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-14-one">Download</label>
-                  <div class="tabbutton-14-content">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
-                  </div>
+            <div class="conditional" data-cond-option="cputype" data-cond-value="amd-athlon">
+              <p>Here is the download:</p>
+              <div class="tabbutton-6 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-6-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-6-one">Download</label>
+                <div class="tabbutton-6-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
                 </div>
               </div>
             </div>
-            <!-- <div class="conditional" data-cond-option="linux2" data-cond-value="no"> -->
-              <!-- <p>These builds can be a bit difficult to get running without prior Linux knowledge. <br> Have you read our Documentation and understand the process? </p> -->
-              <!-- <label><input type="radio" name="docs2" value="yes"><span></span> Yes</label> -->
-              <!-- <label><input type="radio" name="docs2" value="no"><span></span> No</label> -->
-            <!-- </div> -->
-            <div class="conditional" data-cond-option="docs2" data-cond-value="yes">
-              <p>Awesome! What kind of CPU does it have?</p>
-              <select class="select" name="cputype2">
-                <option value="Pick one!">Pick one!</option>
-                <option value="intel-atom">Intel Atom</option>
-                <option value="intel-ix">Intel Celeron/i3/i5/i7/i9</option>
-                <option value="intel-core2duo">Intel Core2Duo &amp; older Celeron</option>
-                <option value="amd-athlon">AMD Athlon</option>
-                <option value="amd-ryzen">AMD Ryzen</option>
-                <option value="qcom">Qualcomm Snapdragon</option>
-                <option value="surface">Microsoft Surface (Atom/Celeron/i3/i5/i7/i9)</option>
-              </select>
-              <div class="conditional" data-cond-option="cputype2" data-cond-value="intel-atom">
-                <p class="alert alert-warning">Our Atom support is experimental.</p>
-                <p>Our Atom builds work best with newer Atom CPU's. Here are the downloads:</p>
-                <div class="tabbutton-9 " style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-9-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-9-one">Download</label>
-                  <div class="tabbutton-9-content">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                    <br>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/AG-AOSP-10-android_x86_64-202009231416_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_cros-wv.iso/download">AG-10 AOSP barebones - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/AG-AOSP-10-android_x86_64-202009251924_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_foss_cros-wv.iso/download">AG-10 AOSP FOSS - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/AG-10-Bliss-OS-android_x86_64-202010071034_k-kernel-5.8-si-next-rmi_m-q_dgc-q-x86-generic_gms_cros-wv.iso/download">Bliss OS 12.12 - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
-                  </div>
-                </div>
-              </div>
-              <div class="conditional" data-cond-option="cputype2" data-cond-value="intel-ix">
-                <p>Here are the downloads:</p>
-                <div class="tabbutton-10 " style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-10-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-10-one">Download</label>
-                  <div class="tabbutton-10-content">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                    <br>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/AG-AOSP-10-android_x86_64-202009231416_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_cros-wv.iso/download">AG-10 AOSP barebones - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/AG-AOSP-10-android_x86_64-202009251924_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_foss_cros-wv.iso/download">AG-10 AOSP FOSS - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/AG-10-Bliss-OS-android_x86_64-202010071034_k-kernel-5.8-si-next-rmi_m-q_dgc-q-x86-generic_gms_cros-wv.iso/download">Bliss OS 12.12 - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
-                  </div>
-                </div>
-              </div>
-              <div class="conditional" data-cond-option="cputype2" data-cond-value="intel-core2duo">
-                <p class="alert alert-warning">Your CPU lacks support for SSE 4.2 and requires an old build/kernel</p>
-                <p>We actually recommend you run the 32bit version with Kernel-4.4.<br> Here is that download:</p>
-                <div class="tabbutton-11 " style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-11-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-11-one">Download</label>
-                  <div class="tabbutton-11-content">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/Nougat%20stable%20-%20Unsupported/Bliss-v7.2-android_x86_64-OFFICIAL-20171014-1552_k4.4.iso/download">Bliss OS 7.2 - Unsupported</a>
-                  </div>
-                </div>
-              </div>
-              <div class="conditional" data-cond-option="cputype2" data-cond-value="amd-athlon">
-                <p>Here is the download we recommend:</p>
-                <div class="tabbutton-12 " style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-12-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-12-one">Download</label>
-                  <div class="tabbutton-12-content">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
-                  </div>
-                </div>
-              </div>
-              <div class="conditional" data-cond-option="cputype2" data-cond-value="amd-ryzen">
-                <p class="alert alert-warning">Our Ryzen support is experimental.</p>
-                <p> Please be aware of this. <br> Here is the download:</p>
-                <div class="tabbutton-13 " style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-13-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-13-one">Download</label>
-                  <div class="tabbutton-13-content">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/AG-10-Bliss-OS-android_x86_64-202010071034_k-kernel-5.8-si-next-rmi_m-q_dgc-q-x86-generic_gms_cros-wv.iso/download">Bliss OS 12.12 - Experimental</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
-                  </div>
-                </div>
-              </div>
-              <div class="conditional" data-cond-option="cputype2" data-cond-value="qcom">
-                <p>Unfortunately we do not officially support Bliss OS on this type of CPU. <br> Please check our website for info on building Bliss for your device. <br></p>
-                <a class="btn mb-3 btn-warning xt-white " href="https://www.blissroms.com">BlissROMs.com</a>
-              </div>
-              <div class="conditional" data-cond-option="cputype2" data-cond-value="surface">
-                <p class="alert alert-warning">Your device requires a special kernel with IPTS Touchscreen support</p>
-                <p>Most Surface devices include an IPTS touchscreen which requires a separate kernel (excluding SP2/3).<br>
-                  <br>Download the latest Stable build for Intel, then install or use Gearlock, and use that to apply the IPTS kernel.</p>
-                  <br>For complete details, see: <a href="https://supreme-gamers.com/t/android-x86-kernel-for-microsoft-surface-based-on-linux-surface-patches.389/">Here</a></p>
-                <div class="tabbutton-14 " style="margin-bottom: 1.5rem !important; ">
-                  <input id="tabbutton-14-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
-                  <label for="tabbutton-14-one">Download</label>
-                  <div class="tabbutton-14-content">
-                    <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
-                    <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
-                    <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
-                    <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
-                  </div>
+            <div class="conditional" data-cond-option="cputype" data-cond-value="amd-ryzen">
+              <p class="alert alert-warning">Our Ryzen support is experimental.</p>
+              <p> Please be aware of this. <br> Here is the download:</p>
+              <div class="tabbutton-7 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-7-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-7-one">Download</label>
+                <div class="tabbutton-7-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url" target="”_blank”">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/AG-10-Bliss-OS-android_x86_64-202010071034_k-kernel-5.8-si-next-rmi_m-q_dgc-q-x86-generic_gms_cros-wv.iso/download">Bliss OS 12.12 - Experimental</a>
                 </div>
               </div>
             </div>
-            <div class="conditional" data-cond-option="docs2" data-cond-value="no">
-              <p>That's OK, here is the link to our documentation for Bliss OS. Please read and come back once you understand. </p>
-              <a class="btn mb-3 btn-warning xt-white    " href="https://wiki.blissroms.com/" target="”_blank”">Bliss OS Docs Site</a>
+            <div class="conditional" data-cond-option="cputype" data-cond-value="qcom">
+              <p>Unfortunately we do not officially support Bliss OS on this type of CPU. <br> Please check our website for info on building Bliss for your device. <br></p>
+              <a class="btn mb-3 btn-warning xt-white " href="https://www.blissroms.com">BlissROMs.com</a>
+            </div>
+            <div class="conditional" data-cond-option="cputype" data-cond-value="surface">
+              <p class="alert alert-warning">Your device requires a special kernel with IPTS Touchscreen support</p>
+              <p>Most Surface devices include an IPTS touchscreen which requires a separate kernel (excluding SP2/3).<br>
+                <br>Download the latest Stable build for Intel, then install or use Gearlock, and use that to apply the IPTS kernel.</p>
+              <br>For complete details, see: <a href="https://supreme-gamers.com/t/android-x86-kernel-for-microsoft-surface-based-on-linux-surface-patches.389/">Here</a>
+              <p></p>
+              <div class="tabbutton-14 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-14-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-14-one">Download</label>
+                <div class="tabbutton-14-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 bg-secondary" id="ag-downloads">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="col-md-12"><img class="img-fluid d-block" src="https://i.imgur.com/6s8q0WO.png">
-            <a class="text-center btn btn-primary btn-lg text-light btn-block my-4" href="https://android-generic.github.io" target="_blank" id="agdl">
-              <h2 class="text-center">Head to AG Website</h2>
-            </a>
+          <!-- <div class="conditional" data-cond-option="linux2" data-cond-value="no"> -->
+          <!-- <p>These builds can be a bit difficult to get running without prior Linux knowledge. <br> Have you read our Documentation and understand the process? </p> -->
+          <!-- <label><input type="radio" name="docs2" value="yes"><span></span> Yes</label> -->
+          <!-- <label><input type="radio" name="docs2" value="no"><span></span> No</label> -->
+          <!-- </div> -->
+          <div class="conditional" data-cond-option="docs2" data-cond-value="yes">
+            <p>Awesome! What kind of CPU does it have?</p>
+            <select class="select" name="cputype2">
+              <option value="Pick one!">Pick one!</option>
+              <option value="intel-atom">Intel Atom</option>
+              <option value="intel-ix">Intel Celeron/i3/i5/i7/i9</option>
+              <option value="intel-core2duo">Intel Core2Duo &amp; older Celeron</option>
+              <option value="amd-athlon">AMD Athlon</option>
+              <option value="amd-ryzen">AMD Ryzen</option>
+              <option value="qcom">Qualcomm Snapdragon</option>
+              <option value="surface">Microsoft Surface (Atom/Celeron/i3/i5/i7/i9)</option>
+            </select>
+            <div class="conditional" data-cond-option="cputype2" data-cond-value="intel-atom">
+              <p class="alert alert-warning">Our Atom support is experimental.</p>
+              <p>Our Atom builds work best with newer Atom CPU's. Here are the downloads:</p>
+              <div class="tabbutton-9 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-9-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-9-one">Download</label>
+                <div class="tabbutton-9-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
+                  <br>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/AG-AOSP-10-android_x86_64-202009231416_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_cros-wv.iso/download">AG-10 AOSP barebones - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/AG-AOSP-10-android_x86_64-202009251924_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_foss_cros-wv.iso/download">AG-10 AOSP FOSS - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/AG-10-Bliss-OS-android_x86_64-202010071034_k-kernel-5.8-si-next-rmi_m-q_dgc-q-x86-generic_gms_cros-wv.iso/download">Bliss OS 12.12 - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
+                </div>
+              </div>
+            </div>
+            <div class="conditional" data-cond-option="cputype2" data-cond-value="intel-ix">
+              <p>Here are the downloads:</p>
+              <div class="tabbutton-10 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-10-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-10-one">Download</label>
+                <div class="tabbutton-10-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
+                  <br>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/AG-AOSP-10-android_x86_64-202009231416_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_cros-wv.iso/download">AG-10 AOSP barebones - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/AG-AOSP-10-android_x86_64-202009251924_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_foss_cros-wv.iso/download">AG-10 AOSP FOSS - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/AG-10-Bliss-OS-android_x86_64-202010071034_k-kernel-5.8-si-next-rmi_m-q_dgc-q-x86-generic_gms_cros-wv.iso/download">Bliss OS 12.12 - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
+                </div>
+              </div>
+            </div>
+            <div class="conditional" data-cond-option="cputype2" data-cond-value="intel-core2duo">
+              <p class="alert alert-warning">Your CPU lacks support for SSE 4.2 and requires an old build/kernel</p>
+              <p>We actually recommend you run the 32bit version with Kernel-4.4.<br> Here is that download:</p>
+              <div class="tabbutton-11 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-11-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-11-one">Download</label>
+                <div class="tabbutton-11-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/Nougat%20stable%20-%20Unsupported/Bliss-v7.2-android_x86_64-OFFICIAL-20171014-1552_k4.4.iso/download">Bliss OS 7.2 - Unsupported</a>
+                </div>
+              </div>
+            </div>
+            <div class="conditional" data-cond-option="cputype2" data-cond-value="amd-athlon">
+              <p>Here is the download we recommend:</p>
+              <div class="tabbutton-12 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-12-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-12-one">Download</label>
+                <div class="tabbutton-12-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
+                </div>
+              </div>
+            </div>
+            <div class="conditional" data-cond-option="cputype2" data-cond-value="amd-ryzen">
+              <p class="alert alert-warning">Our Ryzen support is experimental.</p>
+              <p> Please be aware of this. <br> Here is the download:</p>
+              <div class="tabbutton-13 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-13-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-13-one">Download</label>
+                <div class="tabbutton-13-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/AG-10-Bliss-OS-android_x86_64-202010071034_k-kernel-5.8-si-next-rmi_m-q_dgc-q-x86-generic_gms_cros-wv.iso/download">Bliss OS 12.12 - Experimental</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/archived/Bliss-v11.12--OFFICIAL-20201107-2035_x86_64_k-k4.19.122-ax86-ga-rmi_m-p9.0-x86_dgc-t3_foss_intelhd.iso/download">Bliss OS 11.12 FOSS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
+                </div>
+              </div>
+            </div>
+            <div class="conditional" data-cond-option="cputype2" data-cond-value="qcom">
+              <p>Unfortunately we do not officially support Bliss OS on this type of CPU. <br> Please check our website for info on building Bliss for your device. <br></p>
+              <a class="btn mb-3 btn-warning xt-white " href="https://www.blissroms.com">BlissROMs.com</a>
+            </div>
+            <div class="conditional" data-cond-option="cputype2" data-cond-value="surface">
+              <p class="alert alert-warning">Your device requires a special kernel with IPTS Touchscreen support</p>
+              <p>Most Surface devices include an IPTS touchscreen which requires a separate kernel (excluding SP2/3).<br>
+                <br>Download the latest Stable build for Intel, then install or use Gearlock, and use that to apply the IPTS kernel.</p>
+              <br>For complete details, see: <a href="https://supreme-gamers.com/t/android-x86-kernel-for-microsoft-surface-based-on-linux-surface-patches.389/">Here</a>
+              <p></p>
+              <div class="tabbutton-14 " style="margin-bottom: 1.5rem !important; ">
+                <input id="tabbutton-14-one" type="checkbox" name="tabbutton-s" style=" width: 0px; margin-left: -10px;">
+                <label for="tabbutton-14-one">Download</label>
+                <div class="tabbutton-14-content">
+                  <a class="btn mb-3 btn-warning xt-white    " href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="”_blank”">Donate $5</a>
+                  <a class="btn btn-info mb-3 mx-1" target="”_blank”" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a>
+                  <a class="btn btn-dark text-white mb-3" href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank">Donate Other Amount</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download">Bliss OS 11.13 GMS - Stable</a>
+                  <a class="btn btn-primary mx-1 mb-3 fade-in" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210422-1557_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-p9.0-11.13_foss_intelhd.iso/download">Bliss OS 11.14 FOSS - Stable</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="conditional" data-cond-option="docs2" data-cond-value="no">
+            <p>That's OK, here is the link to our documentation for Bliss OS. Please read and come back once you understand. </p>
+            <a class="btn mb-3 btn-warning xt-white    " href="https://wiki.blissroms.com/" target="”_blank”">Bliss OS Docs Site</a>
           </div>
         </div>
       </div>
@@ -643,13 +631,46 @@
       </div>
     </div>
   </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="px-5 col-md-8 text-center mx-auto">
+          <h3 class="text-primary display-4"> <b>Pingendo</b> </h3>
+          <h2 class="my-3">I am so happy, my dear friend.</h2>
+          <p class="mb-3">I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable.</p> <a href="#" class="btn btn-primary">Download</a>
+          <p class="mt-2"> <small>Currently v2.0.3</small> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-secondary" id="ag-downloads">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-12">
+            <div class="px-5 col-md-12 text-center mx-auto">
+              <h3 class="display-4 text-light"> <b>This Project uses</b></h3><img class="img-fluid d-block" src="https://i.imgur.com/6s8q0WO.png">
+              <h2 class="my-3">A rapid prototyping toolkit</h2>
+              <p class="mb-3">Created by the makers of Bliss OS, Android-Generic Project aims to assist in bringing all AOSP based projects to x86/x86_64 PC hardware, emulators, and more</p>
+            </div>
+            <a class="text-center btn btn-primary btn-lg text-light btn-block my-4" href="https://android-generic.github.io" target="_blank" id="agdl">
+              <h2 class="text-center">Head to AG Website</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="py-5" style="	background-image: url(&quot;https://i.imgur.com/gDeZpfE.png&quot;);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
     <div class="container">
       <div class="row">
         <div class="px-md-5 col-md-6 d-flex flex-column align-items-start justify-content-center order-1 order-md-2">
           <h1 class="text-light">Thinking about using our work for your project?&nbsp;</h1>
-          <p class="text-light">We provide a bare-bones AOSP build of the latest stable version of Android for PC's for you to test things out with. If it is something you can see being used for your project, we offer development contracts as well as commercial licensing options for our PC/GSI toolkit.&nbsp;</p> 
-		  <a class="btn mb-3 btn-primary" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/AG-AOSP-10-android_x86_64-202009231416_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_cros-wv.iso/download" target="_blank">Latest Android 10 build</a>
+          <p class="text-light">We provide a bare-bones AOSP build of the latest stable version of Android for PC's for you to test things out with. If it is something you can see being used for your project, we offer development contracts as well as commercial licensing options for our PC/GSI toolkit.&nbsp;</p>
+          <div class="row">
+            <div class="col-md-6"><a class="btn mb-3 btn-primary" href="oem.html" target="_blank">OEMs &amp; Partners</a></div>
+            <div class="col-md-6"><a class="btn mb-3 btn-primary" href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/AG-AOSP-10-android_x86_64-202009231416_k-kernel-5.8-si-next-rmi_m-android-10.0.0_r41_dgc-q-x86-generic_cros-wv.iso/download" target="_blank">Latest Android 10 build</a></div>
+          </div>
         </div>
         <div class="col-lg-6 p-3">
           <div id="carousel3" class="carousel slide" data-ride="carousel" data-interval="5000">
@@ -691,15 +712,15 @@
                   success: function(data) {
                     var newContent = ''; // Variable to hold HTML
                     for (var i = 0; i < data.length; i++) { // Loop through object
-						if ($.inArray(data[i].member, ['Jon West', 'utzcoz', 'Jackeagle']) >= 0) {
-							newContent += '<div id="event" class="team_item">';
-							newContent += '<img class="image crop" src="' + data[i].avatar + '" ';
-							newContent += 'alt="' + data[i].member + '" />';
-							newContent += '<h3><b>' + data[i].member + '</b></h3>';
-							newContent += '<p class="team_data_text font-weight-bold">' + data[i].designation + '</p>';
-							// newContent += '<p class="team_data_text font-weight-bold"><i>&quot;' + data[i].email + '&quot;</i></p>';
-							newContent += '</div>';
-						}                     
+                      if ($.inArray(data[i].member, ['Jon West', 'utzcoz', 'Jackeagle']) >= 0) {
+                        newContent += '<div id="event" class="team_item">';
+                        newContent += '<img class="image crop" src="' + data[i].avatar + '" ';
+                        newContent += 'alt="' + data[i].member + '" />';
+                        newContent += '<h3><b>' + data[i].member + '</b></h3>';
+                        newContent += '<p class="team_data_text font-weight-bold">' + data[i].designation + '</p>';
+                        // newContent += '<p class="team_data_text font-weight-bold"><i>&quot;' + data[i].email + '&quot;</i></p>';
+                        newContent += '</div>';
+                      }
                     }
                     // Update the page with the new content
                     document.getElementById('content').innerHTML = newContent;
@@ -715,24 +736,23 @@
   <div class="py-5 bg-secondary" id="bfor">
     <div class="container">
       <div class="row">
-        
       </div>
     </div>
   </div>
   <!-- START OF BLISSLABS -->
   <div class="py-5 text-light cover" style="background-color: #343a40;">
     <div class="container" style="max-width: 100%;">
-	  <div class="row">
-	    <div class="col-md-12">
-		    <div class="row">
-				<div class="d-flex flex-column justify-content-center p-3 col-md-8 offset-lg-1 align-items-start order-1 order-md-1">
-					<h1 class="mb-3">A BlissLabs Project</h1>
-					<p class="lead">We are part of a larger community of open-source projects called BlissLabs. Explore more about the other BlissLabs projects below:<br></p>
-					<a class="btn btn-primary" target="_blank" href="https://blisslabs.org">Learn More</a>
-				</div>
-				<div class="col-md-4 col-lg-3 order-2 order-md-2 p-0"> <img class="img-fluid d-block justify-content-between align-items-center" src="https://blisslabs.org/assets/images/bliss_labs_logo.svg" style="width: 20vw;"> </div>
-		    </div>
-	    </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="d-flex flex-column justify-content-center p-3 col-md-8 offset-lg-1 align-items-start order-1 order-md-1">
+              <h1 class="mb-3">A BlissLabs Project</h1>
+              <p class="lead">We are part of a larger community of open-source projects called BlissLabs. Explore more about the other BlissLabs projects below:<br></p>
+              <a class="btn btn-primary" target="_blank" href="https://blisslabs.org">Learn More</a>
+            </div>
+            <div class="col-md-4 col-lg-3 order-2 order-md-2 p-0"> <img class="img-fluid d-block justify-content-between align-items-center" src="https://blisslabs.org/assets/images/bliss_labs_logo.svg" style="width: 20vw;"> </div>
+          </div>
+        </div>
       </div>
       <div class="row">
         <div class="col-md-12">
@@ -858,7 +878,7 @@
       </div>
       <div class="row">
         <div class="col-md-12 text-center">
-          <p class="mb-0 mt-2">© 2019 Bliss Family of ROMs. All rights reserved</p>
+          <p class="mb-0 mt-2">© 2021 BlissLabs. All rights reserved</p>
         </div>
       </div>
     </div>
