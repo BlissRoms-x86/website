@@ -12,7 +12,7 @@
 # Bliss OS Website
 
 * Official Bliss OS website, can be found [here](https://blissos.org).
-* Licensed under the [GPLv3 license](LICENSE.md)
+* Licensed under the [GPLv3 license](LICENSE)
 
 ## Contributing
 
