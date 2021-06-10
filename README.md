@@ -1,20 +1,19 @@
-<img src="https://i.imgur.com/0GnrwaU.png">
+![Bliss OS logotype](https://imgur.com/aIJdfgm.png)
 
-# blissroms-x86.github.io
-New website for [Bliss OS](https://www.blissos.org)
+<p align="center">
+<a href="https://blissos.org">Website</a> |
+<a href="https://blissos.org/discord">Discord</a> |
+<a href="https://blissos.org/download">Download |
+<a href="https://blissos.org/donate">Donate</a> |
+<a href="https://docs.blissos.org">Documentation</a> |
+<a href="https://knowledgebase.blissos.org">Knowledgebase</a> |
+  <a href="https://blissos.org/support">Support</a>
 
+# Bliss OS Website
 
+* Official Bliss OS website, can be found [here](https://blissos.org).
+* Licensed under the [GPLv3 license](LICENSE)
 
+## Contributing
 
-
-
-
-
-
-
-
-
-This website is tested with BrowserStack.
-
-<img src="https://bstacksupport.zendesk.com/attachments/token/xOAbso67D0wIju4PyV3EplIZl/?name=browserstack-logo-600x315.png" width="20%" height="20%">
-
+If you're looking to contribute to the project, please refer to [CONTRIBUTING](CONTRIBUTING.md).
