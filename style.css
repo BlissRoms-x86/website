@@ -11,6 +11,17 @@ background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-2
 background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+.documentation_banner {
+  background: #00212E;  /* fallback for old browsers */
+}
+.drk_bg {
+  background: #333333;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #333333, #111111);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #333333, #111111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.footer_bg {
+  background: #111111;  /* fallback for old browsers */
+}
 .sponser-card {
   height: 18rem;
 }
