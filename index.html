@@ -236,10 +236,9 @@
     <section class="py-4">
         <div class="container">
             <h2 class="text-center">Everything We Do is Open Source</h2>
-            <p class="mb-4 text-center">Many of our competitors do offer a free download, but they are still making
-                money off your data</p>
+            <p class="mb-4 text-center">Many of our competitors do offer their OS a free download, but that typically means that you are the product, and they are making money off your data</p>
             <div class="row">
-                <div class="col-sm mt-5">
+                <div class="col-sm mt-2">
                     <h2>We respect your personal data</h2>
                     <p class="mb-0">Not only do we respect your privacy, but we vow to never include anything to put
                         your data in
@@ -302,7 +301,7 @@
 
                 </div>
                 <div class="col-sm">
-                    <h5>Bliss OS 12 (Archive) (Android 10)</h5>
+                    <h5>Bliss OS 12 (Depreciated) (Android 10)</h5>
                     <img class="w-50"
                         src="https://img.shields.io/sourceforge/dm/blissos-dev.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue">
 
@@ -358,7 +357,7 @@
 
         <div class="container my-5 text-left">
             <h2>Bliss OS Variations</h2>
-            <p class="mb-3">Apps You Need, Without Ones You Don’t.</p>
+            <p class="mb-3">Info about what is included in our builds and how it relates to your hardware.</p>
             <div class="accordion" id="accordionExample">
                 <div class="card">
                     <div class="card-header" id="headingOne">
@@ -453,25 +452,59 @@
 							How to identify Native-Bridge Types in ISO file ? <br>
 							<br>
 							<ul>
-							<li>houdini - Includes Intel's Houdini <br></li>
-							<li>libndk - Includes Google's libndk-translation<br></li>
+							<li>houdini - Includes Intel's Houdini (Works with most Intel CPU's and some recent AMD CPU's)<br></li>
+							<li>libndk - Includes Google's libndk-translation (Works on all CPU's, but not as efficient as Houdini)<br></li>
 							</ul>
 							<br>
                             Find more info on <a href="https://knowledgebase.blissos.org/frequently-asked-questions/build-filenames" target="_blank">Bliss OS Knowledge Base</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="card">
+				
+				<div class="card">
                     <div class="card-header" id="headingfive">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                 data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                                Supported GPU's
+                                Supported CPU's
                             </button>
                         </h5>
                     </div>
                     <div id="collapsefive" class="collapse" aria-labelledby="headingfive"
+                        data-parent="#accordionExample">
+                        <div class="card-body">
+							Intel:<br>
+							<br>
+							<ul>
+                            <li>Intel i Series (i3/5/7/9) - Fully Supported<br></li>
+                            <li>Intel Celeron M - Fully Supported (Kernel 5.4+ recommended) <br></li>
+                            <li>Intel Atom - Mostly Supported (Kernel 5.10+ recommended)<br></li>
+                            <li>Core2Duo - Not Fully Supported (Needs SSE4.2) (May require 32bit builds)<br></li>
+							</ul>
+							<br>
+							AMD:<br>
+							<br>
+							<ul>
+                            <li>A Series - Mostly Supported (Needs SSE4.2) (Kernel 5.10+ recommended)<br></li>
+                            <li>Ryzen Series (1k-7k) - Fully Supported (Kernel 5.10+ recommended)<br></li>
+                            <li>Athlon Series - Mostly Supported (Needs SSE4.2) (Kernel 5.10+ recommended)<br></li>
+							</ul>
+							
+                            Find more info on <a href="https://knowledgebase.blissos.org/frequently-asked-questions/hardware-compatibility" target="_blank">Bliss OS Knowledge Base</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingsix">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                Supported GPU's
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
                         data-parent="#accordionExample">
                         <div class="card-body">
 							All of our builds include support for the following GPU's:<br>
