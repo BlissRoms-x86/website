@@ -1,246 +1,205 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- PAGE settings -->
-    <link rel="icon" href="favicon.ico">
-    <title>Bliss OS For PC</title>
-    <meta name="description" content="Open Source OS for PC's, based on AOSP">
-    <meta name="keywords" content="blissroms, bliss, os, x86, aosp, android, rom, teambliss, android x86">
-    <!-- CSS dependencies -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/7b4ed0a31a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="neon.css">
-    <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-    <script src="js/navbar-ontop.js"></script>
-
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/buttonstyle.css">
-    <link rel="stylesheet" href="css/table.css">
-    <style>
-        a>* {
-            pointer-events: none;
-        }
-    </style>
-    <script data-ad-client="ca-pub-7639560510014441" async=""
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</head>
-
-<body>
-    <!-- Navbar -->
-    <div class="container">
-        <nav class="navbar navbar-expand-lg fixed-top bg-primary navbar-light">
-            <div class="container">
-                <a class="navbar-brand" style="text-align: center;" href="index.html"><img
-                        src="images/BlissIcon_Smal_wl.png" class="d-inline-block align-top" style="width: 40%;"
-                        alt="logo"></a>
-
-                <a class="navbar-brand" href="index.html"><span style="font-weight: 500">Bliss OS</span></a>
-
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
-
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="index.html#features">Features</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="index.html#about">About</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="index.html#team">Team</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="https://blisslabs.org" target="_blank">Non Profit</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" href="index.html#documentation">Docs</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" target="_blank" href="https://blog.blissos.org">Blog</a>
-                        </li>
-                    </ul>
-                    <a class="btn navbar-btn mx-2 btn-secondary shadow" href="index.html#download">Download</a>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- PAGE settings -->
+        <link rel="icon" href="favicon.ico">
+        <title>Bliss OS For PC</title>
+        <meta name="description" content="Open Source OS for PC's, based on AOSP">
+        <meta name="keywords" content="blissroms, bliss, os, x86, aosp, android, rom, teambliss, android x86">
+        <!-- CSS dependencies -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/7b4ed0a31a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="neon.css">
+        <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+        <script src="js/navbar-ontop.js"></script>
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/buttonstyle.css">
+        <link rel="stylesheet" href="css/terminal_style.css">
+        <link rel="stylesheet" href="css/table.css">
+        <style>a>* { pointer-events: none; }</style>
+        <script data-ad-client="ca-pub-7639560510014441" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg fixed-top bg-primary navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" style="text-align: center;" href="index.html"><img src="images/BlissIcon_Smal_wl.png" class="d-inline-block align-top" style="width: 40%;" alt="logo"></a>
+                    <a class="navbar-brand" href="index.html"><span style="font-weight: 500">Bliss OS</span></a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html#features">Features</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html#about">About</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html#team">Team</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="https://blisslabs.org" target="_blank">Non Profit</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="index.html#documentation">Docs</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" target="_blank" href="https://blog.blissos.org">Blog</a>
+                            </li>
+                        </ul>
+                        <a class="btn navbar-btn mx-2 btn-secondary shadow" href="index.html#download">Download</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </div>
-
-
-
-    <!-- Cover -->
-    <section class="section-fade-out-white pt-2 main_background">
-        <div class="container mt-5 pt-6">
-            <div class="row">
-                <div class="col-md-6 text-left">
-                    <h2 class="display-4 mb-4">Bliss OS for PC</h2>
-                    <h3>Android for your PC</h3>
-                    <p>An Open Source OS, based on Android, that
+            </nav>
+        </div>
+        <!-- Cover -->
+        <section class="section-fade-out-white pt-2 main_background">
+            <div class="container mt-5 pt-6">
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <h2 class="display-4 mb-4">Bliss OS for PC</h2>
+                        <h3>Android for your PC</h3>
+                        <p>An Open Source OS, based on Android, that
                         incorporates many
                         optimizations, features, and expanded device support. And it is available for just about any
                         Chromebook,
                         Windows/Linux PC or tablet released in the last 4 years</p>
-                </div>
-                <div class="col-md-4">
-                    <img class="img-fluid mx-auto" src="images/bliss_surface4.png">
+                    </div>
+                    <div class="col-md-4">
+                        <img class="img-fluid mx-auto" src="images/bliss_surface4.png">
+                    </div>
                 </div>
             </div>
-        </div>
-
-    </section>
-
-    <!-- Features -->
-
-    <section class="my-5" id="features">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h1>Bliss OS Features</h1>
-            </div>
-            <div class="row">
-                <div class="col-sm text-center">
-                    <h4 class="text-primary">Focus on design</h4>
-                    <p class="mb-4">We include many options for customization and theming throughout the OS</p>
-                    <h4 class="text-primary">Customized settings</h4>
-                    <p class="mb-4">We offer many custom options for big screens and small screens alike that allow
+        </section>
+        <!-- Features -->
+        <section class="my-5" id="features">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h1>Bliss OS Features</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm text-center">
+                        <h4 class="text-primary">Focus on design</h4>
+                        <p class="mb-4">We include many options for customization and theming throughout the OS</p>
+                        <h4 class="text-primary">Customized settings</h4>
+                        <p class="mb-4">We offer many custom options for big screens and small screens alike that allow
                         you
                         to setup
                         your device for various different tasks</p>
-                    <h4 class="text-primary">Performance</h4>
-                    <p class="mb-4">We built the OS with a focus on speed and stability with tweaks to assist in the
+                        <h4 class="text-primary">Performance</h4>
+                        <p class="mb-4">We built the OS with a focus on speed and stability with tweaks to assist in the
                         most
                         demanding applications</p>
-                </div>
-                <div class="col-sm">
-                    <img class="img-fluid" src="images/bliss_surface3.png">
-                    <img class="img-fluid" src="images/bliss_surface6.png">
-                </div>
-                <div class="col-sm  text-center">
-                    <h4 class="text-primary">Battery-friendly</h4>
-                    <p class="mb-4">Extra options are provided to help tune battery consumption to the best levels
-                    </p>
-                    <h4 class="text-primary">Added Security</h4>
-                    <p class="mb-4">Additional security options and features are found throughout the OS. And AOSP
+                    </div>
+                    <div class="col-sm">
+                        <img class="img-fluid" src="images/bliss_surface3.png">
+                        <img class="img-fluid" src="images/bliss_surface6.png">
+                    </div>
+                    <div class="col-sm  text-center">
+                        <h4 class="text-primary">Battery-friendly</h4>
+                        <p class="mb-4">Extra options are provided to help tune battery consumption to the best levels </p>
+                        <h4 class="text-primary">Added Security</h4>
+                        <p class="mb-4">Additional security options and features are found throughout the OS. And AOSP
                         security
                         updates are merged regularly</p>
-                    <h4 class="text-primary">Compatibility</h4>
-                    <p class="mb-4">We bring Bliss to every device we own. And our PC builds include extras for
+                        <h4 class="text-primary">Compatibility</h4>
+                        <p class="mb-4">We bring Bliss to every device we own. And our PC builds include extras for
                         ARM/ARM64 app
                         compatibility</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-    <!-- Desktop or Tablet UI -->
-
-    <section class="my-5" id="about">
-        <div class="container">
-            <div class="my-5 text-center">
-                <img class="img-fluid" src="images/bliss12_surface_all.png">
-            </div>
-
-            <div class="text-left align-items-start">
-                <h2>Desktop or Tablet UI</h2>
-                <p class="mb-3">Bliss OS lets the user choose between Desktop or Tablet UI, based on the launcher
+        </section>
+        <!-- Desktop or Tablet UI -->
+        <section class="my-5" id="about">
+            <div class="container">
+                <div class="my-5 text-center">
+                    <img class="img-fluid" src="images/bliss12_surface_all.png">
+                </div>
+                <div class="text-left align-items-start">
+                    <h2>Desktop or Tablet UI</h2>
+                    <p class="mb-3">Bliss OS lets the user choose between Desktop or Tablet UI, based on the launcher
                     being used. You can even mix the two for a truly customized experience</p>
-            </div>
-
-            <div class="row my-5">
-                <div class="col-sm">
-                    <h5>Taskbar, by @farmerbb</h5>
-                    <p class="small">An Open Source Desktop launcher that allows the use of a bottom taskbar, with
+                </div>
+                <div class="row my-5">
+                    <div class="col-sm">
+                        <h5>Taskbar, by @farmerbb</h5>
+                        <p class="small">An Open Source Desktop launcher that allows the use of a bottom taskbar, with
                         Bliss
                         button
                         (start menu)</p>
-                </div>
-                <div class="col-sm">
-                    <h5>BoringdroidSystemUI, by @Utzcoz</h5>
-                    <p class="small">An integrated desktop launcher with tasks, built into the navigation bar
+                    </div>
+                    <div class="col-sm">
+                        <h5>BoringdroidSystemUI, by @Utzcoz</h5>
+                        <p class="small">An integrated desktop launcher with tasks, built into the navigation bar
                         (Coming
                         Soon)</p>
-                </div>
-                <div class="col-sm">
-                    <h5> AOSP based Launcher</h5>
-                    <p class="small">An Open Source launcher that is more geared towards a tablet interface. Based
+                    </div>
+                    <div class="col-sm">
+                        <h5> AOSP based Launcher</h5>
+                        <p class="small">An Open Source launcher that is more geared towards a tablet interface. Based
                         off
                         AOSP
                         Launcher 3</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- More Compatibility -->
-
-    <section class="py-5 bg-secondary">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <img class="img-fluid w-75" src="images/bliss_surface6.png">
-                </div>
-
-                <div class="col-sm p-4">
-                    <h2>More Compatibility</h2>
-                    <p>Bliss OS comes with a variety of added features for compatibility with ARM/ARM64 Apps and
+        </section>
+        <!-- More Compatibility -->
+        <section class="py-5 bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <img class="img-fluid w-75" src="images/bliss_surface6.png">
+                    </div>
+                    <div class="col-sm p-4">
+                        <h2>More Compatibility</h2>
+                        <p>Bliss OS comes with a variety of added features for compatibility with ARM/ARM64 Apps and
                         support
                         for
                         Widewine L3 DRM to play Netflix & Amazon Prime videos.
                         As well as added configurations for gamepads and profiles for Tincore Keymapper, allowing
                         users
                         to game like never before</p>
-                    <a class="btn btn-primary mb-3" href="#download">Go to Downloads</a>
+                        <a class="btn btn-primary mb-3" href="#download">Go to Downloads</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Visit Social Communites -->
-
-    <section class="py-4 community_banner">
-        <div class="container">
-            <div class="row">
-                <div class="my-3 col-sm col-md-7">
-                    <h2 class="text-left">Visit our social communities and share your experience with developers
-                    </h2>
-                </div>
-                <div class="col-sm col-md-3 d-flex p-4">
-                    <a href="https://www.facebook.com/BlissFamilyOfROMs/" target="_blank"><i
-                            class="fa fa-facebook-official mr-2 text-light fa-2x"></i></a>
-                    <a href="https://instagram.com/blissos_org" target="_blank"><i
-                            class="fa fa-instagram mx-2 text-light fa-2x"></i></a>
-                    <a href=" github.com/blissroms-x86" target="_blank"><i
-                            class="fa fa-github mx-2 text-light fa-2x"></i></a>
-                    <a href="https://www.reddit.com/r/BlissOS" target="_blank"><i
-                            class="fa fa-reddit mx-2 text-light fa-2x"></i></a>
-                    <a href="https://twitter.com/blissos_org" target="_blank"><i
-                            class="fa fa-twitter ml-2 text-light fa-2x"></i></a>
-                    <a href="https://discord.com/invite/F9n5gbdNy2" target="_blank"><i
-                            class="fab fa-discord ml-2 text-light fa-2x"></i></a>
+        </section>
+        <!-- Visit Social Communites -->
+        <section class="py-4 community_banner">
+            <div class="container">
+                <div class="row">
+                    <div class="my-3 col-sm col-md-7">
+                        <h2 class="text-left">Visit our social communities and share your experience with developers </h2>
+                    </div>
+                    <div class="col-sm col-md-3 d-flex p-4">
+                        <a href="https://www.facebook.com/BlissFamilyOfROMs/" target="_blank"><i class="fa fa-facebook-official mr-2 text-light fa-2x"></i></a>
+                        <a href="https://instagram.com/blissos_org" target="_blank"><i class="fa fa-instagram mx-2 text-light fa-2x"></i></a>
+                        <a href=" github.com/blissroms-x86" target="_blank"><i class="fa fa-github mx-2 text-light fa-2x"></i></a>
+                        <a href="https://www.reddit.com/r/BlissOS" target="_blank"><i class="fa fa-reddit mx-2 text-light fa-2x"></i></a>
+                        <a href="https://twitter.com/blissos_org" target="_blank"><i class="fa fa-twitter ml-2 text-light fa-2x"></i></a>
+                        <a href="https://discord.com/invite/F9n5gbdNy2" target="_blank"><i class="fab fa-discord ml-2 text-light fa-2x"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Privacy Section -->
-
-    <section class="py-4">
-        <div class="container">
-            <h2 class="text-center">Everything We Do is Open Source</h2>
-            <p class="mb-4 text-center">Many of our competitors do offer their OS a free download, but that typically means that you are the product, and they are making money off your data</p>
-            <div class="row">
-                <div class="col-sm mt-2">
-                    <h2>We respect your personal data</h2>
-                    <p class="mb-0">Not only do we respect your privacy, but we vow to never include anything to put
+        </section>
+        <!-- Privacy Section -->
+        <section class="py-4">
+            <div class="container">
+                <h2 class="text-center">Everything We Do is Open Source</h2>
+                <p class="mb-4 text-center">Many of our competitors do offer their OS a free download, but that typically means that you are the product, and they are making money off your data</p>
+                <div class="row">
+                    <div class="col-sm mt-2">
+                        <h2>We respect your personal data</h2>
+                        <p class="mb-0">Not only do we respect your privacy, but we vow to never include anything to put
                         your data in
                         jeopardy. We are also constantly updating things with the latest security updates from
                         Google
@@ -254,1176 +213,1455 @@
                         user data, we also offer Bliss OS builds that are Google Services free, and come with fDroid
                         &amp; microG
                         for a truly secure user experience</p>
-                </div>
-                <div class="col-sm">
-                    <div class="p-5"> <img class="w-50" src="images/Respect-Personal-Data-sm.png"> </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="p-5">
+                            <img class="w-50" src="images/Respect-Personal-Data-sm.png">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- We volunteer our time -->
-
-    <section class="py-4 bg-secondary">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm col-md-7">
-                    <div class="text-left">
-                        <h2>We volunteer our time.</h2>
-                        <p>We are a 501(c3) nonprofit, run by people that donate their free time towards the
+        </section>
+        <!-- We volunteer our time -->
+        <section class="py-4 bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm col-md-7">
+                        <div class="text-left">
+                            <h2>We volunteer our time.</h2>
+                            <p>We are a 501(c3) nonprofit, run by people that donate their free time towards the
                             project. We
                             do our
                             best to bring a quality OS to your device, while working a real job on the side in most
                             cases. Please
                             consider showing us we're on the right track by clicking the button below. </p>
-                        <a href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank"
-                            class="btn btn-primary shadow">Buy Us a Coffee</a>
+                            <a href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank" class="btn btn-primary shadow">Buy Us a Coffee</a>
+                        </div>
+                    </div>
+                    <div class="col-sm col-md-3 text-center p-3">
+                        <img class="w-50" src="https://www.blissos.org/images/coffee-break.svg">
                     </div>
                 </div>
-                <div class="col-sm col-md-3 text-center p-3">
-                    <img class="w-50" src="https://www.blissos.org/images/coffee-break.svg">
+            </div>
+        </section>
+        <!-- Bliss OS Versions -->
+        <section class="download-section pt-5">
+            <div class="container">
+                <h2 class="text-center">Bliss OS Versions</h2>
+                <div class="row my-3 text-center">
+                    <div class="col-sm">
+                        <h5>Bliss OS 11 (Stable) (Android 9.0)</h5>
+                        <img class="w-50" src="https://img.shields.io/sourceforge/dm/blissos-x86.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue">
+                    </div>
+                    <div class="col-sm">
+                        <h5>Bliss OS 12 (Depreciated) (Android 10)</h5>
+                        <img class="w-50" src="https://img.shields.io/sourceforge/dm/blissos-dev.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue">
+                    </div>
+                    <div class="col-sm">
+                        <h5>Bliss OS 14 (RC) (Android 11)</h5>
+                        <img class="w-50" src="https://img.shields.io/sourceforge/dm/blissos-dev.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue">
+                    </div>
+                    <div class="col-sm">
+                        <h5>Bliss OS 15 (Alpha) (Android 12)</h5>
+                        <img class="w-50" src="https://img.shields.io/sourceforge/dm/blissos-dev.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue">
+                    </div>
+                </div>
+                <div class="alert alert-danger my-4" role="alert">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <h4 class="alert-heading">!!Please Note!!</h4>
+                    <p>Our Bliss OS 12 builds are no longer maintained, so download biss os 14 or 11 builds instead.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-    <!-- Bliss OS Versions -->
-
-    <section class="download-section pt-5">
-        <div class="container">
-            <h2 class="text-center">Bliss OS Versions</h2>
-            <div class="row my-3 text-center">
-                <div class="col-sm">
-                    <h5>Bliss OS 11 (Stable) (Android 9.0)</h5>
-                    <img class="w-50"
-                        src="https://img.shields.io/sourceforge/dm/blissos-x86.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue">
-
-                </div>
-                <div class="col-sm">
-                    <h5>Bliss OS 12 (Depreciated) (Android 10)</h5>
-                    <img class="w-50"
-                        src="https://img.shields.io/sourceforge/dm/blissos-dev.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue">
-
-                </div>
-                <div class="col-sm">
-                    <h5>Bliss OS 14 (Beta) (Android 11)</h5>
-                    <img class="w-50"
-                        src="https://img.shields.io/sourceforge/dm/blissos-dev.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue">
-
-                </div>
-            </div>
-            <div class="alert alert-danger my-4" role="alert">
-                <button type="button" class="close" data-dismiss="alert">×</button>
-                <h4 class="alert-heading">!!Please Note!!</h4>
-                <p>Our Bliss OS 12 builds are no longer maintained, so download biss os 14 or 11 builds instead.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bliss OS Flavors & Variations -->
-
-    <section>
-        <div class="container my-5">
-            <h2>Bliss OS comes in a few flavors</h2>
-            <p>Since we are usually working across multiple versions of Android with Bliss OS, things
+        </section>
+        <!-- Bliss OS Flavors & Variations -->
+        <section>
+            <div class="container my-5">
+                <h2>Bliss OS comes in a few flavors</h2>
+                <p>Since we are usually working across multiple versions of Android with Bliss OS, things
                 can get a little confusing when it comes to figuring out what build type is right for you. Here is a
                 little
                 explanation of our currently supported variants to help things along</p>
-            <div class="row mt-4">
-                <div class="col-sm p-2 mx-2 bg-primary">
-                    <h2 class="my-3">Bliss OS 11.x</h2>
-                    <p>These are generic builds based on Android 9 (Pie) and BlissROMs sources. These are considered
+                <div class="row mt-4">
+                    <div class="col-sm p-2 mx-2 bg-primary">
+                        <h2 class="my-3">Bliss OS 11.x</h2>
+                        <p>These are generic builds based on Android 9 (Pie) and BlissROMs sources. These are considered
                         our
                         current stable branch<br>(These builds come with ARM/ARM64 App compatibility)</p>
-                    <a class="btn btn-secondary mb-3 mx-1" target="blank"
-                        href="https://forum.xda-developers.com/t/bliss-os-pie-for-pcs-lts.3855917/">XDA thread</a>
-                </div>
-                <div class="col-sm p-2 mx-2 bg-warning">
-                    <h2 class="my-3"> Bliss OS 14.x</h2>
-                    <p>These are generic builds based on Android 11 (R) and BlissROMs sources. These builds are
+                        <a class="btn btn-secondary mb-3 mx-1" target="blank" href="https://forum.xda-developers.com/t/bliss-os-pie-for-pcs-lts.3855917/">XDA thread</a>
+                    </div>
+                    <div class="col-sm p-2 mx-2 bg-warning">
+                        <h2 class="my-3"> Bliss OS 14.x</h2>
+                        <p>These are generic builds based on Android 11 (R) and BlissROMs sources. These builds are
                         considered as
                         experimental and 14.x is still under development <br>(Bliss 14.x has new ARM/ARM64
                         app compatibility)</p>
-                    <a class="btn btn-secondary mb-3" target="blank" href="https://android-generic.github.io">Learn
+                        <a class="btn btn-secondary mb-3" target="blank" href="https://android-generic.github.io">Learn
                         More
                         About Android-Generic</a>
-                    <a class="btn btn-secondary mb-3" target="blank"
-                        href="https://forum.xda-developers.com/t/bliss-os-x86-for-pcs-12-x-14-x-development-beta-builds.4004419/">XDA
+                        <a class="btn btn-secondary mb-3" target="blank" href="https://forum.xda-developers.com/t/bliss-os-x86-for-pcs-12-x-14-x-development-beta-builds.4004419/">XDA
                         thread</a>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="container my-5 text-left">
-            <h2>Bliss OS Variations</h2>
-            <p class="mb-3">Info about what is included in our builds and how it relates to your hardware.</p>
-            <div class="accordion" id="accordionExample">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                                App Services
-                            </button>
-                        </h5>
+            <div class="container my-5 text-left">
+                <h2>Bliss OS Variations</h2>
+                <p class="mb-3">Info about what is included in our builds and how it relates to your hardware.</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0"> <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    App Services
+</button> </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                These are the apps included in the builds. Each set is a minimal set of default apps, providing basic functionaliy.
+                                <br>
+                                <br>
+                                <ul>
+                                    <li>Stock - Normally barebones, minimal apps added. Perfect for product testing
+                                        <br>
+                                    </li>
+                                    <li>FOSS - Includes Free and Open Source apps and app store solutions (Aurora Droid for open-source apps from F-Droid repos, and Aurora Store for accessing the Google Play library of apps)
+                                        <br>
+                                    </li>
+                                    <li>Gapps/GMS - Includes Google Play Services (Minimal set of apps, comparible to Pico/Nano)
+                                        <br>
+                                    </li>
+                                </ul>
+                                <br>
+                                Find more info on
+                                <a href="https://knowledgebase.blissos.org/frequently-asked-questions/build-filenames" target="_blank">Bliss OS Knowledge Base</a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-							These are the apps included in the builds. Each set is a minimal set of default apps, providing basic functionaliy.<br>
-							<br>
-							<ul>
-                            <li>Stock - Normally barebones, minimal apps added. Perfect for product testing <br></li>
-                            <li>FOSS - Includes Free and Open Source apps and app store solutions (Aurora Droid for open-source apps from F-Droid repos, and Aurora Store for accessing the Google Play library of apps)<br></li>
-                            <li>Gapps/GMS - Includes Google Play Services (Minimal set of apps, comparible to Pico/Nano)<br></li>
-							</ul>
-							<br>
-                            Find more info on <a href="https://knowledgebase.blissos.org/frequently-asked-questions/build-filenames" target="_blank">Bliss OS Knowledge Base</a>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0"> <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Kernel
+</button> </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                The Kernel is part of the operating system And it's the most crucial part of the OS.
+                                New Kernel can be unstable for old hardware so choose your build accordingly.
+                                <br>
+                                <br>
+                                How to identify kernel version in ISO file ?
+                                <br>
+                                This is the file name we use to define kernel & Arch in our ISO builds
+                                <br>
+                                <br>
+                                <ul>
+                                    <li>x86/x86_64 :- Device Type 32bit/64bit
+                                        <br>
+                                    </li>
+                                    <li>_k-xxxx :- Kernel Branch - ex: _k-5.4
+                                        <br>
+                                    </li>
+                                </ul>
+                                <br>
+                                Find more info on
+                                <a href="https://knowledgebase.blissos.org/frequently-asked-questions/build-filenames" target="_blank">Bliss OS Knowledge Base</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0"> <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Mesa
+</button> </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Mesa is an open-source implementation of the OpenGL specification. OpenGL is a programming library for writing interactive 3D applications.
+                                <br>
+                                basically it's your GPU driver for Android-x86.
+                                <br>
+                                <br>
+                                How to identify Mesa version in ISO file ?
+                                <br>
+                                <br>
+                                <ul>
+                                    <li>_m-xxxxx :- Mesa Branch - ex: m-r-x86 (r/r-x86 means stock Mesa branch in current manifest)
+                                        <br>
+                                    </li>
+                                </li>
+                                <br>
+                                Find more info on
+                                <a href="https://knowledgebase.blissos.org/frequently-asked-questions/build-filenames" target="_blank">Bliss OS Knowledge Base</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfour">
+                            <h5 class="mb-0"> <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                    Native-bridge
+</button> </h5>
+                        </div>
+                        <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Native-Bridge is an ARM translation layer for android x86 developed by Intel and Google to run ARM apps on x86 architecture.
+                                <br>
+                                <br>
+                                How to identify Native-Bridge Types in ISO file ?
+                                <br>
+                                <br>
+                                <ul>
+                                    <li>houdini - Includes Intel's Houdini (Works with most Intel CPU's and some recent AMD CPU's)
+                                        <br>
+                                    </li>
+                                    <li>libndk - Includes Google's libndk-translation (Works on all CPU's, but not as efficient as Houdini)
+                                        <br>
+                                    </li>
+                                </ul>
+                                <br>
+                                Find more info on
+                                <a href="https://knowledgebase.blissos.org/frequently-asked-questions/build-filenames" target="_blank">Bliss OS Knowledge Base</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingfive">
+                            <h5 class="mb-0"> <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                    Supported CPU's
+</button> </h5>
+                        </div>
+                        <div id="collapsefive" class="collapse" aria-labelledby="headingfive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Intel:
+                                <br>
+                                <br>
+                                <ul>
+                                    <li>Intel i Series (i3/5/7/9) - Fully Supported
+                                        <br>
+                                    </li>
+                                    <li>Intel Celeron M - Fully Supported (Kernel 5.4+ recommended)
+                                        <br>
+                                    </li>
+                                    <li>Intel Atom - Mostly Supported (Kernel 5.10+ recommended)
+                                        <br>
+                                    </li>
+                                    <li>Core2Duo - Not Fully Supported (Needs SSE4.2) (May require 32bit builds)
+                                        <br>
+                                    </li>
+                                </ul>
+                                <br>
+                                AMD:
+                                <br>
+                                <br>
+                                <ul>
+                                    <li>A Series - Mostly Supported (Needs SSE4.2) (Kernel 5.10+ recommended)
+                                        <br>
+                                    </li>
+                                    <li>Ryzen Series (1k-7k) - Fully Supported (Kernel 5.10+ recommended)
+                                        <br>
+                                    </li>
+                                    <li>Athlon Series - Mostly Supported (Needs SSE4.2) (Kernel 5.10+ recommended)
+                                        <br>
+                                    </li>
+                                </ul>
+                                Find more info on
+                                <a href="https://knowledgebase.blissos.org/frequently-asked-questions/hardware-compatibility" target="_blank">Bliss OS Knowledge Base</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingsix">
+                            <h5 class="mb-0"> <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                    Supported GPU's
+</button> </h5>
+                        </div>
+                        <div id="collapsesix" class="collapse" aria-labelledby="headingsix" data-parent="#accordionExample">
+                            <div class="card-body">
+                                All of our builds include support for the following GPU's:
+                                <br>
+                                <br>
+                                <ul>
+                                    <li>Intel / AMD iGPU - all supported + Vulkan
+                                        <br>
+                                    </li>
+                                    <li>AMD Desktop GPUs - mostly supported + Vulkan
+                                        <br>
+                                    </li>
+                                    <li>Nvidia Desktop GPUs - poor support - no vulkan
+                                        <br>
+                                    </li>
+                                </ul>
+                                <br>
+                                Find more info on
+                                <a href="https://knowledgebase.blissos.org/frequently-asked-questions/hardware-compatibility" target="_blank">Bliss OS Knowledge Base</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Kernel
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                            The Kernel is part of the operating system And it's the most crucial part of the OS.
-                            New Kernel can be unstable for old hardware so choose your build accordingly. <br>
-							<br>
-                            How to identify kernel version in ISO file ?<br>
-                            This is the file name we use to define kernel & Arch in our ISO builds<br>
-							<br>
-							<ul>
-                            <li>x86/x86_64 :- Device Type 32bit/64bit<br></li>
-                            <li>_k-xxxx :- Kernel Branch - ex: _k-5.4<br></li>
-							</ul>
-							<br>
-                            Find more info on <a href="https://knowledgebase.blissos.org/frequently-asked-questions/build-filenames" target="_blank">Bliss OS Knowledge Base</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Mesa
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            Mesa is an open-source implementation of the OpenGL specification. OpenGL is a programming library for writing interactive 3D applications.<br>
-                            basically it's your GPU driver for Android-x86. <br>
-							<br>
-                            How to identify Mesa version in ISO file ? <br>
-							<br>
-							<ul>
-                            <li>_m-xxxxx :- Mesa Branch - ex: m-r-x86 (r/r-x86 means stock Mesa branch in current manifest)<br></li>
-							</li>
-							<br>
-                            Find more info on <a href="https://knowledgebase.blissos.org/frequently-asked-questions/build-filenames" target="_blank">Bliss OS Knowledge Base</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingfour">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                Native-bridge
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapsefour" class="collapse" aria-labelledby="headingfour"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-                            Native-Bridge is an ARM translation layer for android x86 developed by Intel and Google to run ARM apps on x86 architecture. <br>
-                            <br>
-							How to identify Native-Bridge Types in ISO file ? <br>
-							<br>
-							<ul>
-							<li>houdini - Includes Intel's Houdini (Works with most Intel CPU's and some recent AMD CPU's)<br></li>
-							<li>libndk - Includes Google's libndk-translation (Works on all CPU's, but not as efficient as Houdini)<br></li>
-							</ul>
-							<br>
-                            Find more info on <a href="https://knowledgebase.blissos.org/frequently-asked-questions/build-filenames" target="_blank">Bliss OS Knowledge Base</a>
-                        </div>
-                    </div>
-                </div>
-				
-				<div class="card">
-                    <div class="card-header" id="headingfive">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
-                                Supported CPU's
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapsefive" class="collapse" aria-labelledby="headingfive"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-							Intel:<br>
-							<br>
-							<ul>
-                            <li>Intel i Series (i3/5/7/9) - Fully Supported<br></li>
-                            <li>Intel Celeron M - Fully Supported (Kernel 5.4+ recommended) <br></li>
-                            <li>Intel Atom - Mostly Supported (Kernel 5.10+ recommended)<br></li>
-                            <li>Core2Duo - Not Fully Supported (Needs SSE4.2) (May require 32bit builds)<br></li>
-							</ul>
-							<br>
-							AMD:<br>
-							<br>
-							<ul>
-                            <li>A Series - Mostly Supported (Needs SSE4.2) (Kernel 5.10+ recommended)<br></li>
-                            <li>Ryzen Series (1k-7k) - Fully Supported (Kernel 5.10+ recommended)<br></li>
-                            <li>Athlon Series - Mostly Supported (Needs SSE4.2) (Kernel 5.10+ recommended)<br></li>
-							</ul>
-							
-                            Find more info on <a href="https://knowledgebase.blissos.org/frequently-asked-questions/hardware-compatibility" target="_blank">Bliss OS Knowledge Base</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header" id="headingsix">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                                Supported GPU's
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapsesix" class="collapse" aria-labelledby="headingsix"
-                        data-parent="#accordionExample">
-                        <div class="card-body">
-							All of our builds include support for the following GPU's:<br>
-							<br>
-							<ul>
-                            <li>Intel / AMD iGPU - all supported + Vulkan<br></li>
-                            <li>AMD Desktop GPUs - mostly supported + Vulkan<br></li>
-                            <li>Nvidia Desktop GPUs - poor support - no vulkan<br></li>
-							</ul>
-							<br>
-                            Find more info on <a href="https://knowledgebase.blissos.org/frequently-asked-questions/hardware-compatibility" target="_blank">Bliss OS Knowledge Base</a>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
-
-        </div>
-
-    </section>
-
-    <!-- Bliss OS Download Section -->
-
-    <section id="download" class="text-center my-5">
-        <div class="container">
-
-            <!-- Bliss OS Download Model -->
-
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content bg-dark">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLongTitle">Thank you for choosing Bliss OS</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p> Your download will start automatically...<br>
+        </section>
+        <!-- Bliss OS Download Section -->
+        <section id="download" class="text-center my-5">
+            <div class="container">
+                <!-- Bliss OS Download Model -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Thank you for choosing Bliss OS</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p> Your download will start automatically...<br>
                                 Meanwhile you can Help us to spread the word, by sharing about bliss os with your
                                 friends,
-                                it'll only take 1 minutes.
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-warning px-3"
-                                onclick='window.open("https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24","_blank","","")'><i
-                                    class="fas fa-hand-holding-usd"> </i> Donate </button>
-                            <button type="button" class="btn btn-primary px-3" type="button" data-toggle="collapse"
-                                data-target="#share-toggle" aria-expanded="false" aria-controls="share-toggle"><i
-                                    class="fas fa-share-alt"> </i> Share </button>
-                        </div>
-
-
-                        <!-- using Sharingbuttons.io buttons for sharing on social media  -->
-
-                        <div class="row collapse my-3" id="share-toggle">
-                            <div class="col-sm">
-                                <!-- Sharingbutton Facebook -->
-                                <a class="resp-sharing-button__link"
-                                    href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblissos.org%2F"
-                                    target="_blank" rel="noopener" aria-label="">
-                                    <div
-                                        class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
-                                        <div aria-hidden="true"
-                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <!-- Sharingbutton Twitter -->
-                                <a class="resp-sharing-button__link"
-                                    href="https://twitter.com/intent/tweet?text=Hey%20guys%2C%20I&#x27;m%20switching%20to%20this%20amazing%20android%20x86%20distro%20called%20%23blissos&amp;url=https%3A%2F%2Fblissos.org%2F"
-                                    target="_blank" rel="noopener" aria-label="">
-                                    <div
-                                        class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
-                                        <div aria-hidden="true"
-                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <!-- Sharingbutton Reddit -->
-                                <a class="resp-sharing-button__link"
-                                    href="https://reddit.com/submit?url=https%3A%2F%2Fblissos.org%2F&amp;resubmit=true&amp;title=Hey%20guys%2C%20I&#x27;m%20switching%20to%20this%20amazing%20android%20x86%20distro%20called%20%23blissos"
-                                    target="_blank" rel="noopener" aria-label="">
-                                    <div
-                                        class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small">
-                                        <div aria-hidden="true"
-                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <!-- Sharingbutton VK -->
-                                <a class="resp-sharing-button__link"
-                                    href="http://vk.com/share.php?title=Hey%20guys%2C%20I&#x27;m%20switching%20to%20this%20amazing%20android%20x86%20distro%20called%20%23blissos&amp;url=https%3A%2F%2Fblissos.org%2F"
-                                    target="_blank" rel="noopener" aria-label="">
-                                    <div class="resp-sharing-button resp-sharing-button--vk resp-sharing-button--small">
-                                        <div aria-hidden="true"
-                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M21.547 7h-3.29a.743.743 0 0 0-.655.392s-1.312 2.416-1.734 3.23C14.734 12.813 14 12.126 14 11.11V7.603A1.104 1.104 0 0 0 12.896 6.5h-2.474a1.982 1.982 0 0 0-1.75.813s1.255-.204 1.255 1.49c0 .42.022 1.626.04 2.64a.73.73 0 0 1-1.272.503 21.54 21.54 0 0 1-2.498-4.543.693.693 0 0 0-.63-.403h-2.99a.508.508 0 0 0-.48.685C3.005 10.175 6.918 18 11.38 18h1.878a.742.742 0 0 0 .742-.742v-1.135a.73.73 0 0 1 1.23-.53l2.247 2.112a1.09 1.09 0 0 0 .746.295h2.953c1.424 0 1.424-.988.647-1.753-.546-.538-2.518-2.617-2.518-2.617a1.02 1.02 0 0 1-.078-1.323c.637-.84 1.68-2.212 2.122-2.8.603-.804 1.697-2.507.197-2.507z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <!-- Sharingbutton Telegram -->
-                                <a class="resp-sharing-button__link"
-                                    href="https://telegram.me/share/url?text=Hey%20guys%2C%20I&#x27;m%20switching%20to%20this%20amazing%20android%20x86%20distro%20called%20%23blissos&amp;url=https%3A%2F%2Fblissos.org%2F"
-                                    target="_blank" rel="noopener" aria-label="">
-                                    <div
-                                        class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small">
-                                        <div aria-hidden="true"
-                                            class="resp-sharing-button__icon resp-sharing-button__icon--solid">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                                <path
-                                                    d="M.707 8.475C.275 8.64 0 9.508 0 9.508s.284.867.718 1.03l5.09 1.897 1.986 6.38a1.102 1.102 0 0 0 1.75.527l2.96-2.41a.405.405 0 0 1 .494-.013l5.34 3.87a1.1 1.1 0 0 0 1.046.135 1.1 1.1 0 0 0 .682-.803l3.91-18.795A1.102 1.102 0 0 0 22.5.075L.706 8.475z" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </a>
+                                it'll only take 1 minutes. </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning px-3" onclick='window.open("https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24","_blank","","")'>
+                                    <i class="fas fa-hand-holding-usd"> </i> Donate
+                                </button>
+                                <button type="button" class="btn btn-primary px-3" type="button" data-toggle="collapse" data-target="#share-toggle" aria-expanded="false" aria-controls="share-toggle">
+                                    <i class="fas fa-share-alt"> </i> Share
+                                </button>
+                            </div>
+                            <!-- using Sharingbuttons.io buttons for sharing on social media  -->
+                            <div class="row collapse my-3" id="share-toggle">
+                                <div class="col-sm">
+                                    <!-- Sharingbutton Facebook -->
+                                    <a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblissos.org%2F" target="_blank" rel="noopener" aria-label=""> <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                    <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"/>
+                                                </svg>
+                                            </div>
+                                        </div> </a>
+                                    <!-- Sharingbutton Twitter -->
+                                    <a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet?text=Hey%20guys%2C%20I&#x27;m%20switching%20to%20this%20amazing%20android%20x86%20distro%20called%20%23blissos&amp;url=https%3A%2F%2Fblissos.org%2F" target="_blank" rel="noopener" aria-label=""> <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                    <path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"/>
+                                                </svg>
+                                            </div>
+                                        </div> </a>
+                                    <!-- Sharingbutton Reddit -->
+                                    <a class="resp-sharing-button__link" href="https://reddit.com/submit?url=https%3A%2F%2Fblissos.org%2F&amp;resubmit=true&amp;title=Hey%20guys%2C%20I&#x27;m%20switching%20to%20this%20amazing%20android%20x86%20distro%20called%20%23blissos" target="_blank" rel="noopener" aria-label=""> <div class="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--small">
+                                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                    <path d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z"/>
+                                                </svg>
+                                            </div>
+                                        </div> </a>
+                                    <!-- Sharingbutton VK -->
+                                    <a class="resp-sharing-button__link" href="http://vk.com/share.php?title=Hey%20guys%2C%20I&#x27;m%20switching%20to%20this%20amazing%20android%20x86%20distro%20called%20%23blissos&amp;url=https%3A%2F%2Fblissos.org%2F" target="_blank" rel="noopener" aria-label=""> <div class="resp-sharing-button resp-sharing-button--vk resp-sharing-button--small">
+                                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                    <path d="M21.547 7h-3.29a.743.743 0 0 0-.655.392s-1.312 2.416-1.734 3.23C14.734 12.813 14 12.126 14 11.11V7.603A1.104 1.104 0 0 0 12.896 6.5h-2.474a1.982 1.982 0 0 0-1.75.813s1.255-.204 1.255 1.49c0 .42.022 1.626.04 2.64a.73.73 0 0 1-1.272.503 21.54 21.54 0 0 1-2.498-4.543.693.693 0 0 0-.63-.403h-2.99a.508.508 0 0 0-.48.685C3.005 10.175 6.918 18 11.38 18h1.878a.742.742 0 0 0 .742-.742v-1.135a.73.73 0 0 1 1.23-.53l2.247 2.112a1.09 1.09 0 0 0 .746.295h2.953c1.424 0 1.424-.988.647-1.753-.546-.538-2.518-2.617-2.518-2.617a1.02 1.02 0 0 1-.078-1.323c.637-.84 1.68-2.212 2.122-2.8.603-.804 1.697-2.507.197-2.507z"/>
+                                                </svg>
+                                            </div>
+                                        </div> </a>
+                                    <!-- Sharingbutton Telegram -->
+                                    <a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=Hey%20guys%2C%20I&#x27;m%20switching%20to%20this%20amazing%20android%20x86%20distro%20called%20%23blissos&amp;url=https%3A%2F%2Fblissos.org%2F" target="_blank" rel="noopener" aria-label=""> <div class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--small">
+                                            <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                                                    <path d="M.707 8.475C.275 8.64 0 9.508 0 9.508s.284.867.718 1.03l5.09 1.897 1.986 6.38a1.102 1.102 0 0 0 1.75.527l2.96-2.41a.405.405 0 0 1 .494-.013l5.34 3.87a1.1 1.1 0 0 0 1.046.135 1.1 1.1 0 0 0 .682-.803l3.91-18.795A1.102 1.102 0 0 0 22.5.075L.706 8.475z"/>
+                                                </svg>
+                                            </div>
+                                        </div> </a>
+                                </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
-            </div>
-
-
-            <!-- Bliss OS Downloads -->
-
-            <h1 class="text-center"><i class="fas fa-chevron-down"></i> Bliss OS Downloads <i
-                    class="fas fa-chevron-down"></i>
-            </h1>
-            <div class="alert alert-danger my-5" role="alert">
-                <button type="button" class="close" data-dismiss="alert">×</button>
-                <h4 class="alert-heading">New Release Update</h4>
-                <p>Bliss OS 14 (Android 11) beta Builds are now available for download, We've hit the go button on
-                    releasing our
-                    Android 11 builds for PCs</p>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <ul class="nav nav-pills mb-3 justify-content-center nav-justified px-5 mb-4" id="pills-tab"
-                        role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active text-light" id="bliss11-tab" data-toggle="pill"
-                                data-target="#bliss11" role="tab" aria-controls="bliss11" aria-selected="true">Bliss
+                <!-- Bliss OS Downloads -->
+                <h1 class="text-center"><i class="fas fa-chevron-down"></i> Bliss OS Downloads <i class="fas fa-chevron-down"></i> </h1>
+                <div class="alert alert-danger my-5" role="alert">
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                    <h4 class="alert-heading">New Release Update</h4>
+                    <p>Bliss OS 15 (Android 12) Alpha Builds are now available for download, Development build are available now for PCs</p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <ul class="nav nav-pills mb-3 justify-content-center nav-justified px-5 mb-4" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" id="bliss11-tab" data-toggle="pill" data-target="#bliss11" role="tab" aria-controls="bliss11" aria-selected="true">Bliss
                                 OS
                                 11</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" id="bliss14-tab" data-toggle="pill" data-target="#bliss14"
-                                role="tab" aria-controls="bliss14" aria-selected="false">Bliss OS 14</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-light" id="ag11-tab" data-toggle="pill" data-target="#ag11"
-                                role="tab" aria-controls="ag11" aria-selected="false">Android Generic</a>
-                        </li>
-                    </ul>
-
-                    <!-- Bliss OS 11 Downloads -->
-
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="bliss11" role="tabpanel"
-                            aria-labelledby="bliss11-tab">
-                            <p>Bliss OS 11.x builds are based on android 9.0, these builds are stable and can be
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" id="bliss14-tab" data-toggle="pill" data-target="#bliss14" role="tab" aria-controls="bliss14" aria-selected="false">Bliss OS 14</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" id="bliss15-tab" data-toggle="pill" data-target="#bliss15" role="tab" aria-controls="bliss15" aria-selected="false">Bliss OS 15 Alpha</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link text-light" id="ag11-tab" data-toggle="pill" data-target="#ag11" role="tab" aria-controls="ag11" aria-selected="false">Android Generic</a>
+                            </li>
+                        </ul>
+                        <!-- Bliss OS 11 Downloads -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="bliss11" role="tabpanel" aria-labelledby="bliss11-tab">
+                                <p>Bliss OS 11.x builds are based on android 9.0, these builds are stable and can be
                                 used as
-                                daily driver.
-                            </p>
-                            <div class="table-reponsive w-75 mx-auto">
-                                <table class="table">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th scope="col">Standard Version (For Old CPU & GPU)</th>
-                                            <th scope="col">Features</th>
-                                            <th scope="col">Download</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td> Bliss OS 11.13 GMS Stable (x86_64)<a
-                                                    href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Changelog-Bliss-v11.13--OFFICIAL-20201113.txt/download"
-                                                    target="_blank" class="small"> Changelog </a>
-                                            </td>
-                                            <td><i class="text-success">#Kernel4.19</i>
-                                                <i class="text-danger"> #Mesa20.1 </i>
-                                                <i class="text-secondary">#GApps</i>
-                                            </td>
-                                            <td>
-                                                <a class="btn btn-primary" data-toggle="modal" id="0"
-                                                    onclick="myFunction(event)" data-target="#exampleModalCenter">
-                                                    <i class="fas fa-cloud-download-alt"></i> SourceForge </a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Bliss OS 11.14 FOSS Stable <a
-                                                    href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Changelog-Bliss-v11.14--OFFICIAL-20210422.txt/download"
-                                                    target="_blank" class="small"> Changelog </a>
-                                            </td>
-                                            <td><i class="text-success">#Kernel4.19</i>
-                                                <i class="text-danger"> #Mesa20.1 </i>
-                                                <i class="text-secondary">#FOSS</i>
-                                            </td>
-                                            <td>
-                                                <a class="btn btn-primary" data-toggle="modal" id="1"
-                                                    onclick="myFunction(event)" data-target="#exampleModalCenter">
-                                                    <i class="fas fa-cloud-download-alt"></i> SourceForge </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <table class="table">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th scope="col">Advance Hardware Support (For New CPU & GPU)</th>
-                                            <th scope="col">Features</th>
-                                            <th scope="col">Download</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td> Bliss OS 11.14 FOSS Experimental (x86_64)<a
-                                                    href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Changelog-Bliss-v11.14--OFFICIAL-20210507-2246.txt/download"
-                                                    target="_blank" class="small"> Changelog
-                                                </a></td>
-                                            <td><i class="text-success">#Kernel5.10</i>
-                                                <i class="text-danger"> #Mesa20.1 </i>
-                                                <i class="text-secondary">#FOSS</i>
-                                            </td>
-                                            <td>
-                                                <a class="btn btn-primary" data-toggle="modal" id="2"
-                                                    onclick="myFunction(event)" data-target="#exampleModalCenter">
-                                                    <i class="fas fa-cloud-download-alt"></i> SourceForge</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                daily driver. </p>
+                                <div class="table-reponsive w-75 mx-auto">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">Standard Version (For Old CPU & GPU)</th>
+                                                <th scope="col">Features</th>
+                                                <th scope="col">Download</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> Bliss OS 11.13 GMS Stable (x86_64)<a href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Changelog-Bliss-v11.13--OFFICIAL-20201113.txt/download" target="_blank" class="small"> Changelog </a> </td>
+                                                <td><i class="text-success">#Kernel4.19</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#GApps</i> </td>
+                                                <td> <a class="btn btn-primary" data-toggle="modal" id="0" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bliss OS 11.14 FOSS Stable <a href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Changelog-Bliss-v11.14--OFFICIAL-20210422.txt/download" target="_blank" class="small"> Changelog </a> </td>
+                                                <td><i class="text-success">#Kernel4.19</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#FOSS</i> </td>
+                                                <td> <a class="btn btn-primary" data-toggle="modal" id="1" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">Advance Hardware Support (For New CPU & GPU)</th>
+                                                <th scope="col">Features</th>
+                                                <th scope="col">Download</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> Bliss OS 11.14 FOSS Experimental (x86_64)<a href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Changelog-Bliss-v11.14--OFFICIAL-20210507-2246.txt/download" target="_blank" class="small"> Changelog </a></td>
+                                                <td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#FOSS</i> </td>
+                                                <td> <a class="btn btn-primary" data-toggle="modal" id="2" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge</a> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-
-                        </div>
-
-                        <!-- Bliss OS 14 Downloads -->
-
-                        <div class="tab-pane fade" id="bliss14" role="tabpanel" aria-labelledby="bliss14-tab">
-
-                            <p>Bliss OS 14.x builds are based on android 11, these builds are still under
+                            <!-- Bliss OS 14 Downloads -->
+                            <div class="tab-pane fade" id="bliss14" role="tabpanel" aria-labelledby="bliss14-tab">
+                                <p>Bliss OS 14.x builds are based on android 11, these builds are still under
                                 development
                                 and we don't
-                                recommend it for new users.
-                            </p>
-                            <div class="table-reponsive w-75 mx-auto">
-                                <table class="table">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th scope="col">Standard Version (For Old CPU & GPU)</th>
-                                            <th scope="col">Features</th>
-                                            <th scope="col">Download</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td> Bliss OS 14.3 GMS with Gearlock (x86_64)<a
-                                                    href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/Changelog-BlissOS-14.3-x86_64-202106181339.txt/download"
-                                                    target="_blank" class="small"> Changelog
-                                                </a></td>
-                                            <td><i class="text-success">#Kernel5.4</i>
-                                                <i class="text-danger"> #Mesa20.1 </i>
-                                                <i class="text-secondary">#GApps</i>
-                                                <i class="text-primary">#Gearlock</i>
-                                            </td>
-                                            <td>
-                                                <a class="btn btn-primary" data-toggle="modal" id="3"
-                                                    onclick="myFunction(event)" data-target="#exampleModalCenter">
-                                                    <i class="fas fa-cloud-download-alt"></i> SourceForge</a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <table class="table">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th scope="col">Advance Hardware Support (For New CPU & GPU)</th>
-                                            <th scope="col">Features</th>
-                                            <th scope="col">Download</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td> Bliss OS 14.3 GMS Experimental (x86_64)<a
-                                                    href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/Changelog-BlissOS-14.3-x86_64-202106261907.txt/download"
-                                                    target="_blank" class="small"> Changelog
-                                                </a></td>
-                                            <td><i class="text-success">#Kernel5.10</i>
-                                                <i class="text-danger"> #Mesa21 </i>
-                                                <i class="text-secondary">#GApps</i>
-                                            </td>
-                                            <td>
-                                                <a class="btn btn-primary" data-toggle="modal" id="5"
-                                                    onclick="myFunction(event)" data-target="#exampleModalCenter">
-                                                    <i class="fas fa-cloud-download-alt"></i> SourceForge </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-
-                                    <tbody>
-                                        <tr>
-                                            <td> Bliss OS 14.3 FOSS (x86) <a
-                                                    href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/Changelog-BlissOS-14.3-x86-202107202034.txt/download"
-                                                    target="_blank" class="small"> Changelog </a>
-                                            </td>
-                                            <td><i class="text-success">#Kernel5.10</i>
-                                                <i class="text-danger"> #Mesa20.1 </i>
-                                                <i class="text-secondary">#FOSS</i>
-                                            </td>
-                                            <td>
-                                                <a class="btn btn-primary" data-toggle="modal" id="4"
-                                                    onclick="myFunction(event)" data-target="#exampleModalCenter">
-                                                    <i class="fas fa-cloud-download-alt"></i> SourceForge
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-									<tbody>
-                                        <tr>
-                                            <td> Bliss OS 14.3 FOSS (x86_64) <a
-                                                    href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/Changelog-BlissOS-14.3-x86_64-202107161936.txt/download"
-                                                    target="_blank" class="small"> Changelog </a>
-                                            </td>
-                                            <td><i class="text-success">#Kernel5.10</i>
-                                                <i class="text-danger"> #Mesa20.1 </i>
-                                                <i class="text-secondary">#FOSS</i>
-                                            </td>
-                                            <td>
-                                                <a class="btn btn-primary" data-toggle="modal" id="8"
-                                                    onclick="myFunction(event)" data-target="#exampleModalCenter">
-                                                    <i class="fas fa-cloud-download-alt"></i> SourceForge
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-									
-                                </table>
+                                recommend it for new users. </p>
+                                <div class="table-reponsive w-75 mx-auto">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">Standard Version (For Old CPU & GPU)</th>
+                                                <th scope="col">Features</th>
+                                                <th scope="col">Download</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> Bliss OS 14.3 GMS with Gearlock (x86_64)<a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/Changelog-BlissOS-14.3-x86_64-202106181339.txt/download" target="_blank" class="small"> Changelog </a></td>
+                                                <td><i class="text-success">#Kernel5.4</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#GApps</i> <i class="text-primary">#Gearlock</i> </td>
+                                                <td> <a class="btn btn-primary" data-toggle="modal" id="3" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge</a> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">Advance Hardware Support (For New CPU & GPU)</th>
+                                                <th scope="col">Features</th>
+                                                <th scope="col">Download</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> Bliss OS 14.3 GMS Experimental (x86_64)<a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/Changelog-BlissOS-14.3-x86_64-202106261907.txt/download" target="_blank" class="small"> Changelog </a></td>
+                                                <td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa21 </i> <i class="text-secondary">#GApps</i> </td>
+                                                <td> <a class="btn btn-primary" data-toggle="modal" id="5" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td> Bliss OS 14.3 FOSS (x86) <a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/Changelog-BlissOS-14.3-x86-202107202034.txt/download" target="_blank" class="small"> Changelog </a> </td>
+                                                <td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#FOSS</i> </td>
+                                                <td> <a class="btn btn-primary" data-toggle="modal" id="4" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td> Bliss OS 14.3 FOSS (x86_64) <a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/Changelog-BlissOS-14.3-x86_64-202107161936.txt/download" target="_blank" class="small"> Changelog </a> </td>
+                                                <td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#FOSS</i> </td>
+                                                <td> <a class="btn btn-primary" data-toggle="modal" id="8" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- Android-Generic Downloads -->
-
-                        <div class="tab-pane fade" id="ag11" role="tabpanel" aria-labelledby="ag11-tab">
-
-                            <p>Android-Generic builds are based on android 11, these builds are still under
+                            <!-- Bliss OS 15 Downloads -->
+                            <div class="tab-pane fade" id="bliss15" role="tabpanel" aria-labelledby="bliss15-tab"  >
+                                <h3>Bliss OS 15.x builds are based on android 12</h3><br><h4>These builds are in early alpha and not recommended for users.</h4>
+								<p>We are asking those that would like to test to understand how to produce logs, so we came up with a way to educate the user before the download.<br>
+								Please use "ls", "cd" and other commands to locate the external storage (Where the Documents, DCIM, and Download folders are) and save a "logcat.txt" file in the root directory there.<br><br>
+								</p>
+								<div class="alert alert-danger my-5" role="alert">
+									<button type="button" class="close" data-dismiss="alert">×</button>
+									<h4 class="alert-heading">WARNING</h4>
+									<p><b>** These alpha builds come with Kernel-SU by default. Please be aware how easy it will be to cause harm to the OS **</b></p>
+								</div>
+                                <!-- partial:index.partial.html -->
+                                <div class="console_container" style="text-align: left;" >
+                                    <h1></h1>
+                                    <div class="console_header" style="text-align-last: center;" >
+                                        <div class="dot red"></div>
+                                        <div class="dot yellow"></div>
+                                        <div class="dot green"></div>
+										<p style="color: #222;" >This terminal requires Javascript to be enabled</p>
+                                    </div>
+                                    <div class="console_panel mb-5" id="console_panel">
+                                        <div class="console_action">
+                                            <span style="text-align: left;" class="symbol output">*** Bliss OS v15 Alpha *** <br><br> In order to download, you must prove you can create  <br>a logcat.txt in the root of your external storage <br><br>You have already entered root console "$ su" <br><br>Commands: ls, cd, mkdir, echo, touch, rm, cat, pwd, help, logcat <br><br>  </span>
+                                            <div class="console_command">
+												<form name="myform">
+                                                <span class="symbol" style="text-align: left;" >#</span>
+                                                <input class="in" name="inputtextfield" type="text" placeholder="type here to start" autofocus />
+												</form>
+												<script type="text/javascript" language="JavaScript">
+												document.forms['myform'].elements['inputtextfield'].focus();
+												</script>
+                                            </div>
+                                            <div class="console_output " ></div>
+                                        </div>
+                                    </div>
+                                </div>
+								<!-- <script src="js/terminal_script.js"></script> -->
+                                <!-- partial -->
+                            </div>
+                            <!-- Android-Generic Downloads -->
+                            <div class="tab-pane fade" id="ag11" role="tabpanel" aria-labelledby="ag11-tab">
+                                <p>Android-Generic builds are based on android 11, these builds are still under
                                 development
                                 and we don't
-                                recommend it for new users.
-                            </p>
-                            <div class="table-reponsive w-75 mx-auto">
-                                <table class="table">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th scope="col">Experimental builds</th>
-                                            <th scope="col">Features</th>
-                                            <th scope="col">Download</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td> Android-Generic 11 AOSP (x86_64)<a
-                                                    href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/11/Changelog-AG-11--x86_64-202106131243.txt/download"
-                                                    target="_blank" class="small"> Changelog </a></td>
-                                            <td><i class="text-success">#Kernel5.4</i>
-                                                <i class="text-danger"> #Mesa20.1 </i>
-                                                <i class="text-secondary">#AOSP</i>
-                                            </td>
-                                            <td>
-                                                <a class="btn btn-primary" data-toggle="modal" id="6"
-                                                    onclick="myFunction(event)" data-target="#exampleModalCenter">
-                                                    <i class="fas fa-cloud-download-alt"></i> SourceForge </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-
-                                    <tbody>
-                                        <tr>
-                                            <td> Android-Generic 11 FOSS (x86_64)<a
-                                                    href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/11/Changelog-ax86-11-android_x86_64-202105101056.txt/download"
-                                                    target="_blank" class="small"> Changelog </a></td>
-                                            <td><i class="text-success">#Kernel5.4</i>
-                                                <i class="text-danger"> #Mesa20.1 </i>
-                                                <i class="text-secondary">#FOSS</i>
-                                            </td>
-                                            <td>
-                                                <a class="btn btn-primary" data-toggle="modal" id="7"
-                                                    onclick="myFunction(event)" data-target="#exampleModalCenter">
-                                                    <i class="fas fa-cloud-download-alt"></i> SourceForge </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-									
-                                </table>
+                                recommend it for new users. </p>
+                                <div class="table-reponsive w-75 mx-auto">
+                                    <table class="table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">Experimental builds</th>
+                                                <th scope="col">Features</th>
+                                                <th scope="col">Download</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td> Android-Generic 11 AOSP (x86_64)<a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/11/Changelog-AG-11--x86_64-202106131243.txt/download" target="_blank" class="small"> Changelog </a></td>
+                                                <td><i class="text-success">#Kernel5.4</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#AOSP</i> </td>
+                                                <td> <a class="btn btn-primary" data-toggle="modal" id="6" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody>
+                                            <tr>
+                                                <td> Android-Generic 11 FOSS (x86_64)<a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/11/Changelog-ax86-11-android_x86_64-202105101056.txt/download" target="_blank" class="small"> Changelog </a></td>
+                                                <td><i class="text-success">#Kernel5.4</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#FOSS</i> </td>
+                                                <td> <a class="btn btn-primary" data-toggle="modal" id="7" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Donations & Funding -->
-
-    <section id="funding">
-        <div class="container my-5 pt-5 text-center">
-            <h1>Funding</h1>
-            <p class="mx-auto">With the help of our users and fans, we've been able to grow from individuals passionate
+        </section>
+        <!-- Donations & Funding -->
+        <section id="funding">
+            <div class="container my-5 pt-5 text-center">
+                <h1>Funding</h1>
+                <p class="mx-auto">With the help of our users and fans, we&apos;ve been able to grow from individuals passionate
                 volunteers into a small but sustainable team.
                 Every little bit of support helps us improve Bliss OS and tackle even more ambitious problems.</p>
-
-            <div class="row my-5">
-                <div class="col-sm my-3">
-                    <div class="card sponser-card">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fab fa-github display-4"></i></h5>
-                            <p class="card-text">Directly fund Bliss OS and get a badge on your GitHub profile to
+                <div class="row my-5">
+                    <div class="col-sm my-3">
+                        <div class="card sponser-card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fab fa-github display-4"></i></h5>
+                                <p class="card-text">Directly fund Bliss OS and get a badge on your GitHub profile to
                                 show
                                 your support.
-                                GitHub Sponsors doesn't charge any fees, so it's a great way to make your
+                                GitHub Sponsors doesn&apos;t charge any fees, so it&apos;s a great way to make your
                                 contribution
                                 go farther.</p>
-                            <a href="https://github.com/BlissRoms-x86" target="_blank" class="btn btn-warning">Sponsor
+                                <a href="https://github.com/BlissRoms-x86" target="_blank" class="btn btn-warning">Sponsor
                                 on Github</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm my-3">
-                    <div class="card sponser-card">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fab fa-paypal display-4"></i></h5>
-                            <p class="card-text">A quick & easy to donate, use your debit card, credit card, or
+                    <div class="col-sm my-3">
+                        <div class="card sponser-card">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fab fa-paypal display-4"></i></h5>
+                                <p class="card-text">A quick &amp; easy to donate, use your debit card, credit card, or
                                 PayPal
                                 Account,
                                 and you can choose a one-time payment or set up recurring payments.</p>
-                            <a href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank"
-                                class="btn btn-warning">Use
+                                <a href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank" class="btn btn-warning">Use
                                 Paypal</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <div class="card sponser-card main_background">
+                        <div class="card-body mb-0 mt-4">
+                            <h5 class="card-title"> <img src="https://opencollective.com/static/images/opencollective-icon.svg" class="fab display-4" width="85.25rem"> </img>
+							</h5>
+							<p class="card-text">Bliss OS is also on OpenCollective, and you can contribute to our collective through the link below.</p>
+							<a href="https://opencollective.com/bliss-os/donate" target="_blank"> <img src="https://opencollective.com/webpack/donate/button@2x.png?color=blue" width="300rem"/> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Bliss OS Docs -->
+		<section class="my-5 p-4 documentation_banner" id="documentation">
+			<div class="container">
+				<h2>Bliss Docs</h2>
+				<p>Bliss ROMs documentation can be found on our <a href="https://docs.blissos.org" target="_blank">docs
+						site</a>,
+					while our development update posts can be found on the XDA thread for that
+					devices release version. <br><br> We recommend all users start with using the documentation we have
+					provided
+					before trying to hunt us down online and ask us questions as this action takes away the valuable
+					development
+					time we have committed towards this project. None of us are paid for the work we do on Bliss, so
+					please
+					set
+					your expectations accordingly.&nbsp; <br><br> For questions, please join our Community Support chats
+					on <a href="https://t.me/blissx86" target="_blank">Telegram</a> or <a href="https://discord.com/invite/F9n5gbdNy2" target="_blank">Discord</a> and search for answers in
+					there. </p>
+				<div class="row">
+					<div class="col-sm text-center">
+						<a class="btn m-2 btn-secondary" href="https://docs.blissos.org" target="_blank">Bliss OS
+							Docs</a>
+						<a class="btn m-2 btn-secondary" href="https://forum.xda-developers.com/bliss-roms/bliss-roms-development/bliss-os-pie-beta-preview-t3855917" target="_blank">Bliss OS 11 XDA Thread</a>
+						<a class="btn m-2 btn-secondary" href="https://forum.xda-developers.com/t/bliss-os-x86-for-pcs-12-x-14-x-development-beta-builds.4004419" target="_blank">Bliss OS 14/12 XDA Thread</a>
+						<a class="btn m-2 btn-secondary" href="https://github.com/android-generic/vendor_ag" target="_blank">Android-Generic Project</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Contribute -->
+		<section class="my-5 mx-3 bg-dark" id="contribute">
+			<div class="container">
+				<div class="join-bliss my-5">
+					<h2 class="my-3">Be a Part of Something Bigger</h2>
+					<p>Everything that we make is 100% open source and developed collaboratively by people from all over the
+						world.
+						Even if you're not a programmer, you can get involved and make a difference.
+						We are constantly looking for people to help out with the following activities on our project. </p>
+					<div class="row text-center bg-dark">
+						<div class="col-sm">
+							<ul class="list-group list-group-flush m-3 text-light bg-dark">
+								<li class="list-group-item bg-dark">Graphic Design</li>
+								<li class="list-group-item bg-dark">Social Media & Advertising</li>
+								<li class="list-group-item bg-dark">Animation</li>
+								<li class="list-group-item bg-dark">Kernel Development</li>
+								<li class="list-group-item bg-dark">Device Development</li>
+							</ul>
+						</div>
+						<div class="col-sm bg-dark">
+							<ul class="list-group list-group-flush m-3 text-light bg-dark">
+								<li class="list-group-item bg-dark">Platform Development</li>
+								<li class="list-group-item bg-dark">Web App Development</li>
+								<li class="list-group-item bg-dark">Android App Development</li>
+								<li class="list-group-item bg-dark">Business Management</li>
+								<li class="list-group-item bg-dark">Product Strategy</li>
+							</ul>
+						</div>
+					</div>
+					<p>If you are interested in helping out with any of the above, please fill out our form to let us know
+						how you can help. <a href="https://goo.gl/forms/PdiaAj1PojosmehK2" target="_blank"> Google form</a> </p>
+				</div>
+			</div>
+		</section>
+		<!-- Android-Generic Section -->
+		<section class="py-5 bg-secondary">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2>Built for Developers</h2>
+						<img class="w-50 mb-2" src="images/ag_logo_flat.png">
+						<p class="mb-3">A rapid prototyping toolkit Created by the makers of Bliss OS. Android-Generic
+							Project aims to
+							assist in bringing all AOSP based projects to x86/x86_64 PC hardware, emulators, and more </p>
+						<a class="btn btn-primary mb-4 shadow" href="https://android-generic.github.io" target="_blank" id="agdl">
+							Head to AG Website</a>
+					</div>
+					<div class="col-md-4">
+						<a href="https://android-generic.github.io"><img class="img-fluid" src="images/ag_website.png"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Team Section -->
+		<section class="py-5" id="team">
+			<div class="container">
+				<div class="mx-auto text-center">
+					<h2 class="display-5">The A-Team</h2>
+				</div>
+				<div class="tab-content mt-2">
+					<div class="tab-pane fade show active" id="tabone" role="tabpanel">
+						<section id="content" class="team_content"></section>
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+						<script>
+							$.ajax({
+								type: "GET",
+								url: "https://api.blissroms.org/api/teambliss", // TeamBliss JSON
+								success: function (data) {
+									var newContent = ''; // Variable to hold HTML
+									for (var i = 0; i < data.length; i++) { // Loop through object
+										if ($.inArray(data[i].member, ['Jon West', 'utzcoz', 'Jackeagle']) >= 0) {
+											newContent += '<div id="event" class="team_item">';
+											newContent += '<img class="image crop" src="' + data[i].avatar + '" ';
+											newContent += 'alt="' + data[i].member + '" />';
+											newContent += '<h3>' + data[i].member + '</h3>';
+											newContent += '<p class="team_data_text font-weight-bold">' + data[i].designation + '</p>';
+											// newContent += '<p class="team_data_text font-weight-bold"><i>&quot;' + data[i].email + '&quot;</i></p>';
+											newContent += '</div>';
+										}
+									}
+									// Update the page with the new content
+									document.getElementById('content').innerHTML = newContent;
+								}
+							})
+						</script>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- BLISSLABS Section -->
+		<section id="bliss-labs" class="p-3 drk_bg">
+			<div class="container my-4 text-center">
+				<a href="https://blisslabs.org/"> <img class="w-10 mb-3" src="images/bliss_labs_logo.svg" alt="bliss labs"> </a>
+				<p>Bliss OS is just one of many projects maintained with the help of <a class="text-info" href="https://blisslabs.org/"> BlissLabs </a><br>
+					Checkout some of the other projects that work through BlissLabs below </p>
+				<div id="carouselControls" class="carousel slide h-50 my-5" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="card w-100">
+								<div class="row g-0 p-4">
+									<div class="col-md-4 my-auto">
+										<img src="images/BlissIcon.png" class="w-75 rounded-start" alt="bliss os">
+									</div>
+									<div class="col-md-6">
+										<div class="card-body">
+											<h4 class="card-title">Bliss OS</h4>
+											<p class="card-text">Project Lead: Jon West <br> <i class="small">Bliss OS brings all the features and options of Bliss
+													ROM
+													to your PC, tablet,
+													Chromebook and MacBook, and is available in many different
+													configurations.</i> </p>
+											<h1 class="card-text"> <a href="https://github.com/BlissRoms-x86"><i class="fab fa-github mx-3"></i></a> <a href="https://github.com/BlissRoms-x86"><i class="fas fa-globe"></i></a> </h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="card w-100">
+								<div class="row g-0 p-4">
+									<div class="col-md-4 my-auto">
+										<img src="images/bliss_rom_icon.png" class="w-100 rounded-start align-self-center" alt="bliss ROMs">
+									</div>
+									<div class="col-md-6">
+										<div class="card-body">
+											<h4 class="card-title">Bliss ROMs</h4>
+											<p class="card-text">Project Lead: Jackeagle <br> <i class="small">A fully featured replacement OS for your Android device
+													based off AOSP, bringing
+													many customizations, features, and optimizations to your device</i> </p>
+											<h1 class="card-text"> <a href="https://github.com/BlissRoms"><i class="fab fa-github mx-3"></i></a> <a href="https://blissroms.org"><i class="fas fa-globe"></i></a> </h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="card w-100">
+								<div class="row g-0 p-4">
+									<div class="col-md-4 my-auto">
+										<img src="images/AG_Icon_Logo.png" class="w-50 rounded-start" alt="AG">
+									</div>
+									<div class="col-md-6">
+										<div class="card-body">
+											<h4 class="card-title">Android-Generic</h4>
+											<p class="card-text">Project Lead: Jon West <br> <i class="small">Bringing Android ROMs to PCs and GSI devices
+													everywhere.
+													Simple to start, easy to
+													use development toolkit. Go get your ROM on :)</i> </p>
+											<h1 class="card-text"> <a href="https://gitlab.com/android-generic/vendor_android-generic"><i class="fab fa-github mx-3"></i></a> <a href="https://android-generic.github.io"><i class="fas fa-globe"></i></a> </h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="card w-100">
+								<div class="row g-0 p-4">
+									<div class="col-md-4 my-auto">
+										<img src="images/boringdroid_blue.svg" class="w-75 rounded-start" alt="boringdroid">
+									</div>
+									<div class="col-md-6">
+										<div class="card-body">
+											<h4 class="card-title">Boringdroid</h4>
+											<p class="card-text">Project Lead: utzcoz<br> <i class="small">Boringdroid is a boring project to provide patch set to
+													run
+													multi-window on low
+													version AOSP.</i> </p>
+											<h1 class="card-text"> <a href="https://github.com/boringdroid"><i class="fab fa-github mx-3"></i></a> <a href="https://boringdroid.github.io"><i class="fas fa-globe"></i></a> </h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="card w-100">
+								<div class="row g-0 p-4">
+									<div class="col-md-4 my-auto">
+										<img src="images/SG_Asset_2.png" class="w-25 rounded-start" alt="SG">
+									</div>
+									<div class="col-md-6">
+										<div class="card-body">
+											<h4 class="card-title">SupremeGamers</h4>
+											<p class="card-text">Project Lead: Axon<br> <i class="small">Biggest Android-x86 Gaming and Modding Community and
+													creators of Gearlock
+													Recovery and Advance Android x86 Installer for Windows.</i> </p>
+											<h1 class="card-text"> <a href="https://github.com/axonasif/gearlock"><i class="fab fa-github mx-3"></i></a> <a href="https://supreme-gamers.com"><i class="fas fa-globe"></i></a> </h1>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" data-target="#carouselControls" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+					<a class="carousel-control-next" data-target="#carouselControls" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+				</div>
+			</div>
+		</section>
+		<!-- Footer -->
+		<section id="footer" class="footer_bg">
+			<div class="container my-6">
+				<div class="row">
+					<div class="col-sm px-1">
+						<h5> Socials</h5>
+						<ul class="list-unstyled text-primary">
+							<li class="text-primary">
+								<a target="_blank" href="https://t.me/Team_Bliss_Community" class="text-info">BlissROMs Telegram</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://t.me/blissx86" class="text-info">Bliss OS Telegram</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.facebook.com/BlissFamilyOfROMs/" class="text-info">Bliss
+									Facebook</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://twitter.com/blissos_org" class="text-info">Bliss
+									Twitter</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.linkedin.com/company/stayblissful" class="text-info">Bliss
+									LinkedIn</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm px-1">
+						<h5> Sources</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a target="_blank" href="https://review.blissroms.com" class="text-info">BlissROMs Gerrit
+									Review</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://review.blissos.org/" class="text-info">Bliss OS (x86)
+									Gerrit Review</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://github.com/BlissRoms" class="text-info">BlissROMs
+									GitHub</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://github.com/BlissRoms-Devices" class="text-info">BlissROMs-Devices
+									GitHub</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://github.com/BlissRoms-x86" class="text-info">Bliss OS
+									GitHub</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://github.com/BlissRoms-pine64" class="text-info">BlissROMs-PINE64
+									GitHub</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://github.com/android-generic/vendor_ag" class="text-info">Android-Generic GitLab</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm px-1">
+						<h5>Subreddits</h5>
+						<ul class="list-unstyled">
+							<li>
+								<a target="_blank" href="https://www.reddit.com/r/BlissRoms" class="text-info">BlissROMs</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.reddit.com/r/BlissOS" class="text-info">Bliss OS</a>
+							</li>
+							<li>
+								<a target="_blank" href="https://www.reddit.com/r/TeamBliss" class="text-info">TeamBliss</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm px-1">
+						<h5> Follow us </h5>
+						<div class="row">
+							<div class="col-sm my-2">
+								<a href="https://www.facebook.com/BlissFamilyOfROMs/"> <i class="fa fa-facebook-official text-muted fa-2x mr-1"></i></a>
+								<a target="_blank" href="https://instagram.com/blissos_org"> <i class="fa fa-instagram text-muted fa-2x mr-1"></i> </a>
+								<a target="_blank" href="https://github.com/blissroms-x86"> <i class="fa fa-github text-muted text-muted fa-2x mr-1"></i> </a>
+								<a target="_blank" href="https://www.linkedin.com/company/stayblissful"> <i class="fa fa-linkedin text-muted text-muted fa-2x mr-1"></i> </a>
+								<a target="_blank" href="https://www.reddit.com/r/BlissOS"> <i class="fa fa-reddit text-muted fa-2x mr-1"></i> </a>
+								<a target="_blank" href="https://twitter.com/blissos_org"> <i class="fa fa-twitter text-muted fa-2x mr-1"></i></a>
+								<a href="https://discord.com/invite/F9n5gbdNy2" target="_blank"><i class="fab fa-discord text-muted fa-2x mr-1"></i></a>
+							</div>
+						</div>
+						<ul class="list-unstyled">
+							<li>
+								<a target="_blank" href="images/Bliss_visual_system.pdf" class="text-info">Brand Info</a>
+							</li>
+							<li>
+								<a target="_blank" href="licensing.html" class="text-info">Licensing &amp; Info</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="my-3" id="copyright">
+			<div class="container text-center">
+				<p class="mb-0 py-1">Copyright © 2021 BlissLabs. All rights reserved</p>
+			</div>
+		</section>
+		<!-- JavaScript dependencies -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<!-- Script: Smooth scrolling between anchors in the same page -->
+		<script src="js/smooth-scroll.js"></script>
+		<script src="js/adv.js"></script>
+		<!-- <script src="js/chat.js"></script> -->
+		<!-- Script for downloading Bliss OS files -->
+		<script>
+			const mapedDownloadablelinks = {
+				0: "https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download",
+				1: "https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210508-1013_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.10_pie-x86_dgc-p9.0-11.13_ld-p9.0-x86_dg-_dh-blueprint_pie-x86_w45_2020_mg-p9.0-x86.iso/download",
+				2: "https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210507-2246_x86_64_k-google-5.10.32-lts-pledge-xanmod_m-20.1.10_pie-x86_dgc-p9.0-11.13_ld-p9.0-x86_dg-_dh-blueprint_pie-x86_w45_2020_mg-p9.0-x86.iso/download",
+				3: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/BlissOS-14.3-x86_64-202106181339_k-google-5.4.112-lts-ax86_m-r_emugapps_cros-hd_gearlock.iso/download",
+				4: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/BlissOS-14.3-x86-202107202034_k-android12-5.10.50-ax86_m-21.1.3_r-x86_foss_cros-hd.iso/download",
+				5: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/BlissOS-14.3-x86_64-202106261907_k-android12-5.10.46-ax86_m-21.1.3_r-x86_emugapps_cros-hd.iso/download",
+				6: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/11/AG-11--x86_64-202106131243_k-kernel-5.4_m-x86.iso/download",
+				7: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/11/ax86-11-android_x86_64-202105101056_k-5.4.112-android_m-21.1.0-devel_w13_foss_magisk.iso/download",
+				8: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/BlissOS-14.3-x86_64-202107242243_k-android12-5.10.50-ax86_m-21.1.3_r-x86_foss_cros-hd.iso/download",
+				9: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/S/foss/"
+			}
 
-        </div>
-    </section>
+			// time is in mili sec 1000 * 5 = 5000 mili sec  = 5 sec;
+			let popuptimer = 1000 * 3;
 
-    <!-- Bliss OS Docs -->
+			function myFunction(e) {
+				setTimeout(() => {
+					window.open(mapedDownloadablelinks[parseInt(e.target.id)], '_blank');
 
-    <section class="my-5 p-4 documentation_banner" id="documentation">
-        <div class="container">
-            <h2>Bliss Docs</h2>
-            <p>Bliss ROMs documentation can be found on our <a href="https://docs.blissos.org" target="_blank">docs
-                    site</a>,
-                while our development update posts can be found on the XDA thread for that
-                devices release version. <br><br> We recommend all users start with using the documentation we have
-                provided
-                before trying to hunt us down online and ask us questions as this action takes away the valuable
-                development
-                time we have committed towards this project. None of us are paid for the work we do on Bliss, so
-                please
-                set
-                your expectations accordingly.&nbsp; <br><br> For questions, please join our Community Support chats
-                on
-                <a href="https://t.me/blissx86" target="_blank">Telegram</a> or <a
-                    href="https://discord.com/invite/F9n5gbdNy2" target="_blank">Discord</a> and search for answers in
-                there.
-            </p>
+				}, popuptimer)
 
-            <div class="row">
-                <div class="col-sm text-center">
-                    <a class="btn m-2 btn-secondary" href="https://docs.blissos.org" target="_blank">Bliss OS
-                        Docs</a>
-                    <a class="btn m-2 btn-secondary"
-                        href="https://forum.xda-developers.com/bliss-roms/bliss-roms-development/bliss-os-pie-beta-preview-t3855917"
-                        target="_blank">Bliss OS 11 XDA Thread</a>
-                    <a class="btn m-2 btn-secondary"
-                        href="https://forum.xda-developers.com/t/bliss-os-x86-for-pcs-12-x-14-x-development-beta-builds.4004419"
-                        target="_blank">Bliss OS 14/12 XDA Thread</a>
-                    <a class="btn m-2 btn-secondary" href="https://github.com/android-generic/vendor_ag"
-                        target="_blank">Android-Generic Project</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-	
-	<!-- Contribute -->
-
-    <section class="my-5 mx-3 bg-dark" id="contribute">
-        <div class="container">
-	
-			<div class="join-bliss my-5">
-                <h2 class="my-3">Be a Part of Something Bigger</h2>
-                <p>Everything that we make is 100% open source and developed collaboratively by people from all over the
-                    world.
-                    Even if you're not a programmer, you can get involved and make a difference.
-                    We are constantly looking for people to help out with the following activities on our project.
-                </p>
-
-                <div class="row text-center bg-dark">
-                    <div class="col-sm">
-                        <ul class="list-group list-group-flush m-3 text-light bg-dark">
-                            <li class="list-group-item bg-dark">Graphic Design</li>
-                            <li class="list-group-item bg-dark">Social Media & Advertising</li>
-                            <li class="list-group-item bg-dark">Animation</li>
-                            <li class="list-group-item bg-dark">Kernel Development</li>
-                            <li class="list-group-item bg-dark">Device Development</li>
-                        </ul>
-                    </div>
-                    <div class="col-sm bg-dark">
-                        <ul class="list-group list-group-flush m-3 text-light bg-dark">
-                            <li class="list-group-item bg-dark">Platform Development</li>
-                            <li class="list-group-item bg-dark">Web App Development</li>
-                            <li class="list-group-item bg-dark">Android App Development</li>
-                            <li class="list-group-item bg-dark">Business Management</li>
-                            <li class="list-group-item bg-dark">Product Strategy</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <p>If you are interested in helping out with any of the above, please fill out our form to let us know
-                    how you can help.
-                    <a href="https://goo.gl/forms/PdiaAj1PojosmehK2" target="_blank"> Google form</a>
-                </p>
-
-
-
-            </div>
+			}
 			
-        </div>
-    </section>
+			var used_to = false;
+			var download = false;
 
-    <!-- Android-Generic Section -->
-
-    <section class="py-5 bg-secondary">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Built for Developers</h2><img class="w-50 mb-2" src="images/ag_logo_flat.png">
-                    <p class="mb-3">A rapid prototyping toolkit Created by the makers of Bliss OS. Android-Generic
-                        Project aims to
-                        assist in bringing all AOSP based projects to x86/x86_64 PC hardware, emulators, and more
-                    </p>
-                    <a class="btn btn-primary mb-4 shadow" href="https://android-generic.github.io" target="_blank"
-                        id="agdl">
-                        Head to AG Website</a>
-                </div>
-                <div class="col-md-4"> <a href="https://android-generic.github.io"><img class="img-fluid"
-                            src="images/ag_website.png"></a> </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-
-    <section class="py-5" id="team">
-        <div class="container">
-            <div class="mx-auto text-center">
-                <h2 class="display-5">The A-Team</h2>
-            </div>
-
-            <div class="tab-content mt-2">
-                <div class="tab-pane fade show active" id="tabone" role="tabpanel">
-                    <section id="content" class="team_content"></section>
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-                    <script>
-                        $.ajax({
-                            type: "GET",
-                            url: "https://api.blissroms.org/api/teambliss", // TeamBliss JSON
-                            success: function (data) {
-                                var newContent = ''; // Variable to hold HTML
-                                for (var i = 0; i < data.length; i++) { // Loop through object
-                                    if ($.inArray(data[i].member, ['Jon West', 'utzcoz', 'Jackeagle']) >= 0) {
-                                        newContent += '<div id="event" class="team_item">';
-                                        newContent += '<img class="image crop" src="' + data[i].avatar + '" ';
-                                        newContent += 'alt="' + data[i].member + '" />';
-                                        newContent += '<h3>' + data[i].member + '</h3>';
-                                        newContent += '<p class="team_data_text font-weight-bold">' + data[i].designation + '</p>';
-                                        // newContent += '<p class="team_data_text font-weight-bold"><i>&quot;' + data[i].email + '&quot;</i></p>';
-                                        newContent += '</div>';
-                                    }
-                                }
-                                // Update the page with the new content
-                                document.getElementById('content').innerHTML = newContent;
-                            }
-                        })
-                    </script>
-                </div>
-            </div>
-        </div>
-    </section>
+			$(".console_panel").on('keypress', ".in", function(e) {
+				if (e.which == 13) {
+					$(this).prop('readonly', true);
+					var format = /[>]+/;
+					
+					var raw_input = $(this).val()
+					if(format.test(raw_input)){
+						used_to = true
+						newStr = raw_input.replace(/ >/g, '');
+						var input = newStr.split(" ");
+						console.log('Original String: ', raw_input);
+						console.log('After character removed: ', newStr);
+						console.log('input command: ', input);
+						
+					} else {
+						used_to = false
+						var input = $(this).val().split(" ");
+					}
+					
+					if (input[1]) {
+						var output = execute(input[0], input[1]);
+					} else {
+						var output = execute(input[0], "");
+					}
+					$(".console_output").last().html(output)
+					$(".console_panel").append($("<div class='console_action'>").html("<div class='console_action'><div class='console_command'><span class='symbol'>#</span><input class='in' type='text'></div><div class='console_output'></div></div>"));
+					$(".in").last().focus();
+				}
+			});
 
 
-    <!-- BLISSLABS Section -->
+			function execute(command, parameters) {
+				console.log(command, parameters);
+				if (window[command]) {
+					return window[command](parameters);
+				} else {
+					return "bash: " + command + " : command not found";
+				}
+			}
 
-    <section id="bliss-labs" class="p-3 drk_bg">
-        <div class="container my-4 text-center">
-            <a href="https://blisslabs.org/">
-                <img class="w-10 mb-3" src="images/bliss_labs_logo.svg" alt="bliss labs">
-            </a>
-            <p>Bliss OS is just one of many projects maintained with the help of <a class="text-info"
-                    href="https://blisslabs.org/"> BlissLabs </a><br>
-                Checkout some of the other projects that work through BlissLabs below
-            </p>
-
-            <div id="carouselControls" class="carousel slide h-50 my-5" data-ride="carousel">
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active">
-                        <div class="card w-100">
-                            <div class="row g-0 p-4">
-                                <div class="col-md-4 my-auto">
-                                    <img src="images/BlissIcon.png" class="w-75 rounded-start" alt="bliss os">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Bliss OS</h4>
-                                        <p class="card-text">Project Lead: Jon West <br>
-                                            <i class="small">Bliss OS brings all the features and options of Bliss
-                                                ROM
-                                                to your PC, tablet,
-                                                Chromebook and MacBook, and is available in many different
-                                                configurations.</i>
-                                        </p>
-                                        <h1 class="card-text">
-                                            <a href="https://github.com/BlissRoms-x86"><i
-                                                    class="fab fa-github mx-3"></i></a>
-                                            <a href="https://github.com/BlissRoms-x86"><i class="fas fa-globe"></i></a>
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card w-100">
-                            <div class="row g-0 p-4">
-                                <div class="col-md-4 my-auto">
-                                    <img src="images/bliss_rom_icon.png" class="w-100 rounded-start align-self-center"
-                                        alt="bliss ROMs">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Bliss ROMs</h4>
-                                        <p class="card-text">Project Lead: Jackeagle <br>
-                                            <i class="small">A fully featured replacement OS for your Android device
-                                                based off AOSP, bringing
-                                                many customizations, features, and optimizations to your device</i>
-                                        </p>
-                                        <h1 class="card-text">
-                                            <a href="https://github.com/BlissRoms"><i
-                                                    class="fab fa-github mx-3"></i></a>
-                                            <a href="https://blissroms.org"><i class="fas fa-globe"></i></a>
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card w-100">
-                            <div class="row g-0 p-4">
-                                <div class="col-md-4 my-auto">
-                                    <img src="images/AG_Icon_Logo.png" class="w-50 rounded-start" alt="AG">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Android-Generic</h4>
-                                        <p class="card-text">Project Lead: Jon West <br>
-                                            <i class="small">Bringing Android ROMs to PCs and GSI devices
-                                                everywhere.
-                                                Simple to start, easy to
-                                                use development toolkit. Go get your ROM on :)</i>
-                                        </p>
-                                        <h1 class="card-text">
-                                            <a href="https://gitlab.com/android-generic/vendor_android-generic"><i
-                                                    class="fab fa-github mx-3"></i></a>
-                                            <a href="https://android-generic.github.io"><i class="fas fa-globe"></i></a>
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card w-100">
-                            <div class="row g-0 p-4">
-                                <div class="col-md-4 my-auto">
-                                    <img src="images/boringdroid_blue.svg" class="w-75 rounded-start" alt="boringdroid">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Boringdroid</h4>
-                                        <p class="card-text">Project Lead: utzcoz<br>
-                                            <i class="small">Boringdroid is a boring project to provide patch set to
-                                                run
-                                                multi-window on low
-                                                version AOSP.</i>
-                                        </p>
-                                        <h1 class="card-text">
-                                            <a href="https://github.com/boringdroid"><i
-                                                    class="fab fa-github mx-3"></i></a>
-                                            <a href="https://boringdroid.github.io"><i class="fas fa-globe"></i></a>
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card w-100">
-                            <div class="row g-0 p-4">
-                                <div class="col-md-4 my-auto">
-                                    <img src="images/SG_Asset_2.png" class="w-25 rounded-start" alt="SG">
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card-body">
-                                        <h4 class="card-title">SupremeGamers</h4>
-                                        <p class="card-text">Project Lead: Axon<br>
-                                            <i class="small">Biggest Android-x86 Gaming and Modding Community and
-                                                creators of Gearlock
-                                                Recovery and Advance Android x86 Installer for Windows.</i>
-                                        </p>
-                                        <h1 class="card-text">
-                                            <a href="https://github.com/axonasif/gearlock"><i
-                                                    class="fab fa-github mx-3"></i></a>
-                                            <a href="https://supreme-gamers.com"><i class="fas fa-globe"></i></a>
-                                        </h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <a class="carousel-control-prev" data-target="#carouselControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" data-target="#carouselControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-
-
-        </div>
-    </section>
-
-
-    <!-- Footer -->
-    <section id="footer" class="footer_bg">
-        <div class="container my-6">
-            <div class="row">
-                <div class="col-sm px-1">
-                    <h5> Socials</h5>
-                    <ul class="list-unstyled text-primary">
-                        <li class="text-primary"> <a target="_blank" href="https://t.me/Team_Bliss_Community"
-                                class="text-info">BlissROMs Telegram</a> </li>
-                        <li> <a target="_blank" href="https://t.me/blissx86" class="text-info">Bliss OS Telegram</a>
-                        </li>
-                        <li> <a target="_blank" href="https://www.facebook.com/BlissFamilyOfROMs/"
-                                class="text-info">Bliss
-                                Facebook</a> </li>
-                        <li> <a target="_blank" href="https://twitter.com/blissos_org" class="text-info">Bliss
-                                Twitter</a> </li>
-                        <li> <a target="_blank" href="https://www.linkedin.com/company/stayblissful"
-                                class="text-info">Bliss
-                                LinkedIn</a> </li>
-                    </ul>
-                </div>
-                <div class="col-sm px-1">
-                    <h5> Sources</h5>
-                    <ul class="list-unstyled">
-                        <li> <a target="_blank" href="https://review.blissroms.com" class="text-info">BlissROMs Gerrit
-                                Review</a>
-                        </li>
-                        <li> <a target="_blank" href="https://review.blissos.org/" class="text-info">Bliss OS (x86)
-                                Gerrit Review</a>
-                        </li>
-                        <li> <a target="_blank" href="https://github.com/BlissRoms" class="text-info">BlissROMs
-                                GitHub</a> </li>
-                        <li> <a target="_blank" href="https://github.com/BlissRoms-Devices"
-                                class="text-info">BlissROMs-Devices
-                                GitHub</a> </li>
-                        <li> <a target="_blank" href="https://github.com/BlissRoms-x86" class="text-info">Bliss OS
-                                GitHub</a> </li>
-                        <li> <a target="_blank" href="https://github.com/BlissRoms-pine64"
-                                class="text-info">BlissROMs-PINE64
-                                GitHub</a> </li>
-                        <li> <a target="_blank" href="https://github.com/android-generic/vendor_ag"
-                                class="text-info">Android-Generic GitLab</a> </li>
-                    </ul>
-                </div>
-                <div class="col-sm px-1">
-                    <h5>Subreddits</h5>
-                    <ul class="list-unstyled">
-                        <li> <a target="_blank" href="https://www.reddit.com/r/BlissRoms"
-                                class="text-info">BlissROMs</a> </li>
-                        <li> <a target="_blank" href="https://www.reddit.com/r/BlissOS" class="text-info">Bliss OS</a>
-                        </li>
-                        <li> <a target="_blank" href="https://www.reddit.com/r/TeamBliss"
-                                class="text-info">TeamBliss</a> </li>
-                    </ul>
-                </div>
-                <div class="col-sm px-1">
-                    <h5> Follow us </h5>
-                    <div class="row">
-                        <div class="col-sm my-2">
-                            <a href="https://www.facebook.com/BlissFamilyOfROMs/">
-                                <i class="fa fa-facebook-official text-muted fa-2x mr-1"></i></a>
-                            <a target="_blank" href="https://instagram.com/blissos_org">
-                                <i class="fa fa-instagram text-muted fa-2x mr-1"></i>
-                            </a> <a target="_blank" href="https://github.com/blissroms-x86">
-                                <i class="fa fa-github text-muted text-muted fa-2x mr-1"></i>
-                            </a><a target="_blank" href="https://www.linkedin.com/company/stayblissful">
-                                <i class="fa fa-linkedin text-muted text-muted fa-2x mr-1"></i>
-                            </a> <a target="_blank" href="https://www.reddit.com/r/BlissOS">
-                                <i class="fa fa-reddit text-muted fa-2x mr-1"></i>
-                            </a> <a target="_blank" href="https://twitter.com/blissos_org">
-                                <i class="fa fa-twitter text-muted fa-2x mr-1"></i></a>
-                            <a href="https://discord.com/invite/F9n5gbdNy2" target="_blank"><i
-                                    class="fab fa-discord text-muted fa-2x mr-1"></i></a>
-                        </div>
-                    </div>
-
-                    <ul class="list-unstyled">
-                        <li> <a target="_blank" href="images/Bliss_visual_system.pdf" class="text-info">Brand Info</a>
-                        </li>
-                        <li> <a target="_blank" href="licensing.html" class="text-info">Licensing &amp; Info</a>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="my-3" id="copyright">
-        <div class="container text-center">
-            <p class="mb-0 py-1">Copyright © 2021 BlissLabs. All rights reserved</p>
-        </div>
-    </section>
-
-    <!-- JavaScript dependencies -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <!-- Script: Smooth scrolling between anchors in the same page -->
-    <script src="js/smooth-scroll.js"></script>
-
-    <script src="js/adv.js"></script>
-
-    <!-- <script src="js/chat.js"></script> -->
-
-    <!-- Script for downloading Bliss OS files -->
-
-    <script>
-        const mapedDownloadablelinks = {
-            0: "https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download",
-            1: "https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210508-1013_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.10_pie-x86_dgc-p9.0-11.13_ld-p9.0-x86_dg-_dh-blueprint_pie-x86_w45_2020_mg-p9.0-x86.iso/download",
-            2: "https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210507-2246_x86_64_k-google-5.10.32-lts-pledge-xanmod_m-20.1.10_pie-x86_dgc-p9.0-11.13_ld-p9.0-x86_dg-_dh-blueprint_pie-x86_w45_2020_mg-p9.0-x86.iso/download",
-            3: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/BlissOS-14.3-x86_64-202106181339_k-google-5.4.112-lts-ax86_m-r_emugapps_cros-hd_gearlock.iso/download",
-            4: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/BlissOS-14.3-x86-202107202034_k-android12-5.10.50-ax86_m-21.1.3_r-x86_foss_cros-hd.iso/download",
-            5: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/BlissOS-14.3-x86_64-202106261907_k-android12-5.10.46-ax86_m-21.1.3_r-x86_emugapps_cros-hd.iso/download",
-            6: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/11/AG-11--x86_64-202106131243_k-kernel-5.4_m-x86.iso/download",
-            7: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/11/ax86-11-android_x86_64-202105101056_k-5.4.112-android_m-21.1.0-devel_w13_foss_magisk.iso/download",
-            8: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/BlissOS-14.3-x86_64-202107242243_k-android12-5.10.50-ax86_m-21.1.3_r-x86_foss_cros-hd.iso/download"
-        }
-
-        // time is in mili sec 1000 * 5 = 5000 mili sec  = 5 sec;
-        let popuptimer = 1000 * 3;
-
-        function myFunction(e) {
-            setTimeout(() => {
-                window.open(mapedDownloadablelinks[parseInt(e.target.id)], '_blank');
-
-            }, popuptimer)
+			files = {
+				"root": {
+					"acct": {
+						"uid": {
+							
+						}
+					},
+					"apex": {
+						
+					},
+					"bin": {
+						"ls": "This is a command, please type it to run ",
+						"cd": "This is a command, please type it to run ",
+						"mkdir": "This is a command, please type it to run ",
+						"echo": "This is a command, please type it to run ", 
+						"touch": "This is a command, please type it to run ", 
+						"rm": "This is a command, please type it to run ", 
+						"cat": "This is a command, please type it to run ", 
+						"pwd": "This is a command, please type it to run ", 
+						"help": "This is a command, please type it to run ", 
+						"logcat": "This is a command, please type it to run "
+					},
+					"cache": {
+						"backup": {
+							
+						},
+						"backup_stage": {
+							
+						},
+						"lost+found": {
+							
+						},
+						"recovery": {
+							
+						},
+					},
+					"config": {
+						
+					},
+					"d": {
+						
+					},
+					"data": {
+						"adb": {},			
+						"anr": {},
+						"apex": {},
+						"app-sec": {},
+						"app-ephemeral": {},
+						"app-lib": {},
+						"app-ptivate": {},
+						"app-ataging": {},
+						"backup": {},
+						"bootchart": {},
+						"cache": {},
+						"dalvik-cache": {},
+						"data": {},
+						"drm": {},
+						"fonts": {},
+						"ghome": {},
+						"gsi": {},
+						"gsi_persistent_data": {},
+						"gyro-conf": {},
+						"incremental": {},
+						"local": {},
+						"media": {},
+						"mediadrm": {},
+						"misc": {},
+						"nfc": {},
+						"ota": {},
+						"ota_package": {},
+						"preloads": {},
+						"property": {},
+						"resource-cache": {},
+						"rollbabk": {},
+						"ss": {},
+						"ssh": {},
+						"system": {},
+						"tombstones": {},			
+						"user": {},
+						"vendor": {},
+					},
+					"data_mirror": {
+						"cur_profiles": {
+							
+						},
+						"data_ce": {
+							
+						},
+						"data_de": {
+							
+						},
+						"ref_profiles": {
+							
+						},
+					},
+					"dev": {
+						
+					},
+					"etc": {
+						
+					},
+					"gearlock": {
+						"bin": {},
+						"core": {},
+						"etc": {},
+						"gearroot": {},
+						"lib": {},
+						"libexec": {},
+						"share": {},
+						"tmp": {},
+						"usr": {},
+					},
+					"init": "Binary File",
+					"init.android_x86_64.rc": "Too Large to Preview",
+					"init.environ.rc": "Too Large to Preview",
+					"lib": {
+						
+					},
+					"linkerconfig": {
+						
+					},
+					"lost+found": {
+						
+					},
+					"mnt": {
+						"androidwritable": {
+							"0":{
+								"Alarms": {},
+								"Android": {},
+								"AppProjects": {},
+								"Audiobooks": {},
+								"DCIM": {},
+								"Documents": {},
+								"Download": {},
+								"Movies": {},
+								"Music": {},
+								"Notifications": {},
+								"Podcasts": {},
+								"Recordings": {},
+								"Ringtones": {},
+							}
+						},
+						"appfuse": {
+							
+						},
+						"asec": {
+							
+						},
+						"expand": {
+							
+						},
+						"gearload": {
+							
+						},
+						"installer": {
+							
+						},
+						"media_rw": {
+							"F7D3LCK2JDS5OI": {}
+							
+						},
+						"obb": {
+							
+						},
+						"pass_through": {
+							"emulated": {
+								"0": {
+									"Alarms": {},
+									"Android": {},
+									"AppProjects": {},
+									"Audiobooks": {},
+									"DCIM": {},
+									"Documents": {},
+									"Download": {},
+									"Movies": {},
+									"Music": {},
+									"Notifications": {},
+									"Podcasts": {},
+									"Recordings": {},
+									"Ringtones": {},						
+								}
+							},
+							"self": {
+								
+							}
+						},
+					},
+					
+					"fstab.android_x86_64": "none			/cache		tmpfs	nosuid,nodev,noatime	defaults" + 
+							"/devices/*/block/sr*		auto	auto	defaults		voldmanaged=cdrom:auto " + 
+							"/devices/*/usb*/*		auto	auto	defaults		voldmanaged=usb:auto,encryptable=userdata" + 
+							"/devices/*/mmc0:a*/*		auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata" + 
+							"/devices/*/*sdmmc*/*		auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata" + 
+							"/devices/*/80860F14:01/mmc_*	auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata" + 
+							"/devices/*/80860F14:02/mmc_*	auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata" + 
+							"/devices/*/80860F16:00/mmc_*	auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata" + 
+							"/devices/*/PNP0FFF:00/mmc_*	auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata",
+					
+					"obm": {
+						
+					},
+					"oem": {
+						
+					},
+					"postinstall": {
+						
+					},
+					"proc": {
+						
+					},
+					"product": {
+						
+					},
+					"sdcard": {
+						"Alarms": {},
+						"Android": {},
+						"AppProjects": {},
+						"Audiobooks": {},
+						"DCIM": {},
+						"Documents": {},
+						"Download": {},
+						"Movies": {},
+						"Music": {},
+						"Notifications": {},
+						"Podcasts": {},
+						"Recordings": {},
+						"Ringtones": {},			
+					},
+					"second_stage_resources": {
+						
+					},
+					"sepolicy": {
+						
+					},
+					"storage": {
+						"emulated": {
+							"0": {
+								"Alarms": {},
+								"Android": {},
+								"AppProjects": {},
+								"Audiobooks": {},
+								"DCIM": {},
+								"Documents": {},
+								"Download": {},
+								"Movies": {},
+								"Music": {},
+								"Notifications": {},
+								"Podcasts": {},
+								"Recordings": {},
+								"Ringtones": {},						
+							}
+						},
+						"self": {
+							
+						}
+					},
+					"sys": {
+						
+					},
+					"system": {
+						"addon.d": {},
+						"apex": {},
+						"app": {},
+						"bin": {},
+						"build.prop": "",
+						"etc": {},
+						"fonts": {},
+						"framework": {},
+						"lib": {},
+						"media": {},
+						"overlay": {},
+						"priv-app": {},
+						"product": {},
+						"system_ext": {},
+						"usr": {},
+						"vendor": {},
+						"xbin": {},
+					},
+					"system_ext": {
+						
+					},
+					"vendor": {
+						
+					},
+				}
+			}
 
 
+			var upperFolder = null;
+			var currentFolder = files["root"];
+			var path = [];
 
-        }
+			function ls() {
+				var keys = [];
+				for (var key in currentFolder) {
+					if (currentFolder.hasOwnProperty(key)) { //to be safe
+						keys.push(key);
+					}
+				}
+				return keys.join(" ");
+			}
 
-    </script>
-</body>
+			function cat(filename) {
+				if (filename == "") {
+					return "usage: cat file ...";
+				}
+				if (typeof currentFolder[filename] == "object") {
+					return "cat: " + filename + " : Is a directory"
 
+				}
+				if (currentFolder[filename] == "") {
+					return "";
+				}
+				if (currentFolder[filename]) {
+					return currentFolder[filename];
+				} else {
+					return "cat: " + filename + " : No such file or directory"
+				}
+			}
+
+			function cd(folder) {
+				if (folder == "") {
+					return "";
+				}
+				if (folder == "..") {
+					if (path.length > 0) {
+						currentFolder = upperFolder;
+						upperFolder = files["root"];
+						path.push(folder);
+						return;
+					}
+				} else if (typeof currentFolder[folder] == "object") {
+					upperFolder = currentFolder;
+					currentFolder = currentFolder[folder];
+					path.push(folder);
+				} else if (folder == "/") {
+					currentFolder = files["root"];
+					path.pop();
+				} else {
+					return "bash: cd: " + folder + ": No such file or directory";
+				}
+			}
+
+			function logcat(destination) {
+				
+				var str = new String("...");
+				var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
+				var t = setInterval(function () {
+					var ele = document.getElementById('myBlinkingDiv');
+					ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
+					}, blink_speed);
+				if (destination == "") {
+					return "usage: logcat > foldername/filename ..." + destination;
+				}
+				if (used_to == true) {		
+					console.log('used_to: ', used_to);
+					if (destination == "sdcard/logcat.txt") {
+						download = true;
+					} else if (destination == "mnt/androidwritable/0/logcat.txt") {
+						download = true;
+					} else if (destination == "mnt/pass_through/emulated/0/logcat.txt") {
+						download = true;	
+					} else if (destination == "storage/emulated/0/logcat.txt") {
+						download = true;	
+					} else {
+						return "usage: logcat > foldername/filename ..." + destination;
+					}
+					if (download == true) {
+						var newContent = ''; // Variable to hold HTML
+						console.log('download: ', download);
+						// newContent += '<li class="cards__item">';
+						newContent += '<div class="card blur badge-dark">';
+						newContent += '<div class="card__content">';
+						newContent += '<div class="card__title" style="color: #fff; padding-top: 1.7rem; padding-left: 1rem; padding-right: 1rem;"></div?';
+						newContent += '<h3><b style="color: #fff; font-size: xx-large;"> Bliss OS v15 for PC Alpha</b></h3>';
+						newContent += '<p class="card__text" style="color: #fff;">The initial alpha release of our Android 12 builds for PC hardware</p>';
+						// newContent += '<a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/S/foss/" target="_blank"><i class="fab fa p-2 fa-globe" style="font-size: 300%;"></i>DOWNLOAD</a>';
+						newContent += '</div>';
+						newContent += '</div>';
+						// newContent += '</li>';
+						newContent += '<tbody>';
+						newContent += '	<tr>';
+						newContent += '		<td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa22.0 </i> <i class="text-secondary">#FOSS</i> </td>';
+						newContent += '		<td> <a class="btn btn-primary" data-toggle="modal" id="9" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>';
+						newContent += '	</tr>';
+						newContent += '</tbody>';
+						// Update the page with the new content
+						
+						// return ( '<div id="myBlinkingDiv">...<br><br> Good Job! Loading the download link</div>') 
+						return document.getElementById('console_panel').innerHTML = newContent;
+					}
+				} else {
+					console.log('download: ', download);
+					console.log('used_to: ', used_to);
+					console.log('destination: ', destination);
+				}
+				
+			}
+
+			function mkdir(folderName) {
+				if (folderName != "") {
+					currentFolder[folderName] = {};
+					return "";
+				} else {
+					return "usage: mkdir directory ...";
+				}
+			}
+
+			function touch(fileName) {
+				currentFolder[fileName] = "";
+			}
+
+			function echo(string) {
+				return string;
+			}
+
+			function rm(name) {
+				delete currentFolder[name]
+			}
+
+			function help() {
+				return "Commands: ls, cd, mkdir, echo, touch, rm, cat, pwd, help, logcat";
+			}
+
+			function pwd() {
+				if (path.length == 0) {
+					return "/"
+				}
+				return "/" + path.join("/")
+			}
+
+
+			$('.console_panel').stop().animate({
+				scrollTop: $(".console_panel")[0].scrollHeight
+			}, 800);
+
+		</script>
+	</body>
 </html>
