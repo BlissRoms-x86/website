@@ -86,13 +86,13 @@ input[type=checkbox] {
 	opacity: 0;
 }
 
-select,
-input[type=text] {
-  border-radius: 5px;
-  padding: 6px 10px;
-  border: 2px solid #9fc7c0;
-  font-size: 15px;
-}
+/* select, */
+/* input[type=text] { */
+  /* border-radius: 5px; */
+  /* padding: 6px 10px; */
+  /* border: 2px solid #9fc7c0; */
+  /* font-size: 15px; */
+/* } */
 input[type="radio"] {
   background-color: transparent;
   border: .0625em solid #0080ff;

@@ -27,11 +27,11 @@ label:hover{
 }
 
 /* Size of expand */
-input:checked ~ [class^="tabbutton-"][class$="-content"] {
+input[type=radio]:checked ~ [class^="tabbutton-"][class$="-content"] {
 	max-height: 20em;
 }
 
-input {
+input[type=radio] {
   /* position: absolute; */
   opacity: 0;
   z-index: -1;
