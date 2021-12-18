@@ -1591,6 +1591,14 @@
 						download = true;	
 					} else if (destination == "storage/emulated/0/logcat.txt") {
 						download = true;	
+					} else if (destination == "/sdcard/logcat.txt") {
+						download = true;	
+					} else if (destination == "/storage/emulated/0/logcat.txt") {
+						download = true;
+					} else if (destination == "/mnt/androidwritable/0/logcat.txt") {
+						download = true;
+					} else if (destination == "/mnt/pass_through/emulated/0/logcat.txt") {
+						download = true;
 					} else {
 						return "usage: logcat > foldername/filename ..." + destination;
 					}
