@@ -14,20 +14,6 @@
     position: relative;
 }
 
-.dot {
-    position: absolute;
-    top: 25%;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 1rem;
-    display: inline-block;
-}
-
-.blue {
-    margin-left: 1rem;
-    background: #3F5EFB;
-}
-
 .console_panel {
     height: fit-content;
     background: #27292c;
