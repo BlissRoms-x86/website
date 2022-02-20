@@ -15,16 +15,17 @@
 }
 
 .console_panel {
-    height: fit-content;
+    height: 70vh;
     background: #27292c;
     padding: 1rem;
-    overflow: hidden;
+    overflow: scroll;
     border-radius: 0 0 10px 10px;
 }
 
 .console_action {
     margin-bottom: 10px;
-    height: 350px;
+    /* height: 350px; */
+	text-align: left;
 }
 
 .console_command {
