@@ -1166,7 +1166,8 @@
 				6: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/11/AG-11--x86_64-202106131243_k-kernel-5.4_m-x86.iso/download",
 				7: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/11/ax86-11-android_x86_64-202105101056_k-5.4.112-android_m-21.1.0-devel_w13_foss_magisk.iso/download",
 				8: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/BlissOS-14.3-x86_64-202107242243_k-android12-5.10.50-ax86_m-21.1.3_r-x86_foss_cros-hd.iso/download",
-				9: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/S/foss/alpha/Bliss-v15.0-Alpha-android_x86_64-OFFICIAL-foss-202112151838-nb-sd-ksu-gearlock-ex_vt-console_all-mesa-drivers-crocus.iso/download"
+				9: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/S/foss/alpha/Bliss-v15.0-Alpha-android_x86_64-OFFICIAL-foss-202112151838-nb-sd-ksu-gearlock-ex_vt-console_all-mesa-drivers-crocus.iso/download",
+				10: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/gapps/12/android_x86_64-a12_r27-03.04.22-01-mesa22-ksu-gapps-treble-libndk-sleep-sd-libva.iso/download"
 			}
 
 			// time is in mili sec 1000 * 5 = 5000 mili sec  = 5 sec;
@@ -1595,8 +1596,16 @@
 						download = true;
 					} else if (destination == "/mnt/pass_through/emulated/0/logcat.txt") {
 						download = true;
+					} else if (upperFolder == "emulated" && currentFolder == "0" && destination == "logcat.txt") {
+						download = true;
+					} else if (upperFolder == "androidwritable" && currentFolder == "0" && destination == "logcat.txt") {
+						download = true;
+					} else if (destination == "logcat.txt") {
+						download = true;	
 					} else {
 						return "usage: logcat > foldername/filename ..." + destination;
+						print(upperFolder);
+						print(currentFolder);
 					}
 					if (download == true) {
 						var newContent = ''; // Variable to hold HTML
@@ -1605,17 +1614,34 @@
 						newContent += '<div class="card blur badge-dark">';
 						newContent += '<div class="card__content">';
 						newContent += '<div class="card__title" style="color: #fff; padding-top: 1.7rem; padding-left: 1rem; padding-right: 1rem;"></div?';
-						newContent += '<h3><b style="color: #fff; font-size: xx-large;"> Bliss OS v15 for PC Alpha</b></h3>';
-						newContent += '<p class="card__text" style="color: #fff;">The initial alpha release of our Android 12 builds for PC hardware</p>';
+						newContent += '<h3><b style="color: #fff; font-size: xx-large;"> Bliss OS v15 and Android-x86 12 for PC Alpha</b></h3>';
+						newContent += '<p class="card__text" style="color: #fff;">The initial alpha releases of our Android 12 builds for PC hardware</p>';
 						// newContent += '<a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/S/foss/" target="_blank"><i class="fab fa p-2 fa-globe" style="font-size: 300%;"></i>DOWNLOAD</a>';
 						newContent += '</div>';
 						newContent += '</div>';
 						// newContent += '</li>';
 						newContent += '<tbody>';
 						newContent += '	<tr>';
+						newContent += '	<tc>';
 						newContent += '		<td>Bliss OS v15 Alpha FOSS <a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/S/foss/alpha/Changelog-Bliss-v15.0-Alpha-android_x86_64-OFFICIAL-foss-202112151838.txt/download" target="_blank" class="small"> Changelog </a> </td>';
+						newContent += '	</tc>';
+						newContent += '	<tc>';
 						newContent += '		<td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa22.0 </i> <i class="text-secondary">#FOSS</i> </td>';
+						newContent += '	</tc>';
+						newContent += '	<tc>';
 						newContent += '		<td> <a class="btn btn-primary" data-toggle="modal" id="9" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>';
+						newContent += '	</tc>';
+						newContent += '	</tr>';
+						newContent += '	<tr>';
+						newContent += '	<tc>';
+						newContent += '		<td>Android-x86 12_r27 Alpha (GAPPS/libndk) <a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/gapps/12/README.md/download" target="_blank" class="small"> Release Info </a> </td>';
+						newContent += '	</tc>';
+						newContent += '	<tc>';
+						newContent += '		<td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa22.0 </i> <i class="text-secondary">#GAPPS</i> </td>';
+						newContent += '	</tc>';
+						newContent += '	<tc>';
+						newContent += '		<td> <a class="btn btn-primary" data-toggle="modal" id="10" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>';
+						newContent += '	</tc>';
 						newContent += '	</tr>';
 						newContent += '</tbody>';
 						// Update the page with the new content
