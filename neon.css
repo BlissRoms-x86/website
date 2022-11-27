@@ -54,7 +54,7 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -66,7 +66,7 @@ html {
 body {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
-    overflow-y: scroll; 
+    overflow-y: scroll;
   margin: 0;
   font-size: 1rem;
   font-weight: 200;
@@ -365,7 +365,7 @@ h6, .h6 {
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.2; }
-  
+
 hr {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -476,6 +476,8 @@ pre {
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
     margin-left: auto;
+    align-items: center;
+    justify-content: space-between;
   }
 
   @media (min-width: 768px) {
@@ -1073,6 +1075,7 @@ pre {
     margin-left: 91.66667%; } }
 
 .table {
+  table-layout:fixed;
   width: 100%;
   margin-bottom: 1.5rem;
   background-color: transparent; }
@@ -1642,10 +1645,10 @@ textarea.form-control {
       margin-bottom: 0; } }
 
 .btn {
-  display: inline-block;
+  display: block;
   font-weight: 200;
   text-align: center;
-  white-space: nowrap;
+  overflow-wrap: break-word;
   vertical-align: middle;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2879,7 +2882,6 @@ input[type="button"].btn-block {
   display: inline-block;
   padding-top: 0.30875rem;
   padding-bottom: 0.30875rem;
-  margin-right: 1.5rem;
   font-size: 1.0625rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -2906,7 +2908,7 @@ input[type="button"].btn-block {
 
 .navbar-collapse {
   flex-basis: 100%;
-  flex-grow: 1;
+  flex-grow: 0;
   align-items: center; }
 
 .navbar-toggler {
@@ -4071,7 +4073,7 @@ button.close {
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
     bottom: 0;
     border-top-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-top .arrow::after,
   .bs-popover-auto[x-placement^="top"] .arrow::after {
     bottom: 1px;
@@ -4091,7 +4093,7 @@ button.close {
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
     left: 0;
     border-right-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-right .arrow::after,
   .bs-popover-auto[x-placement^="right"] .arrow::after {
     left: 1px;
@@ -4108,7 +4110,7 @@ button.close {
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
     top: 0;
     border-bottom-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-bottom .arrow::after,
   .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 1px;
@@ -4137,7 +4139,7 @@ button.close {
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
     right: 0;
     border-left-color: rgba(0, 0, 0, 0.25); }
-  
+
   .bs-popover-left .arrow::after,
   .bs-popover-auto[x-placement^="left"] .arrow::after {
     right: 1px;
@@ -5426,7 +5428,7 @@ button.bg-dark:focus {
 .py-5 {
   padding-top: 4.5rem !important; }
 
-  .pt-6,
+.pt-6,
 .py-6 {
   padding-top: 25vh !important; }
 
