@@ -9,17 +9,18 @@
         <meta name="description" content="Open Source OS for PC's, based on AOSP">
         <meta name="keywords" content="blissroms, bliss, os, x86, aosp, android, rom, teambliss, android x86">
         <!-- CSS dependencies -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/7b4ed0a31a.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="neon.css">
-        <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-        <script src="js/navbar-ontop.js"></script>
-        <link rel="stylesheet" href="css/animations.css">
+		<link rel="stylesheet" href="neon.css">
+		<link rel="stylesheet" href="css/animations.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/buttonstyle.css">
-        <link rel="stylesheet" href="css/terminal_style.css">
         <link rel="stylesheet" href="css/table.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        
+        <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+        <script src="js/navbar-ontop.js"></script>
+		<script src="https://kit.fontawesome.com/7b4ed0a31a.js" crossorigin="anonymous"></script>
+       
         <style>a>* { pointer-events: none; }</style>
         <script data-ad-client="ca-pub-7639560510014441" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </head>
@@ -205,8 +206,8 @@
 			&amp; microG for a <i>truly</i> secure user experience.</p>
                     </div>
                     <div class="col-sm">
-                        <div class="p-5">
-                            <img class="w-50" src="images/Respect-Personal-Data-sm.png">
+                        <div class="text-center mt-4">
+                            <img class="img-fluid" src="images/Personal-Data-sm.png">
                         </div>
                     </div>
                 </div>
@@ -236,30 +237,32 @@
         <section class="download-section pt-5">
             <div class="container">
                 <h2 class="text-center">Bliss OS Versions</h2>
-                <div class="row my-3 text-center">
-                    <div class="col-sm">
-                        <h5>Bliss OS 11 (Stable) (Android 9.0)</h5>
-                        <img class="w-50" src="https://img.shields.io/sourceforge/dm/blissos-x86.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue">
-                    </div>
-                    <div class="col-sm">
-                        <h5>Bliss OS 12 (Deprecated) (Android 10)</h5>
-                        <img class="w-50" src="https://img.shields.io/sourceforge/dm/blissos-dev.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue">
-                    </div>
-                    <div class="col-sm">
-                        <h5>Bliss OS 14 (RC) (Android 11)</h5>
-                        <img class="w-50" src="https://img.shields.io/sourceforge/dm/blissos-dev.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue">
-                    </div>
-                    <div class="col-sm">
-                        <h5>Bliss OS 15 (Alpha) (Android 12)</h5>
-                        <img class="w-50" src="https://img.shields.io/sourceforge/dm/blissos-dev.svg?style=for-the-badge&amp;logo=appveyor&amp;colorB=blue">
-                    </div>
-                </div>
+				<table class="table table-borderless text-center text-dark">
+					<thead>
+					  <tr class="bg-success p3">
+						<th scope="col"></th>
+						<th scope="col">Bliss OS 14 (Beta) (Android 11)</th>
+						<th scope="col">Bliss OS 15 (Beta) (Android 12L)</th>
+						
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr class="bg-dark p3">
+						<th scope="row"></th>
+						<td>Bliss OS 12 (Deprecated) (Android 10)</td>
+						<td>Bliss OS 11 (Deprecated) (Android 9.0)</td>
+						
+					  </tr>
+					  
+					</tbody>
+				  </table>
+
                 <div class="alert alert-danger my-4" role="alert" style="text-align: center !important">
                     <button type="button" class="close" data-dismiss="alert">×</button>
 		    <h4 class="alert-heading"><i class="fas fa-exclamation-triangle"></i> Please Note
 		    <i class="fas fa-exclamation-triangle"/></i></h4>
-                    <p>Our Bliss OS 12 builds are no longer maintained, and updates will not be delivered. 
-		    <br/><i>It is <b>HIGHLY</b> recommended to download Bliss OS 11.x or 14.x builds instead.
+                    <p>Our Bliss OS 11 & 12 builds are no longer maintained, and updates will not be delivered. 
+		    <br/><i>It is <b>HIGHLY</b> recommended to download Bliss OS 14.x or 15.x builds instead.
 		    Support and updates are available for those versions.</i></p>
                 </div>
             </div>
@@ -272,17 +275,14 @@
                 can get a little confusing when it comes to figuring out what build type is right for you. Here is an 
 		explanation of our currently supported variants to help things along.</p>
                 <div class="row mt-4">
-                    <div class="col-sm p-2 mx-2 bg-primary">
-                        <h2 class="my-3">Bliss OS 11.x</h2>
-                        <p>These are generic builds based on Android 9 (Pie) and BlissROMs sources. This is considered
-                        our current stable branch.</p>
+                    <div class="col-sm p-2 mx-2 bg-primary rounded">
+                        <h2 class="my-3">Bliss OS 14.10.x</h2>
+                        <p>These are generic builds based on Android 11 and BlissROMs sources. These builds are considered experimental.</p>
                         <a class="btn btn-secondary mb-3 mx-1" target="blank" href="https://forum.xda-developers.com/t/bliss-os-pie-for-pcs-lts.3855917/">XDA thread</a>
                     </div>
-                    <div class="col-sm p-2 mx-2 bg-warning">
-                        <h2 class="my-3"> Bliss OS 14.x</h2>
-                        <p>These are generic builds based on Android 11 (R) and BlissROMs sources. These builds are
-                        considered experimental and 14.x is still under development.<br>(Bliss 14.x has new ARM/ARM64
-                        app compatibility)</p>
+                    <div class="col-sm p-2 mx-2 bg-warning rounded">
+                        <h2 class="my-3"> Bliss OS 15.8.x</h2>
+                        <p>These are generic builds based on Android 12L and BlissROMs sources. These builds are considered experimental.</p>
                         <a class="btn btn-secondary mb-3" target="blank" href="https://android-generic.github.io">Learn
                         More
                         About Android-Generic</a>
@@ -435,7 +435,7 @@
                                     <li>Intel Atom - Mostly Supported (Kernel 5.10+ recommended)
                                         <br>
                                     </li>
-                                    <li>Core2Duo - Not Fully Supported (Needs SSE4.2) (May require 32bit builds)
+                                    <li>Core2Duo - Not Fully Supported (Needs x86-64-v2) (May require 32bit builds)
                                         <br>
                                     </li>
                                 </ul>
@@ -444,13 +444,13 @@
                                 <br>
                                 <br>
                                 <ul>
-                                    <li>A Series - Mostly Supported (Needs SSE4.2) (Kernel 5.10+ recommended)
+                                    <li>A Series - Mostly Supported (Needs x86-64-v2) (Kernel 5.10+ recommended)
                                         <br>
                                     </li>
-                                    <li>Ryzen Series (1k-7k) - Fully Supported (Kernel 5.10+ recommended)
+                                    <li>Ryzen Series (1k-7k) - Fully Supported (Kernel 5.15+ recommended)
                                         <br>
                                     </li>
-                                    <li>Athlon Series - Mostly Supported (Needs SSE4.2) (Kernel 5.10+ recommended)
+                                    <li>Athlon Series - Mostly Supported (Needs x86-64-v2) (Kernel 5.10+ recommended)
                                         <br>
                                     </li>
                                 </ul>
@@ -580,189 +580,73 @@
                 <div class="alert alert-danger my-5" role="alert">
                     <button type="button" class="close" data-dismiss="alert">×</button>
                     <h4 class="alert-heading">New Release Update</h4>
-                    <p>Bliss OS 15 & Android-x86 (Android 12) Alpha Builds are now available for download, development builds are available now for PCs</p>
+                    <p>Bliss OS 15 & Android-x86 (Android 12L) Beta Builds are now available for download, development builds are available now for PCs</p>
                 </div>
                 <div class="row">
                     <div class="col">
                         <ul class="nav nav-pills mb-3 justify-content-center nav-justified px-5 mb-4" id="pills-tab" role="tablist">
+    
                             <li class="nav-item">
-                                <a class="nav-link active text-light" id="bliss11-tab" data-toggle="pill" data-target="#bliss11" role="tab" aria-controls="bliss11" aria-selected="true">Bliss
-                                OS
-                                11</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-light" id="bliss14-tab" data-toggle="pill" data-target="#bliss14" role="tab" aria-controls="bliss14" aria-selected="false">Bliss OS 14</a>
+                                <a class="nav-link active text-light" id="bliss14-tab" data-toggle="pill" data-target="#bliss14" role="tab" aria-controls="bliss14" aria-selected="false">Bliss OS 14</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-light" id="bliss15-tab" data-toggle="pill" data-target="#bliss15" role="tab" aria-controls="bliss15" aria-selected="false">Bliss OS 15/Android-x86 Alpha</a>
+                                <a class="nav-link text-light" id="bliss15-tab" data-toggle="pill" data-target="#bliss15" role="tab" aria-controls="bliss15" aria-selected="false">Bliss OS 15</a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link text-light" id="ag11-tab" data-toggle="pill" data-target="#ag11" role="tab" aria-controls="ag11" aria-selected="false">Android Generic</a>
-                            </li>
+                            
                         </ul>
                         <!-- Bliss OS 11 Downloads -->
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="bliss11" role="tabpanel" aria-labelledby="bliss11-tab">
-                                <p>Bliss OS 11.x builds are based on Android 9.0 (Pie), these builds are considered 
-				stable and can be used as daily driver.</p>
-                                <div class="table-reponsive w-75 mx-auto">
-                                    <table class="table">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th scope="col">Standard Version (for older CPUs and/or GPUs)</th>
-                                                <th scope="col">Features</th>
-                                                <th scope="col">Download</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td> Bliss OS 11.13 GMS Stable (x86_64)<a href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Changelog-Bliss-v11.13--OFFICIAL-20201113.txt/download" target="_blank" class="small"> Changelog </a> </td>
-                                                <td><i class="text-success">#Kernel4.19</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#GApps</i> </td>
-                                                <td> <a class="btn btn-primary" data-toggle="modal" id="0" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Bliss OS 11.14 FOSS Stable <a href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Changelog-Bliss-v11.14--OFFICIAL-20210422.txt/download" target="_blank" class="small"> Changelog </a> </td>
-                                                <td><i class="text-success">#Kernel4.19</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#FOSS</i> </td>
-                                                <td> <a class="btn btn-primary" data-toggle="modal" id="1" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <table class="table">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th scope="col">Advanced Hardware Support (for newer CPUs and/or GPUs)</th>
-                                                <th scope="col">Features</th>
-                                                <th scope="col">Download</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td> Bliss OS 11.14 FOSS Experimental (x86_64)<a href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Changelog-Bliss-v11.14--OFFICIAL-20210507-2246.txt/download" target="_blank" class="small"> Changelog </a></td>
-                                                <td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#FOSS</i> </td>
-                                                <td> <a class="btn btn-primary" data-toggle="modal" id="2" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge</a> </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
+                            
                             <!-- Bliss OS 14 Downloads -->
-                            <div class="tab-pane fade" id="bliss14" role="tabpanel" aria-labelledby="bliss14-tab">
-                                <p>Bliss OS 14.x builds are based on Android 11 (R), these builds are still under
-                                development and aren't recommended for daily use.</p>
+                            <div class="tab-pane fade show active" id="bliss14" role="tabpanel" aria-labelledby="bliss14-tab">
+                                <p>Bliss OS 14.x builds are based on Android 11, these builds are still under development and aren't recommended for daily use.</p>
                                 <div class="table-reponsive w-75 mx-auto">
                                     <table class="table">
                                         <thead class="thead-dark">
                                             <tr>
                                                 <th scope="col">Standard Version (for older CPUs and/or GPUs)</th>
-                                                <th scope="col">Features</th>
                                                 <th scope="col">Download</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td> Bliss OS 14.3 GMS with Gearlock (x86_64)<a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/Changelog-BlissOS-14.3-x86_64-202106181339.txt/download" target="_blank" class="small"> Changelog </a></td>
-                                                <td><i class="text-success">#Kernel5.4</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#GApps</i> <i class="text-primary">#Gearlock</i> </td>
+                                                <td> Bliss OS 14.10.x (x86_64) <a href="https://sourceforge.net/projects/blissos-dev/files/Beta/" target="_blank" class="small"> Changelog </a></td>
+                                               
                                                 <td> <a class="btn btn-primary" data-toggle="modal" id="3" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge</a> </td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table class="table">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th scope="col">Advanced Hardware Support (for newer CPUs and/or GPUs)</th>
-                                                <th scope="col">Features</th>
-                                                <th scope="col">Download</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td> Bliss OS 14.3 GMS Experimental (x86_64)<a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/Changelog-BlissOS-14.3-x86_64-202106261907.txt/download" target="_blank" class="small"> Changelog </a></td>
-                                                <td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa21 </i> <i class="text-secondary">#GApps</i> </td>
-                                                <td> <a class="btn btn-primary" data-toggle="modal" id="5" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
-                                            </tr>
-                                        </tbody>
-                                        <tbody>
-                                            <tr>
-                                                <td> Bliss OS 14.3 FOSS (x86) <a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/Changelog-BlissOS-14.3-x86-202107202034.txt/download" target="_blank" class="small"> Changelog </a> </td>
-                                                <td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#FOSS</i> </td>
-                                                <td> <a class="btn btn-primary" data-toggle="modal" id="4" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
-                                            </tr>
-                                        </tbody>
-                                        <tbody>
-                                            <tr>
-                                                <td> Bliss OS 14.3 FOSS (x86_64) <a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/Changelog-BlissOS-14.3-x86_64-202107161936.txt/download" target="_blank" class="small"> Changelog </a> </td>
-                                                <td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#FOSS</i> </td>
-                                                <td> <a class="btn btn-primary" data-toggle="modal" id="8" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    
                                 </div>
                             </div>
                             <!-- Bliss OS 15 Downloads -->
                             <div class="tab-pane fade" id="bliss15" role="tabpanel" aria-labelledby="bliss15-tab"  >
-                                <h3>Bliss OS 15.x builds are based on Android 12 (S)</h3><br><h4>These builds are in
-				early alpha and not recommended for ANYBODY except testers and developers.</h4>
-								<p>We are asking those that would like to test to
-								understand how to produce logs using
-								<a href="https://developer.android.com/studio/command-line/logcat" target="_blank"> logcat</a> before downloading, so we came up with a way to educate the user/confirm command line familiarity before download.<br>
-								Please use "ls", "cd" and other commands to locate the external storage (Where the Documents, DCIM, and Download folders are) and save a "<b>logcat.txt</b>" file in the root directory there.<br><br>
-								</p>
-								<div class="alert alert-danger my-5" role="alert">
-									<button type="button" class="close" data-dismiss="alert">×</button>
-									<h4 class="alert-heading">WARNING</h4>
-									<p><b>** These alpha builds come with Kernel-SU (root access) by default. Please be aware how easy it will be to cause harm to the OS **</b></p>
-								</div>
-                                <!-- partial:index.partial.html -->
-                                <div class="console_container">
-                                    <div class="console_header text-center">
-                                        <p style="color: #222;"> Download Terminal (needs js enabled)</p>
-                                    </div>
-                                    <div class="console_panel mb-5 text-center" id="console_panel">
-                                        <div class="console_action">
-                                            <span class="symbol output">*** Bliss OS v15 Alpha *** <br><br> In order to download, you must prove you can create  <br>a logcat.txt in the root of your external storage <br><br>You have already entered root console "$ su" <br><br>Commands: ls, cd, mkdir, echo, touch, rm, cat, pwd, help, logcat <br><br>  </span>
-                                            <div class="console_command">
-                                                <span class="symbol" style="text-align: left;" >#</span>
-                                                <input class="in" type="text" placeholder="type here to start" autofocus="" />
-                                            </div>
-                                            <div class="console_output " ></div>
-                                        </div>
-                                    </div>
-                                </div>
-								<!-- <script src="js/terminal_script.js"></script> -->
-                                <!-- partial -->
-                            </div>
-                            <!-- Android-Generic Downloads -->
-                            <div class="tab-pane fade" id="ag11" role="tabpanel" aria-labelledby="ag11-tab">
-                                <p>Android-Generic builds are based on Android 11 (R), these builds are still under
-                                development
-                                and we don't
-                                recommend it for new users. </p>
-                                <div class="table-reponsive w-75 mx-auto">
+                                <p>Bliss OS 15.x builds are based on Android 12L, These builds are in early Beta versions and not recommended for ANYBODY except testers and developers.</p>
+								
+								<div class="table-reponsive w-75 mx-auto">
                                     <table class="table">
                                         <thead class="thead-dark">
                                             <tr>
-                                                <th scope="col">Experimental builds</th>
-                                                <th scope="col">Features</th>
+                                                <th scope="col">Standard Version (for older CPUs and/or GPUs)</th>
                                                 <th scope="col">Download</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td> Android-Generic 11 AOSP (x86_64)<a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/11/Changelog-AG-11--x86_64-202106131243.txt/download" target="_blank" class="small"> Changelog </a></td>
-                                                <td><i class="text-success">#Kernel5.4</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#AOSP</i> </td>
-                                                <td> <a class="btn btn-primary" data-toggle="modal" id="6" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
-                                            </tr>
-                                        </tbody>
-                                        <tbody>
-                                            <tr>
-                                                <td> Android-Generic 11 FOSS (x86_64)<a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/11/Changelog-ax86-11-android_x86_64-202105101056.txt/download" target="_blank" class="small"> Changelog </a></td>
-                                                <td><i class="text-success">#Kernel5.4</i> <i class="text-danger"> #Mesa20.1 </i> <i class="text-secondary">#FOSS</i> </td>
-                                                <td> <a class="btn btn-primary" data-toggle="modal" id="7" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>
+                                                <td> Bliss OS 15.8.x (x86_64) <a href="https://sourceforge.net/projects/blissos-dev/files/Beta/" target="_blank" class="small"> Changelog </a></td>
+                                               
+                                                <td> <a class="btn btn-primary" data-toggle="modal" id="3" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge</a> </td>
                                             </tr>
                                         </tbody>
                                     </table>
+                                    
                                 </div>
+
                             </div>
+                            <!-- Android-Generic Downloads -->
+                           
+
+
                         </div>
                     </div>
                 </div>
@@ -1151,18 +1035,10 @@
 		<!-- Script for downloading Bliss OS files -->
 		<script>
 			const mapedDownloadablelinks = {
-				0: "https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.13/Bliss-v11.13--OFFICIAL-20201113-1525_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.0-llvm90_dgc-t3_gms_intelhd.iso/download",
-				1: "https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210508-1013_x86_64_k-k4.19.122-ax86-ga-rmi_m-20.1.10_pie-x86_dgc-p9.0-11.13_ld-p9.0-x86_dg-_dh-blueprint_pie-x86_w45_2020_mg-p9.0-x86.iso/download",
-				2: "https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/11.14/Bliss-v11.14--OFFICIAL-20210507-2246_x86_64_k-google-5.10.32-lts-pledge-xanmod_m-20.1.10_pie-x86_dgc-p9.0-11.13_ld-p9.0-x86_dg-_dh-blueprint_pie-x86_w45_2020_mg-p9.0-x86.iso/download",
-				3: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/BlissOS-14.3-x86_64-202106181339_k-google-5.4.112-lts-ax86_m-r_emugapps_cros-hd_gearlock.iso/download",
-				4: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/BlissOS-14.3-x86-202107202034_k-android12-5.10.50-ax86_m-21.1.3_r-x86_foss_cros-hd.iso/download",
-				5: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/gapps/BlissOS-14.3-x86_64-202106261907_k-android12-5.10.46-ax86_m-21.1.3_r-x86_emugapps_cros-hd.iso/download",
-				6: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/stock/11/AG-11--x86_64-202106131243_k-kernel-5.4_m-x86.iso/download",
-				7: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/foss/11/ax86-11-android_x86_64-202105101056_k-5.4.112-android_m-21.1.0-devel_w13_foss_magisk.iso/download",
-				8: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/R/foss/BlissOS-14.3-x86_64-202107242243_k-android12-5.10.50-ax86_m-21.1.3_r-x86_foss_cros-hd.iso/download",
-				9: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/S/foss/alpha/Bliss-v15.0-Alpha-android_x86_64-OFFICIAL-foss-202112151838-nb-sd-ksu-gearlock-ex_vt-console_all-mesa-drivers-crocus.iso/download",
-				10: "https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/gapps/12L/android_x86_64-a12.1_r1-03.16.22-01-mesa22-ksu-gapps-libndk-sd.iso/download"
-			}
+				0: "https://sourceforge.net/projects/blissos-dev/files/Beta/",
+				1: "https://sourceforge.net/projects/blissos-dev/files/Beta/",
+				2: "https://sourceforge.net/projects/blissos-dev/files/Beta/",
+				}
 
 			// time is in mili sec 1000 * 5 = 5000 mili sec  = 5 sec;
 			let popuptimer = 1000 * 3;
@@ -1174,519 +1050,7 @@
 				}, popuptimer)
 
 			}
-			
-			var used_to = false;
-			var download = false;
 
-			$(".console_panel").on('keypress', ".in", function(e) {
-				if (e.which == 13) {
-					$(this).prop('readonly', true);
-					var format = /[>]+/;
-					
-					var raw_input = $(this).val()
-					if(format.test(raw_input)){
-						used_to = true
-						newStr = raw_input.replace(/ >/g, '');
-						var input = newStr.split(" ");
-						console.log('Original String: ', raw_input);
-						console.log('After character removed: ', newStr);
-						console.log('input command: ', input);
-						
-					} else {
-						used_to = false
-						var input = $(this).val().split(" ");
-					}
-					
-					if (input[1]) {
-						var output = execute(input[0], input[1]);
-					} else {
-						var output = execute(input[0], "");
-					}
-					$(".console_output").last().html(output)
-					$(".console_panel").append($("<div class='console_action'>").html("<div class='console_action'><div class='console_command'><span class='symbol'>#</span><input class='in' type='text'></div><div class='console_output'></div></div>"));
-					$(".in").last().focus();
-				}
-			});
-
-
-			function execute(command, parameters) {
-				console.log(command, parameters);
-				if (window[command]) {
-					return window[command](parameters);
-				} else {
-					return "bash: " + command + " : command not found";
-				}
-			}
-
-			files = {
-				"root": {
-					"acct": {
-						"uid": {
-							
-						}
-					},
-					"apex": {
-						
-					},
-					"bin": {
-						"ls": "This is a command, please type it to run ",
-						"cd": "This is a command, please type it to run ",
-						"mkdir": "This is a command, please type it to run ",
-						"echo": "This is a command, please type it to run ", 
-						"touch": "This is a command, please type it to run ", 
-						"rm": "This is a command, please type it to run ", 
-						"cat": "This is a command, please type it to run ", 
-						"pwd": "This is a command, please type it to run ", 
-						"help": "This is a command, please type it to run ", 
-						"logcat": "This is a command, please type it to run "
-					},
-					"cache": {
-						"backup": {
-							
-						},
-						"backup_stage": {
-							
-						},
-						"lost+found": {
-							
-						},
-						"recovery": {
-							
-						},
-					},
-					"config": {
-						
-					},
-					"d": {
-						
-					},
-					"data": {
-						"adb": {},			
-						"anr": {},
-						"apex": {},
-						"app-sec": {},
-						"app-ephemeral": {},
-						"app-lib": {},
-						"app-ptivate": {},
-						"app-ataging": {},
-						"backup": {},
-						"bootchart": {},
-						"cache": {},
-						"dalvik-cache": {},
-						"data": {},
-						"drm": {},
-						"fonts": {},
-						"ghome": {},
-						"gsi": {},
-						"gsi_persistent_data": {},
-						"gyro-conf": {},
-						"incremental": {},
-						"local": {},
-						"media": {},
-						"mediadrm": {},
-						"misc": {},
-						"nfc": {},
-						"ota": {},
-						"ota_package": {},
-						"preloads": {},
-						"property": {},
-						"resource-cache": {},
-						"rollbabk": {},
-						"ss": {},
-						"ssh": {},
-						"system": {},
-						"tombstones": {},			
-						"user": {},
-						"vendor": {},
-					},
-					"data_mirror": {
-						"cur_profiles": {
-							
-						},
-						"data_ce": {
-							
-						},
-						"data_de": {
-							
-						},
-						"ref_profiles": {
-							
-						},
-					},
-					"dev": {
-						
-					},
-					"etc": {
-						
-					},
-					"gearlock": {
-						"bin": {},
-						"core": {},
-						"etc": {},
-						"gearroot": {},
-						"lib": {},
-						"libexec": {},
-						"share": {},
-						"tmp": {},
-						"usr": {},
-					},
-					"init": "Binary File",
-					"init.android_x86_64.rc": "Too Large to Preview",
-					"init.environ.rc": "Too Large to Preview",
-					"lib": {
-						
-					},
-					"linkerconfig": {
-						
-					},
-					"lost+found": {
-						
-					},
-					"mnt": {
-						"androidwritable": {
-							"0":{
-								"Alarms": {},
-								"Android": {},
-								"AppProjects": {},
-								"Audiobooks": {},
-								"DCIM": {},
-								"Documents": {},
-								"Download": {},
-								"Movies": {},
-								"Music": {},
-								"Notifications": {},
-								"Podcasts": {},
-								"Recordings": {},
-								"Ringtones": {},
-							}
-						},
-						"appfuse": {
-							
-						},
-						"asec": {
-							
-						},
-						"expand": {
-							
-						},
-						"gearload": {
-							
-						},
-						"installer": {
-							
-						},
-						"media_rw": {
-							"F7D3LCK2JDS5OI": {}
-							
-						},
-						"obb": {
-							
-						},
-						"pass_through": {
-							"emulated": {
-								"0": {
-									"Alarms": {},
-									"Android": {},
-									"AppProjects": {},
-									"Audiobooks": {},
-									"DCIM": {},
-									"Documents": {},
-									"Download": {},
-									"Movies": {},
-									"Music": {},
-									"Notifications": {},
-									"Podcasts": {},
-									"Recordings": {},
-									"Ringtones": {},						
-								}
-							},
-							"self": {
-								
-							}
-						},
-					},
-					
-					"fstab.android_x86_64": "none			/cache		tmpfs	nosuid,nodev,noatime	defaults" + 
-							"/devices/*/block/sr*		auto	auto	defaults		voldmanaged=cdrom:auto " + 
-							"/devices/*/usb*/*		auto	auto	defaults		voldmanaged=usb:auto,encryptable=userdata" + 
-							"/devices/*/mmc0:a*/*		auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata" + 
-							"/devices/*/*sdmmc*/*		auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata" + 
-							"/devices/*/80860F14:01/mmc_*	auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata" + 
-							"/devices/*/80860F14:02/mmc_*	auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata" + 
-							"/devices/*/80860F16:00/mmc_*	auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata" + 
-							"/devices/*/PNP0FFF:00/mmc_*	auto	auto	defaults		voldmanaged=sdcard1:auto,encryptable=userdata",
-					
-					"obm": {
-						
-					},
-					"oem": {
-						
-					},
-					"postinstall": {
-						
-					},
-					"proc": {
-						
-					},
-					"product": {
-						
-					},
-					"sdcard": {
-						"Alarms": {},
-						"Android": {},
-						"AppProjects": {},
-						"Audiobooks": {},
-						"DCIM": {},
-						"Documents": {},
-						"Download": {},
-						"Movies": {},
-						"Music": {},
-						"Notifications": {},
-						"Podcasts": {},
-						"Recordings": {},
-						"Ringtones": {},			
-					},
-					"second_stage_resources": {
-						
-					},
-					"sepolicy": {
-						
-					},
-					"storage": {
-						"emulated": {
-							"0": {
-								"Alarms": {},
-								"Android": {},
-								"AppProjects": {},
-								"Audiobooks": {},
-								"DCIM": {},
-								"Documents": {},
-								"Download": {},
-								"Movies": {},
-								"Music": {},
-								"Notifications": {},
-								"Podcasts": {},
-								"Recordings": {},
-								"Ringtones": {},						
-							}
-						},
-						"self": {
-							
-						}
-					},
-					"sys": {
-						
-					},
-					"system": {
-						"addon.d": {},
-						"apex": {},
-						"app": {},
-						"bin": {},
-						"build.prop": "",
-						"etc": {},
-						"fonts": {},
-						"framework": {},
-						"lib": {},
-						"media": {},
-						"overlay": {},
-						"priv-app": {},
-						"product": {},
-						"system_ext": {},
-						"usr": {},
-						"vendor": {},
-						"xbin": {},
-					},
-					"system_ext": {
-						
-					},
-					"vendor": {
-						
-					},
-				}
-			}
-
-
-			var upperFolder = null;
-			var currentFolder = files["root"];
-			var path = [];
-
-			function ls() {
-				var keys = [];
-				for (var key in currentFolder) {
-					if (currentFolder.hasOwnProperty(key)) { //to be safe
-						keys.push(key);
-					}
-				}
-				return keys.join(" ");
-			}
-
-			function cat(filename) {
-				if (filename == "") {
-					return "usage: cat file ...";
-				}
-				if (typeof currentFolder[filename] == "object") {
-					return "cat: " + filename + " : Is a directory"
-
-				}
-				if (currentFolder[filename] == "") {
-					return "";
-				}
-				if (currentFolder[filename]) {
-					return currentFolder[filename];
-				} else {
-					return "cat: " + filename + " : No such file or directory"
-				}
-			}
-
-			function cd(folder) {
-				if (folder == "") {
-					return "";
-				}
-				if (folder == "..") {
-					if (path.length > 0) {
-						currentFolder = upperFolder;
-						upperFolder = files["root"];
-						path.push(folder);
-						return;
-					}
-				} else if (typeof currentFolder[folder] == "object") {
-					upperFolder = currentFolder;
-					currentFolder = currentFolder[folder];
-					path.push(folder);
-				} else if (folder == "/") {
-					currentFolder = files["root"];
-					path.pop();
-				} else {
-					return "bash: cd: " + folder + ": No such file or directory";
-				}
-			}
-
-			function logcat(destination) {
-				
-				var str = new String("...");
-				var blink_speed = 1000; // every 1000 == 1 second, adjust to suit
-				var t = setInterval(function () {
-					var ele = document.getElementById('myBlinkingDiv');
-					ele.style.visibility = (ele.style.visibility == 'hidden' ? '' : 'hidden');
-					}, blink_speed);
-				if (destination == "") {
-					return "usage: logcat > foldername/filename ..." + destination;
-				}
-				if (used_to == true) {		
-					console.log('used_to: ', used_to);
-					if (destination == "sdcard/logcat.txt") {
-						download = true;
-					} else if (destination == "mnt/androidwritable/0/logcat.txt") {
-						download = true;
-					} else if (destination == "mnt/pass_through/emulated/0/logcat.txt") {
-						download = true;	
-					} else if (destination == "storage/emulated/0/logcat.txt") {
-						download = true;	
-					} else if (destination == "/sdcard/logcat.txt") {
-						download = true;	
-					} else if (destination == "/storage/emulated/0/logcat.txt") {
-						download = true;
-					} else if (destination == "/mnt/androidwritable/0/logcat.txt") {
-						download = true;
-					} else if (destination == "/mnt/pass_through/emulated/0/logcat.txt") {
-						download = true;
-					} else if (upperFolder == "emulated" && currentFolder == "0" && destination == "logcat.txt") {
-						download = true;
-					} else if (upperFolder == "androidwritable" && currentFolder == "0" && destination == "logcat.txt") {
-						download = true;
-					} else if (destination == "logcat.txt") {
-						download = true;	
-					} else {
-						return "usage: logcat > foldername/filename ..." + destination;
-						print(upperFolder);
-						print(currentFolder);
-					}
-					if (download == true) {
-						var newContent = ''; // Variable to hold HTML
-						console.log('download: ', download);
-						// newContent += '<li class="cards__item">';
-						newContent += '<div class="card blur badge-dark">';
-						newContent += '<div class="card__content">';
-						newContent += '<div class="card__title" style="color: #fff; padding-top: 1.7rem; padding-left: 1rem; padding-right: 1rem;"></div?';
-						newContent += '<h3><b style="color: #fff; font-size: xx-large;"> Bliss OS v15 and Android-x86 12 for PC Alpha</b></h3>';
-						newContent += '<p class="card__text" style="color: #fff;">The initial alpha releases of our Android 12 builds for PC hardware</p>';
-						// newContent += '<a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/S/foss/" target="_blank"><i class="fab fa p-2 fa-globe" style="font-size: 300%;"></i>DOWNLOAD</a>';
-						newContent += '</div>';
-						newContent += '</div>';
-						// newContent += '</li>';
-						newContent += '<tbody>';
-						newContent += '	<tr>';
-						newContent += '	<tc>';
-						newContent += '		<td>Bliss OS v15 Alpha FOSS <a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/bliss/S/foss/alpha/Changelog-Bliss-v15.0-Alpha-android_x86_64-OFFICIAL-foss-202112151838.txt/download" target="_blank" class="small"> Changelog </a> </td>';
-						newContent += '	</tc>';
-						newContent += '	<tc>';
-						newContent += '		<td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa22.0 </i> <i class="text-secondary">#FOSS</i> </td>';
-						newContent += '	</tc>';
-						newContent += '	<tc>';
-						newContent += '		<td> <a class="btn btn-primary" data-toggle="modal" id="9" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>';
-						newContent += '	</tc>';
-						newContent += '	</tr>';
-						newContent += '	<tr>';
-						newContent += '	<tc>';
-						newContent += '		<td>Android-x86 12L (12.1.0_r1) Beta (GAPPS/libndk) <a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/gapps/12L/README.md/download" target="_blank" class="small"> Release Info </a> </td>';
-						newContent += '	</tc>';
-						newContent += '	<tc>';
-						newContent += '		<td><i class="text-success">#Kernel5.10</i> <i class="text-danger"> #Mesa22.0 </i> <i class="text-secondary">#GAPPS</i> </td>';
-						newContent += '	</tc>';
-						newContent += '	<tc>';
-						newContent += '		<td> <a class="btn btn-primary" data-toggle="modal" id="10" onclick="myFunction(event)" data-target="#exampleModalCenter"> <i class="fas fa-cloud-download-alt"></i> SourceForge </a> </td>';
-						newContent += '	</tc>';
-						newContent += '	</tr>';
-						newContent += '</tbody>';
-						// Update the page with the new content
-						
-						// return ( '<div id="myBlinkingDiv">...<br><br> Good Job! Loading the download link</div>') 
-						return document.getElementById('console_panel').innerHTML = newContent;
-					}
-				} else {
-					console.log('download: ', download);
-					console.log('used_to: ', used_to);
-					console.log('destination: ', destination);
-				}
-				
-			}
-
-			function mkdir(folderName) {
-				if (folderName != "") {
-					currentFolder[folderName] = {};
-					return "";
-				} else {
-					return "usage: mkdir directory ...";
-				}
-			}
-
-			function touch(fileName) {
-				currentFolder[fileName] = "";
-			}
-
-			function echo(string) {
-				return string;
-			}
-
-			function rm(name) {
-				delete currentFolder[name]
-			}
-
-			function help() {
-				return "Commands: ls, cd, mkdir, echo, touch, rm, cat, pwd, help, logcat";
-			}
-
-			function pwd() {
-				if (path.length == 0) {
-					return "/"
-				}
-				return "/" + path.join("/")
-			}
-
-
-			$('.console_panel').stop().animate({
-				scrollTop: $(".console_panel")[0].scrollHeight
-			}, 800);
 
 		</script>
 	</body>
