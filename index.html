@@ -124,27 +124,23 @@
             </div>
         </section>
         <!-- Features -->
-        <section class="my-5" id="features">
+        <section class="my-5 pb-5" id="features">
             <div class="container">
                 <div class="text-center mb-5">
                     <h1>Bliss OS Features</h1>
                 </div>
                 <div class="row">
-                    <div class="col-sm text-center">
+                    <div class="col-sm text-center my-3">
                         <h4 class="text-primary">Focus on design</h4>
-                        <p class="mb-4">We include many extra options for
-                            customization and theming throughout the OS</p>
-                        <h4 class="text-primary">Customized settings</h4>
+                        <p class="mb-4">We have a minimal theme design, without any bloatware or unwanted adware apps</p>
+                        <h4 class="text-primary pt-4">Customized settings</h4>
                         <p class="mb-4">We offer many customizable options for
                             screens, big and small, that allow
                             you to setup your device for whatever task is at
                             hand</p>
-                        <h4 class="text-primary">Performance</h4>
-                        <p class="mb-4">We built the OS with a focus on speed
-                            and stability with tweaks to assist in the
-                            most demanding use cases</p>
+                        
                     </div>
-                    <div class="col-sm">
+                    <div class="col-sm text-center">
                         <img class="img-fluid" src="images/thinkpad1.png">
                         <img class="img-fluid mt-4" style="
                             border: 10px solid transparent;
@@ -155,17 +151,12 @@
                             transform: skew(-8deg, 0deg) rotate(6deg);"
                             src="images/bliss14_menu_s.jpg">
                     </div>
-                    <div class="col-sm text-center">
-                        <h4 class="text-primary">Battery-friendly</h4>
-                        <p class="mb-4">Extra options are provided to let you
-                            tune battery usage to your perfect blend
-                            of performance and power</p>
-                        <h4 class="text-primary">Added Security</h4>
-                        <p class="mb-4">Additional security options and features
-                            are included in Bliss, and AOSP
-                            security updates are merged regularly to ensure
-                            safety and stability of your device</p>
-                        <h4 class="text-primary">Compatibility</h4>
+                    <div class="col-sm text-center mt-3">
+                        <h4 class="text-primary">Performance</h4>
+                        <p class="mb-4">We built the OS with a focus on speed
+                            and stability with tweaks to assist in the
+                            most demanding use cases</p>
+                        <h4 class="text-primary pt-3">Compatibility</h4>
                         <p class="mb-4">We bring Bliss to every device we can,
                             and our PC builds even include extra
                             ARM/ARM64 compatibility so you can use your favorite
@@ -234,17 +225,16 @@
                             (start menu)</p>
                     </div>
                     <div class="col-sm">
-                        <h5>BoringdroidSystemUI, by @Utzcoz</h5>
-                        <p class="small">An integrated desktop launcher with
-                            tasks, built into the navigation bar
-                            (Coming
-                            Soon)</p>
+                        <h5>Smart Dock by @axel358</h5>
+                        <p class="small">An Open Source Desktop Launcher that is inspired from the ChromeOS taskbar</p>
                     </div>
                     <div class="col-sm">
-                        <h5>AOSP based Launcher</h5>
-                        <p class="small">An Open Source launcher that is more
-                            geared towards a tablet interface. Based
-                            off AOSP Launcher 3</p>
+                        <h5>BoringDroid by @utzcoz</h5>
+                        <p class="small">An integrated desktop launcher with tasks, built into the navigation bar (Experimental, only on 14.10)</p>
+                    </div>
+                    <div class="col-sm">
+                        <h5>AOSP's Quickstep</h5>
+                        <p class="small">The classic Launcher3 from AOSP with some minor tweak</p>
                     </div>
                 </div>
             </div>
@@ -252,8 +242,8 @@
         <!-- More Compatibility -->
         <section class="py-5 bg-secondary">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm">
+                <div class="row" style="align-items: center;" >
+                    <div class="col-md-6">
                         <img class="img-fluid" style="
                             border: 1rem solid transparent;
                             border-radius: 1rem;
@@ -262,25 +252,41 @@
                             #292929) border-box;"
                             src="images/bliss15_multi.jpg">
                     </div>
-                    <div class="col-sm p-4">
+                    <div class="col-md-6 p-4">
                         <h2>More Compatibility</h2>
-                        <p>Bliss OS comes with a variety of added features for
-                            compatibility, be it ARM/ARM64 app
-                            support on your PC, letting you use the games & apps
-                            you know and love, or support for Widewine
-                            L3 DRM to play protected content, such as Netflix &
-                            Amazon Prime videos. We've even added
-                            configurations for gamepads, and profiles for
-                            Tincore KeyMapper, allowing you to game like
-                            never before</p>
-                        <a class="btn btn-primary mb-3" href="#download">Go to
-                            Downloads</a>
+                        <p>
+                            Bliss OS comes with a variety of added features for compatibility, be it ARM/ARM64 app support on your PC, letting you use the games & apps you know and love or VA-API hardware accelerated video decoding to watch your favorite streaming platform. Also, with the latest XtMapper keymapper, you will be able to control your apps using a keyboard & mouse with ease.
+                           <small> <br> (Keymapper is still in the alpha stage, not every app is supported.)</small>
+                        </p>
                     </div>
                 </div>
+                
             </div>
         </section>
+
+        <section class="py-4" style="background: rgb(0 86 157);">
+            <div class="container">
+                <div class="row my-4" style="align-items: center;" >
+                    <div class="col-md-6 text-right">
+                            <h2 class="h2"><a class="text-light" href="https://kernelsu.org/">Pre-rooted with KernelSU </a></h2>
+                        <p>
+                            BlissOS is the first Android-x86 derivative that included <a class="text-light" href="https://github.com/tiann">weishu's </a>
+                            KernelSU inside our kernel. With KernelSU, you can easily grant root permission for apps and even install Magisk modules without having to install Magisk. <small><br>(KernelSU is still in the beta stage, and modules support is still experimental) </small>
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 p-4">
+                        <img class="w-50 shadow-lg" src="images/kernsu.png" alt="kernelsu">
+                    </div>
+                        
+                    
+                </div>
+            </div>
+
+
+        </section>
         <!-- Visit Social Communites -->
-        <section class="py-4 community_banner" style="background: #037; ">
+        <section class="py-4 community_banner" style="background: #037;">
             <div class="container">
                 <div class="row">
                     <div class="my-3 col-sm col-md-7">
@@ -459,10 +465,6 @@
                         <p>These are generic builds based on Android 12L and
                             BlissROMs sources. These builds are considered
                             experimental.</p>
-                        <a class="btn btn-secondary mb-3" target="blank"
-                            href="https://android-generic.github.io">Learn
-                            More
-                            About Android-Generic</a>
                         <a class="btn btn-secondary mb-3" target="blank"
                             href="https://forum.xda-developers.com/t/bliss-os-x86-for-pcs-12-x-14-x-development-beta-builds.4004419/">XDA
                             thread</a>
@@ -687,55 +689,11 @@
                             aria-labelledby="headingfive"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                Intel:
-                                <br>
-                                <br>
-                                <ul>
-                                    <li>Intel i Series (i3/5/7/9) - Fully
-                                        Supported
-                                        <br>
-                                    </li>
-                                    <li>Intel Celeron M - Fully Supported
-                                        (Kernel 5.4+ recommended)
-                                        <br>
-                                    </li>
-                                    <li>Intel Atom - Mostly Supported
-                                        (Kernel
-                                        5.10+ recommended)
-                                        <br>
-                                    </li>
-                                    <li>Core2Duo - Not Fully Supported
-                                        (Needs
-                                        x86-64-v2) (May require 32bit
-                                        builds)
-                                        <br>
-                                    </li>
-                                </ul>
-                                <br>
-                                AMD:
-                                <br>
-                                <br>
-                                <ul>
-                                    <li>A Series - Mostly Supported (Needs
-                                        x86-64-v2) (Kernel 5.10+
-                                        recommended)
-                                        <br>
-                                    </li>
-                                    <li>Ryzen Series (1k-7k) - Fully
-                                        Supported
-                                        (Kernel 5.15+ recommended)
-                                        <br>
-                                    </li>
-                                    <li>Athlon Series - Mostly Supported
-                                        (Needs
-                                        x86-64-v2) (Kernel 5.10+
-                                        recommended)
-                                        <br>
-                                    </li>
-                                </ul>
+                                x86_64-v2 compatible CPU <br>
+                                You can find more info on Bliss OS Knowledge Base or <a href="https://en.wikipedia.org/wiki/X86-64#Microarchitecture_levels"> Wikipedia</a> & <a href="https://developer.android.com/ndk/guides/abis">
+                                Android Developers Documentation.</a><br>
                                 Find more info on
-                                <a
-                                    href="https://knowledgebase.blissos.org/frequently-asked-questions/hardware-compatibility"
+                                <a href="https://knowledgebase.blissos.org/frequently-asked-questions/hardware-compatibility"
                                     target="_blank">Bliss OS Knowledge Base</a>
                             </div>
                         </div>
