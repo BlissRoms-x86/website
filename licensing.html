@@ -1,759 +1,449 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- PAGE settings -->
-    <link rel="icon" href="favicon.ico" />
-    <title>Bliss OS</title>
-    <meta name="description" content="Open Source OS for PC's, based on AOSP" />
-    <meta
-      name="keywords"
-      content="blissroms, bliss, os, x86, aosp, android, rom, teambliss"
-    />
-    <!-- CSS dependencies -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="neon.css" />
-    <link rel="stylesheet" href="css/animations.css" />
-    <link rel="stylesheet" href="css/buttonstyle.css" />
-    <link rel="stylesheet" href="css/table.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://kit.fontawesome.com/7b4ed0a31a.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=VT323"
-      rel="stylesheet"
-      type="text/css"
-    />
 
-    <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-    <script src="js/navbar-ontop.js"></script>
-    <!-- Script: Animated entrance -->
-    <script src="js/animate-in.js"></script>
-    <link rel="stylesheet" href="css/chat.css" />
-    <!-- <script data-ad-client="ca-pub-7639560510014441" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="favicon.ico">
+  <title>Bliss OS</title>
+  <meta name="description" content="Open Source OS for PC's, based on AOSP">
+  <meta name="keywords" content="blissroms, bliss, os, x86, aosp, android, rom, teambliss">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="neon.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/buttonstyle.css">
+  <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/7b4ed0a31a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css">
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <script src="js/navbar-ontop.js"></script>
+  <!-- Script: Animated entrance -->
+  <script src="js/animate-in.js"></script>
+  <link rel="stylesheet" href="css/chat.css">
+  <!-- <script data-ad-client="ca-pub-7639560510014441" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+</head>
 
-  <body>
-    <!-- Navbar -->
-    <div class="container">
-      <nav class="navbar navbar-expand-lg fixed-top bg-primary navbar-dark">
-        <div class="container">
-          <a class="navbar-brand" style="text-align: center" href="index.html"
-            ><img
-              src="images/bliss_icon_light.png"
-              class="d-inline-block align-top"
-              style="width: 40%"
-              alt="logo"
-          /></a>
-          <a class="navbar-brand" href="index.html">
-            <span style="font-weight: 500">Bliss OS</span>
-          </a>
-          <button
-            class="navbar-toggler navbar-toggler-right"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbar2SupportedContent"
-            aria-controls="navbar2SupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse text-center justify-content-end"
-            id="navbar2SupportedContent"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="index.html#features">Features</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="index.html#team">Team</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="https://blisslabs.org" target="_blank"
-                  >Org</a
-                >
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="index.html#documentation">Docs</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a
-                  class="nav-link"
-                  target="_blank"
-                  href="https://blog.blissos.org"
-                  >Blog</a
-                >
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="licensing.html">Licensing</a>
-              </li>
-            </ul>
-            <a
-              class="btn navbar-btn mx-2 btn-secondary shadow"
-              href="index.html#download"
-              >Download</a
-            >
-          </div>
+<body>
+  <!-- Navbar -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" style="text-align: center" href="index.html"><img src="images/bliss_icon_light.png" class="d-inline-block align-top" style="width: 40%" alt="logo"></a>
+        <a class="navbar-brand" href="index.html">
+          <span style="font-weight: 500">Bliss OS</span>
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="index.html#features">Features</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="index.html#team">Team</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="https://blisslabs.org" target="_blank">Org</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="index.html#documentation">Docs</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" target="_blank" href="https://blog.blissos.org">Blog</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="licensing.html">Licensing</a>
+            </li>
+          </ul>
+          <a class="btn navbar-btn mx-2 btn-secondary shadow" href="index.html#download">Download</a>
         </div>
-      </nav>
-    </div>
-
-    <!-- Cover -->
-    <section class="section-fade-out-white pt-5 text-light main_background">
-      <div class="container py-5 mt-5" style="top: 15vh; position: relative">
-        <div class="row">
-          <div class="col-md-6">
-            <h2 class="mb-4 display-5">Licensing Information</h2>
-            <p>
-              Bliss OS brings the best of what Android has to offer to your
-              projects.
-            </p>
-            <p class="pb-3">
-              With a wide variety of compatibility for devices built in, we can
-              help to bring the experience your customers demand, and the
-              features they deserve.
-            </p>
-            <a
-              href="#oems"
-              class="btn btn-lg btn-primary"
-              contenteditable="true"
-              >Learn More</a
-            >
-          </div>
-          <div class="col-md-5 align-self-center">
-            <img
-              class="img-fluid mx-auto"
-              style="
+      </div>
+    </nav>
+  </div>
+  <!-- Cover -->
+  <section class="section-fade-out-white pt-5 text-light main_background">
+    <div class="container py-5 mt-5" style="top: 15vh; position: relative">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="mb-4 display-5">Licensing Information</h2>
+          <p> Bliss OS brings the best of what Android has to offer to your projects. </p>
+          <p class="pb-3"> With a wide variety of compatibility for devices built in, we can help to bring the experience your customers demand, and the features they deserve. </p>
+          <a href="#oems" class="btn btn-lg btn-primary" contenteditable="true">Learn More</a>
+        </div>
+        <div class="col-md-5 align-self-center">
+          <img class="img-fluid mx-auto" style="
                 border: 1rem solid transparent;
                 border-radius: 1rem;
                 box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
                 background: linear-gradient(to left, #191919, #292929)
                   border-box;
-              "
-              src="images/bliss15_about.jpg"
-            />
-          </div>
+              " src="images/bliss15_about.jpg">
         </div>
       </div>
-    </section>
-    <div class="py-5" style="" id="oems">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h4 class="display-5">Licensing &amp; FAQ</h4>
-            <p>
-              Bliss OS inherits the same Apache licensing that AOSP uses for
-              most of the components, while other components like
-              Android-Generic Project use GNU v2 and Boringdroid use Apache v2.
-              <br />
-              Proprietary components like Google Apps, Native-Bridge, and some
-              features would require additional licensing to be obtained by the
-              customer. <br />
-              Bliss OS does however offer development contracts in order to help
-              meet the specific needs of our customers. Please reach out to us
-              if you are in need of assistance at
-              <a
-                href="mailto:social@blissos.org,contact@blisslabs.org?subject=Bliss OS - Development Assistance"
-                >social@blissos.org</a
-              >
-            </p>
-            <br />
-            <p>Licenses</p>
-            <p>
-              -
-              <a
-                href="https://source.android.com/docs/setup/about/licenses"
-                target="_BLANK"
-                >AOSP Licenses</a
-              >
-              -
-              <a
-                href="https://github.com/BlissRoms-x86/manifest/blob/arcadia-x86/License"
-                target="_BLANK"
-                >Bliss OS License</a
-              >
-              -
-              <a
-                href="https://github.com/BlissRoms/platform_manifest/blob/typhoon/LICENSE"
-                target="_BLANK"
-                >Bliss ROM License</a
-              >
-              -
-              <a
-                href="https://github.com/android-generic/vendor_ag/blob/unified/LICENSE.md"
-                target="_BLANK"
-                >Android-Generic Project License</a
-              >
-              -
-              <a
-                href="https://github.com/boringdroid/boringdroid/blob/master/LICENSE"
-                target="_BLANK"
-                >Boringdroid License</a
-              >
-              -
-            </p>
-          </div>
+    </div>
+  </section>
+  <div class="py-5" style="" id="oems">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="display-3">Licensing &amp; FAQ</h3>
+          <p> Bliss OS inherits the same Apache v2 licensing that AOSP uses for most of the components, while many of the other components like Android-Generic Project use GPL-2.0 license. <br> Proprietary components like Google Apps, Native-Bridge, and some features would require additional licensing to be obtained by the customer.&nbsp;<br>&nbsp;<br>Bliss OS does however offer development contracts in order to help meet the specific needs of our customers. You can learn more about our contract development and consulting services by visiting the <a href="https://blisscolabs.dev" target="_BLANK">Bliss Co-Labs site</a></p>
+          <br>
+          <h3>Licenses</h3>
+          <p> - <a href="https://source.android.com/docs/setup/about/licenses" target="_BLANK">AOSP Licenses</a> - <a href="https://github.com/BlissRoms-x86/manifest/blob/arcadia-x86/License" target="_BLANK">Bliss OS License</a> - <a href="https://github.com/BlissRoms/platform_manifest/blob/typhoon/LICENSE" target="_BLANK">Bliss ROM License</a> - <a href="https://github.com/android-generic/vendor_ag/blob/unified/LICENSE.md" target="_BLANK">Android-Generic Project License</a> - <a href="https://github.com/boringdroid/boringdroid/blob/master/LICENSE" target="_BLANK">Boringdroid License</a> - </p>
         </div>
-        <div class="row">
-          <div class="col-md-6 p-3">
-            <h4>Q: Is Bliss OS suitable for individuals?</h4>
-            <p>
-              A: Yes, Bliss OS is designed to be used as a daily replacement for
-              Windows or Linux and work is consistently being done to improve
-              the User Experience.
-            </p>
-          </div>
-          <div class="col-md-6 p-3">
-            <h4>Q: Does Bliss OS include proprietary software?</h4>
-            <p>
-              A: Yes and No. Our main GMS/Gapps releases include proprietary
-              software, and are intended for individuals, while we also offer
-              bare-bones AOSP builds with no proprietary software included, and
-              FOSS builds, with only Native-Bridge included.
-            </p>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <h4>Q: Is Bliss OS suitable for individuals?</h4>
+          <p> A: Yes, Bliss OS public releases are designed to be used as a daily replacement for Windows, ChromeOS, Mac OS or Linux and work is consistently being done to improve the User Experience. </p>
         </div>
-        <div class="row">
-          <div class="col-md-6 p-3">
-            <h4>Q: Is Bliss OS suitable for companies?</h4>
-            <p>
-              A: Yes, but not all builds. We produce standard (bare-bones) AOSP
-              builds with basic x86/x86_64 PC hardware support, and no
-              proprietary software included, and those are available to test
-              with from our website. If your company requires Google Apps or
-              ARM/ARM64 Native-Bridge, please contact us to discuss licensing
-              options.
-            </p>
-          </div>
-          <div class="col-md-6 p-3">
-            <h4>Q: Can my company use Bliss OS as-is?</h4>
-            <p>
-              A: No. the public builds that we make available online are not fit
-              for corporate consumption or meant to be included in products.
-              Companies must contact us if they would like to use our projects
-              in their commercial purposes, and either form an agreement on a
-              development contract to tailor things to their needs, or sponsor
-              our project with the recommended $500/mo for company use.
-            </p>
-          </div>
+        <div class="col-md-6 p-3">
+          <h4>Q: Does Bliss OS include proprietary software?</h4>
+          <p> A: Yes. Our main GMS/Gapps releases include proprietary software, and are intended for individuals, while our FOSS builds also include some proprietary parts as well.&nbsp;<br><br>Proprietary parts in all Bliss OS public builds:<br>- linux-firmware blobs&nbsp;<br>- proprietary linux drivers (broadcom-wl for example)&nbsp;<br>- media codecs (H.264/HEVC)</p>
         </div>
-        <div class="row">
-          <div class="col-md-6 p-3">
-            <h4>Q: Can my company use the Bare-Bones AOSP builds as-is?</h4>
-            <p>
-              A: Yes, while those builds are very basic, they do include much of
-              what would be needed to base a product off of.
-              <b
-                >If you are a startup or a company making under $100,000.00 USD
-                annually, you are eligible to use these builds at no cost.</b
-              >
-              Otherwise, we recommend you contact us and setup a
-              <a
-                href="mailto:social@blissos.org,contact@blisslabs.org?subject=Development Contract Inquiry"
-                >development contract</a
-              >
-              for branding, optimizations and specific needs.
-            </p>
-          </div>
-          <div class="col-md-6 p-3">
-            <h4>
-              Q: Does my company have to release any changes made to the
-              collective source code of Bliss OS?
-            </h4>
-            <p>
-              A: This all depends on where the changes in the source were made,
-              as many repos in the project retain a different OSS Licenses,
-              there are different requirements per repo. If you are unsure if
-              your company needs to release the source for any of the changes
-              made, please feel free to contact us.
-            </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <h4>Q: Is Bliss OS suitable for companies?</h4>
+          <p> A: Yes, but not all builds. We produce standard (bare-bones) AOSP builds with basic x86/x86_64 PC hardware support, and no proprietary software included, and those are available to test with. If your company requires Google Apps, ARM/ARM64 Native-Bridge, or Widevine, please contact us to discuss licensing options. </p>
+        </div>
+        <div class="col-md-6 p-3">
+          <h4>Q: Can my company use Bliss OS or Bliss OS Go as-is?</h4>
+          <p> A: No. the public builds that we make available online are not fit for commercial use or meant to be included in products as they contain proprietary features and services that require per-product licensing through Google, Intel, us or others. Companies that would like to use Bliss OS or Bliss OS Go, with it's expanded hardware-support and features list, must contact us if they would like to use our projects for their commercial purposes, and form an agreement on a <a href="mailto:social@blissos.org,info@blisscolabs.dev?subject=Development Contract Inquiry">development contract</a> to tailor things to their needs, and/or work out a per-device licensing agreement for company use. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <h4>Q: Can my company use Android-PC or Bliss Bass (Bare-Bones AOSP) builds as-is?</h4>
+          <p style=""> A: Yes, but only the Vanilla versions. While those builds are very basic, they do include much of what would be needed to base a product off of. <b>If you are a startup or a company interested in this options, please contact us to see if you are eligible to use these builds at no cost.</b> Otherwise, we request you contact us to work out a per-device licensing agreement and setup a <a href="mailto:social@blissos.org,info@blisscolabs.dev?subject=Development Contract Inquiry">development contract</a> for branding, optimizations and specific needs.<br><br>You can find the AOSP base builds here: <a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/" target="_BLANK">Sourceforge</a></p>
+        </div>
+        <div class="col-md-6 p-3">
+          <h4> Q: Does my company have to release any changes made to the collective source code of Bliss OS? </h4>
+          <p> A: This all depends on where the changes in the source were made, as many repos in the project retain a different OSS Licenses, there are different requirements per repo. If you are unsure if your company needs to release the source for any of the changes made, please feel free to contact us.<br><br>Another thing to pay attention to is if the tools being used require the end product or alterations to be released. Some Apache 2.0 licensed projects allow for that requirement to be made. Some versions of Android-Generic Project also have similar licensing requirements.&nbsp;</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 p-3">
+          <h4>Per-Device License Pricing Scale (negotiable):</h4>
+          <div class="table-responsive">
+            <table class="table table-bordered ">
+              <thead class="thead-dark">
+                <tr>
+                  <th># Devices</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>5000 (or below) units license</th>
+                  <td>$17/unit</td>
+                </tr>
+                <tr>
+                  <th>10,000 units license</th>
+                  <td>$15/unit</td>
+                </tr>
+                <tr>
+                  <th scope="row">30,000 units license</th>
+                  <td>$13/unit</td>
+                </tr>
+                <tr>
+                  <th scope="row">50,000 units license</th>
+                  <td>$10/unit</td>
+                </tr>
+                <tr>
+                  <th scope="row">++50,000 units license</th>
+                  <td><a href="mailto:social@blissos.org,info@blisscolabs.dev?subject=Development Contract Inquiry">Contact Us</a></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
-
-    <section class="my-5" id="resources">
-      <div
-        class="container main_grid"
-        style="
+  </div>
+  <section class="my-5" id="resources">
+    <div class="container main_grid" style="
           display: grid;
           grid-template-columns: 1fr 2fr 3fr 2fr;
           grid-template-rows: 1fr;
           gap: 0px 0px;
           align-items: center;
-        "
-      >
-        <div class="">
-          <h4 class="display-5">Resources</h4>
-          <p>
-            We offer OEM toolkits, custom options for automatic installation, as
-            well as endless other customization options.
-          </p>
-        </div>
-        <div class="w-75">
-          <img
-            class="img-fluid position-relative"
-            style="
+        ">
+      <div class="">
+        <h4 class="display-5">Resources</h4>
+        <p> We offer OEM toolkits, custom options for automatic installation, as well as endless other customization options. </p>
+      </div>
+      <div class="w-75">
+        <img class="img-fluid position-relative" style="
               border: 1rem solid transparent;
               border-radius: 1rem;
               box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
               background: linear-gradient(to left, #191919, #292929) border-box;
               right: -70%;
               z-index: -1;
-            "
-            src="images/bliss15_multi_left.jpg"
-          />
-        </div>
-        <div class="">
-          <img
-            class="img-fluid position-relative"
-            style="
+            " src="images/bliss15_multi_left.jpg">
+      </div>
+      <div class="">
+        <img class="img-fluid position-relative" style="
               border: 1rem solid transparent;
               border-radius: 1rem;
               box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
               background: linear-gradient(to left, #191919, #292929) border-box;
               z-index: 1000;
-            "
-            src="images/bliss15_multi_menu.jpg"
-          />
-        </div>
-        <div class="w-75">
-          <img
-            class="img-fluid position-relative"
-            style="
+            " src="images/bliss15_multi_menu.jpg">
+      </div>
+      <div class="w-75">
+        <img class="img-fluid position-relative" style="
               border: 1rem solid transparent;
               border-radius: 1rem;
               box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
               background: linear-gradient(to left, #191919, #292929) border-box;
               right: 50%;
               z-index: -1;
-            "
-            src="images/bliss15_about.jpg"
-          />
+            " src="images/bliss15_about.jpg">
+      </div>
+    </div>
+  </section>
+  <div class="py-3" id="oems">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <h4>System Settings</h4>
+          <p> We are available for contract work to help you with any specific device tuning and development in order to achieve the targets you require. </p>
+        </div>
+        <div class="col-md-6 p-3">
+          <h4>OTA Updates &amp; LTS Contracts</h4>
+          <p> We offer OTA updates for a variety of hardware and offer Long Term Service contracts as well.&nbsp; </p>
         </div>
       </div>
-    </section>
-
-    <div class="py-3" id="oems">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 p-3">
-            <h4>System Settings</h4>
-            <p>
-              We are available for contract work to help you with any specific
-              device tuning and development in order to achieve the targets you
-              require.
-            </p>
-          </div>
-          <div class="col-md-6 p-3">
-            <h4>OTA Updates &amp; LTS Contracts</h4>
-            <p>
-              We offer OTA updates for a variety of hardware and offer Long Term
-              Service contracts as well.&nbsp;
-            </p>
-          </div>
+    </div>
+  </div>
+  <div class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="android-generic.github.io="><img class="w-75 rounded" src="images/ag_website.png"></a>
         </div>
+        <div class="col-md-6 p-4">
+          <h4>Advanced Prototyping Tools</h4>
+          <p> We develop a few different tools and one of them is Android Generic Project (AG), a rapid prototyping toolkit for Android on PC (x86) hardware. <br>
+            <b>AG uses GNU General Public License v2.0 </b>
+          </p>
+          <a class="btn btn-primary text-right" href="https://android-generic.github.io" target="_blank">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 class="display-3">Branding</h3>
+        <p> If you decide to include our work in your project or product, we would appreciate you including a link to <a href="https://blissos.org" target="_blank">BlissLabs</a> as well as the projects you used. We have included a branding guide below for your convenience if you also choose to represent our branding in your project. </p>
       </div>
     </div>
     <div class="py-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <a href="android-generic.github.io="
-              ><img class="w-75 rounded" src="images/ag_website.png"
-            /></a>
+          <div class="col-md-6 p-4">
+            <h4>Visual Branding Guide</h4>
+            <p> We offer a loose branding guide for our partners to follow. Feel free to contact us with any questions you may have </p>
+            <a class="btn btn-primary" href="images/Bliss_visual_system.pdf" target="_blank">Branding Guide</a>
           </div>
           <div class="col-md-6 p-4">
-            <h4>Advanced Prototyping Tools</h4>
-            <p>
-              We develop a few different tools and one of them is Android
-              Generic Project (AG), a rapid prototyping toolkit for Android on
-              PC (x86) hardware.
-              <br />
-              <b>AG uses GNU General Public License v2.0 </b>
-            </p>
-            <a
-              class="btn btn-primary text-right"
-              href="https://android-generic.github.io"
-              target="_blank"
-              >Learn More</a
-            >
+            <h4>Our Logos</h4>
+            <p> We have a few assets for our partners to use in their designs. Please see below for a few options and feel free to contact us for more if you are in need. </p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="container my-5">
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 p-3">
+            <img class="w-75" src="images/BlissIcon.png">
+          </div>
+          <div class="col-6 p-3">
+            <img class="w-75" src="images/Lotus_white.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Article style section -->
+    <!-- Features -->
+    <!-- Features -->
+    <!-- Carousel reviews -->
+    <!-- Call to action -->
+    <!-- START OF BLISSLABS -->
+    <div class="mt-5 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="mb-3 display-5"> Third-Party Repositories &amp; Packages </h4>
+            <p> We recommend all software included in Bliss OS releases be inspected and agreed upon through official involvement with <a target="_blank" href="https://blisslabs.org">BlissLabs</a> in order to ensure user privacy and security guidelnes. All third-party software must also agree to present source code for us to inspect as well. Failure to do this may void any support contracts or retail contracts.&nbsp; </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mt-5">
+    <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
-          <h4 class="display-5">Branding</h4>
-          <p>
-            If you decide to include our work in your project or product, we
-            would appreciate you including a link to
-            <a href="https://blissos.org" target="_blank">BlissLabs</a> as well
-            as the projects you used. We have included a branding guide below
-            for your convenience if you also choose to represent our branding in
-            your project.
-          </p>
+        <div class="mx-auto p-4 col-md-6">
+          <h2 class="mb-4">Get in touch</h2>
+          <p> We love to hear from potential partners and offer a way for you to talk directly with the team by emailing us Whether you’re an existing partner or want to explore offering BlissOS, we look forward to hearing from you. </p>
+          <!-- <p class="mb-0 lead" > <a href="mailto:contact@blisslogs.org">contact@blisslabs.org</a> </p> -->
+        </div>
+        <div class="mx-auto p-4 col-md-6">
+          <h2 class="mb-4">Send us a message</h2>
+          <form action="mailto:social@blissos.org, contact@blisslabs.org" method="post" enctype="text/plain">
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" placeholder="Name" style="opacity: 100%" required="required">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="mail" placeholder="Email" style="opacity: 100%" required="required">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="3" name="comment" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" value="Send"> Send </button>
+          </form>
         </div>
       </div>
-      <div class="py-3">
-        <div class="container">
+    </div>
+  </div>
+  <!-- END OF BLISSLABS -->
+  <!-- Footer -->
+  <div class="py-3 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-6 p-3">
+          <h5><b>Socials</b></h5>
+          <ul class="list-unstyled text-primary">
+            <li class="text-primary">
+              <a target="_blank" href="https://t.me/Team_Bliss_Community" class="text-info">BlissROMs Telegram</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://t.me/blissx86" class="text-info">Bliss OS Telegram</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.facebook.com/BlissFamilyOfROMs/" class="text-info">Bliss Facebook</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/Bliss_Roms" class="text-info">Bliss Twitter</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/blissos_org" class="text-info">Bliss OS Twitter</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/company/stayblissful" class="text-info">Bliss LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6 p-3">
+          <h5><b>Sources</b></h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://review.blissroms.com" class="text-info">BlissROMs Gerrit Review</a>
+            </li>
+            <li>
+              <a href="https://review-x86.blissroms.com">Bliss OS (x86) Gerrit Review</a>
+            </li>
+            <li>
+              <a href="https://github.com/BlissRoms" class="text-info">BlissROMs GitHub</a>
+            </li>
+            <li>
+              <a href="https://github.com/BlissRoms-Devices" style="" class="text-info">BlissROMs-Devices GitHub</a>
+            </li>
+            <li>
+              <a href="https://github.com/BlissRoms-x86" class="text-info">Bliss OS GitHub</a>
+            </li>
+            <li>
+              <a href="https://github.com/BlissRoms-pine64" class="text-info">BlissROMs-PINE64 GitHub</a>
+            </li>
+            <li>
+              <a href="https://gitlab.com/android-generic/vendor_android-generic" class="text-info">Android-Generic GitLab</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6 p-3">
+          <h5>Subreddits</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.reddit.com/r/BlissRoms" class="text-info">BlissROMs</a>
+            </li>
+            <li>
+              <a href="https://www.reddit.com/r/BlissOS" class="text-info">Bliss OS</a>
+            </li>
+            <li>
+              <a href="https://www.reddit.com/r/TeamBliss" class="text-info">TeamBliss</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-3 p-3">
+          <h5><b>Follow us</b></h5>
           <div class="row">
-            <div class="col-md-6 p-4">
-              <h4>Visual Branding Guide</h4>
-              <p>
-                We offer a loose branding guide for our partners to follow. Feel
-                free to contact us with any questions you may have
-              </p>
-              <a
-                class="btn btn-primary"
-                href="images/Bliss_visual_system.pdf"
-                target="_blank"
-                >Branding Guide</a
-              >
-            </div>
-            <div class="col-md-6 p-4">
-              <h4>Our Logos</h4>
-              <p>
-                We have a few assets for our partners to use in their designs.
-                Please see below for a few options and feel free to contact us
-                for more if you are in need.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-6 p-3">
-              <img class="w-75" src="images/BlissIcon.png" />
-            </div>
-            <div class="col-6 p-3">
-              <img class="w-75" src="images/Lotus_white.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Article style section -->
-      <!-- Features -->
-      <!-- Features -->
-      <!-- Carousel reviews -->
-      <!-- Call to action -->
-      <!-- START OF BLISSLABS -->
-      <div class="mt-5 text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h4 class="mb-3 display-5">
-                Third-Party Repositories &amp; Packages
-              </h4>
-              <p>
-                We recommend all software included in Bliss OS releases be
-                inspected and agreed upon through official involvement with
-                <a target="_blank" href="https://blisslabs.org">BlissLabs</a> in
-                order to ensure user privacy and security guidelnes. All
-                third-party software must also agree to present source code for
-                us to inspect as well. Failure to do this may void any support
-                contracts or retail contracts.&nbsp;
-              </p>
+            <div class="col-md-12 d-flex align-items-center my-2 justify-content-center">
+              <a href="https://www.facebook.com/BlissFamilyOfROMs/" class="">
+                <i class="d-block fa fa-facebook-official text-muted mr-2 fa-2x" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.instagram.com/blissroms/">
+                <i class="d-block fa fa-instagram text-muted mx-2 fa-2x" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/BlissRoms">
+                <i class="d-block fa fa-github text-muted text-muted mx-2 fa-2x" aria-hidden="true"></i> </a><a href="https://www.linkedin.com/company/stayblissful">
+                <i class="d-block fa fa-linkedin text-muted text-muted mx-2 fa-2x" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.reddit.com/r/BlissRoms">
+                <i class="d-block fa fa-reddit text-muted mx-2 fa-2x" aria-hidden="true"></i>
+              </a>
+              <a href="https://twitter.com/Bliss_Roms">
+                <i class="d-block fa fa-twitter text-muted ml-2 fa-2x" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="mx-auto p-4 col-md-6">
-            <h2 class="mb-4">Get in touch</h2>
-            <p>
-              We love to hear from potential partners and offer a way for you to
-              talk directly with the team by emailing us Whether you’re an
-              existing partner or want to explore offering BlissOS, we look
-              forward to hearing from you.
-            </p>
-            <!-- <p class="mb-0 lead" > <a href="mailto:contact@blisslogs.org">contact@blisslabs.org</a> </p> -->
-          </div>
-          <div class="mx-auto p-4 col-md-6">
-            <h2 class="mb-4">Send us a message</h2>
-            <form
-              action="mailto:social@blissos.org, contact@blisslabs.org"
-              method="post"
-              enctype="text/plain"
-            >
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="name"
-                  placeholder="Name"
-                  style="opacity: 100%"
-                  required="required"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="mail"
-                  placeholder="Email"
-                  style="opacity: 100%"
-                  required="required"
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  class="form-control"
-                  rows="3"
-                  name="comment"
-                  placeholder="Your message"
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" value="Send">
-                Send
-              </button>
-            </form>
-          </div>
+  </div>
+  <div class="py-3 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center d-md-flex justify-content-between align-items-center">
+          <ul class="nav d-flex justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="images/Bliss_visual_system.pdf" target="_blank">Brand</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="licensing.html">Licensing &amp; Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://blisslabs.org">BlissLabs</a>
+            </li>
+          </ul>
+          <p class="mb-0 py-1">© 2021 BlissLabs. All rights reserved</p>
         </div>
       </div>
     </div>
-    <!-- END OF BLISSLABS -->
-    <!-- Footer -->
-    <div class="py-3 bg-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-6 p-3">
-            <h5><b>Socials</b></h5>
-            <ul class="list-unstyled text-primary">
-              <li class="text-primary">
-                <a
-                  target="_blank"
-                  href="https://t.me/Team_Bliss_Community"
-                  class="text-info"
-                  >BlissROMs Telegram</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://t.me/blissx86"
-                  class="text-info"
-                  >Bliss OS Telegram</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/BlissFamilyOfROMs/"
-                  class="text-info"
-                  >Bliss Facebook</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://twitter.com/Bliss_Roms"
-                  class="text-info"
-                  >Bliss Twitter</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://twitter.com/blissos_org"
-                  class="text-info"
-                  >Bliss OS Twitter</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/company/stayblissful"
-                  class="text-info"
-                  >Bliss LinkedIn</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-6 p-3">
-            <h5><b>Sources</b></h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="https://review.blissroms.com" class="text-info"
-                  >BlissROMs Gerrit Review</a
-                >
-              </li>
-              <li>
-                <a href="https://review-x86.blissroms.com"
-                  >Bliss OS (x86) Gerrit Review</a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/BlissRoms" class="text-info"
-                  >BlissROMs GitHub</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://github.com/BlissRoms-Devices"
-                  style=""
-                  class="text-info"
-                  >BlissROMs-Devices GitHub</a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/BlissRoms-x86" class="text-info"
-                  >Bliss OS GitHub</a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/BlissRoms-pine64" class="text-info"
-                  >BlissROMs-PINE64 GitHub</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://gitlab.com/android-generic/vendor_android-generic"
-                  class="text-info"
-                  >Android-Generic GitLab</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-6 p-3">
-            <h5>Subreddits</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="https://www.reddit.com/r/BlissRoms" class="text-info"
-                  >BlissROMs</a
-                >
-              </li>
-              <li>
-                <a href="https://www.reddit.com/r/BlissOS" class="text-info"
-                  >Bliss OS</a
-                >
-              </li>
-              <li>
-                <a href="https://www.reddit.com/r/TeamBliss" class="text-info"
-                  >TeamBliss</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-3 p-3">
-            <h5><b>Follow us</b></h5>
-            <div class="row">
-              <div
-                class="col-md-12 d-flex align-items-center my-2 justify-content-center"
-              >
-                <a href="https://www.facebook.com/BlissFamilyOfROMs/" class="">
-                  <i
-                    class="d-block fa fa-facebook-official text-muted mr-2 fa-2x"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-                <a href="https://www.instagram.com/blissroms/">
-                  <i
-                    class="d-block fa fa-instagram text-muted mx-2 fa-2x"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-                <a href="https://github.com/BlissRoms">
-                  <i
-                    class="d-block fa fa-github text-muted text-muted mx-2 fa-2x"
-                    aria-hidden="true"
-                  ></i> </a
-                ><a href="https://www.linkedin.com/company/stayblissful">
-                  <i
-                    class="d-block fa fa-linkedin text-muted text-muted mx-2 fa-2x"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-                <a href="https://www.reddit.com/r/BlissRoms">
-                  <i
-                    class="d-block fa fa-reddit text-muted mx-2 fa-2x"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-                <a href="https://twitter.com/Bliss_Roms">
-                  <i
-                    class="d-block fa fa-twitter text-muted ml-2 fa-2x"
-                    aria-hidden="true"
-                  ></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="py-3 bg-dark">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-md-12 text-center d-md-flex justify-content-between align-items-center"
-          >
-            <ul class="nav d-flex justify-content-center">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="images/Bliss_visual_system.pdf"
-                  target="_blank"
-                  >Brand</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="licensing.html"
-                  >Licensing &amp; Info</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://blisslabs.org">BlissLabs</a>
-              </li>
-            </ul>
-            <p class="mb-0 py-1">© 2021 BlissLabs. All rights reserved</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- JavaScript dependencies -->
-    <!-- <script src="js/mainani.js" type="text/javascript"></script> -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Script: Smooth scrolling between anchors in the same page -->
-    <script src="js/smooth-scroll.js"></script>
-    <!-- <script src="https://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script> -->
-    <script src="js/counter.js"></script>
-    <script src="js/conditionize.js"></script>
-    <script src="js/adv.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-    <!-- <script src="js/chat.js"></script> -->
-  </body>
+  </div>
+  <!-- JavaScript dependencies -->
+  <!-- <script src="js/mainani.js" type="text/javascript"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Script: Smooth scrolling between anchors in the same page -->
+  <script src="js/smooth-scroll.js"></script>
+  <!-- <script src="https://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script> -->
+  <script src="js/counter.js"></script>
+  <script src="js/conditionize.js"></script>
+  <script src="js/adv.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+  <!-- <script src="js/chat.js"></script> -->
+</body>
+
 </html>
