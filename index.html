@@ -76,7 +76,7 @@
         <div class="col-md-6 text-left">
           <h2 class="display-4 mb-4">Bliss OS for PC</h2>
           <h3>Android for your PC</h3>
-          <p>An Android-based open source OS that incorporates many optimizations, features, and that supports many more devices. What's more? It's available for just about any Chromebook, PC or tablet released in the last 5 years.</p>
+          <p>An Android-based open source OS that incorporates many optimizations, features, and that supports many more devices. What's more? It's available for just about any Chromebook, PC or tablet released in the last 10 years.</p>
         </div>
         <div class="col-md-5 align-self-center">
           <img class="img-fluid mx-auto" style="
@@ -296,8 +296,8 @@
         <thead>
           <tr class="bg-success p3">
             <th scope="col"></th>
-            <th scope="col">Bliss OS 14 (Beta) (Android 11)</th>
-            <th scope="col">Bliss OS 15 (Beta) (Android 12L)</th>
+            <th scope="col">Bliss OS 14 (Stable) (Android 11)</th>
+            <th scope="col">Bliss OS 15 (Stable) (Android 12L)</th>
           </tr>
         </thead>
         <tbody>
@@ -325,12 +325,12 @@
       <div class="row mt-4">
         <div class="col-sm p-2 mx-2 bg-primary rounded">
           <h2 class="my-3">Bliss OS 14.10.x</h2>
-          <p>These are generic builds based on Android 11 and BlissROMs sources. These builds are considered experimental.</p>
+          <p>These are generic builds based on Android 11 and BlissROMs sources. These builds are considered stable.</p>
           <a class="btn btn-secondary mb-3 mx-1" target="blank" href="https://forum.xda-developers.com/t/bliss-os-x86-for-pcs-12-x-14-x-development-beta-builds.4004419/">XDA thread</a>
         </div>
         <div class="col-sm p-2 mx-2 bg-warning rounded">
           <h2 class="my-3"> Bliss OS 15.8.x</h2>
-          <p>These are generic builds based on Android 12L and BlissROMs sources. These builds are considered experimental.</p>
+          <p>These are generic builds based on Android 12L and BlissROMs sources. These builds are considered stable.</p>
           <a class="btn btn-secondary mb-3" target="blank" href="https://forum.xda-developers.com/t/bliss-os-x86-for-pcs-12-x-14-x-development-beta-builds.4004419/">XDA thread</a>
         </div>
       </div>
@@ -753,7 +753,7 @@
       <div class="alert alert-danger my-5" role="alert">
         <button type="button" class="close" data-dismiss="alert">×</button>
         <h4 class="alert-heading">New Release Update</h4>
-        <p>Bliss OS 15.8 (Android 12L) Beta Builds are now available for download.</p>
+        <p>Bliss OS 14.10 (Android 11) & Bliss OS 15.8 (Android 12L) Stable Builds are now available for download.</p>
       </div>
       <div class="row">
         <div class="col">
@@ -776,7 +776,7 @@
             <div class="tab-pane fade
                                                     show
                                                     active" id="bliss14" role="tabpanel" aria-labelledby="bliss14-tab">
-              <p>Bliss OS 14.x builds are based on Android 11, these builds are still under development and aren't recommended for daily use.</p>
+              <p>Bliss OS 14.x builds are based on Android 11, these builds are stable and can be used as daily driver.</p>
               <div class="table-reponsive
                                                         w-75 mx-auto">
                 <table class="table">
@@ -789,17 +789,74 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td> Bliss OS 14.10.x (x86_64) <a href="https://sourceforge.net/projects/blissos-dev/files/Beta/" target="_blank" class="small"> Changelog </a>
+                      <td> Bliss OS 14.10.x (x86_64-v2) with GApps<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/OpenGApps/Generic/" target="_blank" class="small"> Changelog </a>
                       </td>
                       <td><i class="text-success"> #Kernel 5.15.x </i>
                         <i class="text-danger"> #Mesa 23.1.x </i>
-                        <i class="text-secondary"> #FOSS &amp; GApps </i>
+                        <i class="text-secondary"> #GApps </i>
                       </td>
                       <td>
                         <a class="btn
                                                                             btn-primary" data-toggle="modal" id="0" onclick="myFunction(event)" data-target="#exampleModalCenter">
                           <i class="fas
                                                                                 fa-cloud-download-alt"></i> SourceForge</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> Bliss OS 14.10.x (x86_64-v2) with FOSS apps<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/FOSS/Generic/" target="_blank" class="small"> Changelog </a>
+                      </td>
+                      <td><i class="text-success"> #Kernel 5.15.x </i>
+                        <i class="text-danger"> #Mesa 23.1.x </i>
+                        <i class="text-secondary"> #FOSS </i>
+                      </td>
+                      <td>
+                        <a class="btn
+                                                                            btn-primary" data-toggle="modal" id="1" onclick="myFunction(event)" data-target="#exampleModalCenter">
+                          <i class="fas
+                                                                                fa-cloud-download-alt"></i> SourceForge</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>These are builds for some Microsoft Surface devices that uses linux-surface patches. Not all Microsoft Surface devices need to use these builds. Check our Documentation to see which devices these builds are supported</p>
+              <div class="table-reponsive
+                                                        w-75 mx-auto">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Version</th>
+                      <th scope="col">Features</th>
+                      <th scope="col">Download</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Bliss OS 14.10.x (x86_64-v3) with GApps & linux-surface<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/OpenGApps/Surface/" target="_blank" class="small"> Changelog </a>
+                      </td>
+                      <td><i class="text-success"> #Kernel 5.15.x </i>
+                        <i class="text-danger"> #Mesa 23.1.x </i>
+                        <i class="text-secondary"> #GApps </i>
+                        <i class="text-info"> #Surface </i>
+                      </td>
+                      <td>
+                        <a class="btn
+                                                                            btn-primary" data-toggle="modal" id="2" onclick="myFunction(event)" data-target="#exampleModalCenter">
+                        Coming Soon</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> Bliss OS 14.10.x (x86_64-v3) with FOSS apps & linux-surface<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/FOSS/Surface/" target="_blank" class="small"> Changelog </a>
+                      </td>
+                      <td><i class="text-success"> #Kernel 5.15.x </i>
+                        <i class="text-danger"> #Mesa 23.1.x </i>
+                        <i class="text-secondary"> #FOSS </i>
+                        <i class="text-info"> #Surface </i>
+                      </td>
+                      <td>
+                        <a class="btn
+                                                                            btn-primary" data-toggle="modal" id="3" onclick="myFunction(event)" data-target="#exampleModalCenter">
+                        Coming Soon</a>
                       </td>
                     </tr>
                   </tbody>
@@ -808,7 +865,7 @@
             </div>
             <!-- Bliss OS 15 Downloads -->
             <div class="tab-pane fade" id="bliss15" role="tabpanel" aria-labelledby="bliss15-tab">
-              <p>Bliss OS 15.x builds are based on Android 12L, these builds are still under development and aren't recommended for daily use.</p>
+              <p>Bliss OS 15.x builds are based on Android 12L, these builds are stable and can be used as daily driver.</p>
               <div class="table-reponsive
                                                         w-75 mx-auto">
                 <table class="table">
@@ -821,17 +878,74 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td> Bliss OS 15.8.x (x86_64) <a href="https://sourceforge.net/projects/blissos-dev/files/Beta/" target="_blank" class="small"> Changelog </a>
+                      <td> Bliss OS 15.8.x (x86_64-v2) with GApps<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS15/Gapps/Generic/" target="_blank" class="small"> Changelog </a>
                       </td>
                       <td><i class="text-success"> #Kernel 5.15.x </i>
                         <i class="text-danger"> #Mesa 23.1.x </i>
-                        <i class="text-secondary"> #FOSS &amp; GApps </i>
+                        <i class="text-secondary"> #GApps </i>
                       </td>
                       <td>
                         <a class="btn
-                                                                            btn-primary" data-toggle="modal" id="0" onclick="myFunction(event)" data-target="#exampleModalCenter">
+                                                                            btn-primary" data-toggle="modal" id="4" onclick="myFunction(event)" data-target="#exampleModalCenter">
                           <i class="fas
                                                                                 fa-cloud-download-alt"></i> SourceForge</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> Bliss OS 15.8.x (x86_64-v2) with FOSS apps<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/FOSS/Generic/" target="_blank" class="small"> Changelog </a>
+                      </td>
+                      <td><i class="text-success"> #Kernel 5.15.x </i>
+                        <i class="text-danger"> #Mesa 23.1.x </i>
+                        <i class="text-secondary"> #FOSS </i>
+                      </td>
+                      <td>
+                        <a class="btn
+                                                                            btn-primary" data-toggle="modal" id="5" onclick="myFunction(event)" data-target="#exampleModalCenter">
+                          <i class="fas
+                                                                                fa-cloud-download-alt"></i> SourceForge</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>These are builds for some Microsoft Surface devices that uses linux-surface patches. Not all Microsoft Surface devices need to use these builds. Check our Documentation to see which devices these builds are supported</p>
+              <div class="table-reponsive
+                                                        w-75 mx-auto">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Version</th>
+                      <th scope="col">Features</th>
+                      <th scope="col">Download</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> Bliss OS 15.8.x (x86_64-v3) with GApps & linux-surface<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS15/Gapps/Generic/" target="_blank" class="small"> Changelog </a>
+                      </td>
+                      <td><i class="text-success"> #Kernel 5.15.x </i>
+                        <i class="text-danger"> #Mesa 23.1.x </i>
+                        <i class="text-secondary"> #GApps </i>
+                        <i class="text-info"> #Surface </i>
+                      </td>
+                      <td>
+                        <a class="btn
+                                                                            btn-primary" data-toggle="modal" id="6" onclick="myFunction(event)" data-target="#exampleModalCenter">
+                          Coming Soon</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td> Bliss OS 15.8.x (x86_64-v3) with FOSS apps & linux-surface<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/FOSS/Generic/" target="_blank" class="small"> Changelog </a>
+                      </td>
+                      <td><i class="text-success"> #Kernel 5.15.x </i>
+                        <i class="text-danger"> #Mesa 23.1.x </i>
+                        <i class="text-secondary"> #FOSS </i>
+                        <i class="text-info"> #Surface </i>
+                      </td>
+                      <td>
+                        <a class="btn
+                                                                            btn-primary" data-toggle="modal" id="7" onclick="myFunction(event)" data-target="#exampleModalCenter">
+                          Coming Soon</a>
                       </td>
                     </tr>
                   </tbody>
@@ -1321,8 +1435,14 @@
   <!-- Script for downloading Bliss OS files -->
   <script>
     const mapedDownloadablelinks = {
-      0: "https://sourceforge.net/projects/blissos-dev/files/Beta/",
-      1: "https://sourceforge.net/projects/blissos-dev/files/Beta/"
+      0: "https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/OpenGApps/Generic/",
+      1: "https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/FOSS/Generic/",
+      2: "https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/OpenGApps/Surface/",
+      3: "https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/FOSS/Surface/",
+      4: "https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS15/Gapps/Generic/",
+      5: "https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS15/FOSS/Generic/",
+      6: "https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS15/Gapps/Surface/",
+      7: "https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS15/FOSS/Surface/"
     }
     // time is in mili sec 1000 * 5 = 5000 mili sec  = 5 sec;
     let popuptimer = 1000 * 3;
