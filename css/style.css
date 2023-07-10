@@ -319,3 +319,22 @@ input[type="radio"]:checked {
 .resp-sharing-button--telegram:hover {
   background-color: #4B97D1;
 }
+
+#bp-web-widget-container {
+  width:70%;
+  }
+
+#bp-web-widget-container {
+  position: fixed !important;
+  top:5.4rem;
+  left:2vw;
+  bottom: 20vh;
+  height: 60vh !important;
+  }
+
+.bp-widget-web {
+  position: sticky !important;
+  top:9vh;
+  height: 78vh !important;
+  }
+  

@@ -1448,6 +1448,29 @@
       }, popuptimer)
     }
   </script>
+  <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+  <script>
+    window.botpressWebChat.init({
+        "composerPlaceholder": "Chat with BlissBot-GPT",
+        "botConversationDescription": "ChatGPT based support bot for Bliss OS. Use @ask to get an answer",
+        "botId": "36e2256c-f2b4-4523-a4e9-02888c5ebbd8",
+        "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+        "messagingUrl": "https://messaging.botpress.cloud",
+        "clientId": "36e2256c-f2b4-4523-a4e9-02888c5ebbd8",
+        "botName": "BlissBot-GPT",
+        "website": "https://blissos.org",
+        "showBotInfoPage": true,
+        // "backgroundColor": "#222222", 
+        // "textColorOnBackground": "#ffffff", 
+        // "foregroundColor": "#ffffff", 
+        // "textColorOnForeground": "#ffffff",
+        // "extraStylesheet": "css/chat-style.css",
+        "showConversationsButton": true, 
+        "showUserName": false, 
+        "showUserAvatar": false, 
+        "enableTranscriptDownload": true
+    });
+  </script>
 </body>
 
 </html>
