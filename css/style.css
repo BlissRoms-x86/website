@@ -329,7 +329,7 @@ input[type="radio"]:checked {
   top:5.4rem;
   left:2vw;
   bottom: 20vh;
-  height: 60vh !important;
+  height: 78vh !important;
   }
 
 .bp-widget-web {
@@ -337,4 +337,3 @@ input[type="radio"]:checked {
   top:9vh;
   height: 78vh !important;
   }
-  
