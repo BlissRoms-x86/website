@@ -1,0 +1,35 @@
+
+#bp-web-widget-container .bpw-floating-button {
+    fill: #fff !important;
+}
+
+#bp-web-widget-container .bpw-from-user .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: #000000 !important;
+}
+
+#bp-web-widget-container .bpw-from-bot .bpw-chat-bubble .bpw-chat-bubble-content {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+#bp-web-widget-container .bpw-chat-bubble {
+  color: #000000 !important;
+  background: none;
+  border: 0px;
+  display: inline-block;
+}
+
+#bp-web-widget-container .bpw-bubble-carousel {
+  display: block;
+  margin-left: 30px;
+}
+
+#bp-web-widget-container .bpw-widget-btn {
+  background-color: #3b5998 !important;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+#bp-web-widget-container .bpw-widget-btn .bpw-floating-button .bpw-anim-undefined {
+  background-color: #3b5998 !important;
+}

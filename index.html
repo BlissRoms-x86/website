@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/buttonstyle.css">
   <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" href="css/chat-style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <!-- Script: Make my navbar transparent when the document is scrolled to top -->
@@ -1449,10 +1450,18 @@
     }
   </script>
   <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+  <!-- chatbot script -->
+  <!-- style for first time pop up message for user -->
+  <style>
+    .bp-widget-widget {
+      width: 20em !important;
+      height: 4em !important;
+    }
+  </style>
   <script>
     window.botpressWebChat.init({
         "composerPlaceholder": "Chat with BlissBot-GPT",
-        "botConversationDescription": "ChatGPT based support bot for Bliss OS. Use @ask to get an answer",
+        "botConversationDescription": "ChatGPT based support bot for Bliss OS.<br>Use @ask to get an answer",
         "botId": "36e2256c-f2b4-4523-a4e9-02888c5ebbd8",
         "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
         "messagingUrl": "https://messaging.botpress.cloud",
@@ -1460,15 +1469,18 @@
         "botName": "BlissBot-GPT",
         "website": "https://blissos.org",
         "showBotInfoPage": true,
-        // "backgroundColor": "#222222", 
-        // "textColorOnBackground": "#ffffff", 
-        // "foregroundColor": "#ffffff", 
-        // "textColorOnForeground": "#ffffff",
-        // "extraStylesheet": "css/chat-style.css",
+        "backgroundColor": "#222222", // Color of the background
+        "textColorOnBackground": "#ffffff", // Color of the text on the background
+        "foregroundColor": "#3b5998", // Element background color (header, composer, button..)
+        "textColorOnForeground": "#ffffff", // Element text color (header, composer, button..)
         "showConversationsButton": true, 
         "showUserName": false, 
         "showUserAvatar": false, 
-        "enableTranscriptDownload": true
+        "enableTranscriptDownload": true,
+        "enableReset": true,
+        "enablePersistHistory": true,
+        "enableResetSessionShortcut": true,
+        "extraStylesheet": "css/chat-style.css"
     });
   </script>
 </body>

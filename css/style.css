@@ -326,14 +326,10 @@ input[type="radio"]:checked {
 
 #bp-web-widget-container {
   position: fixed !important;
-  top:5.4rem;
-  left:2vw;
-  bottom: 20vh;
   height: 78vh !important;
+  z-index: 9999 !important;
   }
 
-.bp-widget-web {
-  position: sticky !important;
-  top:9vh;
+/* .bp-widget-web {
   height: 78vh !important;
-  }
+  } */
