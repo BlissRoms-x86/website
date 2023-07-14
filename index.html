@@ -173,8 +173,7 @@
         </div>
         <div class="col-sm">
           <h5>Smart Dock by @axel358</h5>
-          <p class="small">A user-friendly desktop mode launcher that offers a modern and customizable user interface
-          </p>
+          <p class="small">A user-friendly desktop mode launcher that offers a modern and customizable user interface </p>
         </div>
         <div class="col-sm">
           <h5>BoringDroid by @utzcoz</h5>
@@ -207,12 +206,23 @@
       </div>
     </div>
   </section>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="px-5 col-md-8 text-center mx-auto">
+          <h3 class="text-primary display-4"><b>Immutable System</b></h3>
+          <h2 class="my-3">Bliss OS uses an immutable system setup by default&nbsp;</h2>
+          <p class="mb-3">This ensures the operating system's core remains unchanged. The root file system for the immutable system remains read-only, also allowing for a secure way to update and maintain critical system structure. </p>
+        </div>
+      </div>
+    </div>
+  </div>
   <section class="py-4" style="background: rgb(0 86 157);">
     <div class="container">
       <div class="row my-4" style="align-items: center;">
         <div class="col-md-6 text-right">
           <h2 class="h2"><a class="text-light" href="https://kernelsu.org/">Pre-rooted with KernelSU </a></h2>
-          <p> BlissOS is the first Android-x86 derivative that includes <a class="text-light" href="https://github.com/tiann">weishu's </a> KernelSU. With it, you can easily grant root permission for apps and even install Magisk modules without having to install Magisk. <small><br>(KernelSU is still in the beta stage, and modules support is still experimental)</small>
+          <p>Bliss OS is the first Android-x86 derivative that includes weishu's KernelSU that works with the systems immutability. With it, you can easily grant root permission for apps and even install Magisk modules without having to install Magisk or write to the system partition.&nbsp;<small><br>(KernelSU is still in the beta stage, and modules support is still experimental)</small>
           </p>
         </div>
         <div class="col-md-4 p-4">
@@ -256,12 +266,12 @@
   <section class="py-4">
     <div class="container">
       <h2 class="text-center">Everything We Do is Open Source</h2>
-      <p class="mb-4 text-center">Many of our competitors offer their OS as a free download, but that typically leaves <b>you</b> as the product, selling your data as a way to make profits.<br><b>By making Bliss OS open source and being non-profit run, it can be ensured that nothing is being sold and no malicious code is included.</b>
+      <p class="mb-4 text-center">Many of our competitors offer their OS as a free download, but with no source-code available, that typically leaves <b>you</b> as the product, with no way of knowing what data they are collecting or if they are selling your data as a way to make profits.<br><b>By making Bliss OS open source and being part of a non-profit org, it can be ensured that nothing is being sold and no malicious code is included.</b>
       </p>
       <div class="row">
         <div class="col-sm mt-2">
           <h2>We respect your privacy.</h2>
-          <p class="mb-0">Not only do we respect your privacy, but we vow to never include anything to put your data in jeopardy. We are also constantly updating things with the latest security updates from Google for the currently active and maintained versions of Bliss OS. And as an open source project, all our source code is also available, so you and others can ensure your data and safety are at the top of our concerns. For users that have an even greater concern about their user data, we also offer Bliss OS builds that are Google Services free, and come with F-Droid &amp; microG for a <i>truly</i> secure user experience. </p>
+          <p class="mb-0">Not only do we respect your privacy, but we vow to never include anything to put your data in jeopardy. We are also constantly updating things with the latest security updates from Google for the currently active and maintained versions of Bliss OS. And as an open source project, all our source code is also available, so you and others can ensure your data and safety are at the top of our concerns. For users that have an even greater concern about their user data, we also offer Bliss OS builds that are Google Services free, and come with F-Droid, Aurora &amp; microG for a <i>truly</i> secure user experience. </p>
         </div>
         <div class="col-sm">
           <div class="text-center mt-4">
@@ -275,15 +285,15 @@
   <section class="py-4 bg-secondary">
     <div class="container">
       <div class="row">
-        <div class="col-sm col-md-7">
+        <div class="col-sm col-md-4 text-center p-3" style="">
+          <img class="w-50" src="images/coffee-break.svg">
+        </div>
+        <div class="col-sm col-md-7" style="">
           <div class="text-left">
             <h2>We volunteer our time.</h2>
-            <p>We are a 501(c3) nonprofit, run by people that donate their free time towards the project. We do our best to bring a quality OS to your device, while working a real job on the side in most cases. Please consider showing us we're on the right track by donating using the button below.</p>
+            <p>We are just one of many other projects under BlissLabs, a 501(c3) nonprofit, run by people that donate their free time towards the project. We do our best to bring a quality OS to your device, while working a real job on the side in most cases. Please consider showing us we're on the right track by donating using the button below.</p>
             <a href="https://www.paypal.com/donate?hosted_button_id=J5SLZ7MQNCT24" target="_blank" class="btn btn-primary shadow">Buy Us a Coffee</a>
           </div>
-        </div>
-        <div class="col-sm col-md-3 text-center p-3">
-          <img class="w-50" src="https://www.blissos.org/images/coffee-break.svg">
         </div>
       </div>
     </div>
@@ -349,7 +359,7 @@
             <div class="card-body"> These are the apps included in the builds. Each set is a minimal set of default apps, providing basic functionaliy. <br>
               <br>
               <ul>
-                <li>Stock - Normally barebones, minimal apps added. Perfect for product testing <br>
+                <li>Stock or Vanilla - Normally barebones, minimal apps added. Perfect for product testing <br>
                 </li>
                 <li>FOSS - Includes Free and Open Source apps and app store solutions (Aurora Droid for open-source apps from F-Droid repos, and Aurora Store for accessing the Google Play library of apps) <br>
                 </li>
@@ -749,7 +759,7 @@
       <div class="alert alert-danger my-5" role="alert">
         <button type="button" class="close" data-dismiss="alert">×</button>
         <h4 class="alert-heading">New Release Update</h4>
-        <p>Bliss OS 14.10 (Android 11) & Bliss OS 15.8 (Android 12L) Stable Builds are now available for download.</p>
+        <p>Bliss OS 14.10 (Android 11) &amp; Bliss OS 15.8 (Android 12L) Stable Builds are now available for download.</p>
       </div>
       <div class="row">
         <div class="col">
@@ -828,7 +838,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td> Bliss OS 14.10.x (x86_64-v3) with GApps & linux-surface<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/OpenGApps/Surface/" target="_blank" class="small"> Changelog </a>
+                      <td> Bliss OS 14.10.x (x86_64-v3) with GApps &amp; linux-surface<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/OpenGApps/Surface/" target="_blank" class="small"> Changelog </a>
                       </td>
                       <td><i class="text-success"> #Kernel 5.15.x </i>
                         <i class="text-danger"> #Mesa 23.1.x </i>
@@ -837,12 +847,11 @@
                       </td>
                       <td>
                         <a class="btn
-                                                                            btn-primary" data-toggle="modal" id="2" onclick="myFunction(event)" data-target="#exampleModalCenter">
-                        Coming Soon</a>
+                                                                            btn-primary" data-toggle="modal" id="2" onclick="myFunction(event)" data-target="#exampleModalCenter"> Coming Soon</a>
                       </td>
                     </tr>
                     <tr>
-                      <td> Bliss OS 14.10.x (x86_64-v3) with FOSS apps & linux-surface<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/FOSS/Surface/" target="_blank" class="small"> Changelog </a>
+                      <td> Bliss OS 14.10.x (x86_64-v3) with FOSS apps &amp; linux-surface<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/FOSS/Surface/" target="_blank" class="small"> Changelog </a>
                       </td>
                       <td><i class="text-success"> #Kernel 5.15.x </i>
                         <i class="text-danger"> #Mesa 23.1.x </i>
@@ -851,8 +860,7 @@
                       </td>
                       <td>
                         <a class="btn
-                                                                            btn-primary" data-toggle="modal" id="3" onclick="myFunction(event)" data-target="#exampleModalCenter">
-                        Coming Soon</a>
+                                                                            btn-primary" data-toggle="modal" id="3" onclick="myFunction(event)" data-target="#exampleModalCenter"> Coming Soon</a>
                       </td>
                     </tr>
                   </tbody>
@@ -917,7 +925,7 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td> Bliss OS 15.8.x (x86_64-v3) with GApps & linux-surface<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS15/Gapps/Generic/" target="_blank" class="small"> Changelog </a>
+                      <td> Bliss OS 15.8.x (x86_64-v3) with GApps &amp; linux-surface<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS15/Gapps/Generic/" target="_blank" class="small"> Changelog </a>
                       </td>
                       <td><i class="text-success"> #Kernel 5.15.x </i>
                         <i class="text-danger"> #Mesa 23.1.x </i>
@@ -926,12 +934,11 @@
                       </td>
                       <td>
                         <a class="btn
-                                                                            btn-primary" data-toggle="modal" id="6" onclick="myFunction(event)" data-target="#exampleModalCenter">
-                          Coming Soon</a>
+                                                                            btn-primary" data-toggle="modal" id="6" onclick="myFunction(event)" data-target="#exampleModalCenter"> Coming Soon</a>
                       </td>
                     </tr>
                     <tr>
-                      <td> Bliss OS 15.8.x (x86_64-v3) with FOSS apps & linux-surface<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/FOSS/Generic/" target="_blank" class="small"> Changelog </a>
+                      <td> Bliss OS 15.8.x (x86_64-v3) with FOSS apps &amp; linux-surface<a href="https://sourceforge.net/projects/blissos-x86/files/Official/BlissOS14/FOSS/Generic/" target="_blank" class="small"> Changelog </a>
                       </td>
                       <td><i class="text-success"> #Kernel 5.15.x </i>
                         <i class="text-danger"> #Mesa 23.1.x </i>
@@ -940,8 +947,7 @@
                       </td>
                       <td>
                         <a class="btn
-                                                                            btn-primary" data-toggle="modal" id="7" onclick="myFunction(event)" data-target="#exampleModalCenter">
-                          Coming Soon</a>
+                                                                            btn-primary" data-toggle="modal" id="7" onclick="myFunction(event)" data-target="#exampleModalCenter"> Coming Soon</a>
                       </td>
                     </tr>
                   </tbody>
@@ -1460,27 +1466,27 @@
   </style>
   <script>
     window.botpressWebChat.init({
-        "composerPlaceholder": "Chat with BlissBot-GPT",
-        "botConversationDescription": "ChatGPT based support bot for Bliss OS.<br>Use @ask to get an answer",
-        "botId": "36e2256c-f2b4-4523-a4e9-02888c5ebbd8",
-        "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
-        "messagingUrl": "https://messaging.botpress.cloud",
-        "clientId": "36e2256c-f2b4-4523-a4e9-02888c5ebbd8",
-        "botName": "BlissBot-GPT",
-        "website": "https://blissos.org",
-        "showBotInfoPage": true,
-        "backgroundColor": "#222222", // Color of the background
-        "textColorOnBackground": "#ffffff", // Color of the text on the background
-        "foregroundColor": "#3b5998", // Element background color (header, composer, button..)
-        "textColorOnForeground": "#ffffff", // Element text color (header, composer, button..)
-        "showConversationsButton": true, 
-        "showUserName": false, 
-        "showUserAvatar": false, 
-        "enableTranscriptDownload": true,
-        "enableReset": true,
-        "enablePersistHistory": true,
-        "enableResetSessionShortcut": true,
-        "extraStylesheet": "css/chat-style.css"
+      "composerPlaceholder": "Chat with BlissBot-GPT",
+      "botConversationDescription": "ChatGPT based support bot for Bliss OS.<br>Use @ask to get an answer",
+      "botId": "36e2256c-f2b4-4523-a4e9-02888c5ebbd8",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "36e2256c-f2b4-4523-a4e9-02888c5ebbd8",
+      "botName": "BlissBot-GPT",
+      "website": "https://blissos.org",
+      "showBotInfoPage": true,
+      "backgroundColor": "#222222", // Color of the background
+      "textColorOnBackground": "#ffffff", // Color of the text on the background
+      "foregroundColor": "#3b5998", // Element background color (header, composer, button..)
+      "textColorOnForeground": "#ffffff", // Element text color (header, composer, button..)
+      "showConversationsButton": true,
+      "showUserName": false,
+      "showUserAvatar": false,
+      "enableTranscriptDownload": true,
+      "enableReset": true,
+      "enablePersistHistory": true,
+      "enableResetSessionShortcut": true,
+      "extraStylesheet": "css/chat-style.css"
     });
   </script>
 </body>
