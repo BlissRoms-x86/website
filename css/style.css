@@ -333,3 +333,42 @@ input[type="radio"]:checked {
 /* .bp-widget-web {
   height: 78vh !important;
   } */
+
+div[class^="opencollective-banner"] {
+  height:200px !important;
+}
+
+.opencollective-banner {
+  height:200px !important;
+}
+
+iframe[id^="banner-iframe-"] {
+  height:200px !important;
+}
+
+section[id^="backers"] {
+  font-weight: bold !important;
+  color: #c9c9c9 !important;
+  font-size: 34px !important;
+}
+
+div[class^="opencollective-banner"] h1 {
+  font-weight: bold !important;
+  color: #fff !important;
+  font-size: 54px !important;
+}
+
+div[class^="opencollective-banner"] h2 {
+  font-weight: bold !important;
+  color: #c9c9c9 !important;
+  font-size: 34px !important;
+}
+
+div[class^="opencollective-banner"] a {
+  color: #2289ff !important;
+  font-size: 34px !important;
+}
+
+div[class^="MembersWithData__MembersContainer-sc-"] {
+  height:100px !important;
+}
