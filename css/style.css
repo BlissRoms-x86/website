@@ -330,9 +330,10 @@ input[type="radio"]:checked {
   z-index: 9999 !important;
   }
 
-/* .bp-widget-web {
+.bp-widget-widget {
+  bottom: 92px !important;
   height: 78vh !important;
-  } */
+}
 
 div[class^="opencollective-banner"] {
   height:200px !important;
