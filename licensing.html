@@ -91,41 +91,41 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h3 class="display-3">Licensing &amp; FAQ</h3>
-          <p> Bliss OS inherits the same Apache v2 licensing that AOSP uses for most of the components, while many of the other components like Android-Generic Project use GPL-2.0 license. <br> Proprietary components like Google Apps, Native-Bridge, and some features would require additional licensing to be obtained by the customer.&nbsp;<br>&nbsp;<br>Bliss OS does however offer development contracts in order to help meet the specific needs of our customers. You can learn more about our contract development and consulting services by visiting the <a href="https://blisscolabs.dev" target="_BLANK">Bliss Co-Labs site</a></p>
+          <h2 class="display-3">Licensing</h2>
+          <p> Bliss OS inherits the same Apache v2 licensing that AOSP uses for most of the components, while many of the other components like Android-Generic Project use GPL-2.0 license. <br>For product use, we do not include proprietary components like Google Apps, Native-Bridge, and widevine. Some features and toolkits like our rebranding toolkit would require additional licensing to be obtained by the customer.&nbsp;<br>&nbsp;<br>Members of Bliss OS do however work with a separate consulting firm that offers development contracts in order to help meet the specific needs of our customers. You can learn more about their contract development and consulting services by visiting the <a href="https://blisscolabs.dev" target="_BLANK">Bliss Co-Labs site</a></p>
           <br>
-          <h3>Licenses</h3>
-          <p> - <a href="https://source.android.com/docs/setup/about/licenses" target="_BLANK">AOSP Licenses</a> - <a href="https://github.com/BlissRoms-x86/manifest/blob/arcadia-x86/License" target="_BLANK">Bliss OS License</a> - <a href="https://github.com/BlissRoms/platform_manifest/blob/typhoon/LICENSE" target="_BLANK">Bliss ROM License</a> - <a href="https://github.com/android-generic/vendor_ag/blob/unified/LICENSE.md" target="_BLANK">Android-Generic Project License</a> - <a href="https://github.com/boringdroid/boringdroid/blob/master/LICENSE" target="_BLANK">Boringdroid License</a> - </p>
+          <p> - <a href="https://source.android.com/docs/setup/about/licenses" target="_BLANK">AOSP Licenses</a> - <a href="https://github.com/BlissRoms-x86/manifest/blob/arcadia-x86/License" target="_BLANK">Bliss OS License</a> - <a href="https://github.com/BlissRoms/platform_manifest/blob/typhoon/LICENSE" target="_BLANK">Bliss ROM License</a> - <a href="https://github.com/android-generic/vendor_ag/blob/unified/LICENSE.md" target="_BLANK">Android-Generic Project License</a> - <a href="https://github.com/boringdroid/boringdroid/blob/master/LICENSE" target="_BLANK">Boringdroid License</a> - <br><br>For Bliss OS source, we do catalog all the repos used and their licenses. You can view that <a href="https://github.com/BlissRoms-x86/oss-licenses" target="_BLANK"> here</a>.</p><br>
         </div>
       </div>
       <div class="row">
+        <h3 class="display-4 text-center">FAQ</h3>
         <div class="col-md-6 p-3">
           <h4>Q: Is Bliss OS suitable for individuals?</h4>
-          <p> A: Yes, Bliss OS public releases are designed to be used as a daily replacement for Windows, ChromeOS, Mac OS or Linux and work is consistently being done to improve the User Experience. </p>
+          <p> A: Yes, Bliss OS public releases are designed to be used as a daily replacement for Windows, ChromeOS, Mac OS or Linux and work is consistently being done to improve the User Experience.<br><br>We offer users multiple types of builds to help fit their needs:<br>- <b>Gapps Builds</b>: Comes with Google Play Store, Widevine and ARM compatibility layer options<br>- <b>FOSS Builds</b>: Comes with open-source alternatives for Google Play Store and media alternatives.&nbsp;<br>- <b>Vanilla Builds</b>: Comes with no added apps and services. Basic media support.&nbsp;</p>
         </div>
         <div class="col-md-6 p-3">
           <h4>Q: Does Bliss OS include proprietary software?</h4>
-          <p> A: Yes. Our main GMS/Gapps releases include proprietary software, and are intended for individuals, while our FOSS builds also include some proprietary parts as well.&nbsp;<br><br>Proprietary parts in all Bliss OS public builds:<br>- linux-firmware blobs&nbsp;<br>- proprietary linux drivers (broadcom-wl for example)&nbsp;<br>- media codecs (H.264/HEVC)</p>
+          <p> A: Yes. Our GMS/Gapps releases include proprietary software, and are intended for individuals only, while our FOSS and Vanilla builds might include some proprietary parts as well.&nbsp;<br><br>Proprietary redistributables in all Bliss OS public builds:<br>- linux-firmware blobs&nbsp;<br>- proprietary linux drivers (broadcom-wl for example)&nbsp;<br>- some media codecs (H.264/HEVC)<br><br>Proprietary redistributables in Bliss OS - Gapps builds:&nbsp;<br>- Google Play Services<br>- ARM Translation Library (Houdini or libndk-translation)&nbsp;<br>- Widevine</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6 p-3">
           <h4>Q: Is Bliss OS suitable for companies?</h4>
-          <p> A: Yes, but not all builds. We produce standard (bare-bones) AOSP builds with basic x86/x86_64 PC hardware support, and no proprietary software included, and those are available to test with. If your company requires Google Apps, ARM/ARM64 Native-Bridge, or Widevine, please contact us to discuss licensing or alternative development options. </p>
+          <p> A: Yes, but not all builds. We produce minimal vanilla and FOSS Bliss OS, and Bliss-Bass (bare-bones) AOSP builds with basic x86/x86_64 PC hardware support, and no proprietary software included, and those are available to test with.&nbsp;While those builds are very basic, they do include much of what would be needed to base a product off of. If your product requires no additional changes on top of what is released to the public, then you are free to use it at no cost.<br>If your product requires Google Apps, ARM/ARM64 Native-Bridge, or Widevine, due to licensing restrictions, we suggest that you look into alternative options using open-source solutions.&nbsp;<br><br>You can find the AOSP base builds here: <a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/" target="_BLANK">Sourceforge</a> </p>
         </div>
         <div class="col-md-6 p-3">
-          <h4>Q: Can my company use Bliss OS or Bliss OS Go as-is?</h4>
-          <p> A: No. the public builds that we make available online are not fit for commercial use or meant to be included in products as they contain proprietary features and services that require per-product licensing through Google, Intel, us or others. Companies that would like to use Bliss OS or Bliss OS Go, with it's expanded hardware-support and features list, must contact us if they would like to use our projects for their commercial purposes, and form an agreement on a <a href="mailto:social@blissos.org,info@blisscolabs.dev?subject=Development Contract Inquiry">development contract</a> to tailor things to their needs, and/or work out a per-device licensing agreement for company use. </p>
+          <h4>Q: Can my company use Bliss OS with Gapps as-is?</h4>
+          <p> A: No. The Bliss OS versions that include Google Play Store, native-bridge, or widevine are not fit for commercial use or meant to be included in products as they contain proprietary features and services that typically require per-product licensing through Google, Intel, or others.&nbsp;We do however release public Vanilla and FOSS (bare-bones) builds that do not contain any proprietary resources.<br><br>Most of those proprietary licenses are not eligible for use in&nbsp;generic operating-system setups. Some require the device to pass certification programs that is only meant for single device certifications.&nbsp;<br></p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6 p-3">
-          <h4>Q: Can my company use Android-PC or Bliss Bass (Bare-Bones AOSP) builds as-is?</h4>
-          <p style=""> A: Yes, but only the Vanilla versions. While those builds are very basic, they do include much of what would be needed to base a product off of. <b>If you are a startup or a company interested in this options, please contact us to see if you are eligible to use these builds at no cost.</b> Otherwise, we request you contact us to work out a per-device licensing agreement and setup a <a href="mailto:social@blissos.org,info@blisscolabs.dev?subject=Development Contract Inquiry">development contract</a> for branding, optimizations and specific needs.<br><br>You can find the AOSP base builds here: <a href="https://sourceforge.net/projects/blissos-dev/files/Android-Generic/PC/aosp/" target="_BLANK">Sourceforge</a></p>
+          <h4>Q: Can my company use Bliss OS source-code in a product?</h4>
+          <p style=""> A: Yes, This applies to&nbsp;Android-PC, Bliss OS, Bliss OS Go or Bliss Bass (Bare-Bones AOSP) sources.&nbsp;<b>If you are an individual developer, a startup, or represent some other business enterprise and you are interested in using our sources, our open-source licenses allow you to use the source at no cost as long as you use it: A) as-is, B) you contribute any changes made back to the source, or C) produce the full source to the public independently.</b> If you would like to use our source and make changes to it that you do not plan on releasing as open-source, we request you contact us to work out a <b>per-device licensing agreement</b> and/or setup a <a href="mailto:social@blissos.org?subject=Development Contract Inquiry">development contract</a> for branding, optimizations and specific needs.</p>
         </div>
         <div class="col-md-6 p-3">
           <h4> Q: Does my company have to release any changes made to the collective source code of Bliss OS? </h4>
-          <p> A: This all depends on where the changes in the source were made, as many repos in the project retain a different OSS Licenses, there are different requirements per repo. If you are unsure if your company needs to release the source for any of the changes made, please feel free to contact us.<br><br>Another thing to pay attention to is if the tools being used require the end product or alterations to be released. Some Apache 2.0 licensed projects allow for that requirement to be made. Some versions of Android-Generic Project also have similar licensing requirements.&nbsp;</p>
+          <p> A: This all depends on where the changes in the source were made, as many repos in the project retain a different OSS Licenses, there are different requirements per repo. If you are unsure if your company needs to release the source for any of the changes made, please feel free to contact us.<br><br>Another thing to pay attention to is if the tools being used require the end product or alterations to be released. Some Apache 2.0 licensed projects allow for that requirement to be made. Some versions of Android-Generic Project also have similar licensing requirements.</p>
         </div>
       </div>
       <div class="row">
@@ -158,7 +158,7 @@
                 </tr>
                 <tr>
                   <th scope="row">++50,000 units license</th>
-                  <td><a href="mailto:social@blissos.org,info@blisscolabs.dev?subject=Development Contract Inquiry">Contact Us</a></td>
+                  <td><a href="mailto:social@blissos.org?subject=Development Contract Inquiry">Contact Us</a></td>
                 </tr>
               </tbody>
             </table>
