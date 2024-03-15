@@ -13,7 +13,3 @@
 
 * Official Bliss OS website, can be found [here](https://blissos.org).
 * Licensed under the [GPLv3 license](LICENSE)
-
-## Contributing
-
-If you're looking to contribute to the project, please refer to [CONTRIBUTING](CONTRIBUTING.md).
