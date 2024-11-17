@@ -71,7 +71,7 @@ $(document).ready(function(){
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 9 builds: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 9 builds: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Generic%20builds%20-%20Pie/">x86_64 Generic Builds</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Experimental%20-%2032%20bit%20%28x86%29%20builds%20-%20Pie/">Experimental x86 (32bit)</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-x86/files/Official/bleeding_edge/Surface%20IPTS%20builds%20-%20Pie/">x86_64 IPTS (M$ Surface 3(non-pro)-6 Devices Only)</a><br>';
@@ -80,7 +80,7 @@ $(document).ready(function(){
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissos-dev/files/merkaba/">Bliss OS Merkaba - x86_64 Generic Builds</a><br>'+
 			'There are currently no Android 10 Surface builds. Please check back later for those.';
 		} else if (message.includes("taimen")||message.includes("pixel 2 xl")){
@@ -88,168 +88,168 @@ $(document).ready(function(){
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Tiamen: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Tiamen: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/taimen/">Go To Downloads</a><br>';
 		} else if (message.includes("I01WD")||message.includes("zenfone 6")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for ZenFone 6: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for ZenFone 6: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/I01WD/">Go To Downloads</a><br>';
 		} else if (message.includes("z01r")||message.includes("zenfone 5z")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for zenfone 5z: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for zenfone 5z: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/z01r/">Go To Downloads</a><br>';
 		} else if (message.includes("oneplus3")||message.includes("oneplus 3")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for oneplus3: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for oneplus3: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/oneplus3/">Go To Downloads</a><br>';
 		} else if (message.includes("wayne")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for wayne: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for wayne: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/wayne/">Go To Downloads</a><br>';
 		} else if (message.includes("jasmine")||message.includes("sprout")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for jasmine & sprout: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for jasmine & sprout: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/jasmine_sprout/">Go To Downloads</a><br>';
 		} else if (message.includes("clover")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for clover: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for clover: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/clover/">Go To Downloads</a><br>';
 		} else if (message.includes("violet")||message.includes("redmi note 7 pro")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for redmi note 7 pro: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for redmi note 7 pro: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/violet/">Go To Downloads</a><br>';
 		} else if (message.includes("guacamole")||message.includes("oneplus 7 pro")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for oneplus 7 pro: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for oneplus 7 pro: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/guacamole/">Go To Downloads</a><br>';
 		} else if (message.includes("gtaxllte")||message.includes("galaxy tab a lte")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for gtaxllte: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for gtaxllte: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/gtaxllte/">Go To Downloads</a><br>';
 		} else if (message.includes("gtaxlwifi")||message.includes("galaxy tab a wifi")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for gtaxlwifi: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for gtaxlwifi: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/gtaxlwifi/">Go To Downloads</a><br>';
 		} else if (message.includes("X00T")||message.includes("ZenFone Max Pro m1")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for ZenFone Max Pro m1: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for ZenFone Max Pro m1: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/X00T/">Go To Downloads</a><br>';
 		} else if (message.includes("kenzo")||message.includes("Redmi Note 3")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Redmi Note 3: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Redmi Note 3: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/kenzo/">Go To Downloads</a><br>';
 		} else if (message.includes("X01BD")||message.includes("ZenFone Max Pro M2")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for ZenFone Max Pro M2: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for ZenFone Max Pro M2: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/X01BD/">Go To Downloads</a><br>';
 		} else if (message.includes("enchilada")||message.includes("oneplus 6")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for OnePlus 6: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for OnePlus 6: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/enchilada/">Go To Downloads</a><br>';
 		} else if (message.includes("whyred")||message.includes("redmi note 5")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Redmi Note 5: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Redmi Note 5: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/whyred/">Go To Downloads</a><br>';
 		} else if (message.includes("z2_plus")||message.includes("lenovo zuk z2 plus")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Lenovo ZUK Z2/Z2 Plus: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Lenovo ZUK Z2/Z2 Plus: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/z2_plus/">Go To Downloads</a><br>';
 		} else if (message.includes("h870")||message.includes("lg g6 lte")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for LG G6: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for LG G6: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/h870/">Go To Downloads</a><br>';
 		} else if (message.includes("us997")||message.includes("lg g6 lte-a")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for LG G6 LTE-A: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for LG G6 LTE-A: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/us997/">Go To Downloads</a><br>';
 		} else if (message.includes("h872")||message.includes("lg g6 tmo")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for LG G6 T-Mobile: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for LG G6 T-Mobile: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/h872/">Go To Downloads</a><br>';
 		} else if (message.includes("bullhead")||message.includes("nexus 5x")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Nexus 5X: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Nexus 5X: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/bullhead/">Go To Downloads</a><br>';
 		} else if (message.includes("santoni")||message.includes("redmi 4x")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Xiaomi Redmi 4X: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Xiaomi Redmi 4X: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/santoni/">Go To Downloads</a><br>';
 		} else if (message.includes("bonito")||message.includes("pixel 4 xl")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Pixel 4 XL: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for Pixel 4 XL: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/bonito/">Go To Downloads</a><br>';
 		} else if (message.includes("dumpling")||message.includes("oneplus 5t")){
 			const container = document.querySelector('.code_container');
 			const containerTitle = document.querySelector('.code_container__title');
 			container.style.background = secretCode;
 			container.classList.add('alive');
-			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for OnePlus 5T: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a>'+
+			containerTitle.innerHTML = 'Here is the download link to our Android 10 builds for OnePlus 5T: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a>'+
 			'<a class="btn mb-3 btn-link" style="color:black;" target="_blank" href="https://sourceforge.net/projects/blissroms/files/Q/dumpling/">Go To Downloads</a><br>';
 		}
 		
@@ -259,7 +259,7 @@ $(document).ready(function(){
 		//	const containerTitle = document.querySelector('.code_container__title');
 		//	container.style.background = secretCode;
 		//	container.classList.add('alive');
-		//	containerTitle.innerHTML = 'correct code! Here is the download link: <br><br><a class="btn btn-primary mx-1 mb-3" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=MKDDQGLYDKGV6&amp;source=url" target="_blank">Donate $5</a><a class="btn btn-info mb-3 mx-1" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=99GBH7ZW77P54&amp;source=url">Donate $10</a><a class="btn btn-light text-dark mb-3" href="https://www.paypal.me/TeamBliss" target="_blank">Donate Other Amount</a><a class="btn mb-3 btn-link" style="color:white;" target="_blank" href="https://sourceforge.net/projects/blissos-dev/files/Alpha/Bliss-OS-v12.2-x86_64-OFFICIAL-201912272156_k-k4.19.80-ax86-ga-q_m-q-x86_ld-q-x86_dg-_dh-q-x86.iso/download">Go To Downloads</a><br>';
+		//	containerTitle.innerHTML = 'correct code! Here is the download link: <br><br><a class="btn btn-light text-dark mb-3" href="https://opencollective.com/bliss-os/donate" target="_blank">Donate</a><a class="btn mb-3 btn-link" style="color:white;" target="_blank" href="https://sourceforge.net/projects/blissos-dev/files/Alpha/Bliss-OS-v12.2-x86_64-OFFICIAL-201912272156_k-k4.19.80-ax86-ga-q_m-q-x86_ld-q-x86_dg-_dh-q-x86.iso/download">Go To Downloads</a><br>';
 		//}
 		
 		lastMessage=message;
