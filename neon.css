@@ -6325,6 +6325,10 @@ button.close {
 }
 
 .bg-primary {
+  background-color: #0080ff !important;
+}
+
+.bg-transparent {
   background-color: #0080ff00 !important;
 }
 
