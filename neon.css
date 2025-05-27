@@ -6325,7 +6325,7 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #0080ff !important;
+  background-color: #0080ff00 !important;
 }
 
 a.bg-primary:hover,
