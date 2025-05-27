@@ -1,9 +1,18 @@
 .main_background {
-  background-image: url("../images/bliss_main.svg");
+  background-image: url("../images/new/bliss_main.png");
   background-position: center bottom;
   background-size: cover;
   width: 100%;
   height: 100vh;
+}
+
+.blur_main_background {
+  background-image: url("../images/new/bliss_main.png");
+  background-position: center bottom;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  filter: blur(16px);
 }
 
 .community_banner {
