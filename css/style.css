@@ -1,5 +1,5 @@
 .main_background {
-  background-image: url("../images/new/bliss_main.png");
+  background-image: url("../images/new/bliss_main.jpg");
   background-position: center bottom;
   background-size: cover;
   width: 100%;
@@ -7,7 +7,7 @@
 }
 
 .main_background2 {
-  background-image: url("../images/new/bliss_main_bg.png");
+  background-image: url("../images/new/bliss_main_bg.jpg");
   background-position: center bottom;
   background-size: cover;
   width: 100%;
