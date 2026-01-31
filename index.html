@@ -6,161 +6,318 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- PAGE settings -->
   <link rel="icon" href="favicon.ico">
-  <title>Bliss OS For PC</title>
-  <meta name="description" content="Open Source OS for PC's, based on
-            AOSP">
-  <meta name="keywords" content="blissroms, bliss, os, x86, aosp, android,
-            rom, teambliss, android x86">
+  <title>Bliss OS</title>
+  <meta name="description" content="Open Source OS for PC's, based on AOSP">
+  <meta name="keywords" content="blissroms, bliss, os, x86, aosp, android, rom, teambliss">
   <!-- CSS dependencies -->
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="neon.css">
   <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/buttonstyle.css">
   <link rel="stylesheet" href="css/table.css">
-  <link rel="stylesheet" href="css/chat-style.css">
-  <link rel="stylesheet" href="css/space.css">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" type="text/css">
   <!-- Script: Make my navbar transparent when the document is scrolled to top -->
   <script src="js/navbar-ontop.js"></script>
-  <style>
-    a>* {
-      pointer-events: none;
-    }
-  </style>
+  <!-- Script: Animated entrance -->
+  <script src="js/animate-in.js"></script>
+  <link rel="stylesheet" href="css/chat.css">
+  <!-- <script data-ad-client="ca-pub-7639560510014441" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
   <script defer src="https://analytics.blisslabs.org/script.js"
     data-website-id="ece62611-a982-4213-81bb-c948446d9eba"></script>
   <script data-ad-client="ca-pub-7639560510014441" async=""
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <style>
+    body {
+        background-color: #212529;
+        color: white;
+    }
+    .modal-content {
+        background-color: #333;
+        color: #fff;
+    }
+    .modal-header {
+        border-bottom: 1px solid #444;
+    }
+    .modal-footer {
+        border-top: 1px solid #444;
+    }
+    .btn-close {
+        filter: invert(1) grayscale(100%) brightness(200%);
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Navbar -->
-  <div class="container">
-    <nav class="navbar navbar-expand-lg fixed-top bg-transparent
-                navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" style="text-align: center;" href="index.html"><img
-            src="images/new/NewBlissOS_logo_white.png" class="d-inline-block align-top mx-auto img-fluid"
-            style="width: 4rem;" alt="logo"></a>
-        <a class="navbar-brand" href="index.html">
-          <span style="font-weight: 500">Bliss OS</span>
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-          data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-center
-                        justify-content-end" id="navbar2SupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item mx-2 disabled">
-              <a class="nav-link " href="https://blisslabs.org" target="_blank">Org</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="licensing.html">Licensing</a>
-            </li>
-          </ul>
+  <access origin="mailto://*" launch-external="true">
+    <!-- Navbar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" style="text-align: center;" href="index.html"><img
+              src="images/new/NewBlissOS_logo_white.png" class="d-inline-block align-top mx-auto img-fluid"
+              style="width: 4rem;" alt="logo"></a>
+          <a class="navbar-brand" href="index.html">
+            <span style="font-weight: 500">Bliss OS</span>
+          </a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="https://blisslabs.org" target="_blank">Org</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="licensing.html">Licensing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Cover -->
+    <section class="section-fade-out-white pt-5 text-light main_background2">
+      <div class="container py-5 mt-5" style="top: 15vh; position: relative">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="mb-4 display-5">Bliss OS</h2>
+            <p> This project is currently under maintenance. </p>
+            <p class="pb-3"> We will be updating the website soon with more information. 
+            <br><br>
+            Thank you for your cooperation! </p>
+          </div>
+          <div class="col-md-5 align-self-center">
+            <img class="img-fluid mx-auto" style="
+                border: 1rem solid transparent;
+                border-radius: 1rem;
+                box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
+                background: linear-gradient(to left, #191919, #292929)
+                  border-box;
+              " src="images/bliss15_about.jpg">
+          </div>
         </div>
       </div>
-    </nav>
+    </section><!-- Lockdown Modal -->
+  <div class="modal fade" id="lockdownModal" tabindex="-1" aria-labelledby="lockdownModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="lockdownModalLabel">Important Announcement</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>This is an important announcement regarding the current status of the BlissOS project. We are officially placing the project under a temporary LOCKDOWN, effective immediately. The lockdown includes this Telegram group, our other chat platforms, along with all BlissOS websites.</p>
+          <p>At this time, we cannot provide an estimated time of arrival (ETA) for when we will lift the lockdown.</p>
+          <p>Feel free to dive into our archives and explore past Bliss OS releases. Please keep in mind, these are snapshots in time and won't be receiving any further updates or support. Our full focus is on crafting the next chapter for Bliss OS, and we're excited for you to be a part of it when it arrives! The upcoming changes are so substantial that they make all existing documentation obsolete. It is crucial for us to prioritize rewriting our documentation and group notes to ensure that you have a smooth and successful experience with the new builds. Releasing new builds without accurate documentation would lead to confusion and a poor user experience.</p>
+          <p>All previous public releases will be incompatible with the new code base that we are preparing to deploy. This means that current users running existing builds will not be able to perform OTA (Over-the-Air) or manual updates to the new system. A complete reinstallation from scratch will be required.</p>
+          <p>We sincerely apologize for any inconvenience this may cause and we are incredibly grateful for your continued support and understanding. We have confidence that your patience will be worth it.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
-  <!-- Cover -->
 
-  <section class="section-fade-out-white pt-2 main_background2">
-
-    <div class="container py-5" style="position:absolute;">
-      <div class="row">
-        <div class="mx-auto col-lg-8 col-md-10">
-          <h1 class="display-3 mb-4">something new is coming to a system near you</h1>
-          <p class="lead mb-5">We are preparing for big changes...</p>
+  
+    <div class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="mx-auto p-4 col-md-6">
+            <h2 class="mb-4">Get in touch</h2>
+            <p> We love to hear from potential partners and offer a way for you to talk directly with the team by
+              emailing us. Whether you’re an existing partner or want to explore offering BlissOS, we look forward to
+              hearing from you. </p>
+            <!-- <p class="mb-0 lead" > <a href="mailto:social@blissos.org,info@blisscolabs.dev">info@blisscolabs.dev</a> </p> -->
+          </div>
+          <div class="mx-auto p-4 col-md-6">
+            <h2 class="mb-4">Send us a message</h2>
+            <form action="mailto:social@blissos.org" method="post" enctype="text/plain">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Name" style="opacity: 100%"
+                  required="required">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="mail" placeholder="Email" style="opacity: 100%"
+                  required="required">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="3" name="comment" placeholder="Your message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" value="Send"> Send </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    <div class="loader">
-
-      <div class="wrapper">
-        <span class="line-1"></span>
-        <span class="line-2"></span>
-        <span class="line-3"></span>
-        <span class="line-4"></span>
-        <span class="line-5"></span>
-        <span class="line-6"></span>
-        <span class="line-7"></span>
-        <span class="line-8"></span>
-        <span class="line-9"></span>
-        <span class="line-10"></span>
-        <span class="line-11"></span>
-        <span class="line-12"></span>
-        <span class="line-13"></span>
-        <span class="line-14"></span>
-        <span class="line-15"></span>
-        <span class="line-16"></span>
-        <span class="line-17"></span>
-        <span class="line-18"></span>
-        <span class="line-19"></span>
-        <span class="line-20"></span>
-        <span class="line-21"></span>
-        <span class="line-22"></span>
-        <span class="line-23"></span>
-        <span class="line-24"></span>
-        <span class="line-25"></span>
-        <span class="line-26"></span>
-        <span class="line-27"></span>
-        <span class="line-28"></span>
-        <span class="line-29"></span>
-        <span class="line-30"></span>
-      </div>
-      <!-- Spaceship by [Aleks](https://codepen.io/achudars/)'s Pen [Spaceship](https://codepen.io/achudars/pen/sbDdm/) -->
-      <div id="center">
-        <div id="spaceship">
-          <div id="window"></div>
+    <!-- END OF BLISSLABS -->
+    <!-- Footer -->
+    <div class="py-3 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-6 p-3">
+            <h5><b>Socials</b></h5>
+            <ul class="list-unstyled text-primary">
+              <li class="text-primary">
+                <a target="_blank" href="https://t.me/Team_Bliss_Community" class="text-info">BlissROMs Telegram</a>
+              </li>
+              <li class="text-primary">
+                <a target="_blank" href="https://matrix.to/#/#blissos:matrix.org" class="text-info">Bliss OS Matrix</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://t.me/blissx86" class="text-info">Bliss OS Telegram</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/BlissFamilyOfROMs/" class="text-info">Bliss
+                  Facebook</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/blissos_org" class="text-info">Bliss OS Twitter</a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/company/stayblissful" class="text-info">Bliss
+                  LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-6 p-3">
+            <h5><b>Sources</b></h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://review.blissroms.com" class="text-info">BlissROMs Gerrit Review</a>
+              </li>
+              <li>
+                <a href="https://github.com/BlissRoms" class="text-info">BlissROMs GitHub</a>
+              </li>
+              <li>
+                <a href="https://github.com/BlissRoms-Devices" style="" class="text-info">BlissROMs-Devices GitHub</a>
+              </li>
+              <li>
+                <a href="https://github.com/BlissRoms-x86" class="text-info">Bliss OS GitHub</a>
+              </li>
+              <li>
+                <a href="https://github.com/BlissRoms-pine64" class="text-info">BlissROMs-PINE64 GitHub</a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/android-generic/vendor_android-generic" class="text-info">Android-Generic
+                  GitLab</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-6 p-3">
+            <h5>Subreddits</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.reddit.com/r/BlissRoms" class="text-info">BlissROMs</a>
+              </li>
+              <li>
+                <a href="https://www.reddit.com/r/BlissOS" class="text-info">Bliss OS</a>
+              </li>
+              <li>
+                <a href="https://www.reddit.com/r/TeamBliss" class="text-info">TeamBliss</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-3 p-3">
+            <h5><b>Follow us</b></h5>
+            <div class="row">
+              <div class="col-md-12 d-flex align-items-center my-2 justify-content-center">
+                <a href="https://www.facebook.com/BlissFamilyOfROMs/" target="_blank">
+                  <i class="mr-2 text-light fa-2x"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="lucide lucide-facebook">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg></i>
+                </a>
+                <a href="https://instagram.com/blissos_org" target="_blank">
+                  <i class="mx-2 text-light fa-2x"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="lucide lucide-instagram">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg></i>
+                </a>
+                <a href="https://github.com/blissroms-x86" target="_blank">
+                  <i class="mx-2 text-light fa-2x"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="lucide lucide-github">
+                      <path
+                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                      <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg></i>
+                </a>
+                <a href="https://twitter.com/blissos_org" target="_blank">
+                  <i class="ml-2 text-light fa-2x"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="lucide lucide-twitter">
+                      <path
+                        d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                    </svg></i>
+                </a>
+                <a href="https://discord.com/invite/F9n5gbdNy2" target="_blank">
+                  <i class="ml-2 text-light fa-2x"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                      viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" class="lucide lucide-message-square-quote">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                      <path d="M8 12a2 2 0 0 0 2-2V8H8" />
+                      <path d="M14 12a2 2 0 0 0 2-2V8h-2" />
+                    </svg></i>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="tail"></div>
-        <div class="tail-2"></div>
-        <div id="left-wing"></div>
-        <div id="right-wing"></div>
-        <div id="exhaust"></div>
-        <div id="tail"></div>
       </div>
     </div>
-  </section>
-  <!-- Features -->
-  <!-- Desktop or Tablet UI -->
-  <!-- More Compatibility -->
-  <!-- Visit Social Communites -->
-  <!-- Privacy Section -->
-  <!-- We volunteer our time -->
-  <!-- Bliss OS Versions -->
-  <!-- Bliss OS Flavors & Variations -->
-  <!-- Bliss OS Download Section -->
-  <!-- Donations & Funding -->
-  <!-- Bliss OS Docs -->
-  <!-- Contribute -->
-  <!-- Android-Generic Section -->
-  <!-- Team Section -->
-  <!-- BLISSLABS Section -->
-  <!-- Footer -->
-  <section class="my-3" id="copyright">
-    <div class="container text-center">
-      <p class="mb-0 py-1">Copyright © 2025 BlissLabs. All rights reserved</p>
+    <div class="py-3 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center d-md-flex justify-content-between align-items-center">
+            <ul class="nav d-flex justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="images/Bliss_visual_system.pdf" target="_blank">Brand</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="licensing.html">Licensing &amp; Info</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://blisslabs.org">BlissLabs</a>
+              </li>
+            </ul>
+            <p class="mb-0 py-1">© 2025 BlissLabs. All rights reserved</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </section><!-- JavaScript dependencies -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" crossorigin="anonymous"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"></script>
-  <!-- Script: Smooth scrolling between anchors in the same page -->
-  <script src="js/smooth-scroll.js"></script>
-  <script src="js/adv.js"></script>
-
-  <style>
-    .bp-widget-widget {
-      width: 20em !important;
-      height: 4em !important;
-    }
-  </style>
-
+    <!-- JavaScript dependencies -->
+    <!-- <script src="js/mainani.js" type="text/javascript"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var myModal = new bootstrap.Modal(document.getElementById('lockdownModal'));
+        myModal.show();
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script> -->
+    <!-- Script: Smooth scrolling between anchors in the same page -->
+    <script src="js/smooth-scroll.js"></script>
+    <!-- <script src="https://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script> -->
+    <script src="js/counter.js"></script>
+    <script src="js/conditionize.js"></script>
+    <script src="js/adv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <!-- <script src="js/chat.js"></script> -->
+  </access>
 </body>
 
 </html>
