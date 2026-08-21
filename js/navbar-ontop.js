@@ -7,37 +7,39 @@
 (function() {
 
 	var className = "navbar-ontop"
-	
+
 	// we start hidden, to avoid flickering
 	document.write("<style id='temp-navbar-ontop'>.navbar {opacity:0; transition: none !important}</style>")
 
 	function update() {
-		// toggle className based on the scrollTop property of document
 		var nav = document.querySelector(".navbar")
+		if (!nav) return
 
 		if (window.scrollY > 15)
 			nav.classList.remove(className)
 		else
-			nav.classList.add(className) 
+			nav.classList.add(className)
 	}
 
-	document.addEventListener("DOMContentLoaded", function(event) {
-		$(window).on('show.bs.collapse', function (e) {
-			$(e.target).closest("." + className).removeClass(className);
-		})
+	function reveal() {
+		var temp = document.querySelector("#temp-navbar-ontop")
+		if (temp) temp.remove()
+	}
 
-		$(window).on('hidden.bs.collapse', function (e) {
-			update()
-		})
+	document.addEventListener("DOMContentLoaded", function() {
+		var collapse = document.querySelector(".navbar .collapse")
+		if (collapse) {
+			collapse.addEventListener("show.bs.collapse", function() {
+				var nav = document.querySelector(".navbar")
+				if (nav) nav.classList.remove(className)
+			})
+			collapse.addEventListener("hidden.bs.collapse", update)
+		}
+
 		update()
-		// still hacking to avoid flickering
-		setTimeout(function() {
-			document.querySelector("#temp-navbar-ontop").remove()
-		})
-  	});
-
-	window.addEventListener("scroll", function() {
-		update()			
+		setTimeout(reveal)
 	})
+
+	window.addEventListener("scroll", update)
 
 })();
