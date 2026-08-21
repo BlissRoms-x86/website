@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <title>Projects - Bliss OS</title>
+  <meta name="description" content="Map of the Bliss OS ecosystem: core OS trees, desktop apps and components, installer, Bass: Lineout, Bass: Submix, and Bass OS.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="neon.css">
+  <link rel="stylesheet" href="css/rebuild.css">
+  <script src="js/navbar-ontop.js"></script>
+  <script defer src="https://analytics.blisslabs.org/script.js"
+    data-website-id="ece62611-a982-4213-81bb-c948446d9eba"></script>
+</head>
+
+<body class="rebuild-site">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/new/NewBlissOS_logo_white.png"
+            class="d-inline-block align-top mx-auto img-fluid" style="width: 4rem;" alt="Bliss OS logo"></a>
+        <a class="navbar-brand" href="index.html"><span style="font-weight: 500">Bliss OS</span></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2"><a class="nav-link" href="status.html">Status</a></li>
+            <li class="nav-item mx-2"><a class="nav-link active" href="projects.html">Projects</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="contribute.html">Contribute</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="https://docs.blissos.org" target="_blank" rel="noopener">Docs</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="support.html">Support</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="licensing.html">Licensing</a></li>
+          </ul>
+          <a class="btn navbar-btn mx-2 btn-primary shadow" href="contribute.html">Get involved</a>
+        </div>
+      </div>
+    </nav>
+
+  <section class="section-fade-out-white pt-5 text-light page-hero main_background2">
+    <div class="container py-5 mt-5">
+      <p class="hero-kicker mb-2">Ecosystem</p>
+      <h1 class="mb-3 display-5">Projects</h1>
+      <p class="lead mb-0 col-lg-8">Bliss OS is a family of repositories. This map is the shortest way to find the org that matches the work you want to do.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-8">
+          <h2 class="section-title">How the pieces fit</h2>
+          <p>Android-Generic and the kernel trees are the bring-up layer. BlissOS / BlissRoms-x86 is the OS people install. The desktop you click on is a separate layer: Boringdroid (freeform windows and taskbar in AOSP), Smart Dock (launcher), and XTMapper (keyboard and mouse mapping). Ānanda Āropa is the new installer and initrd. Bass product lines use audio names (Lineout, Submix) as a play on BASS, Broad Apparatus Support System: Lineout is a Bass-funded Lineage OS tree for x86_64; Submix is Debian plus Waydroid. Bliss-Bass productizes the stack for devices and sends selected work back as open source.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <span class="pill pill-ok">Core OS</span>
+            <h3 class="mt-2">BlissOS</h3>
+            <p>Current Bliss OS platform repositories: manifests, frameworks, and related platform work for Android on PC.</p>
+            <p class="mb-1"><a href="https://github.com/BlissOS" target="_blank" rel="noopener">github.com/BlissOS</a></p>
+            <p class="mb-0"><a href="https://github.com/BlissOS/platform_manifest" target="_blank" rel="noopener">platform_manifest</a> ·
+              <a href="https://github.com/BlissOS/bug_reports" target="_blank" rel="noopener">bug_reports</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <span class="pill pill-ok">Core OS</span>
+            <h3 class="mt-2">BlissRoms-x86</h3>
+            <p>Long-running Bliss OS org: historical and current x86 trees, installer-related repos, and the public GitHub face many contributors already follow.</p>
+            <p class="mb-0"><a href="https://github.com/BlissRoms-x86" target="_blank" rel="noopener">github.com/BlissRoms-x86</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <span class="pill">Tooling</span>
+            <h3 class="mt-2">Android-Generic</h3>
+            <p>Prototyping toolkit, Zenith kernel work, project manager (AGPM), and documentation for building AOSP-based x86 images. GPL-2.0 for the core vendor project.</p>
+            <p class="mb-0"><a href="https://github.com/android-generic" target="_blank" rel="noopener">github.com/android-generic</a><br>
+              <a href="https://android-generic.github.io" target="_blank" rel="noopener">Project site</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <span class="pill">Installer</span>
+            <h3 class="mt-2">Ānanda Āropa</h3>
+            <p>New initrd and graphical installer: Devuan ceres live environment, Calamares, GRUB theming, and rootfs builders. x86_64 first. A better on-ramp than a full platform tree.</p>
+            <p class="mb-0"><a href="https://github.com/Ananda-Aropa" target="_blank" rel="noopener">github.com/Ananda-Aropa</a><br>
+              <a href="https://github.com/BlissOS/bootable_aaropa" target="_blank" rel="noopener">BlissOS/bootable_aaropa</a></p>
+          </div>
+        </div>
+      </div>
+      <h2 class="section-title mt-5" id="apps">Apps and desktop components</h2>
+      <p class="col-lg-9 mb-4">These are BlissLabs projects in the application layer: window management, the desktop launcher, and input mapping. They are developed as their own repos (often without a full AOSP tree) and shipped or used with Bliss OS. If you write Android apps, this is usually a better first patch than frameworks.</p>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="rebuild-card">
+            <span class="pill">Windows / SystemUI</span>
+            <h3 class="mt-2">Boringdroid</h3>
+            <p>Minimal AOSP patchset for freeform multi-window by default: minimize and resize, plus a PC-style taskbar (running tasks and installed apps). BlissLabs project, tracked as small forward-portable patches rather than a fork of the whole OS.</p>
+            <p class="mb-0"><a href="https://boringdroid.github.io/" target="_blank" rel="noopener">boringdroid.github.io</a><br>
+              <a href="https://github.com/boringdroid" target="_blank" rel="noopener">github.com/boringdroid</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="rebuild-card">
+            <span class="pill">Launcher</span>
+            <h3 class="mt-2">Smart Dock</h3>
+            <p>Desktop-mode launcher: dock, app menu, keyboard shortcuts, tablet and desktop layouts, multi-window. Independent app (axel358), featured under BlissLabs and used as the Bliss OS desktop shell. Java/Kotlin; no AOSP clone required.</p>
+            <p class="mb-0"><a href="https://github.com/axel358/smartdock" target="_blank" rel="noopener">github.com/axel358/smartdock</a><br>
+              <a href="https://f-droid.org/packages/cu.axel.smartdock/" target="_blank" rel="noopener">F-Droid</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="rebuild-card">
+            <span class="pill">Input</span>
+            <h3 class="mt-2">XTMapper</h3>
+            <p>Open-source keymapper: keyboard and mouse to touch for Android games on PC, with per-app profiles and a visual editor. Included with Bliss OS. Independent project (Xtr126), featured under BlissLabs.</p>
+            <p class="mb-0"><a href="https://xtr126.github.io/XtMapper-docs" target="_blank" rel="noopener">XtMapper docs</a><br>
+              <a href="https://github.com/Xtr126/XtMapper" target="_blank" rel="noopener">github.com/Xtr126/XtMapper</a></p>
+          </div>
+        </div>
+        <div class="col-12 mb-4">
+          <div class="rebuild-card rebuild-card-cta" id="propose-app">
+            <span class="pill">Open</span>
+            <h3 class="mt-2">Have an app, component, or idea?</h3>
+            <p>This list is not closed. If you are building a desktop launcher, window helper, input tool, settings panel, or something else that belongs on PC-class Android, bring it. Existing FOSS projects can ask to be listed here and considered for the BlissLabs family. We look at license, maintenance, and whether it actually fits Bliss OS.</p>
+            <p>Start in development chat with a short description and a repo link if you have one. Do not send a huge unsolicited patch against the OS trees.</p>
+            <p class="mb-0">
+              <a class="btn btn-primary me-2 mb-2" href="https://matrix.to/#/#blissos:matrix.org" target="_blank" rel="noopener">Propose on Matrix</a>
+              <a class="btn btn-outline-light me-2 mb-2" href="https://t.me/androidgenericpc" target="_blank" rel="noopener">Dev Telegram</a>
+              <a class="btn btn-outline-light mb-2" href="mailto:contact@blissos.org?subject=App%20or%20component%20proposal">Email a proposal</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bass-band text-light" id="bass">
+    <div class="container">
+      <span class="pill pill-warn">Commercial</span>
+      <h2 class="section-title mt-2">Bliss-Bass / Bass OS</h2>
+      <p class="col-lg-9">Bass OS is <a href="https://navotpala.tech/" target="_blank" rel="noopener">Navotpala Tech</a>'s product line on top of this stack: modular, brandable Android for x86_64 and ARM, including kiosks, retail, education, Raspberry Pi, and VirtIO. Demo and commercial licensing live on the Bass site. The community site stays focused on Bliss OS.</p>
+      <p class="col-lg-9"><strong>BASS</strong> is Broad Apparatus Support System. Product lines use audio names (Lineout, Submix, and others) as a play on that acronym. Public trees for those lines are below.</p>
+      <div class="row mt-4">
+        <div class="col-12 mb-4" id="lineout">
+          <div class="rebuild-card">
+            <span class="pill pill-ok">Android 16</span>
+            <span class="pill">Bass-funded</span>
+            <h3 class="mt-2">Bass: Lineout Core</h3>
+            <p>Lineage OS for x86_64 used as the base for Bass: Lineout builds: tablet, desktop, TV, and auto. Source is in <a href="https://github.com/los-tv-x86" target="_blank" rel="noopener">los-tv-x86</a>, including the <a href="https://github.com/los-tv-x86/external_mesa" target="_blank" rel="noopener">Mesa fork</a> used in current BlissOS and Android-Generic builds.</p>
+            <p>A public Android 14 Bass fork, <a href="https://github.com/Bliss-Bass/lineage_bass_android" target="_blank" rel="noopener">lineage_bass_android</a>, expands that Lineage tree for tablet, desktop, and related targets. It is a Bass snapshot, not the original TV-x86 project, and Bliss OS does not treat it as an upstream we expect someone else to maintain.</p>
+            <p>The original Android 14 TV-x86 effort is an independent personal project at <a href="https://github.com/LineageOS-TV-x86" target="_blank" rel="noopener">LineageOS-TV-x86</a>. Do not file Bliss OS or Bass issues there. That maintainer is not responsible for updates, support, or patches from this site.</p>
+            <p class="mb-0"><a href="https://github.com/los-tv-x86" target="_blank" rel="noopener">Lineout Core (los-tv-x86)</a> ·
+              <a href="https://github.com/Bliss-Bass/lineage_bass_android" target="_blank" rel="noopener">A14 Bass fork</a></p>
+          </div>
+        </div>
+        <div class="col-12 mb-4" id="submix">
+          <div class="rebuild-card">
+            <span class="pill pill-ok">Android 16</span>
+            <span class="pill">Debian + Waydroid</span>
+            <span class="pill">Bass product line</span>
+            <h3 class="mt-2">Bass: Submix</h3>
+            <p>A lightweight Debian host that boots into a Wayland compositor and runs Lineage OS / Android inside a Waydroid LXC container. Near-native Android on generic x86_64 hardware, with Bliss-Bass enterprise customization. Source is public in <a href="https://github.com/Bliss-Bass/bass-submix" target="_blank" rel="noopener">Bliss-Bass/bass-submix</a>.</p>
+            <p class="mb-0"><a href="https://github.com/Bliss-Bass/bass-submix" target="_blank" rel="noopener">github.com/Bliss-Bass/bass-submix</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <h4>Bliss-Bass org</h4>
+            <p>Product trees, ARM/RPi work, documentation, and release repos.</p>
+            <p class="mb-0"><a href="https://github.com/Bliss-Bass" target="_blank" rel="noopener">github.com/Bliss-Bass</a><br>
+              <a href="https://bassos.navotpala.tech/" target="_blank" rel="noopener">bassos.navotpala.tech</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <h4>Using Bliss OS or Bass in a product</h4>
+            <p>Public Bliss OS source can be used under the licenses on each repo. Proprietary add-ons do not come with free commercial rights. Dual-license details stay on the licensing page.</p>
+            <a class="btn btn-primary me-2" href="https://bassos.navotpala.tech/" target="_blank" rel="noopener">Bass OS</a>
+            <a class="btn btn-outline-light" href="licensing.html">Licensing</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Related</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <p class="mb-1"><strong>Gerrit</strong></p>
+          <p class="mb-0"><a href="https://review.blissroms.com" target="_blank" rel="noopener">review.blissroms.com</a>, still used for some BlissROMs / platform review.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <p class="mb-1"><strong>BlissLabs</strong></p>
+          <p class="mb-0"><a href="https://blisslabs.org" target="_blank" rel="noopener">blisslabs.org</a>, fiscal host and umbrella for infrastructure.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <p class="mb-1"><strong>Docs</strong></p>
+          <p class="mb-0"><a href="https://docs.blissos.org" target="_blank" rel="noopener">docs.blissos.org</a>, still useful, but written for the previous public generation.</p>
+        </div>
+      </div>
+      <p class="mt-3"><a href="contribute.html">Ready to pick a repo? Go to the contributor guide →</a></p>
+    </div>
+  </section>
+
+  <div class="py-3 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-6 p-3">
+          <h5><b>Community</b></h5>
+          <ul class="list-unstyled">
+            <li><a target="_blank" rel="noopener" href="https://matrix.to/#/#blissos:matrix.org" class="text-info">Bliss OS Matrix</a></li>
+            <li><a target="_blank" rel="noopener" href="https://t.me/androidgenericpc" class="text-info">Dev Telegram</a></li>
+            <li><a target="_blank" rel="noopener" href="https://t.me/blissx86" class="text-info">Bliss OS Telegram</a></li>
+            <li><a target="_blank" rel="noopener" href="https://discord.com/invite/F9n5gbdNy2" class="text-info">Discord</a></li>
+            <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/BlissOS" class="text-info">r/BlissOS</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6 p-3">
+          <h5><b>Sources</b></h5>
+          <ul class="list-unstyled">
+            <li><a href="https://github.com/BlissOS" class="text-info">BlissOS GitHub</a></li>
+            <li><a href="https://github.com/BlissRoms-x86" class="text-info">BlissRoms-x86 GitHub</a></li>
+            <li><a href="https://github.com/android-generic" class="text-info">Android-Generic GitHub</a></li>
+            <li><a href="https://github.com/Ananda-Aropa" class="text-info">Ānanda Āropa GitHub</a></li>
+            <li><a href="https://github.com/Bliss-Bass" class="text-info">Bliss-Bass GitHub</a></li>
+            <li><a href="#apps" class="text-info">Apps &amp; components</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6 p-3">
+          <h5>Get involved</h5>
+          <ul class="list-unstyled">
+            <li><a href="contribute.html" class="text-info">Contribute</a></li>
+            <li><a href="support.html" class="text-info">Servers &amp; funding</a></li>
+            <li><a href="https://opencollective.com/bliss-os" class="text-info">Open Collective</a></li>
+            <li><a href="https://docs.blissos.org" class="text-info">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 p-3">
+          <h5><b>Also</b></h5>
+          <ul class="list-unstyled">
+            <li><a href="https://blisslabs.org" class="text-info">BlissLabs</a></li>
+            <li><a href="https://bassos.navotpala.tech/" class="text-info">Bass OS</a></li>
+            <li><a href="licensing.html" class="text-info">Licensing</a></li>
+            <li><a href="download.html" class="text-info">Archive downloads</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center d-md-flex justify-content-between align-items-center">
+          <ul class="nav d-flex justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="images/Bliss_visual_system.pdf" target="_blank" rel="noopener">Brand</a></li>
+            <li class="nav-item"><a class="nav-link" href="licensing.html">Licensing</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://blisslabs.org">BlissLabs</a></li>
+          </ul>
+          <p class="mb-0 py-1">© 2026 BlissLabs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

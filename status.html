@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <title>Development status - Bliss OS</title>
+  <meta name="description" content="Honest status of Bliss OS: public consumer ISOs are paused, source development is not, and there is no ETA for the first image from the new tree.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="neon.css">
+  <link rel="stylesheet" href="css/rebuild.css">
+  <script src="js/navbar-ontop.js"></script>
+  <script defer src="https://analytics.blisslabs.org/script.js"
+    data-website-id="ece62611-a982-4213-81bb-c948446d9eba"></script>
+</head>
+
+<body class="rebuild-site">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/new/NewBlissOS_logo_white.png"
+            class="d-inline-block align-top mx-auto img-fluid" style="width: 4rem;" alt="Bliss OS logo"></a>
+        <a class="navbar-brand" href="index.html"><span style="font-weight: 500">Bliss OS</span></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2"><a class="nav-link active" href="status.html">Status</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="contribute.html">Contribute</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="https://docs.blissos.org" target="_blank" rel="noopener">Docs</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="support.html">Support</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="licensing.html">Licensing</a></li>
+          </ul>
+          <a class="btn navbar-btn mx-2 btn-primary shadow" href="contribute.html">Get involved</a>
+        </div>
+      </div>
+    </nav>
+
+  <section class="section-fade-out-white pt-5 text-light page-hero main_background2">
+    <div class="container py-5 mt-5">
+      <p class="hero-kicker mb-2">As of August 2026</p>
+      <h1 class="mb-3 display-5">Development status</h1>
+      <p class="lead mb-0 col-lg-8">Public consumer releases are paused. Development continues. This page is a status update, not a countdown or a lockdown notice.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 mb-4">
+          <h2 class="section-title">What the pause is</h2>
+          <p>We stopped publishing new official Bliss OS images for general use while the next platform is assembled. The previous public tree, documentation, and support notes do not describe what we are building now. Shipping another ISO on top of that would have created a support mess and a false upgrade path.</p>
+          <p>That decision was never "the project stopped." BlissOS, BlissRoms-x86, Android-Generic, Ānanda Āropa, Bliss-Bass, desktop components (Boringdroid, Smart Dock, XTMapper), and related trees have stayed in active development. We did not keep sending people to old docs and old group FAQ as if they still matched the current tree.</p>
+          <div class="callout callout-warn mt-4">
+            <p class="mb-0"><strong>No ETA.</strong> We will not invent a ship date for the first public image from the new tree. The remaining blockers are documentation, a release pipeline, and enough build/test capacity to stand behind what we publish.</p>
+          </div>
+        </div>
+        <div class="col-lg-5 mb-4">
+          <div class="rebuild-card">
+            <h3>What this means for users</h3>
+            <ul class="need-list">
+              <li>Older SourceForge builds are archives: no updates, no official support.</li>
+              <li>Existing installs will not OTA or sideload onto the new codebase. A clean install will be required.</li>
+              <li>General Telegram/Discord user support was paused with the public releases.</li>
+              <li>Development chat remains the place to talk about the next platform.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="section-title mb-4">Checklist</h2>
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="rebuild-card">
+            <ul class="status-list">
+              <li>
+                <span class="status-mark done" aria-hidden="true">✓</span>
+                <div><strong>Pause public consumer releases</strong><br>Done. This is the period we have been in.</div>
+              </li>
+              <li>
+                <span class="status-mark done" aria-hidden="true">✓</span>
+                <div><strong>Next-platform architecture and trees</strong><br>Work continues across BlissOS, BlissRoms-x86, and Android-Generic.</div>
+              </li>
+              <li>
+                <span class="status-mark done" aria-hidden="true">✓</span>
+                <div><strong>Ānanda Āropa installer and initrd</strong><br>Calamares + Devuan live environment replacing the old console installer path.</div>
+              </li>
+              <li>
+                <span class="status-mark done" aria-hidden="true">✓</span>
+                <div><strong>Bass OS product builds and OSS feedback</strong><br>Commercial images exist; selected trees and components are public.</div>
+              </li>
+              <li>
+                <span class="status-mark open" aria-hidden="true">•</span>
+                <div><strong>Rewrite documentation and group notes</strong><br>docs.blissos.org still documents the previous generation. Contributors can help with this.</div>
+              </li>
+              <li>
+                <span class="status-mark open" aria-hidden="true">•</span>
+                <div><strong>Build, storage, and ISO pipeline</strong><br>Community nightlies need runners, disk, and a mirror. See <a href="support.html">infrastructure needs</a>.</div>
+              </li>
+              <li>
+                <span class="status-mark open" aria-hidden="true">•</span>
+                <div><strong>Internal testing against the new docs</strong><br>We will not call a build "public" until install and support notes match it.</div>
+              </li>
+              <li>
+                <span class="status-mark open" aria-hidden="true">•</span>
+                <div><strong>First official public Bliss OS images from the new tree</strong><br>Not started as a release. Help on the open items is how this box gets checked.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="mt-4 mb-0">Updated August 2026. When something on this list changes, this page should change with it.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h2 class="section-title">If you want to help close the open items</h2>
+          <p>Code, docs, hardware reports, build machines, and mirrors are all needed before we can ship. Licensing and OEM work still exist; they live on their own pages now.</p>
+          <a class="btn btn-primary me-2 mb-2" href="contribute.html">Contribute</a>
+          <a class="btn btn-outline-light mb-2" href="support.html">Support infrastructure</a>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h2 class="section-title">If you need a build today</h2>
+          <p>Use <a href="download.html">archive downloads</a> knowing they are frozen. Product and evaluation images for hardware makers live on the <a href="https://bassos.navotpala.tech/" target="_blank" rel="noopener">Bass OS</a> site. That is a different line, with its own licensing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="py-3 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-6 p-3">
+          <h5><b>Community</b></h5>
+          <ul class="list-unstyled">
+            <li><a target="_blank" rel="noopener" href="https://matrix.to/#/#blissos:matrix.org" class="text-info">Bliss OS Matrix</a></li>
+            <li><a target="_blank" rel="noopener" href="https://t.me/androidgenericpc" class="text-info">Dev Telegram</a></li>
+            <li><a target="_blank" rel="noopener" href="https://t.me/blissx86" class="text-info">Bliss OS Telegram</a></li>
+            <li><a target="_blank" rel="noopener" href="https://discord.com/invite/F9n5gbdNy2" class="text-info">Discord</a></li>
+            <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/BlissOS" class="text-info">r/BlissOS</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6 p-3">
+          <h5><b>Sources</b></h5>
+          <ul class="list-unstyled">
+            <li><a href="https://github.com/BlissOS" class="text-info">BlissOS GitHub</a></li>
+            <li><a href="https://github.com/BlissRoms-x86" class="text-info">BlissRoms-x86 GitHub</a></li>
+            <li><a href="https://github.com/android-generic" class="text-info">Android-Generic GitHub</a></li>
+            <li><a href="https://github.com/Ananda-Aropa" class="text-info">Ānanda Āropa GitHub</a></li>
+            <li><a href="https://github.com/Bliss-Bass" class="text-info">Bliss-Bass GitHub</a></li>
+            <li><a href="projects.html#apps" class="text-info">Apps &amp; components</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6 p-3">
+          <h5>Get involved</h5>
+          <ul class="list-unstyled">
+            <li><a href="contribute.html" class="text-info">Contribute</a></li>
+            <li><a href="support.html" class="text-info">Servers &amp; funding</a></li>
+            <li><a href="https://opencollective.com/bliss-os" class="text-info">Open Collective</a></li>
+            <li><a href="https://docs.blissos.org" class="text-info">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 p-3">
+          <h5><b>Also</b></h5>
+          <ul class="list-unstyled">
+            <li><a href="https://blisslabs.org" class="text-info">BlissLabs</a></li>
+            <li><a href="https://bassos.navotpala.tech/" class="text-info">Bass OS</a></li>
+            <li><a href="licensing.html" class="text-info">Licensing</a></li>
+            <li><a href="download.html" class="text-info">Archive downloads</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center d-md-flex justify-content-between align-items-center">
+          <ul class="nav d-flex justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="images/Bliss_visual_system.pdf" target="_blank" rel="noopener">Brand</a></li>
+            <li class="nav-item"><a class="nav-link" href="licensing.html">Licensing</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://blisslabs.org">BlissLabs</a></li>
+          </ul>
+          <p class="mb-0 py-1">© 2026 BlissLabs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

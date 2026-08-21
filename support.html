@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <title>Support the build - Bliss OS</title>
+  <meta name="description" content="Help Bliss OS with build servers, storage, CI runners, test hardware, and funding through Open Collective and GitHub Sponsors.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="neon.css">
+  <link rel="stylesheet" href="css/rebuild.css">
+  <script src="js/navbar-ontop.js"></script>
+  <script defer src="https://analytics.blisslabs.org/script.js"
+    data-website-id="ece62611-a982-4213-81bb-c948446d9eba"></script>
+</head>
+
+<body class="rebuild-site">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/new/NewBlissOS_logo_white.png"
+            class="d-inline-block align-top mx-auto img-fluid" style="width: 4rem;" alt="Bliss OS logo"></a>
+        <a class="navbar-brand" href="index.html"><span style="font-weight: 500">Bliss OS</span></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-2"><a class="nav-link" href="status.html">Status</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="contribute.html">Contribute</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="https://docs.blissos.org" target="_blank" rel="noopener">Docs</a></li>
+            <li class="nav-item mx-2"><a class="nav-link active" href="support.html">Support</a></li>
+            <li class="nav-item mx-2"><a class="nav-link" href="licensing.html">Licensing</a></li>
+          </ul>
+          <a class="btn navbar-btn mx-2 btn-primary shadow" href="https://opencollective.com/bliss-os" target="_blank" rel="noopener">Donate</a>
+        </div>
+      </div>
+    </nav>
+
+  <section class="section-fade-out-white pt-5 text-light page-hero main_background2">
+    <div class="container py-5 mt-5">
+      <p class="hero-kicker mb-2">Infrastructure</p>
+      <h1 class="mb-3 display-5">We need build machines as well as code</h1>
+      <p class="lead col-lg-8">AOSP-on-PC does not compile on a laptop in the background. If we want community nightlies and a download pipeline again, we need build capacity, storage, bandwidth, and hardware to test on. Money helps. So do unused servers and disk.</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title mb-4">What we need</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <span class="pill">Build</span>
+            <h3 class="mt-2">Compile machines</h3>
+            <p>High-core x86_64 hosts with large RAM and fast disk for AOSP and kernel builds. Persistent self-hosted GitHub Actions / CI runners beat bursting cloud credits on this class of project.</p>
+            <ul class="need-list">
+              <li>Community nightly builders</li>
+              <li>Dedicated kernel / Mesa builders</li>
+              <li>Access we can document for trusted contributors</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <span class="pill">Ship</span>
+            <h3 class="mt-2">Storage, CDN, mirrors</h3>
+            <p>ISOs and debug artifacts are large. SourceForge archives cannot replace a release pipeline. We need disk and bandwidth under BlissLabs control, plus volunteer mirrors.</p>
+            <ul class="need-list">
+              <li>Object storage or dedicated download hosts</li>
+              <li>Geographic mirrors</li>
+              <li>Retention for a small set of nightlies</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <span class="pill">Test</span>
+            <h3 class="mt-2">Hardware</h3>
+            <p>Laptops, Surface-class devices, mini-PCs, ARM boards, kiosk/TV gear. The <a href="https://opencollective.com/device-seeding-program" target="_blank" rel="noopener">Device Seeding Program</a> exists specifically to buy or receive this.</p>
+            <ul class="need-list">
+              <li>UEFI PCs for installer and desktop testing</li>
+              <li>SBCs and ARM targets used by Bass / AG</li>
+              <li>Spare NVMe / RAM for builders</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <span class="pill">Fund</span>
+            <h3 class="mt-2">Recurring costs</h3>
+            <p>Power, transit, domain, and the occasional cloud burst. Fiscal host is BlissLabs via Open Collective. That ledger is public.</p>
+            <ul class="need-list">
+              <li>Labeled gifts for infra vs devices vs R&amp;D</li>
+              <li>Company sponsorship with a logo if you want it</li>
+              <li>One-time hardware grants</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="section-title mb-3">Three levels of help</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="rebuild-card">
+            <h3>Mirror or host</h3>
+            <p>Offer rsync/HTTP space for ISOs and source snapshots. Email us with capacity, region, and how long you can keep it.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="rebuild-card">
+            <h3>Lend a runner</h3>
+            <p>A machine we can SSH to or register as a self-hosted runner. Tell us cores, RAM, disk, and whether it can stay on 24/7.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="rebuild-card">
+            <h3>Sponsor a month of builds</h3>
+            <p>Underwrite power, storage, or a cloud builder for 30 days. We will credit sponsors on this page when you want that.</p>
+          </div>
+        </div>
+      </div>
+      <div class="callout mt-2">
+        <p class="mb-0">In-kind offers: write <a href="mailto:contact@blissos.org?subject=Infrastructure%20offer">contact@blissos.org</a> with subject "Infrastructure offer". Hardware shipping and device loans: same address, or the <a href="https://opencollective.com/device-seeding-program" target="_blank" rel="noopener">Device Seeding</a> collective. We will not publish your street address. We will credit the donation if you want credit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="donate">
+    <div class="container">
+      <h2 class="section-title mb-4">Money</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <h3>Open Collective (Bliss OS)</h3>
+            <p>Primary community fund, fiscally hosted by BlissLabs. Monthly and one-time. Use this for general Bliss OS work.</p>
+            <a class="btn btn-primary" href="https://opencollective.com/bliss-os" target="_blank" rel="noopener">opencollective.com/bliss-os</a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <h3>GitHub Sponsors</h3>
+            <p>Direct sponsorship of the BlissRoms-x86 org. Useful if you already live in GitHub's billing.</p>
+            <a class="btn btn-primary" href="https://github.com/sponsors/BlissRoms-x86" target="_blank" rel="noopener">github.com/sponsors/BlissRoms-x86</a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <h3>Device Seeding</h3>
+            <p>Earmarked for laptops, tablets, SBCs, and build workstations used by developers.</p>
+            <a class="btn btn-outline-light" href="https://opencollective.com/device-seeding-program" target="_blank" rel="noopener">Device Seeding Program</a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="rebuild-card">
+            <h3>Research &amp; Development</h3>
+            <p>Installer experiments, AG tooling, and related side projects that started as R&amp;D (including work that became Android-Generic and Bass).</p>
+            <a class="btn btn-outline-light" href="https://opencollective.com/research-and-development" target="_blank" rel="noopener">R&amp;D fund</a>
+          </div>
+        </div>
+      </div>
+      <p>BlissLabs itself: <a href="https://opencollective.com/blisslabs" target="_blank" rel="noopener">opencollective.com/blisslabs</a>.</p>
+    </div>
+  </section>
+
+  <section class="py-5 bass-band text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h2 class="section-title">Companies</h2>
+          <p>If you ship hardware or a product on this stack, builders, mirrors, and test devices help more than a license email alone. Bass OS is the commercial product line; it already funds some community infrastructure and upstreams patches.</p>
+          <p>Want a branded OS, kiosk image, or a license that is not GPL? That is <a href="https://bassos.navotpala.tech/" target="_blank" rel="noopener">Bass OS</a> and <a href="licensing.html">licensing</a>. Want the public Bliss OS nightlies to exist? Use this page.</p>
+          <a class="btn btn-primary me-2 mb-2" href="mailto:contact@blissos.org?subject=Corporate%20infrastructure%20sponsorship">Talk to us about infra</a>
+          <a class="btn btn-outline-light mb-2" href="licensing.html">Licensing</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="py-3 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-6 p-3">
+          <h5><b>Community</b></h5>
+          <ul class="list-unstyled">
+            <li><a target="_blank" rel="noopener" href="https://matrix.to/#/#blissos:matrix.org" class="text-info">Bliss OS Matrix</a></li>
+            <li><a target="_blank" rel="noopener" href="https://t.me/androidgenericpc" class="text-info">Dev Telegram</a></li>
+            <li><a target="_blank" rel="noopener" href="https://t.me/blissx86" class="text-info">Bliss OS Telegram</a></li>
+            <li><a target="_blank" rel="noopener" href="https://discord.com/invite/F9n5gbdNy2" class="text-info">Discord</a></li>
+            <li><a target="_blank" rel="noopener" href="https://www.reddit.com/r/BlissOS" class="text-info">r/BlissOS</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6 p-3">
+          <h5><b>Sources</b></h5>
+          <ul class="list-unstyled">
+            <li><a href="https://github.com/BlissOS" class="text-info">BlissOS GitHub</a></li>
+            <li><a href="https://github.com/BlissRoms-x86" class="text-info">BlissRoms-x86 GitHub</a></li>
+            <li><a href="https://github.com/android-generic" class="text-info">Android-Generic GitHub</a></li>
+            <li><a href="https://github.com/Ananda-Aropa" class="text-info">Ānanda Āropa GitHub</a></li>
+            <li><a href="https://github.com/Bliss-Bass" class="text-info">Bliss-Bass GitHub</a></li>
+            <li><a href="projects.html#apps" class="text-info">Apps &amp; components</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-6 p-3">
+          <h5>Get involved</h5>
+          <ul class="list-unstyled">
+            <li><a href="contribute.html" class="text-info">Contribute</a></li>
+            <li><a href="support.html" class="text-info">Servers &amp; funding</a></li>
+            <li><a href="https://opencollective.com/bliss-os" class="text-info">Open Collective</a></li>
+            <li><a href="https://docs.blissos.org" class="text-info">Documentation</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 p-3">
+          <h5><b>Also</b></h5>
+          <ul class="list-unstyled">
+            <li><a href="https://blisslabs.org" class="text-info">BlissLabs</a></li>
+            <li><a href="https://bassos.navotpala.tech/" class="text-info">Bass OS</a></li>
+            <li><a href="licensing.html" class="text-info">Licensing</a></li>
+            <li><a href="download.html" class="text-info">Archive downloads</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-3 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center d-md-flex justify-content-between align-items-center">
+          <ul class="nav d-flex justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="images/Bliss_visual_system.pdf" target="_blank" rel="noopener">Brand</a></li>
+            <li class="nav-item"><a class="nav-link" href="licensing.html">Licensing</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://blisslabs.org">BlissLabs</a></li>
+          </ul>
+          <p class="mb-0 py-1">© 2026 BlissLabs</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

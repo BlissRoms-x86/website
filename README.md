@@ -11,5 +11,8 @@
 
 # Bliss OS Website
 
-* Official Bliss OS website, can be found [here](https://blissos.org).
-* Licensed under the [GPLv3 license](LICENSE)
+Official Bliss OS website: [blissos.org](https://blissos.org).
+
+The public site is oriented around development status, the project map (BlissOS, Android-Generic, Ānanda Āropa, Bliss-Bass), contributor onboarding, and infrastructure support. Licensing remains at `licensing.html`. Archived ISOs are documented as unsupported snapshots.
+
+Licensed under the [GPLv3 license](LICENSE).
