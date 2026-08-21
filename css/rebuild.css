@@ -289,6 +289,13 @@ body.rebuild-site {
   background-color: transparent;
 }
 
+@media (max-width: 991.98px) {
+  .rebuild-site .navbar.fixed-top > .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 .rebuild-site footer a.text-info {
   color: #7ec4ff !important;
 }
