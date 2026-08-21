@@ -1,4 +1,13 @@
-# Bliss OS Code of Conduct
+# BlissLabs / Bliss OS Code of Conduct
+
+This Code of Conduct applies to BlissLabs community spaces and to Bliss OS,
+Bass OS, Android-Generic, Ānanda Āropa, Bass: Lineout, Bass: Submix, and related
+sub-projects.
+
+Code and documentation you submit are also covered by the
+[BlissLabs Contributor License Agreement](CLA.md). Signing the CLA is required
+before we can merge your work. This Code of Conduct is about behavior. The CLA
+is about copyright, patents, and dual-licensing.
 
 ## Our Pledge
 
@@ -118,8 +127,22 @@ individual, or aggression toward or disparagement of classes of individuals.
 **Consequence**: A permanent ban from any sort of public interaction within
 the community.
 
+## Contributor License Agreement
+
+By contributing original work (including pull requests, patches, and
+documentation) you must accept the [BlissLabs CLA](CLA.md).
+
+* Individuals sign on GitHub when the CLA check comments on your pull request.
+* Companies whose employees contribute as part of their job must also complete
+  the Corporate CLA in that file and email it to contact@blisslabs.org.
+
+Project maintainers will not merge contributions that are not covered by a
+signed CLA, except for trivial third-party submissions marked as described in
+the CLA.
+
 ## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org),
 version 2.0, available at
 https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+
