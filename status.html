@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <title>Development status - Bliss OS</title>
-  <meta name="description" content="Honest status of Bliss OS: public consumer ISOs are paused, source development is not, and there is no ETA for the first image from the new tree.">
+  <meta name="description" content="Honest status of Bliss OS: public ISOs are paused, source development is not, and there is no ETA for the first image from the new tree.">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="neon.css">
   <link rel="stylesheet" href="css/rebuild.css">
@@ -43,7 +43,7 @@
     <div class="container py-5 mt-5">
       <p class="hero-kicker mb-2">As of August 2026</p>
       <h1 class="mb-3 display-5">Development status</h1>
-      <p class="lead mb-0 col-lg-8">Public consumer releases are paused. Development continues. This page is a status update, not a countdown or a lockdown notice.</p>
+      <p class="lead mb-0 col-lg-8">Public images are paused. Development continues. This is a status page, not a countdown or a "the project is dead" notice.</p>
     </div>
   </section>
 
@@ -52,10 +52,10 @@
       <div class="row">
         <div class="col-lg-7 mb-4">
           <h2 class="section-title">What the pause is</h2>
-          <p>We stopped publishing new official Bliss OS images for general use while the next platform is assembled. The previous public tree, documentation, and support notes do not describe what we are building now. Shipping another ISO on top of that would have created a support mess and a false upgrade path.</p>
+          <p>We stopped publishing new official Bliss OS images while the next tree is built. The previous public tree, documentation, and support notes do not describe what we are building now. Shipping another ISO on top of that would have created a support mess and a false upgrade path.</p>
           <p>That decision was never "the project stopped." BlissOS, BlissRoms-x86, Android-Generic, Ānanda Āropa, Bliss-Bass, desktop components (Boringdroid, Smart Dock, XTMapper), and related trees have stayed in active development. We did not keep sending people to old docs and old group FAQ as if they still matched the current tree.</p>
           <div class="callout callout-warn mt-4">
-            <p class="mb-0"><strong>No ETA.</strong> We will not invent a ship date for the first public image from the new tree. The remaining blockers are documentation, a release pipeline, and enough build/test capacity to stand behind what we publish.</p>
+            <p class="mb-0"><strong>No ETA.</strong> We will not invent a ship date for the first public image from the new tree. The remaining blockers are documentation, builders and mirrors, and enough testing that we can actually support what we publish.</p>
           </div>
         </div>
         <div class="col-lg-5 mb-4">
@@ -65,7 +65,7 @@
               <li>Older SourceForge builds are archives: no updates, no official support.</li>
               <li>Existing installs will not OTA or sideload onto the new codebase. A clean install will be required.</li>
               <li>General Telegram/Discord user support was paused with the public releases.</li>
-              <li>Development chat remains the place to talk about the next platform.</li>
+              <li>Development chat remains the place to talk about the next tree.</li>
             </ul>
           </div>
         </div>
@@ -82,11 +82,11 @@
             <ul class="status-list">
               <li>
                 <span class="status-mark done" aria-hidden="true">✓</span>
-                <div><strong>Pause public consumer releases</strong><br>Done. This is the period we have been in.</div>
+                <div><strong>Pause public images</strong><br>Done. This is the period we have been in.</div>
               </li>
               <li>
                 <span class="status-mark done" aria-hidden="true">✓</span>
-                <div><strong>Next-platform architecture and trees</strong><br>Work continues across BlissOS, BlissRoms-x86, and Android-Generic.</div>
+                <div><strong>New trees and architecture</strong><br>Work continues across BlissOS, BlissRoms-x86, and Android-Generic.</div>
               </li>
               <li>
                 <span class="status-mark done" aria-hidden="true">✓</span>
@@ -94,7 +94,7 @@
               </li>
               <li>
                 <span class="status-mark done" aria-hidden="true">✓</span>
-                <div><strong>Bass OS product builds and OSS feedback</strong><br>Commercial images exist; selected trees and components are public.</div>
+                <div><strong>Bass OS commercial builds and OSS feedback</strong><br>Commercial images exist; selected trees and components are public.</div>
               </li>
               <li>
                 <span class="status-mark open" aria-hidden="true">•</span>
@@ -102,7 +102,7 @@
               </li>
               <li>
                 <span class="status-mark open" aria-hidden="true">•</span>
-                <div><strong>Build, storage, and ISO pipeline</strong><br>Community nightlies need runners, disk, and a mirror. See <a href="support.html">infrastructure needs</a>.</div>
+                <div><strong>Builders, storage, and ISO hosting</strong><br>Community nightlies need runners, disk, and a mirror. See <a href="support.html">what we need for builds</a>.</div>
               </li>
               <li>
                 <span class="status-mark open" aria-hidden="true">•</span>
@@ -110,7 +110,7 @@
               </li>
               <li>
                 <span class="status-mark open" aria-hidden="true">•</span>
-                <div><strong>First official public Bliss OS images from the new tree</strong><br>Not started as a release. Help on the open items is how this box gets checked.</div>
+                <div><strong>First public Bliss OS images from the new tree</strong><br>Not started as a release. Help on the open items is how this box gets checked.</div>
               </li>
             </ul>
           </div>
@@ -125,13 +125,13 @@
       <div class="row">
         <div class="col-md-6 mb-4">
           <h2 class="section-title">If you want to help close the open items</h2>
-          <p>Code, docs, hardware reports, build machines, and mirrors are all needed before we can ship. Licensing and OEM work still exist; they live on their own pages now.</p>
+          <p>Code, docs, hardware reports, build machines, and mirrors are all needed before we can ship. Licensing and commercial builds still exist; they live on their own pages now.</p>
           <a class="btn btn-primary me-2 mb-2" href="contribute.html">Contribute</a>
           <a class="btn btn-outline-light mb-2" href="support.html">Support infrastructure</a>
         </div>
         <div class="col-md-6 mb-4">
           <h2 class="section-title">If you need a build today</h2>
-          <p>Use <a href="download.html">archive downloads</a> knowing they are frozen. Product and evaluation images for hardware makers live on the <a href="https://bassos.navotpala.tech/" target="_blank" rel="noopener">Bass OS</a> site. That is a different line, with its own licensing.</p>
+          <p>Use <a href="download.html">archive downloads</a> knowing they are frozen. Device images for hardware vendors live on the <a href="https://bassos.navotpala.tech/" target="_blank" rel="noopener">Bass OS</a> site. That is a different project, with its own licensing.</p>
         </div>
       </div>
     </div>
