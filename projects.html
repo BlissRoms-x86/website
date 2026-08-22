@@ -52,7 +52,7 @@
       <div class="row mb-4">
         <div class="col-lg-8">
           <h2 class="section-title">How the pieces fit</h2>
-          <p>Android-Generic and the kernel trees are the bring-up layer. BlissOS / BlissRoms-x86 is the OS people install. The desktop you click on is a separate layer: Boringdroid (freeform windows and taskbar in AOSP), Smart Dock (launcher), and XTMapper (keyboard and mouse mapping). Ānanda Āropa is the new installer and initrd. Bass editions use audio names (Lineout, Submix) as a play on BASS, Broad Apparatus Support System: Lineout is a Bass-funded Lineage OS tree for x86_64; Submix is Debian plus Waydroid. Bliss-Bass ships this stack on devices and sends selected work back as open source.</p>
+          <p>Android-Generic and the kernel trees are the bring-up layer. BlissOS / BlissRoms-x86 is the OS people install. The desktop you click on is a separate layer: Boringdroid (freeform windows and taskbar in AOSP), Smart Dock (launcher), and XTMapper (keyboard and mouse mapping). Ānanda Āropa is the new installer and initrd. Bass editions use audio names (Lineout, Submix) as a play on BASS, Broad Apparatus Support System: Lineout is a Bass-funded Lineage OS tree for x86_64; Submix is Debian plus Waydroid. Bliss-Bass ships this stack on devices and contributes selected work back when it helps the whole ecosystem.</p>
         </div>
       </div>
       <div class="row">
@@ -140,17 +140,50 @@
     </div>
   </section>
 
+  <section class="py-5 bg-dark" id="how-it-flows">
+    <div class="container">
+      <h2 class="section-title">How the work flows both ways</h2>
+      <p class="col-lg-9 mb-4">Bliss OS is the public project. <a href="https://navotpala.tech/" target="_blank" rel="noopener">Navotpala Tech</a> is the commercial counterpart that works with this community. Users and FOSS developers stay here. Companies that need a contract, a license, or someone to stand behind a product start there. The two are meant to feed each other.</p>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="rebuild-card">
+            <span class="pill">Community</span>
+            <h3 class="mt-2">Bliss OS</h3>
+            <p>People write code, docs, and tests in the open. That public development is what the OS is made of, and it is what Navotpala Tech builds on when a company needs help.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="rebuild-card">
+            <span class="pill">Commercial</span>
+            <h3 class="mt-2">Navotpala Tech</h3>
+            <p>Contract development with this community, plus commercial licensing, LTS, servicing, and liability for Bliss OS, Bass OS, Waydroid, and related stacks. If you want to ship a product, that is the door.</p>
+            <p class="mb-0"><a href="https://navotpala.tech/" target="_blank" rel="noopener">navotpala.tech</a> ·
+              <a href="licensing.html">Licensing</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="rebuild-card">
+            <span class="pill pill-ok">Back to Bliss</span>
+            <h3 class="mt-2">What comes back</h3>
+            <p>Navotpala Tech also helps fund servers, events, shows, and development. Useful pieces of that work return to Bliss OS and the projects on this map, so the public trees keep moving.</p>
+            <p class="mb-0"><a href="support.html">Servers and funding</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="py-5 bass-band text-light" id="bass">
     <div class="container">
       <span class="pill pill-warn">Commercial</span>
       <h2 class="section-title mt-2">Bliss-Bass / Bass OS</h2>
-      <p class="col-lg-9">Bass OS is <a href="https://navotpala.tech/" target="_blank" rel="noopener">Navotpala Tech</a>'s commercial distro on top of this stack: brandable Android for x86_64 and ARM, including kiosks, retail, education, Raspberry Pi, and VirtIO. Demo and commercial licensing live on the Bass site. This site stays focused on Bliss OS.</p>
-      <p class="col-lg-9"><strong>BASS</strong> is Broad Apparatus Support System. Editions use audio names (Lineout, Submix, and others) as a play on that acronym. Public trees for those editions are below.</p>
+      <p class="col-lg-9">If you want to ship this stack on a device, brand an image, or talk about a license, <a href="https://bassos.navotpala.tech/" target="_blank" rel="noopener">Bass OS</a> is <a href="https://navotpala.tech/" target="_blank" rel="noopener">Navotpala Tech</a>'s commercial distro. Demos and licensing live there. This page stays about Bliss OS and the public trees next to it.</p>
+      <p class="col-lg-9"><strong>BASS</strong> is Broad Apparatus Support System. Editions use audio names (Lineout, Submix, and others) as a play on that acronym. Shared work that helps everyone can land in the commons and help Bliss; product-only extras stay on Bass. Public trees for those editions are below.</p>
       <div class="row mt-4">
         <div class="col-12 mb-4" id="lineout">
           <div class="rebuild-card">
             <span class="pill pill-ok">Android 16</span>
-            <span class="pill">Bass-funded</span>
+            <span class="pill">FOSS Contribution</span>
             <h3 class="mt-2">Bass: Lineout Core</h3>
             <p>Lineage OS for x86_64 used as the base for Bass: Lineout builds: tablet, desktop, TV, and auto. Source is in <a href="https://github.com/los-tv-x86" target="_blank" rel="noopener">los-tv-x86</a>, including the <a href="https://github.com/los-tv-x86/external_mesa" target="_blank" rel="noopener">Mesa fork</a> used in current BlissOS and Android-Generic builds.</p>
             <p>A public Android 14 Bass fork, <a href="https://github.com/Bliss-Bass/lineage_bass_android" target="_blank" rel="noopener">lineage_bass_android</a>, expands that Lineage tree for tablet, desktop, and related targets. It is a Bass snapshot, not the original TV-x86 project, and Bliss OS does not treat it as an upstream we expect someone else to maintain.</p>
@@ -163,10 +196,13 @@
           <div class="rebuild-card">
             <span class="pill pill-ok">Android 16</span>
             <span class="pill">Debian + Waydroid</span>
-            <span class="pill">Bass edition</span>
+            <span class="pill">FOSS Contribution</span>
             <h3 class="mt-2">Bass: Submix</h3>
-            <p>A lightweight Debian host that boots into a Wayland compositor and runs Lineage OS / Android inside a Waydroid LXC container. Near-native Android on generic x86_64 hardware, with extra Bliss-Bass device customization. Source is public in <a href="https://github.com/Bliss-Bass/bass-submix" target="_blank" rel="noopener">Bliss-Bass/bass-submix</a>.</p>
-            <p class="mb-0"><a href="https://github.com/Bliss-Bass/bass-submix" target="_blank" rel="noopener">github.com/Bliss-Bass/bass-submix</a></p>
+            <p>A Debian host that boots a Wayland compositor (Cage by default, with Weston or X11 as fallbacks) and runs Lineage OS 23 / Android 16 inside a Waydroid LXC container. Linux owns the display, input, and network. Android is the guest, so you get a near-native Android session on generic x86_64 without Bliss OS's Android-on-bare-metal boot.</p>
+            <p>Source is in <a href="https://github.com/Bliss-Bass/bass-submix" target="_blank" rel="noopener">bass-submix</a>: Debian rootfs and initrd, live USB plus a Control Panel installer, GRUB / host / Android overrides, and the Waydroid session. If you want Linux as the host and Android as the contained OS for a device image, this is the Bass edition to look at. Demos and licensing live on the Bass site.</p>
+            <p>Submix is not a Bliss OS desktop ISO, and it is more than stock Waydroid on a random distro. Shared host, installer, and graphics work can help the whole stack. Product-only extras stay on Bass, so Bliss can stay the FOSS OS people install.</p>
+            <p class="mb-0"><a href="https://github.com/Bliss-Bass/bass-submix" target="_blank" rel="noopener">github.com/Bliss-Bass/bass-submix</a> ·
+              <a href="https://github.com/Bliss-Bass/bass-submix/blob/ax86-waydroid/ARCHITECTURE.md" target="_blank" rel="noopener">Architecture</a></p>
           </div>
         </div>
         <div class="col-md-6 mb-4">

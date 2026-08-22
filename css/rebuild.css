@@ -237,9 +237,14 @@ body.rebuild-site {
   color: #8ee0d4;
 }
 
-.status-mark.open {
+.status-mark.working {
   background: rgba(255, 193, 7, 0.18);
   color: #ffd369;
+}
+
+.status-mark.open {
+  background: rgba(255, 255, 255, 0.08);
+  color: #adb5bd;
 }
 
 .bass-band {
