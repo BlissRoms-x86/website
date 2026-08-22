@@ -32,7 +32,7 @@ body.rebuild-site {
 }
 
 .cover-hero.main_background2 {
-  height: 100vh;
+  height: auto;
   min-height: 100vh;
 }
 
@@ -48,13 +48,23 @@ body.rebuild-site {
   position: relative;
   z-index: 1;
   padding: 7rem 1.5rem 3rem;
-  max-width: 36rem;
+  max-width: 40rem;
 }
 
 .cover-hero h1 {
   font-size: clamp(1.75rem, 4.2vw, 2.4rem);
   font-weight: 500;
   line-height: 1.25;
+}
+
+.cover-hero .cover-help,
+.cover-hero .cover-connect {
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.cover-hero .cover-connect {
+  color: rgba(255, 255, 255, 0.82) !important;
 }
 
 .cover-actions .btn {
@@ -96,11 +106,25 @@ body.rebuild-site {
   color: #fff !important;
 }
 
-.rebuild-site .home-hero .btn-outline-light,
-.rebuild-site .page-hero .btn-outline-light,
-.rebuild-site .cover-hero .btn-outline-light {
+/* neon.css sets a:hover { color: white }, and outline-light fills white on
+   hover. Without a darker label, that is white-on-white. */
+.rebuild-site .btn-outline-light {
   color: #fff;
   border-color: #fff;
+}
+
+.rebuild-site .btn-outline-light:hover,
+.rebuild-site .btn-outline-light:focus,
+.rebuild-site .btn-outline-light:active {
+  color: #212529;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.rebuild-site .btn-link.text-light:hover,
+.rebuild-site .btn-link.text-light:focus {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .hero-kicker {
